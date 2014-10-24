@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Coutput-class @ dcGOR 1.0.4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Definition for S4 class Coutput</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>Coutput</code> is an S4 class to store output by
+<code><a href='dcRWRpipeline.html'>dcRWRpipeline</a></code>.</p>
+  
+        <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>Class Coutput</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Slots">
+    -->
+      <h3>Slots</h3>
+      
+      <p></p>
+      <p><span class='describe'>
+<code>ratio</code>A symmetrix matrix, containing ratio</p>
+      <p><code>zscore</code>A symmetrix matrix, containing z-scores</p>
+      <p><code>pvalue</code>A symmetrix matrix, containing p-values</p>
+      <p><code>adjp</code>A symmetrix matrix, containing adjusted p-values</p>
+      <p><code>cnetwork</code>An object of S4 class <code><a href='Cnetwork-class.html'>Cnetwork</a></code>,
+storing contact network.
+</span></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Creation">
+    -->
+      <h3>Creation</h3>
+      
+      <p></p>
+      <p>An object of this class can be created via: <code>new("Coutput", ratio,
+zscore, pvalue, adjp, cnetwork)</code></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Methods">
+    -->
+      <h3>Methods</h3>
+      
+      <p></p>
+      <p>Class-specific methods:
+<ul>
+<li><code>ratio()</code>: retrieve the slot 'ratio' in the object
+</li>
+<li><code>zscore()</code>: retrieve the slot 'zscore' in the object
+</li>
+<li><code>pvalue()</code>: retrieve the slot 'pvalue' in the object
+</li>
+<li><code>adjp()</code>: retrieve the slot 'adjp' in the object
+</li>
+<li><code>cnetwork()</code>: retrieve the slot 'cnetwork' in the object
+</li>
+<li><code>write()</code>: write the object into a local file
+</li>
+</ul></p>
+      <p>Standard generic methods:
+<ul>
+<li><code>str()</code>: compact display of the content in the object
+</li>
+<li><code>show()</code>: abbreviated display of the object
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Access">
+    -->
+      <h3>Access</h3>
+      
+      <p></p>
+      <p>Ways to access information on this class:
+<ul>
+<li><code>showClass("Coutput")</code>: show the class definition
+</li>
+<li><code>showMethods(classes="Coutput")</code>: show the method
+definition upon this class
+</li>
+<li><code>getSlots("Coutput")</code>: get the name and class of each slot
+in this class
+</li>
+<li><code>slotNames("Coutput")</code>: get the name of each slot in this
+class
+</li>
+<li><code>selectMethod(f, signature="Coutput")</code>: retrieve the
+definition code for the method 'f' defined in this class
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># 1) load onto.GOMF (as 'Onto' object)
+g <- dcRDataLoader('onto.GOMF')
+</div>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>
+# 2) load SCOP superfamilies annotated by GOMF (as 'Anno' object)
+Anno <- dcRDataLoader('SCOP.sf2GOMF')
+</div>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>
+# 3) prepare for ontology appended with annotation information
+dag <- dcDAGannotate(g, annotations=Anno, path.mode="shortest_paths",
+verbose=TRUE)
+</div>
+<strong class='message'>	At level 15, there are 2 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors.</strong>
+<strong class='message'>	At level 13, there are 8 nodes, and 8 incoming neighbors.</strong>
+<strong class='message'>	At level 12, there are 19 nodes, and 22 incoming neighbors.</strong>
+<strong class='message'>	At level 11, there are 24 nodes, and 28 incoming neighbors.</strong>
+<strong class='message'>	At level 10, there are 53 nodes, and 44 incoming neighbors.</strong>
+<strong class='message'>	At level 9, there are 101 nodes, and 81 incoming neighbors.</strong>
+<strong class='message'>	At level 8, there are 198 nodes, and 147 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 367 nodes, and 192 incoming neighbors.</strong>
+<strong class='message'>	At level 6, there are 644 nodes, and 221 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 489 nodes, and 167 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 246 nodes, and 56 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 106 nodes, and 13 incoming neighbors.</strong>
+<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors.</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
+<div class='input'>
+# 4) calculate pair-wise semantic similarity between 10 randomly chosen domains
+alldomains <- unique(unlist(nInfo(dag)$annotations))
+domains <- sample(alldomains,10)
+dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
+method.domain="BM.average", method.term="Resnik", parallel=FALSE,
+verbose=TRUE)
+</div>
+<strong class='message'>Start at 2014-10-22 19:36:44</strong>
+<strong class='message'></strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-22 19:36:44)...</strong>
+<strong class='message'>	there are 10 input domains amongst 1083 annotatable domains</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 137 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:36:45)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 10 domains using BM.average method (2014-10-22 19:36:46)...</strong>
+<strong class='message'>	1 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	2 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	3 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	4 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	5 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	6 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	7 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	8 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	9 out of 10 (2014-10-22 19:36:46)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2014-10-22 19:36:46</strong>
+<strong class='message'>Runtime in total is: 2 secs
+</strong>
+<div class='input'>dnetwork
+</div>
+<div class='output'>An object of S4 class 'Dnetwork'
+@adjMatrix: a weighted symmetric matrix of 10 domains X 10 domains 
+@nodeInfo (InfoDataFrame)
+  nodeNames: 52980 47823 81271 ... 56849 63712 (10 total)
+  nodeAttr: id
+</div>
+<div class='input'>
+# 5) estimate RWR dating based sample/term relationships
+# define sets of seeds as data
+# each seed with equal weight (i.e. all non-zero entries are '1')
+data <- data.frame(aSeeds=c(1,0,1,0,1), bSeeds=c(0,0,1,0,1))
+rownames(data) <- id(dnetwork)[1:5]
+# calcualte their two contact graph
+coutput <- dcRWRpipeline(data=data, g=dnetwork, parallel=FALSE)
+</div>
+<strong class='message'>Start at 2014-10-22 19:36:46</strong>
+<strong class='message'></strong>
+<strong class='message'>First, RWR on input graph (10 nodes and 34 edges) using input matrix (5 rows and 2 columns) as seeds (2014-10-22 19:36:46)...</strong>
+<strong class='message'>	using indirect method to do RWR (2014-10-22 19:36:46)...</strong>
+<strong class='message'>Second, calculate contact strength (2014-10-22 19:36:46)...</strong>
+<strong class='message'>Third, generate the distribution of contact strength based on 100 permutations on nodes respecting random (2014-10-22 19:36:46)...</strong>
+<strong class='message'>	1 out of 100 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	10 out of 100 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	20 out of 100 (2014-10-22 19:36:46)</strong>
+<strong class='message'>	30 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	40 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	50 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	60 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	70 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	80 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	90 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>	100 out of 100 (2014-10-22 19:36:47)</strong>
+<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2014-10-22 19:36:47)...</strong>
+<strong class='message'>Also, construct the contact graph under the cutoff 5.0e-02 of adjusted-pvalue (2014-10-22 19:36:47)...</strong>
+<strong class='message'>Your input object 'icontact' of class 'igraph' has been converted into an object of class 'Cnetwork'.</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2014-10-22 19:36:47</strong>
+<strong class='message'>Runtime in total is: 1 secs
+</strong>
+<div class='input'>coutput
+</div>
+<div class='output'>An object of S4 class 'Coutput', containing following slots:
+  @ratio: a matrix of 2 X 2, containing ratio
+  @zscore: a matrix of 2 X 2, containing z-scores
+  @pvalue: a matrix of 2 X 2, containing p-values
+  @adjp: a matrix of 2 X 2, containing adjusted p-values
+  @cnetwork: an object of S4 class 'Cnetwork', containing 0 interacting nodes
+</div>
+<div class='input'>
+# 6) write into the file 'Coutput.txt' in your local directory
+write(coutput, file='Coutput.txt', saveBy="adjp")
+</div>
+<strong class='message'>A file ('Coutput.txt') has been written into your local directory ('/Users/hfang/Sites/SUPERFAMILY/dcGOR')</strong>
+<div class='input'>
+# 7) retrieve several slots directly
+ratio(coutput)
+</div>
+<div class='output'>          aSeeds    bSeeds
+aSeeds 0.9819717 0.9825931
+bSeeds 0.9825931 0.9732440
+</div>
+<div class='input'>zscore(coutput)
+</div>
+<div class='output'>           aSeeds     bSeeds
+aSeeds -0.9314535 -0.6013934
+bSeeds -0.6013934 -0.8376487
+</div>
+<div class='input'>pvalue(coutput)
+</div>
+<div class='output'>       aSeeds bSeeds
+aSeeds   0.82   0.67
+bSeeds   0.67   0.78
+</div>
+<div class='input'>adjp(coutput)
+</div>
+<div class='output'>       aSeeds bSeeds
+aSeeds   0.82   0.67
+bSeeds   0.67   0.78
+</div>
+<div class='input'>cnetwork(coutput)
+</div>
+<div class='output'>An object of S4 class 'Cnetwork'
+@adjMatrix: a weighted symmetric matrix of 0 samples/terms X 0 samples/terms 
+nodeInfo (NULL)
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>Coutput</li><li>Coutput-class</li>
+    </ul>
+    <ul>
+      <li>S4</li><li>classes</li>
+    </ul> 
+    -->
+    
+    
+        
+    <h2>See also</h2>
+    
+<code><a href='Coutput-method.html'>Coutput-method</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

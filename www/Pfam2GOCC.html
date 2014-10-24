@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Pfam2GOCC @ dcGOR 1.0.4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Annotations of Pfam domains by Gene Ontology Cellular Component (GOCC).</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p>An object of class "Anno" that contains associations between Gene Ontology Cellular Component terms and Pfam domains. This data is prepared based on the Pfam database (see <a href = 'http://pfam.xfam.org'>http://pfam.xfam.org</a>) and <a href = 'ftp://ftp.geneontology.org/pub/go/external2go/pfam2go'>ftp://ftp.geneontology.org/pub/go/external2go/pfam2go</a>.</p>
+  
+    <h3>Usage</h3>
+    <pre>data(Pfam2GOCC)</pre>
+        <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>an object of class <code><a href='Anno-class.html'>Anno</a></code>. It has slots for "annoData", "termData" and "domainData": 
+    <ul>
+<li><code>annoData</code>: a sparse matrix of domains X terms
+        </li>
+<li><code>termData</code>: variables describing ontology terms (i.e. columns in annoData), including: "ID" (i.e. term ID), "Name" (i.e. term Names), "Namespace" (i.e. term Namespace), and "Distance" (i.e. term Distance to the ontology root)
+        </li>
+<li><code>domainData</code>: variables describing domains (i.e. rows in annoData), including: "id" for Pfam accession ID, and "level" always equals "Pfam", "description" for Pfam description
+    </li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="References">
+    -->
+      <h3>References</h3>
+      
+      <p>Finn et al. (2014) The Pfam protein families database. <em>Nucleic Acids Res</em>, 42(Database issue):D222-D230.</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># load data
+data(Pfam2GOCC)
+Pfam2GOCC
+</div>
+<div class='output'>An object of S4 class 'Anno'
+@annoData: 2036 domains, 307 terms 
+@termData (InfoDataFrame)
+  termNames: GO:0005576 GO:0009295 GO:0016020 ... GO:0070188 GO:0042729
+    (307 total)
+  tvarLabels: ID Name Namespace Distance
+@domainData (InfoDataFrame)
+  domainNames: PF00001 PF00002 PF00003 ... PF15550 PF15556 (2036 total)
+  dvarLabels: id level description
+</div>
+<div class='input'># retrieve info on ontology terms
+termData(Pfam2GOCC)
+</div>
+<div class='output'>An object of S4 class 'InfoDataFrame'
+  rowNames: GO:0005576 GO:0009295 GO:0016020 ... GO:0070188 GO:0042729
+    (307 total)
+  colNames: ID Name Namespace Distance
+</div>
+<div class='input'># retrieve info on Pfam domains
+domainData(Pfam2GOCC)
+</div>
+<div class='output'>An object of S4 class 'InfoDataFrame'
+  rowNames: PF00001 PF00002 PF00003 ... PF15550 PF15556 (2036 total)
+  colNames: id level description
+</div>
+<div class='input'># retrieve the first 5 rows and columns of annotation data
+x <- annoData(Pfam2GOCC)[1:5,1:5]
+x
+</div>
+<div class='output'>5 x 5 sparse Matrix of class "dgCMatrix"
+        GO:0000276 GO:0000439 GO:0072686 GO:0005925 GO:0000444
+PF00001          .          .          .          .          .
+PF00002          .          .          .          .          .
+PF00003          .          .          .          .          .
+PF00015          .          .          .          .          .
+PF00028          .          .          .          .          .
+</div>
+<div class='input'># convert the above retrieval to the full matrix
+as.matrix(x)
+</div>
+<div class='output'>        GO:0000276 GO:0000439 GO:0072686 GO:0005925 GO:0000444
+PF00001          0          0          0          0          0
+PF00002          0          0          0          0          0
+PF00003          0          0          0          0          0
+PF00015          0          0          0          0          0
+PF00028          0          0          0          0          0
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>Pfam2GOCC</li>
+    </ul>
+    <ul>
+      <li>datasets</li>
+    </ul> 
+    -->
+    
+    
+        
+    <h2>See also</h2>
+    
+<code><a href='Anno-class.html'>Anno-class</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2750 @@
+name	term_id	term_name	term_namespace	term_distance
+ZFA:0100000	ZFA:0100000	zebrafish anatomical entity	root	0
+ZFA:0000037	ZFA:0000037	anatomical structure	ZFIN_anatomy	1
+ZFA:0001093	ZFA:0001093	unspecified	ZFIN_anatomy	1
+ZFA:0001487	ZFA:0001487	portion of organism substance	ZFIN_anatomy	1
+ZFA:0001643	ZFA:0001643	anatomical space	ZFIN_anatomy	1
+ZFA:0001689	ZFA:0001689	anatomical line	ZFIN_anatomy	1
+ZFA:0005594	ZFA:0005594	anatomical surface	ZFIN_anatomy	1
+ZFA:0000007	ZFA:0000007	blood	ZFIN_anatomy	2
+ZFA:0000020	ZFA:0000020	extraembryonic structure	ZFIN_anatomy	2
+ZFA:0000042	ZFA:0000042	midbrain hindbrain boundary	ZFIN_anatomy	2
+ZFA:0000049	ZFA:0000049	optic recess	ZFIN_anatomy	2
+ZFA:0000130	ZFA:0000130	olfactory pit	ZFIN_anatomy	2
+ZFA:0000231	ZFA:0000231	lateral recess	ZFIN_anatomy	2
+ZFA:0000330	ZFA:0000330	cloacal chamber	ZFIN_anatomy	2
+ZFA:0000382	ZFA:0000382	acellular anatomical structure	ZFIN_anatomy	2
+ZFA:0000431	ZFA:0000431	semicircular canal	ZFIN_anatomy	2
+ZFA:0000496	ZFA:0000496	compound organ	ZFIN_anatomy	2
+ZFA:0000695	ZFA:0000695	labial cavity	ZFIN_anatomy	2
+ZFA:0001027	ZFA:0001027	oral cavity	ZFIN_anatomy	2
+ZFA:0001055	ZFA:0001055	pronephric duct opening	ZFIN_anatomy	2
+ZFA:0001075	ZFA:0001075	choroidal fissure	ZFIN_anatomy	2
+ZFA:0001094	ZFA:0001094	whole organism	ZFIN_anatomy	2
+ZFA:0001105	ZFA:0001105	embryonic structure	ZFIN_anatomy	2
+ZFA:0001283	ZFA:0001283	pupil	ZFIN_anatomy	2
+ZFA:0001308	ZFA:0001308	organism subdivision	ZFIN_anatomy	2
+ZFA:0001343	ZFA:0001343	telencephalon diencephalon boundary	ZFIN_anatomy	2
+ZFA:0001344	ZFA:0001344	zona limitans intrathalamica	ZFIN_anatomy	2
+ZFA:0001367	ZFA:0001367	forebrain midbrain boundary	ZFIN_anatomy	2
+ZFA:0001388	ZFA:0001388	epithelial mesenchymal boundary	ZFIN_anatomy	2
+ZFA:0001438	ZFA:0001438	coelom	ZFIN_anatomy	2
+ZFA:0001462	ZFA:0001462	somite border	ZFIN_anatomy	2
+ZFA:0001477	ZFA:0001477	portion of tissue	ZFIN_anatomy	2
+ZFA:0001488	ZFA:0001488	multi-tissue structure	ZFIN_anatomy	2
+ZFA:0001512	ZFA:0001512	anatomical group	ZFIN_anatomy	2
+ZFA:0001617	ZFA:0001617	otolith	ZFIN_anatomy	2
+ZFA:0001626	ZFA:0001626	cerebral spinal fluid	ZFIN_anatomy	2
+ZFA:0001654	ZFA:0001654	opercular cavity	ZFIN_anatomy	2
+ZFA:0001655	ZFA:0001655	pericardial cavity	ZFIN_anatomy	2
+ZFA:0001656	ZFA:0001656	pleuroperitoneal cavity	ZFIN_anatomy	2
+ZFA:0001690	ZFA:0001690	groove	ZFIN_anatomy	2
+ZFA:0005154	ZFA:0005154	synovial fluid	ZFIN_anatomy	2
+ZFA:0005163	ZFA:0005163	bile canaliculus	ZFIN_anatomy	2
+ZFA:0005283	ZFA:0005283	renal capsular space	ZFIN_anatomy	2
+ZFA:0005312	ZFA:0005312	pronephric capsular space	ZFIN_anatomy	2
+ZFA:0005338	ZFA:0005338	posterior recess	ZFIN_anatomy	2
+ZFA:0005386	ZFA:0005386	foramen	ZFIN_anatomy	2
+ZFA:0005388	ZFA:0005388	fossa	ZFIN_anatomy	2
+ZFA:0005389	ZFA:0005389	gill opening	ZFIN_anatomy	2
+ZFA:0005413	ZFA:0005413	perilymph	ZFIN_anatomy	2
+ZFA:0005414	ZFA:0005414	endolymph	ZFIN_anatomy	2
+ZFA:0005449	ZFA:0005449	pore	ZFIN_anatomy	2
+ZFA:0005459	ZFA:0005459	perilymphatic space	ZFIN_anatomy	2
+ZFA:0005493	ZFA:0005493	recessus lateralis	ZFIN_anatomy	2
+ZFA:0005499	ZFA:0005499	circulus	ZFIN_anatomy	2
+ZFA:0005536	ZFA:0005536	fontanel	ZFIN_anatomy	2
+ZFA:0005558	ZFA:0005558	orbit	ZFIN_anatomy	2
+ZFA:0005561	ZFA:0005561	vitreous	ZFIN_anatomy	2
+ZFA:0005564	ZFA:0005564	aqueous humor	ZFIN_anatomy	2
+ZFA:0005570	ZFA:0005570	corneo-scleral junction	ZFIN_anatomy	2
+ZFA:0005573	ZFA:0005573	zonule	ZFIN_anatomy	2
+ZFA:0005593	ZFA:0005593	neuraxis flexure	ZFIN_anatomy	2
+ZFA:0005654	ZFA:0005654	blood plasma	ZFIN_anatomy	2
+ZFA:0005658	ZFA:0005658	lymph	ZFIN_anatomy	2
+ZFA:0007020	ZFA:0007020	forebrain midbrain boundary neural plate	ZFIN_anatomy	2
+ZFA:0007027	ZFA:0007027	forebrain midbrain boundary neural keel	ZFIN_anatomy	2
+ZFA:0007033	ZFA:0007033	forebrain midbrain boundary neural rod	ZFIN_anatomy	2
+ZFA:0007040	ZFA:0007040	forebrain midbrain boundary neural tube	ZFIN_anatomy	2
+ZFA:0007044	ZFA:0007044	midbrain hindbrain boundary neural plate	ZFIN_anatomy	2
+ZFA:0007045	ZFA:0007045	midbrain hindbrain boundary neural keel	ZFIN_anatomy	2
+ZFA:0007046	ZFA:0007046	midbrain hindbrain boundary neural rod	ZFIN_anatomy	2
+ZFA:0007047	ZFA:0007047	midbrain hindbrain boundary neural tube	ZFIN_anatomy	2
+ZFA:0009000	ZFA:0009000	cell	ZFIN_anatomy	2
+ZFA:0000004	ZFA:0000004	anterior axial hypoblast	ZFIN_anatomy	3
+ZFA:0000019	ZFA:0000019	epiphysis	ZFIN_anatomy	3
+ZFA:0000022	ZFA:0000022	floor plate	ZFIN_anatomy	3
+ZFA:0000024	ZFA:0000024	retinal ganglion cell layer	ZFIN_anatomy	3
+ZFA:0000028	ZFA:0000028	heart primordium	ZFIN_anatomy	3
+ZFA:0000029	ZFA:0000029	hindbrain	ZFIN_anatomy	3
+ZFA:0000031	ZFA:0000031	hypochord	ZFIN_anatomy	3
+ZFA:0000032	ZFA:0000032	hypothalamus	ZFIN_anatomy	3
+ZFA:0000033	ZFA:0000033	intermediate cell mass of mesoderm	ZFIN_anatomy	3
+ZFA:0000035	ZFA:0000035	lens	ZFIN_anatomy	3
+ZFA:0000045	ZFA:0000045	neural crest	ZFIN_anatomy	3
+ZFA:0000046	ZFA:0000046	retinal neural layer	ZFIN_anatomy	3
+ZFA:0000050	ZFA:0000050	optic vesicle	ZFIN_anatomy	3
+ZFA:0000056	ZFA:0000056	pharynx	ZFIN_anatomy	3
+ZFA:0000060	ZFA:0000060	prechordal plate	ZFIN_anatomy	3
+ZFA:0000064	ZFA:0000064	presumptive retinal pigmented epithelium	ZFIN_anatomy	3
+ZFA:0000079	ZFA:0000079	telencephalon	ZFIN_anatomy	3
+ZFA:0000094	ZFA:0000094	blood island	ZFIN_anatomy	3
+ZFA:0000100	ZFA:0000100	cerebellum	ZFIN_anatomy	3
+ZFA:0000101	ZFA:0000101	diencephalon	ZFIN_anatomy	3
+ZFA:0000102	ZFA:0000102	dorsal fin fold	ZFIN_anatomy	3
+ZFA:0000109	ZFA:0000109	forebrain	ZFIN_anatomy	3
+ZFA:0000110	ZFA:0000110	fourth ventricle	ZFIN_anatomy	3
+ZFA:0000112	ZFA:0000112	gut	ZFIN_anatomy	3
+ZFA:0000115	ZFA:0000115	heart rudiment	ZFIN_anatomy	3
+ZFA:0000119	ZFA:0000119	retinal inner nuclear layer	ZFIN_anatomy	3
+ZFA:0000122	ZFA:0000122	lens placode	ZFIN_anatomy	3
+ZFA:0000128	ZFA:0000128	midbrain	ZFIN_anatomy	3
+ZFA:0000131	ZFA:0000131	neural keel	ZFIN_anatomy	3
+ZFA:0000132	ZFA:0000132	neural plate	ZFIN_anatomy	3
+ZFA:0000133	ZFA:0000133	neural rod	ZFIN_anatomy	3
+ZFA:0000135	ZFA:0000135	notochord	ZFIN_anatomy	3
+ZFA:0000137	ZFA:0000137	optic stalk	ZFIN_anatomy	3
+ZFA:0000143	ZFA:0000143	retinal photoreceptor layer	ZFIN_anatomy	3
+ZFA:0000149	ZFA:0000149	primitive heart tube	ZFIN_anatomy	3
+ZFA:0000152	ZFA:0000152	retina	ZFIN_anatomy	3
+ZFA:0000154	ZFA:0000154	sinus venosus	ZFIN_anatomy	3
+ZFA:0000155	ZFA:0000155	somite	ZFIN_anatomy	3
+ZFA:0000159	ZFA:0000159	tectal ventricle	ZFIN_anatomy	3
+ZFA:0000160	ZFA:0000160	tegmentum	ZFIN_anatomy	3
+ZFA:0000161	ZFA:0000161	third ventricle	ZFIN_anatomy	3
+ZFA:0000165	ZFA:0000165	inferior lobe	ZFIN_anatomy	3
+ZFA:0000166	ZFA:0000166	lateral crista	ZFIN_anatomy	3
+ZFA:0000173	ZFA:0000173	bulbus arteriosus	ZFIN_anatomy	3
+ZFA:0000183	ZFA:0000183	central pretectum	ZFIN_anatomy	3
+ZFA:0000188	ZFA:0000188	corpus cerebelli	ZFIN_anatomy	3
+ZFA:0000190	ZFA:0000190	ganglion	ZFIN_anatomy	3
+ZFA:0000199	ZFA:0000199	dorsal periventricular hypothalamus	ZFIN_anatomy	3
+ZFA:0000204	ZFA:0000204	esophagus	ZFIN_anatomy	3
+ZFA:0000210	ZFA:0000210	gigantocellular part of magnocellular preoptic nucleus	ZFIN_anatomy	3
+ZFA:0000211	ZFA:0000211	gill lamella	ZFIN_anatomy	3
+ZFA:0000212	ZFA:0000212	granular eminence	ZFIN_anatomy	3
+ZFA:0000213	ZFA:0000213	habenula	ZFIN_anatomy	3
+ZFA:0000228	ZFA:0000228	lateral line primordium	ZFIN_anatomy	3
+ZFA:0000233	ZFA:0000233	lower oral valve	ZFIN_anatomy	3
+ZFA:0000242	ZFA:0000242	male organism	ZFIN_anatomy	3
+ZFA:0000267	ZFA:0000267	primary olfactory fiber layer	ZFIN_anatomy	3
+ZFA:0000279	ZFA:0000279	segmental plate	ZFIN_anatomy	3
+ZFA:0000280	ZFA:0000280	medial valvula cerebelli	ZFIN_anatomy	3
+ZFA:0000293	ZFA:0000293	synencephalon	ZFIN_anatomy	3
+ZFA:0000297	ZFA:0000297	vagal lobe	ZFIN_anatomy	3
+ZFA:0000303	ZFA:0000303	female organism	ZFIN_anatomy	3
+ZFA:0000304	ZFA:0000304	ventral telencephalon	ZFIN_anatomy	3
+ZFA:0000305	ZFA:0000305	ventral sulcus	ZFIN_anatomy	3
+ZFA:0000307	ZFA:0000307	vestibulolateralis lobe	ZFIN_anatomy	3
+ZFA:0000309	ZFA:0000309	E-YSL	ZFIN_anatomy	3
+ZFA:0000319	ZFA:0000319	branchiostegal membrane	ZFIN_anatomy	3
+ZFA:0000327	ZFA:0000327	central zone	ZFIN_anatomy	3
+ZFA:0000329	ZFA:0000329	chorion	ZFIN_anatomy	3
+ZFA:0000333	ZFA:0000333	mesovarium	ZFIN_anatomy	3
+ZFA:0000334	ZFA:0000334	corpus mamillare	ZFIN_anatomy	3
+ZFA:0000347	ZFA:0000347	dorsal hypothalamic zone	ZFIN_anatomy	3
+ZFA:0000352	ZFA:0000352	external cellular layer	ZFIN_anatomy	3
+ZFA:0000355	ZFA:0000355	roof plate midbrain region	ZFIN_anatomy	3
+ZFA:0000357	ZFA:0000357	glomerular layer	ZFIN_anatomy	3
+ZFA:0000358	ZFA:0000358	granular layer corpus cerebelli	ZFIN_anatomy	3
+ZFA:0000374	ZFA:0000374	lagena	ZFIN_anatomy	3
+ZFA:0000386	ZFA:0000386	macula	ZFIN_anatomy	3
+ZFA:0000388	ZFA:0000388	medial caudal lobe	ZFIN_anatomy	3
+ZFA:0000392	ZFA:0000392	median tuberal portion	ZFIN_anatomy	3
+ZFA:0000393	ZFA:0000393	mesenchyme	ZFIN_anatomy	3
+ZFA:0000394	ZFA:0000394	molecular layer corpus cerebelli	ZFIN_anatomy	3
+ZFA:0000402	ZFA:0000402	olfactory bulb	ZFIN_anatomy	3
+ZFA:0000418	ZFA:0000418	pretectum	ZFIN_anatomy	3
+ZFA:0000421	ZFA:0000421	reticular formation	ZFIN_anatomy	3
+ZFA:0000428	ZFA:0000428	saccule	ZFIN_anatomy	3
+ZFA:0000445	ZFA:0000445	optic tectum	ZFIN_anatomy	3
+ZFA:0000447	ZFA:0000447	tela chorioidea	ZFIN_anatomy	3
+ZFA:0000449	ZFA:0000449	torus longitudinalis	ZFIN_anatomy	3
+ZFA:0000451	ZFA:0000451	upper oral valve	ZFIN_anatomy	3
+ZFA:0000458	ZFA:0000458	ventral thalamus	ZFIN_anatomy	3
+ZFA:0000470	ZFA:0000470	preoptic area	ZFIN_anatomy	3
+ZFA:0000479	ZFA:0000479	caudal mesencephalo-cerebellar tract	ZFIN_anatomy	3
+ZFA:0000494	ZFA:0000494	deep white zone	ZFIN_anatomy	3
+ZFA:0000501	ZFA:0000501	dorsal funiculus	ZFIN_anatomy	3
+ZFA:0000505	ZFA:0000505	dorsal telencephalon	ZFIN_anatomy	3
+ZFA:0000509	ZFA:0000509	epithalamus	ZFIN_anatomy	3
+ZFA:0000516	ZFA:0000516	periventricular grey zone	ZFIN_anatomy	3
+ZFA:0000517	ZFA:0000517	glossopharyngeal lobe	ZFIN_anatomy	3
+ZFA:0000532	ZFA:0000532	lateral valvula cerebelli	ZFIN_anatomy	3
+ZFA:0000533	ZFA:0000533	lateral funiculus	ZFIN_anatomy	3
+ZFA:0000545	ZFA:0000545	medulla oblongata	ZFIN_anatomy	3
+ZFA:0000570	ZFA:0000570	optic primordium	ZFIN_anatomy	3
+ZFA:0000573	ZFA:0000573	internal cellular layer	ZFIN_anatomy	3
+ZFA:0000582	ZFA:0000582	saccus dorsalis	ZFIN_anatomy	3
+ZFA:0000589	ZFA:0000589	sulcus ypsiloniformis	ZFIN_anatomy	3
+ZFA:0000599	ZFA:0000599	torus semicircularis	ZFIN_anatomy	3
+ZFA:0000603	ZFA:0000603	valvula cerebelli	ZFIN_anatomy	3
+ZFA:0000605	ZFA:0000605	ventral funiculus	ZFIN_anatomy	3
+ZFA:0000633	ZFA:0000633	caudal tuberculum	ZFIN_anatomy	3
+ZFA:0000634	ZFA:0000634	caudal hypothalamic zone	ZFIN_anatomy	3
+ZFA:0000636	ZFA:0000636	cerebellar crest	ZFIN_anatomy	3
+ZFA:0000640	ZFA:0000640	cornea	ZFIN_anatomy	3
+ZFA:0000649	ZFA:0000649	dorsal horn spinal cord	ZFIN_anatomy	3
+ZFA:0000652	ZFA:0000652	dorsal root	ZFIN_anatomy	3
+ZFA:0000653	ZFA:0000653	dorsal thalamus	ZFIN_anatomy	3
+ZFA:0000667	ZFA:0000667	gill filament	ZFIN_anatomy	3
+ZFA:0000686	ZFA:0000686	superficial grey and white zone	ZFIN_anatomy	3
+ZFA:0000687	ZFA:0000687	superficial pretectum	ZFIN_anatomy	3
+ZFA:0000694	ZFA:0000694	ceratobranchial 5 tooth	ZFIN_anatomy	3
+ZFA:0000696	ZFA:0000696	telencephalic ventricle	ZFIN_anatomy	3
+ZFA:0000700	ZFA:0000700	utricle	ZFIN_anatomy	3
+ZFA:0000702	ZFA:0000702	ventral horn spinal cord	ZFIN_anatomy	3
+ZFA:0000705	ZFA:0000705	ventral root	ZFIN_anatomy	3
+ZFA:0000706	ZFA:0000706	posterior intestine	ZFIN_anatomy	3
+ZFA:0000707	ZFA:0000707	ventral hypothalamic zone	ZFIN_anatomy	3
+ZFA:0000712	ZFA:0000712	I-YSL	ZFIN_anatomy	3
+ZFA:0000761	ZFA:0000761	basal plate midbrain region	ZFIN_anatomy	3
+ZFA:0000763	ZFA:0000763	floor plate rhombomere 2	ZFIN_anatomy	3
+ZFA:0000764	ZFA:0000764	floor plate rhombomere 5	ZFIN_anatomy	3
+ZFA:0000765	ZFA:0000765	floor plate rhombomere 8	ZFIN_anatomy	3
+ZFA:0000766	ZFA:0000766	granular layer valvula cerebelli	ZFIN_anatomy	3
+ZFA:0000780	ZFA:0000780	lateral wall diencephalic region	ZFIN_anatomy	3
+ZFA:0000781	ZFA:0000781	lateral wall rhombomere 1	ZFIN_anatomy	3
+ZFA:0000782	ZFA:0000782	lateral wall rhombomere 4	ZFIN_anatomy	3
+ZFA:0000783	ZFA:0000783	lateral wall rhombomere 7	ZFIN_anatomy	3
+ZFA:0000785	ZFA:0000785	lateral wall telencephalic region	ZFIN_anatomy	3
+ZFA:0000786	ZFA:0000786	medial migration pathway mesenchyme	ZFIN_anatomy	3
+ZFA:0000824	ZFA:0000824	roof plate rhombomere 2	ZFIN_anatomy	3
+ZFA:0000825	ZFA:0000825	roof plate rhombomere 6	ZFIN_anatomy	3
+ZFA:0000828	ZFA:0000828	roof plate rhombomere 5	ZFIN_anatomy	3
+ZFA:0000871	ZFA:0000871	floor plate diencephalic region	ZFIN_anatomy	3
+ZFA:0000882	ZFA:0000882	floor plate rhombomere 1	ZFIN_anatomy	3
+ZFA:0000887	ZFA:0000887	floor plate neural rod	ZFIN_anatomy	3
+ZFA:0000888	ZFA:0000888	floor plate rhombomere 3	ZFIN_anatomy	3
+ZFA:0000889	ZFA:0000889	floor plate rhombomere 6	ZFIN_anatomy	3
+ZFA:0000890	ZFA:0000890	floor plate spinal cord region	ZFIN_anatomy	3
+ZFA:0000893	ZFA:0000893	floor plate rhombomere 4	ZFIN_anatomy	3
+ZFA:0000904	ZFA:0000904	floor plate rhombomere 7	ZFIN_anatomy	3
+ZFA:0000906	ZFA:0000906	lateral wall midbrain region	ZFIN_anatomy	3
+ZFA:0000907	ZFA:0000907	lateral wall rhombomere 2	ZFIN_anatomy	3
+ZFA:0000908	ZFA:0000908	lateral wall rhombomere 5	ZFIN_anatomy	3
+ZFA:0000909	ZFA:0000909	lateral wall rhombomere 8	ZFIN_anatomy	3
+ZFA:0000913	ZFA:0000913	molecular layer valvula cerebelli	ZFIN_anatomy	3
+ZFA:0000914	ZFA:0000914	floor plate telencephalic region	ZFIN_anatomy	3
+ZFA:0000938	ZFA:0000938	central canal	ZFIN_anatomy	3
+ZFA:0000950	ZFA:0000950	roof plate rhombomere 3	ZFIN_anatomy	3
+ZFA:0000951	ZFA:0000951	roof plate rhombomere 7	ZFIN_anatomy	3
+ZFA:0000992	ZFA:0000992	lateral migration pathway mesenchyme	ZFIN_anatomy	3
+ZFA:0000993	ZFA:0000993	lateral wall neural rod	ZFIN_anatomy	3
+ZFA:0000994	ZFA:0000994	lateral wall rhombomere 3	ZFIN_anatomy	3
+ZFA:0000995	ZFA:0000995	lateral wall rhombomere 6	ZFIN_anatomy	3
+ZFA:0000996	ZFA:0000996	lateral wall spinal cord	ZFIN_anatomy	3
+ZFA:0001029	ZFA:0001029	inner limiting membrane	ZFIN_anatomy	3
+ZFA:0001033	ZFA:0001033	roof plate rhombomere 1	ZFIN_anatomy	3
+ZFA:0001034	ZFA:0001034	roof plate rhombomere 4	ZFIN_anatomy	3
+ZFA:0001035	ZFA:0001035	roof plate rhombomere 8	ZFIN_anatomy	3
+ZFA:0001069	ZFA:0001069	ventral fin fold	ZFIN_anatomy	3
+ZFA:0001071	ZFA:0001071	presumptive neural retina	ZFIN_anatomy	3
+ZFA:0001072	ZFA:0001072	thyroid follicle	ZFIN_anatomy	3
+ZFA:0001074	ZFA:0001074	taste bud	ZFIN_anatomy	3
+ZFA:0001076	ZFA:0001076	intestinal bulb	ZFIN_anatomy	3
+ZFA:0001080	ZFA:0001080	sclerotome	ZFIN_anatomy	3
+ZFA:0001081	ZFA:0001081	thyroid primordium	ZFIN_anatomy	3
+ZFA:0001082	ZFA:0001082	chordo neural hinge	ZFIN_anatomy	3
+ZFA:0001089	ZFA:0001089	myoseptum	ZFIN_anatomy	3
+ZFA:0001106	ZFA:0001106	pharyngeal pouch	ZFIN_anatomy	3
+ZFA:0001107	ZFA:0001107	internal gill bud	ZFIN_anatomy	3
+ZFA:0001110	ZFA:0001110	ovarian follicle	ZFIN_anatomy	3
+ZFA:0001111	ZFA:0001111	zona radiata	ZFIN_anatomy	3
+ZFA:0001112	ZFA:0001112	granulosa cell layer	ZFIN_anatomy	3
+ZFA:0001113	ZFA:0001113	thecal cell layer	ZFIN_anatomy	3
+ZFA:0001119	ZFA:0001119	dermis	ZFIN_anatomy	3
+ZFA:0001120	ZFA:0001120	neuroectoderm	ZFIN_anatomy	3
+ZFA:0001122	ZFA:0001122	primary germ layer	ZFIN_anatomy	3
+ZFA:0001125	ZFA:0001125	organizer inducing center	ZFIN_anatomy	3
+ZFA:0001126	ZFA:0001126	noninvoluting endocytic marginal cell cluster	ZFIN_anatomy	3
+ZFA:0001135	ZFA:0001135	neural tube	ZFIN_anatomy	3
+ZFA:0001136	ZFA:0001136	hypodermis	ZFIN_anatomy	3
+ZFA:0001153	ZFA:0001153	tooth placode	ZFIN_anatomy	3
+ZFA:0001177	ZFA:0001177	roof plate spinal cord region	ZFIN_anatomy	3
+ZFA:0001178	ZFA:0001178	non neural ectoderm	ZFIN_anatomy	3
+ZFA:0001179	ZFA:0001179	epidermal superficial stratum	ZFIN_anatomy	3
+ZFA:0001180	ZFA:0001180	epidermal basal stratum	ZFIN_anatomy	3
+ZFA:0001181	ZFA:0001181	epidermal intermediate stratum	ZFIN_anatomy	3
+ZFA:0001182	ZFA:0001182	dermal deep region	ZFIN_anatomy	3
+ZFA:0001183	ZFA:0001183	dermal superficial region	ZFIN_anatomy	3
+ZFA:0001186	ZFA:0001186	collagenous dermal stroma	ZFIN_anatomy	3
+ZFA:0001195	ZFA:0001195	pars anterior	ZFIN_anatomy	3
+ZFA:0001197	ZFA:0001197	pars intermedia	ZFIN_anatomy	3
+ZFA:0001198	ZFA:0001198	adenohypophyseal placode	ZFIN_anatomy	3
+ZFA:0001199	ZFA:0001199	infundibulum	ZFIN_anatomy	3
+ZFA:0001200	ZFA:0001200	corpuscles of Stannius	ZFIN_anatomy	3
+ZFA:0001202	ZFA:0001202	optic cup	ZFIN_anatomy	3
+ZFA:0001203	ZFA:0001203	ciliary zone	ZFIN_anatomy	3
+ZFA:0001215	ZFA:0001215	thalamus	ZFIN_anatomy	3
+ZFA:0001238	ZFA:0001238	iris	ZFIN_anatomy	3
+ZFA:0001249	ZFA:0001249	exocrine pancreas	ZFIN_anatomy	3
+ZFA:0001256	ZFA:0001256	lateral floor plate	ZFIN_anatomy	3
+ZFA:0001257	ZFA:0001257	medial floor plate	ZFIN_anatomy	3
+ZFA:0001258	ZFA:0001258	floor plate rhombomere region	ZFIN_anatomy	3
+ZFA:0001259	ZFA:0001259	forebrain ventricle	ZFIN_anatomy	3
+ZFA:0001260	ZFA:0001260	endocrine pancreas	ZFIN_anatomy	3
+ZFA:0001262	ZFA:0001262	gonad primordium	ZFIN_anatomy	3
+ZFA:0001271	ZFA:0001271	neurohypophysis	ZFIN_anatomy	3
+ZFA:0001277	ZFA:0001277	anterior chamber swim bladder	ZFIN_anatomy	3
+ZFA:0001278	ZFA:0001278	posterior chamber swim bladder	ZFIN_anatomy	3
+ZFA:0001282	ZFA:0001282	adenohypophysis	ZFIN_anatomy	3
+ZFA:0001284	ZFA:0001284	optic fissure	ZFIN_anatomy	3
+ZFA:0001288	ZFA:0001288	renal glomerulus	ZFIN_anatomy	3
+ZFA:0001292	ZFA:0001292	epiphyseal stalk	ZFIN_anatomy	3
+ZFA:0001306	ZFA:0001306	pharyngeal arch	ZFIN_anatomy	3
+ZFA:0001311	ZFA:0001311	roof plate rhombomere region	ZFIN_anatomy	3
+ZFA:0001315	ZFA:0001315	atrioventricular canal	ZFIN_anatomy	3
+ZFA:0001317	ZFA:0001317	endocardial cushion	ZFIN_anatomy	3
+ZFA:0001318	ZFA:0001318	cardiac jelly	ZFIN_anatomy	3
+ZFA:0001320	ZFA:0001320	endocardium	ZFIN_anatomy	3
+ZFA:0001323	ZFA:0001323	mid intestine	ZFIN_anatomy	3
+ZFA:0001329	ZFA:0001329	retinal inner plexiform layer	ZFIN_anatomy	3
+ZFA:0001330	ZFA:0001330	retinal outer plexiform layer	ZFIN_anatomy	3
+ZFA:0001331	ZFA:0001331	outer limiting membrane	ZFIN_anatomy	3
+ZFA:0001332	ZFA:0001332	spinal neuromere	ZFIN_anatomy	3
+ZFA:0001345	ZFA:0001345	interrenal gland	ZFIN_anatomy	3
+ZFA:0001346	ZFA:0001346	interrenal primordium	ZFIN_anatomy	3
+ZFA:0001347	ZFA:0001347	stratum fibrosum et griseum superficiale	ZFIN_anatomy	3
+ZFA:0001348	ZFA:0001348	stratum marginale	ZFIN_anatomy	3
+ZFA:0001349	ZFA:0001349	stratum opticum	ZFIN_anatomy	3
+ZFA:0001350	ZFA:0001350	stratum griseum centrale	ZFIN_anatomy	3
+ZFA:0001351	ZFA:0001351	stratum album centrale	ZFIN_anatomy	3
+ZFA:0001352	ZFA:0001352	stratum periventriculare	ZFIN_anatomy	3
+ZFA:0001355	ZFA:0001355	primitive meninx	ZFIN_anatomy	3
+ZFA:0001357	ZFA:0001357	alar plate midbrain region	ZFIN_anatomy	3
+ZFA:0001358	ZFA:0001358	roof plate diencephalic region	ZFIN_anatomy	3
+ZFA:0001359	ZFA:0001359	pineal complex	ZFIN_anatomy	3
+ZFA:0001374	ZFA:0001374	atrial myocardium	ZFIN_anatomy	3
+ZFA:0001378	ZFA:0001378	axial hypoblast	ZFIN_anatomy	3
+ZFA:0001434	ZFA:0001434	floor plate neural tube	ZFIN_anatomy	3
+ZFA:0001435	ZFA:0001435	lateral wall neural tube	ZFIN_anatomy	3
+ZFA:0001436	ZFA:0001436	roof plate neural tube region	ZFIN_anatomy	3
+ZFA:0001439	ZFA:0001439	anatomical system	ZFIN_anatomy	3
+ZFA:0001440	ZFA:0001440	rhombic lip	ZFIN_anatomy	3
+ZFA:0001441	ZFA:0001441	lower rhombic lip	ZFIN_anatomy	3
+ZFA:0001442	ZFA:0001442	upper rhombic lip	ZFIN_anatomy	3
+ZFA:0001448	ZFA:0001448	ultimobranchial body	ZFIN_anatomy	3
+ZFA:0001451	ZFA:0001451	zone of polarizing activity pectoral fin bud	ZFIN_anatomy	3
+ZFA:0001452	ZFA:0001452	zone of polarizing activity pelvic fin bud	ZFIN_anatomy	3
+ZFA:0001464	ZFA:0001464	retinal outer nuclear layer	ZFIN_anatomy	3
+ZFA:0001465	ZFA:0001465	photoreceptor inner segment layer	ZFIN_anatomy	3
+ZFA:0001466	ZFA:0001466	photoreceptor outer segment layer	ZFIN_anatomy	3
+ZFA:0001469	ZFA:0001469	lateral line	ZFIN_anatomy	3
+ZFA:0001478	ZFA:0001478	anatomical cluster	ZFIN_anatomy	3
+ZFA:0001485	ZFA:0001485	basal lamina	ZFIN_anatomy	3
+ZFA:0001486	ZFA:0001486	epithelium	ZFIN_anatomy	3
+ZFA:0001489	ZFA:0001489	compound organ component	ZFIN_anatomy	3
+ZFA:0001492	ZFA:0001492	simple organ	ZFIN_anatomy	3
+ZFA:0001557	ZFA:0001557	pronephric glomerulus	ZFIN_anatomy	3
+ZFA:0001619	ZFA:0001619	optic fiber layer	ZFIN_anatomy	3
+ZFA:0001632	ZFA:0001632	portion of connective tissue	ZFIN_anatomy	3
+ZFA:0001659	ZFA:0001659	diencephalic nucleus	ZFIN_anatomy	3
+ZFA:0001663	ZFA:0001663	cranial nerve root	ZFIN_anatomy	3
+ZFA:0001670	ZFA:0001670	notochord posterior region	ZFIN_anatomy	3
+ZFA:0001672	ZFA:0001672	dorsolateral septum	ZFIN_anatomy	3
+ZFA:0001677	ZFA:0001677	floor plate midbrain region	ZFIN_anatomy	3
+ZFA:0001678	ZFA:0001678	immature eye	ZFIN_anatomy	3
+ZFA:0001679	ZFA:0001679	solid lens vesicle	ZFIN_anatomy	3
+ZFA:0001681	ZFA:0001681	grey matter	ZFIN_anatomy	3
+ZFA:0001682	ZFA:0001682	white matter	ZFIN_anatomy	3
+ZFA:0001684	ZFA:0001684	Bowman's layer	ZFIN_anatomy	3
+ZFA:0001685	ZFA:0001685	corneal stroma	ZFIN_anatomy	3
+ZFA:0001686	ZFA:0001686	Descemet's membrane	ZFIN_anatomy	3
+ZFA:0001688	ZFA:0001688	corneal primordium	ZFIN_anatomy	3
+ZFA:0001700	ZFA:0001700	tunica externa	ZFIN_anatomy	3
+ZFA:0001701	ZFA:0001701	tunica interna	ZFIN_anatomy	3
+ZFA:0001703	ZFA:0001703	epidermal placode	ZFIN_anatomy	3
+ZFA:0001704	ZFA:0001704	scale primordium	ZFIN_anatomy	3
+ZFA:0001706	ZFA:0001706	Purkinje cell layer corpus cerebelli	ZFIN_anatomy	3
+ZFA:0001707	ZFA:0001707	brainstem	ZFIN_anatomy	3
+ZFA:0001709	ZFA:0001709	Purkinje cell layer valvula cerebelli	ZFIN_anatomy	3
+ZFA:0001710	ZFA:0001710	mossy fiber	ZFIN_anatomy	3
+ZFA:0001711	ZFA:0001711	climbing fiber	ZFIN_anatomy	3
+ZFA:0001712	ZFA:0001712	presumptive bulbus arteriosus	ZFIN_anatomy	3
+ZFA:0001713	ZFA:0001713	parallel fiber	ZFIN_anatomy	3
+ZFA:0001715	ZFA:0001715	otic vesicle protrusion	ZFIN_anatomy	3
+ZFA:0001717	ZFA:0001717	pillar of the semicircular canal	ZFIN_anatomy	3
+ZFA:0001718	ZFA:0001718	presumptive atrium heart tube	ZFIN_anatomy	3
+ZFA:0001719	ZFA:0001719	presumptive cardiac ventricle heart tube	ZFIN_anatomy	3
+ZFA:0001720	ZFA:0001720	presumptive cardiac ventricle primitive heart tube	ZFIN_anatomy	3
+ZFA:0001721	ZFA:0001721	presumptive atrium primitive heart tube	ZFIN_anatomy	3
+ZFA:0001722	ZFA:0001722	presumptive sinus venosus	ZFIN_anatomy	3
+ZFA:0001723	ZFA:0001723	presumptive atrioventricular canal	ZFIN_anatomy	3
+ZFA:0001724	ZFA:0001724	presumptive endocardium	ZFIN_anatomy	3
+ZFA:0005028	ZFA:0005028	ventral wall of dorsal aorta	ZFIN_anatomy	3
+ZFA:0005029	ZFA:0005029	rostral blood island	ZFIN_anatomy	3
+ZFA:0005039	ZFA:0005039	anterior lateral mesoderm	ZFIN_anatomy	3
+ZFA:0005041	ZFA:0005041	anterior lateral plate mesoderm	ZFIN_anatomy	3
+ZFA:0005043	ZFA:0005043	nevus	ZFIN_anatomy	3
+ZFA:0005057	ZFA:0005057	epicardium	ZFIN_anatomy	3
+ZFA:0005058	ZFA:0005058	ventricular epicardium	ZFIN_anatomy	3
+ZFA:0005059	ZFA:0005059	trabecular layer	ZFIN_anatomy	3
+ZFA:0005060	ZFA:0005060	trabecular layer of ventricle	ZFIN_anatomy	3
+ZFA:0005061	ZFA:0005061	ventricular myocardium	ZFIN_anatomy	3
+ZFA:0005062	ZFA:0005062	compact layer of ventricle	ZFIN_anatomy	3
+ZFA:0005065	ZFA:0005065	heart valve	ZFIN_anatomy	3
+ZFA:0005066	ZFA:0005066	bulbus arteriosus outer layer	ZFIN_anatomy	3
+ZFA:0005067	ZFA:0005067	bulbus arteriosus middle layer	ZFIN_anatomy	3
+ZFA:0005068	ZFA:0005068	bulbus arteriosus inner layer	ZFIN_anatomy	3
+ZFA:0005069	ZFA:0005069	sinoatrial node	ZFIN_anatomy	3
+ZFA:0005070	ZFA:0005070	atrioventricular node	ZFIN_anatomy	3
+ZFA:0005072	ZFA:0005072	endocardial ring	ZFIN_anatomy	3
+ZFA:0005073	ZFA:0005073	atrioventricular ring	ZFIN_anatomy	3
+ZFA:0005076	ZFA:0005076	primordial vasculature	ZFIN_anatomy	3
+ZFA:0005122	ZFA:0005122	dorsal axial hypoblast	ZFIN_anatomy	3
+ZFA:0005125	ZFA:0005125	intestinal villus	ZFIN_anatomy	3
+ZFA:0005138	ZFA:0005138	dental organ	ZFIN_anatomy	3
+ZFA:0005140	ZFA:0005140	dental papilla	ZFIN_anatomy	3
+ZFA:0005141	ZFA:0005141	tooth pulp	ZFIN_anatomy	3
+ZFA:0005145	ZFA:0005145	muscle	ZFIN_anatomy	3
+ZFA:0005146	ZFA:0005146	area postrema	ZFIN_anatomy	3
+ZFA:0005147	ZFA:0005147	regenerating tissue	ZFIN_anatomy	3
+ZFA:0005171	ZFA:0005171	duct	ZFIN_anatomy	3
+ZFA:0005172	ZFA:0005172	left liver lobe	ZFIN_anatomy	3
+ZFA:0005173	ZFA:0005173	right liver lobe	ZFIN_anatomy	3
+ZFA:0005174	ZFA:0005174	ventral liver lobe	ZFIN_anatomy	3
+ZFA:0005229	ZFA:0005229	optic choroid	ZFIN_anatomy	3
+ZFA:0005249	ZFA:0005249	vasculature	ZFIN_anatomy	3
+ZFA:0005251	ZFA:0005251	microcirculatory vessel	ZFIN_anatomy	3
+ZFA:0005254	ZFA:0005254	renal glomerular capsule	ZFIN_anatomy	3
+ZFA:0005256	ZFA:0005256	intervillus pockets	ZFIN_anatomy	3
+ZFA:0005272	ZFA:0005272	immature gonad	ZFIN_anatomy	3
+ZFA:0005281	ZFA:0005281	renal corpuscle	ZFIN_anatomy	3
+ZFA:0005286	ZFA:0005286	lamina densa	ZFIN_anatomy	3
+ZFA:0005287	ZFA:0005287	lamina rara interna	ZFIN_anatomy	3
+ZFA:0005288	ZFA:0005288	lamina rara externa	ZFIN_anatomy	3
+ZFA:0005310	ZFA:0005310	pronephric glomerular capsule	ZFIN_anatomy	3
+ZFA:0005314	ZFA:0005314	blood vessel	ZFIN_anatomy	3
+ZFA:0005316	ZFA:0005316	fin fold pectoral fin bud	ZFIN_anatomy	3
+ZFA:0005317	ZFA:0005317	pectoral fin fold	ZFIN_anatomy	3
+ZFA:0005318	ZFA:0005318	lymph node	ZFIN_anatomy	3
+ZFA:0005333	ZFA:0005333	tongue	ZFIN_anatomy	3
+ZFA:0005337	ZFA:0005337	anterior swim bladder bud	ZFIN_anatomy	3
+ZFA:0005345	ZFA:0005345	adipose tissue	ZFIN_anatomy	3
+ZFA:0005387	ZFA:0005387	foramen magnum	ZFIN_anatomy	3
+ZFA:0005406	ZFA:0005406	anterior myodome	ZFIN_anatomy	3
+ZFA:0005415	ZFA:0005415	inner ear foramen	ZFIN_anatomy	3
+ZFA:0005418	ZFA:0005418	auditory fenestra	ZFIN_anatomy	3
+ZFA:0005419	ZFA:0005419	auditory foramen	ZFIN_anatomy	3
+ZFA:0005425	ZFA:0005425	serous membrane	ZFIN_anatomy	3
+ZFA:0005426	ZFA:0005426	coracoid foramen	ZFIN_anatomy	3
+ZFA:0005427	ZFA:0005427	dentary foramen	ZFIN_anatomy	3
+ZFA:0005428	ZFA:0005428	optic foramen	ZFIN_anatomy	3
+ZFA:0005429	ZFA:0005429	olfactory nerve foramen	ZFIN_anatomy	3
+ZFA:0005430	ZFA:0005430	orbital foramen	ZFIN_anatomy	3
+ZFA:0005431	ZFA:0005431	scapular foramen	ZFIN_anatomy	3
+ZFA:0005432	ZFA:0005432	superficial ophthalmic nerve foramen	ZFIN_anatomy	3
+ZFA:0005434	ZFA:0005434	tooth cusp	ZFIN_anatomy	3
+ZFA:0005442	ZFA:0005442	articular fossa of opercle	ZFIN_anatomy	3
+ZFA:0005443	ZFA:0005443	sensory canal	ZFIN_anatomy	3
+ZFA:0005446	ZFA:0005446	neuromast foramen	ZFIN_anatomy	3
+ZFA:0005453	ZFA:0005453	basicapsular fenestra	ZFIN_anatomy	3
+ZFA:0005454	ZFA:0005454	subtemporal fossa	ZFIN_anatomy	3
+ZFA:0005455	ZFA:0005455	prootic foramen	ZFIN_anatomy	3
+ZFA:0005489	ZFA:0005489	endocardial precursor	ZFIN_anatomy	3
+ZFA:0005490	ZFA:0005490	myocardial precursor	ZFIN_anatomy	3
+ZFA:0005491	ZFA:0005491	optic furrow	ZFIN_anatomy	3
+ZFA:0005492	ZFA:0005492	sphenotic-prootic fossa	ZFIN_anatomy	3
+ZFA:0005500	ZFA:0005500	prootic bulla	ZFIN_anatomy	3
+ZFA:0005507	ZFA:0005507	nasal capsule	ZFIN_anatomy	3
+ZFA:0005510	ZFA:0005510	prootic depression	ZFIN_anatomy	3
+ZFA:0005559	ZFA:0005559	vascular sprouts	ZFIN_anatomy	3
+ZFA:0005562	ZFA:0005562	Bruch's membrane	ZFIN_anatomy	3
+ZFA:0005563	ZFA:0005563	sclera	ZFIN_anatomy	3
+ZFA:0005569	ZFA:0005569	iris stroma	ZFIN_anatomy	3
+ZFA:0005574	ZFA:0005574	lens capsule	ZFIN_anatomy	3
+ZFA:0005575	ZFA:0005575	brain nucleus	ZFIN_anatomy	3
+ZFA:0005578	ZFA:0005578	spinal nerve root	ZFIN_anatomy	3
+ZFA:0005580	ZFA:0005580	rostral pars anterior	ZFIN_anatomy	3
+ZFA:0005581	ZFA:0005581	proximal pars anterior	ZFIN_anatomy	3
+ZFA:0005586	ZFA:0005586	renal vesicle	ZFIN_anatomy	3
+ZFA:0005587	ZFA:0005587	nephron progenitor	ZFIN_anatomy	3
+ZFA:0005600	ZFA:0005600	sinoatrial region	ZFIN_anatomy	3
+ZFA:0005601	ZFA:0005601	sinoatrial ring	ZFIN_anatomy	3
+ZFA:0005615	ZFA:0005615	metapterygoid-symplectic fenestra	ZFIN_anatomy	3
+ZFA:0005625	ZFA:0005625	hypophyseal fenestra	ZFIN_anatomy	3
+ZFA:0005628	ZFA:0005628	posttemporal fossa	ZFIN_anatomy	3
+ZFA:0005629	ZFA:0005629	hyomandibular foramen	ZFIN_anatomy	3
+ZFA:0005630	ZFA:0005630	pterotic fossa	ZFIN_anatomy	3
+ZFA:0005653	ZFA:0005653	vagal sensory zone	ZFIN_anatomy	3
+ZFA:0005659	ZFA:0005659	intestinal lamina propria mucosa	ZFIN_anatomy	3
+ZFA:0005660	ZFA:0005660	intestinal mucosa	ZFIN_anatomy	3
+ZFA:0005661	ZFA:0005661	olfactory bulb glomerulus	ZFIN_anatomy	3
+ZFA:0006000	ZFA:0006000	intermediate hypothalamus	ZFIN_anatomy	3
+ZFA:0007001	ZFA:0007001	dorso-rostral cluster	ZFIN_anatomy	3
+ZFA:0007004	ZFA:0007004	epiphysial cluster	ZFIN_anatomy	3
+ZFA:0007009	ZFA:0007009	nerve	ZFIN_anatomy	3
+ZFA:0007010	ZFA:0007010	eminentia thalami	ZFIN_anatomy	3
+ZFA:0007014	ZFA:0007014	anterior presumptive neural plate	ZFIN_anatomy	3
+ZFA:0007015	ZFA:0007015	posterior presumptive neural plate	ZFIN_anatomy	3
+ZFA:0007016	ZFA:0007016	anterior neural plate	ZFIN_anatomy	3
+ZFA:0007017	ZFA:0007017	posterior neural plate	ZFIN_anatomy	3
+ZFA:0007018	ZFA:0007018	forebrain neural plate	ZFIN_anatomy	3
+ZFA:0007019	ZFA:0007019	midbrain neural plate	ZFIN_anatomy	3
+ZFA:0007021	ZFA:0007021	spinal cord neural plate	ZFIN_anatomy	3
+ZFA:0007022	ZFA:0007022	hindbrain neural plate	ZFIN_anatomy	3
+ZFA:0007023	ZFA:0007023	posterior neural keel	ZFIN_anatomy	3
+ZFA:0007024	ZFA:0007024	anterior neural keel	ZFIN_anatomy	3
+ZFA:0007025	ZFA:0007025	midbrain neural keel	ZFIN_anatomy	3
+ZFA:0007026	ZFA:0007026	forebrain neural keel	ZFIN_anatomy	3
+ZFA:0007028	ZFA:0007028	spinal cord neural keel	ZFIN_anatomy	3
+ZFA:0007029	ZFA:0007029	hindbrain neural keel	ZFIN_anatomy	3
+ZFA:0007030	ZFA:0007030	posterior neural rod	ZFIN_anatomy	3
+ZFA:0007031	ZFA:0007031	anterior neural rod	ZFIN_anatomy	3
+ZFA:0007032	ZFA:0007032	midbrain neural rod	ZFIN_anatomy	3
+ZFA:0007034	ZFA:0007034	forebrain neural rod	ZFIN_anatomy	3
+ZFA:0007035	ZFA:0007035	spinal cord neural rod	ZFIN_anatomy	3
+ZFA:0007036	ZFA:0007036	hindbrain neural rod	ZFIN_anatomy	3
+ZFA:0007037	ZFA:0007037	posterior neural tube	ZFIN_anatomy	3
+ZFA:0007038	ZFA:0007038	anterior neural tube	ZFIN_anatomy	3
+ZFA:0007039	ZFA:0007039	midbrain neural tube	ZFIN_anatomy	3
+ZFA:0007041	ZFA:0007041	forebrain neural tube	ZFIN_anatomy	3
+ZFA:0007042	ZFA:0007042	spinal cord neural tube	ZFIN_anatomy	3
+ZFA:0007043	ZFA:0007043	hindbrain neural tube	ZFIN_anatomy	3
+ZFA:0007058	ZFA:0007058	roof plate	ZFIN_anatomy	3
+ZFA:0007059	ZFA:0007059	neurogenic field	ZFIN_anatomy	3
+ZFA:0007071	ZFA:0007071	flexural organ	ZFIN_anatomy	3
+ZFA:0000000	ZFA:0000000	Brachet's cleft	ZFIN_anatomy	4
+ZFA:0000001	ZFA:0000001	Kupffer's vesicle	ZFIN_anatomy	4
+ZFA:0000003	ZFA:0000003	adaxial cell	ZFIN_anatomy	4
+ZFA:0000005	ZFA:0000005	artery	ZFIN_anatomy	4
+ZFA:0000006	ZFA:0000006	ball	ZFIN_anatomy	4
+ZFA:0000010	ZFA:0000010	cardiovascular system	ZFIN_anatomy	4
+ZFA:0000016	ZFA:0000016	ectoderm	ZFIN_anatomy	4
+ZFA:0000017	ZFA:0000017	endoderm	ZFIN_anatomy	4
+ZFA:0000018	ZFA:0000018	epiblast	ZFIN_anatomy	4
+ZFA:0000023	ZFA:0000023	forerunner cell group	ZFIN_anatomy	4
+ZFA:0000026	ZFA:0000026	hatching gland	ZFIN_anatomy	4
+ZFA:0000036	ZFA:0000036	liver and biliary system	ZFIN_anatomy	4
+ZFA:0000038	ZFA:0000038	margin	ZFIN_anatomy	4
+ZFA:0000041	ZFA:0000041	mesoderm	ZFIN_anatomy	4
+ZFA:0000051	ZFA:0000051	otic vesicle	ZFIN_anatomy	4
+ZFA:0000053	ZFA:0000053	presumptive segmental plate	ZFIN_anatomy	4
+ZFA:0000054	ZFA:0000054	pericardium	ZFIN_anatomy	4
+ZFA:0000058	ZFA:0000058	polster	ZFIN_anatomy	4
+ZFA:0000062	ZFA:0000062	presumptive forebrain	ZFIN_anatomy	4
+ZFA:0000068	ZFA:0000068	proneural cluster	ZFIN_anatomy	4
+ZFA:0000071	ZFA:0000071	shield	ZFIN_anatomy	4
+ZFA:0000077	ZFA:0000077	tail bud	ZFIN_anatomy	4
+ZFA:0000081	ZFA:0000081	trunk mesenchyme	ZFIN_anatomy	4
+ZFA:0000082	ZFA:0000082	vein	ZFIN_anatomy	4
+ZFA:0000084	ZFA:0000084	yolk	ZFIN_anatomy	4
+ZFA:0000086	ZFA:0000086	EVL	ZFIN_anatomy	4
+ZFA:0000088	ZFA:0000088	YSL	ZFIN_anatomy	4
+ZFA:0000092	ZFA:0000092	axis	ZFIN_anatomy	4
+ZFA:0000093	ZFA:0000093	blastomere	ZFIN_anatomy	4
+ZFA:0000095	ZFA:0000095	pharyngeal arch 3-7 skeleton	ZFIN_anatomy	4
+ZFA:0000098	ZFA:0000098	proliferative region	ZFIN_anatomy	4
+ZFA:0000105	ZFA:0000105	epidermis	ZFIN_anatomy	4
+ZFA:0000106	ZFA:0000106	extension	ZFIN_anatomy	4
+ZFA:0000111	ZFA:0000111	germ ring	ZFIN_anatomy	4
+ZFA:0000113	ZFA:0000113	head mesenchyme	ZFIN_anatomy	4
+ZFA:0000117	ZFA:0000117	hypoblast	ZFIN_anatomy	4
+ZFA:0000118	ZFA:0000118	hypophysis	ZFIN_anatomy	4
+ZFA:0000124	ZFA:0000124	liver primordium	ZFIN_anatomy	4
+ZFA:0000140	ZFA:0000140	pancreas	ZFIN_anatomy	4
+ZFA:0000144	ZFA:0000144	retinal pigmented epithelium	ZFIN_anatomy	4
+ZFA:0000146	ZFA:0000146	presumptive brain	ZFIN_anatomy	4
+ZFA:0000148	ZFA:0000148	presumptive midbrain	ZFIN_anatomy	4
+ZFA:0000150	ZFA:0000150	pronephric duct	ZFIN_anatomy	4
+ZFA:0000163	ZFA:0000163	renal system	ZFIN_anatomy	4
+ZFA:0000164	ZFA:0000164	ventral mesenchyme	ZFIN_anatomy	4
+ZFA:0000178	ZFA:0000178	caudal peduncle	ZFIN_anatomy	4
+ZFA:0000189	ZFA:0000189	otic region	ZFIN_anatomy	4
+ZFA:0000208	ZFA:0000208	gall bladder	ZFIN_anatomy	4
+ZFA:0000217	ZFA:0000217	inner ear	ZFIN_anatomy	4
+ZFA:0000241	ZFA:0000241	midline column	ZFIN_anatomy	4
+ZFA:0000243	ZFA:0000243	neuromast	ZFIN_anatomy	4
+ZFA:0000254	ZFA:0000254	pancreas primordium	ZFIN_anatomy	4
+ZFA:0000272	ZFA:0000272	respiratory system	ZFIN_anatomy	4
+ZFA:0000282	ZFA:0000282	sensory system	ZFIN_anatomy	4
+ZFA:0000290	ZFA:0000290	sphenoid region	ZFIN_anatomy	4
+ZFA:0000292	ZFA:0000292	surface structure	ZFIN_anatomy	4
+ZFA:0000318	ZFA:0000318	brainstem and spinal white matter	ZFIN_anatomy	4
+ZFA:0000339	ZFA:0000339	digestive system	ZFIN_anatomy	4
+ZFA:0000351	ZFA:0000351	olfactory region	ZFIN_anatomy	4
+ZFA:0000354	ZFA:0000354	gill	ZFIN_anatomy	4
+ZFA:0000396	ZFA:0000396	nervous system	ZFIN_anatomy	4
+ZFA:0000403	ZFA:0000403	ovary	ZFIN_anatomy	4
+ZFA:0000407	ZFA:0000407	pectoral girdle	ZFIN_anatomy	4
+ZFA:0000414	ZFA:0000414	presumptive cephalic mesoderm	ZFIN_anatomy	4
+ZFA:0000417	ZFA:0000417	presumptive spinal cord	ZFIN_anatomy	4
+ZFA:0000434	ZFA:0000434	skeletal system	ZFIN_anatomy	4
+ZFA:0000436	ZFA:0000436	spleen	ZFIN_anatomy	4
+ZFA:0000444	ZFA:0000444	suspensorium	ZFIN_anatomy	4
+ZFA:0000531	ZFA:0000531	lateral column	ZFIN_anatomy	4
+ZFA:0000542	ZFA:0000542	medial column	ZFIN_anatomy	4
+ZFA:0000546	ZFA:0000546	mesonephric duct	ZFIN_anatomy	4
+ZFA:0000548	ZFA:0000548	musculature system	ZFIN_anatomy	4
+ZFA:0000554	ZFA:0000554	olfactory epithelium	ZFIN_anatomy	4
+ZFA:0000560	ZFA:0000560	oviduct	ZFIN_anatomy	4
+ZFA:0000565	ZFA:0000565	pelvic girdle	ZFIN_anatomy	4
+ZFA:0000566	ZFA:0000566	posterior crista	ZFIN_anatomy	4
+ZFA:0000569	ZFA:0000569	presumptive hindbrain	ZFIN_anatomy	4
+ZFA:0000571	ZFA:0000571	presumptive telencephalon	ZFIN_anatomy	4
+ZFA:0000574	ZFA:0000574	presumptive diencephalon	ZFIN_anatomy	4
+ZFA:0000579	ZFA:0000579	rostral mesencephalo-cerebellar tract	ZFIN_anatomy	4
+ZFA:0000590	ZFA:0000590	oral region	ZFIN_anatomy	4
+ZFA:0000598	ZFA:0000598	testis	ZFIN_anatomy	4
+ZFA:0000611	ZFA:0000611	visceromotor column	ZFIN_anatomy	4
+ZFA:0000619	ZFA:0000619	anterior crista	ZFIN_anatomy	4
+ZFA:0000632	ZFA:0000632	reproductive system	ZFIN_anatomy	4
+ZFA:0000669	ZFA:0000669	head kidney	ZFIN_anatomy	4
+ZFA:0000688	ZFA:0000688	olfactory support cell	ZFIN_anatomy	4
+ZFA:0000711	ZFA:0000711	DEL	ZFIN_anatomy	4
+ZFA:0000788	ZFA:0000788	mesenchyme dorsal fin	ZFIN_anatomy	4
+ZFA:0000816	ZFA:0000816	oral epithelium	ZFIN_anatomy	4
+ZFA:0000818	ZFA:0000818	vagal neural crest	ZFIN_anatomy	4
+ZFA:0000820	ZFA:0000820	presumptive neuron neural tube	ZFIN_anatomy	4
+ZFA:0000829	ZFA:0000829	sclerotome somite 11	ZFIN_anatomy	4
+ZFA:0000830	ZFA:0000830	sclerotome somite 14	ZFIN_anatomy	4
+ZFA:0000831	ZFA:0000831	sclerotome somite 17	ZFIN_anatomy	4
+ZFA:0000832	ZFA:0000832	sclerotome somite 2	ZFIN_anatomy	4
+ZFA:0000833	ZFA:0000833	sclerotome somite 22	ZFIN_anatomy	4
+ZFA:0000834	ZFA:0000834	sclerotome somite 25	ZFIN_anatomy	4
+ZFA:0000835	ZFA:0000835	sclerotome somite 28	ZFIN_anatomy	4
+ZFA:0000836	ZFA:0000836	sclerotome somite 30	ZFIN_anatomy	4
+ZFA:0000837	ZFA:0000837	sclerotome somite 6	ZFIN_anatomy	4
+ZFA:0000839	ZFA:0000839	sclerotome somite 9	ZFIN_anatomy	4
+ZFA:0000863	ZFA:0000863	dermatocranium	ZFIN_anatomy	4
+ZFA:0000912	ZFA:0000912	mesenchyme median fin fold	ZFIN_anatomy	4
+ZFA:0000952	ZFA:0000952	sclerotome somite 1	ZFIN_anatomy	4
+ZFA:0000953	ZFA:0000953	sclerotome somite 12	ZFIN_anatomy	4
+ZFA:0000954	ZFA:0000954	sclerotome somite 15	ZFIN_anatomy	4
+ZFA:0000955	ZFA:0000955	sclerotome somite 18	ZFIN_anatomy	4
+ZFA:0000956	ZFA:0000956	sclerotome somite 20	ZFIN_anatomy	4
+ZFA:0000958	ZFA:0000958	sclerotome somite 23	ZFIN_anatomy	4
+ZFA:0000959	ZFA:0000959	sclerotome somite 26	ZFIN_anatomy	4
+ZFA:0000960	ZFA:0000960	sclerotome somite 29	ZFIN_anatomy	4
+ZFA:0000961	ZFA:0000961	sclerotome somite 4	ZFIN_anatomy	4
+ZFA:0000962	ZFA:0000962	sclerotome somite 7	ZFIN_anatomy	4
+ZFA:0001000	ZFA:0001000	mesenchyme pectoral fin	ZFIN_anatomy	4
+ZFA:0001024	ZFA:0001024	trunk neural crest	ZFIN_anatomy	4
+ZFA:0001036	ZFA:0001036	sclerotome somite 10	ZFIN_anatomy	4
+ZFA:0001037	ZFA:0001037	sclerotome somite 13	ZFIN_anatomy	4
+ZFA:0001038	ZFA:0001038	sclerotome somite 16	ZFIN_anatomy	4
+ZFA:0001039	ZFA:0001039	sclerotome somite 19	ZFIN_anatomy	4
+ZFA:0001041	ZFA:0001041	sclerotome somite 21	ZFIN_anatomy	4
+ZFA:0001042	ZFA:0001042	sclerotome somite 24	ZFIN_anatomy	4
+ZFA:0001043	ZFA:0001043	sclerotome somite 27	ZFIN_anatomy	4
+ZFA:0001044	ZFA:0001044	sclerotome somite 3	ZFIN_anatomy	4
+ZFA:0001045	ZFA:0001045	sclerotome somite 5	ZFIN_anatomy	4
+ZFA:0001046	ZFA:0001046	sclerotome somite 8	ZFIN_anatomy	4
+ZFA:0001077	ZFA:0001077	thymus primordium	ZFIN_anatomy	4
+ZFA:0001078	ZFA:0001078	thymus	ZFIN_anatomy	4
+ZFA:0001086	ZFA:0001086	muscle pioneer	ZFIN_anatomy	4
+ZFA:0001109	ZFA:0001109	oocyte	ZFIN_anatomy	4
+ZFA:0001114	ZFA:0001114	head	ZFIN_anatomy	4
+ZFA:0001115	ZFA:0001115	trunk	ZFIN_anatomy	4
+ZFA:0001116	ZFA:0001116	presumptive structure	ZFIN_anatomy	4
+ZFA:0001117	ZFA:0001117	post-vent region	ZFIN_anatomy	4
+ZFA:0001158	ZFA:0001158	endocrine system	ZFIN_anatomy	4
+ZFA:0001159	ZFA:0001159	immune system	ZFIN_anatomy	4
+ZFA:0001175	ZFA:0001175	blastodisc	ZFIN_anatomy	4
+ZFA:0001176	ZFA:0001176	blastoderm	ZFIN_anatomy	4
+ZFA:0001185	ZFA:0001185	periderm	ZFIN_anatomy	4
+ZFA:0001187	ZFA:0001187	presumptive midbrain hindbrain boundary	ZFIN_anatomy	4
+ZFA:0001188	ZFA:0001188	Weberian apparatus	ZFIN_anatomy	4
+ZFA:0001194	ZFA:0001194	cranial neural crest	ZFIN_anatomy	4
+ZFA:0001207	ZFA:0001207	presumptive rhombomere 1	ZFIN_anatomy	4
+ZFA:0001208	ZFA:0001208	presumptive rhombomere 2	ZFIN_anatomy	4
+ZFA:0001209	ZFA:0001209	presumptive rhombomere 7	ZFIN_anatomy	4
+ZFA:0001210	ZFA:0001210	presumptive rhombomere 6	ZFIN_anatomy	4
+ZFA:0001211	ZFA:0001211	presumptive rhombomere 5	ZFIN_anatomy	4
+ZFA:0001212	ZFA:0001212	presumptive rhombomere 4	ZFIN_anatomy	4
+ZFA:0001213	ZFA:0001213	presumptive rhombomere 3	ZFIN_anatomy	4
+ZFA:0001214	ZFA:0001214	presumptive rhombomere 8	ZFIN_anatomy	4
+ZFA:0001216	ZFA:0001216	splanchnocranium	ZFIN_anatomy	4
+ZFA:0001218	ZFA:0001218	presumptive floor plate	ZFIN_anatomy	4
+ZFA:0001227	ZFA:0001227	mandibular arch skeleton	ZFIN_anatomy	4
+ZFA:0001228	ZFA:0001228	pharyngeal arch 3 skeleton	ZFIN_anatomy	4
+ZFA:0001229	ZFA:0001229	pharyngeal arch 7 skeleton	ZFIN_anatomy	4
+ZFA:0001230	ZFA:0001230	pharyngeal arch 6 skeleton	ZFIN_anatomy	4
+ZFA:0001231	ZFA:0001231	pharyngeal arch 4 skeleton	ZFIN_anatomy	4
+ZFA:0001232	ZFA:0001232	pharyngeal arch 5 skeleton	ZFIN_anatomy	4
+ZFA:0001261	ZFA:0001261	ventricular system	ZFIN_anatomy	4
+ZFA:0001268	ZFA:0001268	sperm duct	ZFIN_anatomy	4
+ZFA:0001270	ZFA:0001270	blastema	ZFIN_anatomy	4
+ZFA:0001272	ZFA:0001272	palatoquadrate arch	ZFIN_anatomy	4
+ZFA:0001273	ZFA:0001273	ventral mandibular arch	ZFIN_anatomy	4
+ZFA:0001276	ZFA:0001276	pharyngeal arch 2 skeleton	ZFIN_anatomy	4
+ZFA:0001285	ZFA:0001285	intersegmental vessel	ZFIN_anatomy	4
+ZFA:0001293	ZFA:0001293	posterior kidney	ZFIN_anatomy	4
+ZFA:0001309	ZFA:0001309	neurogenic placode	ZFIN_anatomy	4
+ZFA:0001326	ZFA:0001326	lens epithelium	ZFIN_anatomy	4
+ZFA:0001328	ZFA:0001328	neuromere	ZFIN_anatomy	4
+ZFA:0001341	ZFA:0001341	intervening zone	ZFIN_anatomy	4
+ZFA:0001342	ZFA:0001342	presumptive intervening zone	ZFIN_anatomy	4
+ZFA:0001360	ZFA:0001360	parapineal organ	ZFIN_anatomy	4
+ZFA:0001363	ZFA:0001363	neural complex	ZFIN_anatomy	4
+ZFA:0001368	ZFA:0001368	presumptive forebrain midbrain boundary	ZFIN_anatomy	4
+ZFA:0001371	ZFA:0001371	pancreatic system	ZFIN_anatomy	4
+ZFA:0001373	ZFA:0001373	migratory slow muscle precursor cell	ZFIN_anatomy	4
+ZFA:0001383	ZFA:0001383	fin bud	ZFIN_anatomy	4
+ZFA:0001389	ZFA:0001389	regeneration epithelium	ZFIN_anatomy	4
+ZFA:0001390	ZFA:0001390	pancreatic bud	ZFIN_anatomy	4
+ZFA:0001401	ZFA:0001401	dorsal hyoid arch	ZFIN_anatomy	4
+ZFA:0001402	ZFA:0001402	ventral hyoid arch	ZFIN_anatomy	4
+ZFA:0001410	ZFA:0001410	orbital region	ZFIN_anatomy	4
+ZFA:0001414	ZFA:0001414	occipital region	ZFIN_anatomy	4
+ZFA:0001419	ZFA:0001419	dorsal fin pterygiophore	ZFIN_anatomy	4
+ZFA:0001420	ZFA:0001420	anal fin pterygiophore	ZFIN_anatomy	4
+ZFA:0001424	ZFA:0001424	chondrocranium	ZFIN_anatomy	4
+ZFA:0001428	ZFA:0001428	olfactory rosette	ZFIN_anatomy	4
+ZFA:0001430	ZFA:0001430	pneumatic duct	ZFIN_anatomy	4
+ZFA:0001431	ZFA:0001431	primitive olfactory epithelium	ZFIN_anatomy	4
+ZFA:0001437	ZFA:0001437	ductus communicans	ZFIN_anatomy	4
+ZFA:0001449	ZFA:0001449	mesenchyme pelvic fin	ZFIN_anatomy	4
+ZFA:0001453	ZFA:0001453	pectoral fin field	ZFIN_anatomy	4
+ZFA:0001454	ZFA:0001454	pelvic fin field	ZFIN_anatomy	4
+ZFA:0001490	ZFA:0001490	cavitated compound organ	ZFIN_anatomy	4
+ZFA:0001491	ZFA:0001491	solid compound organ	ZFIN_anatomy	4
+ZFA:0001493	ZFA:0001493	atypical epithelium	ZFIN_anatomy	4
+ZFA:0001494	ZFA:0001494	multilaminar epithelium	ZFIN_anatomy	4
+ZFA:0001495	ZFA:0001495	unilaminar epithelium	ZFIN_anatomy	4
+ZFA:0001513	ZFA:0001513	dermomyotome	ZFIN_anatomy	4
+ZFA:0001558	ZFA:0001558	pronephric tubule	ZFIN_anatomy	4
+ZFA:0001559	ZFA:0001559	vertebral column	ZFIN_anatomy	4
+ZFA:0001570	ZFA:0001570	unfertilized egg	ZFIN_anatomy	4
+ZFA:0001580	ZFA:0001580	neurocranium	ZFIN_anatomy	4
+ZFA:0001596	ZFA:0001596	joint	ZFIN_anatomy	4
+ZFA:0001620	ZFA:0001620	pronephric proximal convoluted tubule	ZFIN_anatomy	4
+ZFA:0001621	ZFA:0001621	pronephric proximal straight tubule	ZFIN_anatomy	4
+ZFA:0001622	ZFA:0001622	pronephric distal early tubule	ZFIN_anatomy	4
+ZFA:0001623	ZFA:0001623	posterior pronephric duct	ZFIN_anatomy	4
+ZFA:0001624	ZFA:0001624	pronephric distal late tubule	ZFIN_anatomy	4
+ZFA:0001627	ZFA:0001627	lagenar capsule	ZFIN_anatomy	4
+ZFA:0001633	ZFA:0001633	perichordal connective tissue	ZFIN_anatomy	4
+ZFA:0001634	ZFA:0001634	perichondrium	ZFIN_anatomy	4
+ZFA:0001642	ZFA:0001642	tooth row	ZFIN_anatomy	4
+ZFA:0001648	ZFA:0001648	cardiac neural crest	ZFIN_anatomy	4
+ZFA:0001649	ZFA:0001649	infraorbital series	ZFIN_anatomy	4
+ZFA:0001671	ZFA:0001671	macula communis	ZFIN_anatomy	4
+ZFA:0001675	ZFA:0001675	ligament	ZFIN_anatomy	4
+ZFA:0001683	ZFA:0001683	corneal epithelium	ZFIN_anatomy	4
+ZFA:0001687	ZFA:0001687	corneal endothelium	ZFIN_anatomy	4
+ZFA:0001705	ZFA:0001705	endolymphatic duct	ZFIN_anatomy	4
+ZFA:0005023	ZFA:0005023	hematopoietic system	ZFIN_anatomy	4
+ZFA:0005025	ZFA:0005025	dorsal longitudinal anastomotic vessel	ZFIN_anatomy	4
+ZFA:0005063	ZFA:0005063	cardiac conduction system	ZFIN_anatomy	4
+ZFA:0005091	ZFA:0005091	hepatic sinusoid	ZFIN_anatomy	4
+ZFA:0005120	ZFA:0005120	peritoneum	ZFIN_anatomy	4
+ZFA:0005123	ZFA:0005123	gut epithelium	ZFIN_anatomy	4
+ZFA:0005129	ZFA:0005129	mesentery	ZFIN_anatomy	4
+ZFA:0005131	ZFA:0005131	parietal peritoneum	ZFIN_anatomy	4
+ZFA:0005132	ZFA:0005132	visceral peritoneum	ZFIN_anatomy	4
+ZFA:0005134	ZFA:0005134	dental epithelium	ZFIN_anatomy	4
+ZFA:0005136	ZFA:0005136	inner dental epithelium	ZFIN_anatomy	4
+ZFA:0005137	ZFA:0005137	outer dental epithelium	ZFIN_anatomy	4
+ZFA:0005139	ZFA:0005139	dental mesenchyme	ZFIN_anatomy	4
+ZFA:0005148	ZFA:0005148	apical epidermal cap	ZFIN_anatomy	4
+ZFA:0005149	ZFA:0005149	distal epidermal cap	ZFIN_anatomy	4
+ZFA:0005150	ZFA:0005150	basal regeneration epithelium	ZFIN_anatomy	4
+ZFA:0005162	ZFA:0005162	digestive system duct	ZFIN_anatomy	4
+ZFA:0005227	ZFA:0005227	protoneuromast	ZFIN_anatomy	4
+ZFA:0005239	ZFA:0005239	micropylar cell	ZFIN_anatomy	4
+ZFA:0005244	ZFA:0005244	auditory epithelial support cell	ZFIN_anatomy	4
+ZFA:0005245	ZFA:0005245	xanthoblast	ZFIN_anatomy	4
+ZFA:0005246	ZFA:0005246	regeneration fibroblast	ZFIN_anatomy	4
+ZFA:0005255	ZFA:0005255	arteriole	ZFIN_anatomy	4
+ZFA:0005282	ZFA:0005282	nephron	ZFIN_anatomy	4
+ZFA:0005285	ZFA:0005285	glomerular basement membrane	ZFIN_anatomy	4
+ZFA:0005289	ZFA:0005289	renal duct	ZFIN_anatomy	4
+ZFA:0005297	ZFA:0005297	cranial blood vessel	ZFIN_anatomy	4
+ZFA:0005299	ZFA:0005299	fin blood vessel	ZFIN_anatomy	4
+ZFA:0005306	ZFA:0005306	kidney blood vessel	ZFIN_anatomy	4
+ZFA:0005313	ZFA:0005313	pronephric glomerular basement membrane	ZFIN_anatomy	4
+ZFA:0005315	ZFA:0005315	venule	ZFIN_anatomy	4
+ZFA:0005321	ZFA:0005321	vascular smooth muscle	ZFIN_anatomy	4
+ZFA:0005328	ZFA:0005328	iridoblast	ZFIN_anatomy	4
+ZFA:0005329	ZFA:0005329	leucoblast	ZFIN_anatomy	4
+ZFA:0005331	ZFA:0005331	pigment erythroblast	ZFIN_anatomy	4
+ZFA:0005332	ZFA:0005332	cyanoblast	ZFIN_anatomy	4
+ZFA:0005334	ZFA:0005334	lip epithelium	ZFIN_anatomy	4
+ZFA:0005335	ZFA:0005335	swim bladder bud	ZFIN_anatomy	4
+ZFA:0005409	ZFA:0005409	pars superior ear	ZFIN_anatomy	4
+ZFA:0005410	ZFA:0005410	pars inferior ear	ZFIN_anatomy	4
+ZFA:0005411	ZFA:0005411	common crus	ZFIN_anatomy	4
+ZFA:0005412	ZFA:0005412	transverse canal	ZFIN_anatomy	4
+ZFA:0005461	ZFA:0005461	perilymphatic duct	ZFIN_anatomy	4
+ZFA:0005494	ZFA:0005494	skeletal element	ZFIN_anatomy	4
+ZFA:0005496	ZFA:0005496	snout	ZFIN_anatomy	4
+ZFA:0005509	ZFA:0005509	palate	ZFIN_anatomy	4
+ZFA:0005531	ZFA:0005531	bony shelf above orbit	ZFIN_anatomy	4
+ZFA:0005566	ZFA:0005566	anterior segment eye	ZFIN_anatomy	4
+ZFA:0005567	ZFA:0005567	posterior segment eye	ZFIN_anatomy	4
+ZFA:0005571	ZFA:0005571	ventral canal eye	ZFIN_anatomy	4
+ZFA:0005606	ZFA:0005606	cranial vault	ZFIN_anatomy	4
+ZFA:0005619	ZFA:0005619	skeletal tissue	ZFIN_anatomy	4
+ZFA:0005647	ZFA:0005647	tendon	ZFIN_anatomy	4
+ZFA:0007060	ZFA:0007060	dorsolateral field	ZFIN_anatomy	4
+ZFA:0007061	ZFA:0007061	epibranchial field	ZFIN_anatomy	4
+ZFA:0007062	ZFA:0007062	olfactory field	ZFIN_anatomy	4
+ZFA:0007068	ZFA:0007068	otic epithelium	ZFIN_anatomy	4
+ZFA:0009002	ZFA:0009002	early embryonic cell	ZFIN_anatomy	4
+ZFA:0009005	ZFA:0009005	spermatocyte	ZFIN_anatomy	4
+ZFA:0009006	ZFA:0009006	sperm	ZFIN_anatomy	4
+ZFA:0009007	ZFA:0009007	spermatogonium	ZFIN_anatomy	4
+ZFA:0009009	ZFA:0009009	neuron neural crest derived	ZFIN_anatomy	4
+ZFA:0009010	ZFA:0009010	glioblast	ZFIN_anatomy	4
+ZFA:0009012	ZFA:0009012	neuroplacodal cell	ZFIN_anatomy	4
+ZFA:0009016	ZFA:0009016	germ line cell	ZFIN_anatomy	4
+ZFA:0009021	ZFA:0009021	common myeloid progenitor	ZFIN_anatomy	4
+ZFA:0009025	ZFA:0009025	myoblast	ZFIN_anatomy	4
+ZFA:0009026	ZFA:0009026	fibroblast	ZFIN_anatomy	4
+ZFA:0009027	ZFA:0009027	chondroblast	ZFIN_anatomy	4
+ZFA:0009028	ZFA:0009028	ameloblast	ZFIN_anatomy	4
+ZFA:0009029	ZFA:0009029	odontoblast	ZFIN_anatomy	4
+ZFA:0009030	ZFA:0009030	cementoblast	ZFIN_anatomy	4
+ZFA:0009031	ZFA:0009031	osteoblast	ZFIN_anatomy	4
+ZFA:0009032	ZFA:0009032	ciliated cell	ZFIN_anatomy	4
+ZFA:0009034	ZFA:0009034	epithelial cell	ZFIN_anatomy	4
+ZFA:0009037	ZFA:0009037	barrier epithelial cell	ZFIN_anatomy	4
+ZFA:0009043	ZFA:0009043	circulating cell	ZFIN_anatomy	4
+ZFA:0009045	ZFA:0009045	epithelial cell of pancreas	ZFIN_anatomy	4
+ZFA:0009047	ZFA:0009047	osteoclast	ZFIN_anatomy	4
+ZFA:0009073	ZFA:0009073	glial cell	ZFIN_anatomy	4
+ZFA:0009080	ZFA:0009080	neurectodermal cell	ZFIN_anatomy	4
+ZFA:0009081	ZFA:0009081	mesenchymal cell	ZFIN_anatomy	4
+ZFA:0009082	ZFA:0009082	fat cell	ZFIN_anatomy	4
+ZFA:0009083	ZFA:0009083	osteocyte	ZFIN_anatomy	4
+ZFA:0009086	ZFA:0009086	odontocyte	ZFIN_anatomy	4
+ZFA:0009087	ZFA:0009087	cementocyte	ZFIN_anatomy	4
+ZFA:0009090	ZFA:0009090	pigment cell	ZFIN_anatomy	4
+ZFA:0009092	ZFA:0009092	exocrine cell	ZFIN_anatomy	4
+ZFA:0009095	ZFA:0009095	acid secreting cell	ZFIN_anatomy	4
+ZFA:0009096	ZFA:0009096	endocrine cell	ZFIN_anatomy	4
+ZFA:0009112	ZFA:0009112	pericyte	ZFIN_anatomy	4
+ZFA:0009128	ZFA:0009128	electrically active cell	ZFIN_anatomy	4
+ZFA:0009129	ZFA:0009129	absorptive cell	ZFIN_anatomy	4
+ZFA:0009132	ZFA:0009132	barrier cell	ZFIN_anatomy	4
+ZFA:0009136	ZFA:0009136	motile cell	ZFIN_anatomy	4
+ZFA:0009137	ZFA:0009137	ectodermal cell	ZFIN_anatomy	4
+ZFA:0009138	ZFA:0009138	mesodermal cell	ZFIN_anatomy	4
+ZFA:0009139	ZFA:0009139	endodermal cell	ZFIN_anatomy	4
+ZFA:0009146	ZFA:0009146	Merkel cell	ZFIN_anatomy	4
+ZFA:0009150	ZFA:0009150	Rohon-Beard neuron	ZFIN_anatomy	4
+ZFA:0009151	ZFA:0009151	hatching gland cell	ZFIN_anatomy	4
+ZFA:0009157	ZFA:0009157	keratin accumulating cell	ZFIN_anatomy	4
+ZFA:0009159	ZFA:0009159	mucus secreting cell	ZFIN_anatomy	4
+ZFA:0009160	ZFA:0009160	seminal fluid secreting cell	ZFIN_anatomy	4
+ZFA:0009163	ZFA:0009163	myelin accumulating cell	ZFIN_anatomy	4
+ZFA:0009164	ZFA:0009164	oxygen accumulating cell	ZFIN_anatomy	4
+ZFA:0009165	ZFA:0009165	neural crest cell	ZFIN_anatomy	4
+ZFA:0009166	ZFA:0009166	mesenchyme condensation cell	ZFIN_anatomy	4
+ZFA:0009167	ZFA:0009167	adrenal medulla cell	ZFIN_anatomy	4
+ZFA:0009173	ZFA:0009173	dental papilla cell	ZFIN_anatomy	4
+ZFA:0009174	ZFA:0009174	scleral cell	ZFIN_anatomy	4
+ZFA:0009175	ZFA:0009175	choroidal cell of the eye	ZFIN_anatomy	4
+ZFA:0009176	ZFA:0009176	extraembryonic cell	ZFIN_anatomy	4
+ZFA:0009180	ZFA:0009180	stratified epithelial stem cell	ZFIN_anatomy	4
+ZFA:0009188	ZFA:0009188	ligament cell	ZFIN_anatomy	4
+ZFA:0009189	ZFA:0009189	tendon cell	ZFIN_anatomy	4
+ZFA:0009201	ZFA:0009201	alkali secreting cell	ZFIN_anatomy	4
+ZFA:0009217	ZFA:0009217	digestive enzyme secreting cell	ZFIN_anatomy	4
+ZFA:0009226	ZFA:0009226	stromal cell	ZFIN_anatomy	4
+ZFA:0009233	ZFA:0009233	paracrine cell	ZFIN_anatomy	4
+ZFA:0009249	ZFA:0009249	melanoblast	ZFIN_anatomy	4
+ZFA:0009257	ZFA:0009257	neutrophilic promyelocyte	ZFIN_anatomy	4
+ZFA:0009259	ZFA:0009259	cardiac mesenchymal cell	ZFIN_anatomy	4
+ZFA:0009260	ZFA:0009260	parafollicular cell	ZFIN_anatomy	4
+ZFA:0009277	ZFA:0009277	acinar cell	ZFIN_anatomy	4
+ZFA:0009283	ZFA:0009283	mesangial cell	ZFIN_anatomy	4
+ZFA:0009291	ZFA:0009291	muscle precursor cell	ZFIN_anatomy	4
+ZFA:0009298	ZFA:0009298	terminal Schwann cell	ZFIN_anatomy	4
+ZFA:0009302	ZFA:0009302	sustentacular cell	ZFIN_anatomy	4
+ZFA:0009306	ZFA:0009306	neuroepithelial cell	ZFIN_anatomy	4
+ZFA:0009307	ZFA:0009307	somatic stem cell	ZFIN_anatomy	4
+ZFA:0009354	ZFA:0009354	hematopoietic multipotent progenitor cell	ZFIN_anatomy	4
+ZFA:0009355	ZFA:0009355	lymphoid progenitor cell	ZFIN_anatomy	4
+ZFA:0009356	ZFA:0009356	myeloid lineage restricted progenitor cell	ZFIN_anatomy	4
+ZFA:0009362	ZFA:0009362	neuromast mantle cell	ZFIN_anatomy	4
+ZFA:0009363	ZFA:0009363	neuromast support cell	ZFIN_anatomy	4
+ZFA:0009364	ZFA:0009364	olfactory epithelial support cell	ZFIN_anatomy	4
+ZFA:0009386	ZFA:0009386	somatic cell	ZFIN_anatomy	4
+ZFA:0009387	ZFA:0009387	supportive cell	ZFIN_anatomy	4
+ZFA:0000008	ZFA:0000008	brain	ZFIN_anatomy	5
+ZFA:0000009	ZFA:0000009	cardiac ventricle	ZFIN_anatomy	5
+ZFA:0000012	ZFA:0000012	central nervous system	ZFIN_anatomy	5
+ZFA:0000027	ZFA:0000027	paired fin skeleton	ZFIN_anatomy	5
+ZFA:0000040	ZFA:0000040	median fin fold	ZFIN_anatomy	5
+ZFA:0000047	ZFA:0000047	peripheral olfactory organ	ZFIN_anatomy	5
+ZFA:0000063	ZFA:0000063	presumptive neural plate	ZFIN_anatomy	5
+ZFA:0000066	ZFA:0000066	proctodeum	ZFIN_anatomy	5
+ZFA:0000067	ZFA:0000067	pronephric mesoderm	ZFIN_anatomy	5
+ZFA:0000075	ZFA:0000075	spinal cord	ZFIN_anatomy	5
+ZFA:0000076	ZFA:0000076	swim bladder	ZFIN_anatomy	5
+ZFA:0000080	ZFA:0000080	trigeminal neural crest	ZFIN_anatomy	5
+ZFA:0000083	ZFA:0000083	ventral mesoderm	ZFIN_anatomy	5
+ZFA:0000091	ZFA:0000091	axial chorda mesoderm	ZFIN_anatomy	5
+ZFA:0000107	ZFA:0000107	eye	ZFIN_anatomy	5
+ZFA:0000108	ZFA:0000108	fin	ZFIN_anatomy	5
+ZFA:0000114	ZFA:0000114	heart	ZFIN_anatomy	5
+ZFA:0000121	ZFA:0000121	lateral plate mesoderm	ZFIN_anatomy	5
+ZFA:0000123	ZFA:0000123	liver	ZFIN_anatomy	5
+ZFA:0000142	ZFA:0000142	peripheral nervous system	ZFIN_anatomy	5
+ZFA:0000151	ZFA:0000151	pronephros	ZFIN_anatomy	5
+ZFA:0000207	ZFA:0000207	fin musculature	ZFIN_anatomy	5
+ZFA:0000223	ZFA:0000223	infraorbital 1	ZFIN_anatomy	5
+ZFA:0000225	ZFA:0000225	lateral crista primordium	ZFIN_anatomy	5
+ZFA:0000255	ZFA:0000255	paraxial mesoderm	ZFIN_anatomy	5
+ZFA:0000263	ZFA:0000263	precaudal vertebra	ZFIN_anatomy	5
+ZFA:0000277	ZFA:0000277	scale	ZFIN_anatomy	5
+ZFA:0000298	ZFA:0000298	vent	ZFIN_anatomy	5
+ZFA:0000317	ZFA:0000317	postcranial axial skeleton	ZFIN_anatomy	5
+ZFA:0000328	ZFA:0000328	cephalic musculature	ZFIN_anatomy	5
+ZFA:0000360	ZFA:0000360	heart tube	ZFIN_anatomy	5
+ZFA:0000368	ZFA:0000368	integument	ZFIN_anatomy	5
+ZFA:0000385	ZFA:0000385	lymphatic system	ZFIN_anatomy	5
+ZFA:0000411	ZFA:0000411	posterior crista primordium	ZFIN_anatomy	5
+ZFA:0000413	ZFA:0000413	gonad	ZFIN_anatomy	5
+ZFA:0000416	ZFA:0000416	presumptive endoderm	ZFIN_anatomy	5
+ZFA:0000461	ZFA:0000461	Weberian ossicle	ZFIN_anatomy	5
+ZFA:0000468	ZFA:0000468	anterior crista primordium	ZFIN_anatomy	5
+ZFA:0000471	ZFA:0000471	atrium	ZFIN_anatomy	5
+ZFA:0000473	ZFA:0000473	trunk musculature	ZFIN_anatomy	5
+ZFA:0000486	ZFA:0000486	parietal bone	ZFIN_anatomy	5
+ZFA:0000495	ZFA:0000495	infraorbital 5	ZFIN_anatomy	5
+ZFA:0000514	ZFA:0000514	frontal bone	ZFIN_anatomy	5
+ZFA:0000529	ZFA:0000529	kidney	ZFIN_anatomy	5
+ZFA:0000547	ZFA:0000547	mouth	ZFIN_anatomy	5
+ZFA:0000550	ZFA:0000550	naris	ZFIN_anatomy	5
+ZFA:0000555	ZFA:0000555	opercular flap	ZFIN_anatomy	5
+ZFA:0000559	ZFA:0000559	otolith organ	ZFIN_anatomy	5
+ZFA:0000568	ZFA:0000568	presumptive blood	ZFIN_anatomy	5
+ZFA:0000595	ZFA:0000595	supraoccipital	ZFIN_anatomy	5
+ZFA:0000622	ZFA:0000622	barbel	ZFIN_anatomy	5
+ZFA:0000737	ZFA:0000737	cranium	ZFIN_anatomy	5
+ZFA:0000762	ZFA:0000762	facio-acoustic neural crest	ZFIN_anatomy	5
+ZFA:0000787	ZFA:0000787	mesenchyme derived from head neural crest	ZFIN_anatomy	5
+ZFA:0000789	ZFA:0000789	mesoderm pectoral fin bud	ZFIN_anatomy	5
+ZFA:0000811	ZFA:0000811	neural crest diencephalon	ZFIN_anatomy	5
+ZFA:0000812	ZFA:0000812	neural crest telencephalon	ZFIN_anatomy	5
+ZFA:0000875	ZFA:0000875	facial neural crest	ZFIN_anatomy	5
+ZFA:0000905	ZFA:0000905	lateral mesenchyme derived from mesoderm	ZFIN_anatomy	5
+ZFA:0000935	ZFA:0000935	neural crest midbrain	ZFIN_anatomy	5
+ZFA:0000990	ZFA:0000990	intermediate mesenchyme	ZFIN_anatomy	5
+ZFA:0000998	ZFA:0000998	mesenchyme derived from head mesoderm	ZFIN_anatomy	5
+ZFA:0000999	ZFA:0000999	mesenchyme derived from trunk neural crest	ZFIN_anatomy	5
+ZFA:0001058	ZFA:0001058	caudal fin	ZFIN_anatomy	5
+ZFA:0001065	ZFA:0001065	lateral mesoderm	ZFIN_anatomy	5
+ZFA:0001070	ZFA:0001070	presumptive pronephric mesoderm	ZFIN_anatomy	5
+ZFA:0001079	ZFA:0001079	blood vasculature	ZFIN_anatomy	5
+ZFA:0001083	ZFA:0001083	ventricular zone	ZFIN_anatomy	5
+ZFA:0001095	ZFA:0001095	immature macula	ZFIN_anatomy	5
+ZFA:0001100	ZFA:0001100	hepatic duct	ZFIN_anatomy	5
+ZFA:0001104	ZFA:0001104	pharyngeal endoderm	ZFIN_anatomy	5
+ZFA:0001118	ZFA:0001118	urogenital papilla	ZFIN_anatomy	5
+ZFA:0001121	ZFA:0001121	presumptive shield	ZFIN_anatomy	5
+ZFA:0001137	ZFA:0001137	ventral tooth row	ZFIN_anatomy	5
+ZFA:0001139	ZFA:0001139	mediodorsal tooth row	ZFIN_anatomy	5
+ZFA:0001140	ZFA:0001140	dorsal tooth row	ZFIN_anatomy	5
+ZFA:0001162	ZFA:0001162	anal fin	ZFIN_anatomy	5
+ZFA:0001174	ZFA:0001174	pharyngeal epithelium	ZFIN_anatomy	5
+ZFA:0001201	ZFA:0001201	ventral lateral mesoderm	ZFIN_anatomy	5
+ZFA:0001204	ZFA:0001204	axial mesoderm	ZFIN_anatomy	5
+ZFA:0001206	ZFA:0001206	intermediate mesoderm	ZFIN_anatomy	5
+ZFA:0001217	ZFA:0001217	presumptive hypochord	ZFIN_anatomy	5
+ZFA:0001267	ZFA:0001267	cranial vasculature	ZFIN_anatomy	5
+ZFA:0001289	ZFA:0001289	ciliary marginal zone	ZFIN_anatomy	5
+ZFA:0001290	ZFA:0001290	stomodeum	ZFIN_anatomy	5
+ZFA:0001324	ZFA:0001324	enteric musculature	ZFIN_anatomy	5
+ZFA:0001334	ZFA:0001334	presumptive enteric nervous system	ZFIN_anatomy	5
+ZFA:0001338	ZFA:0001338	intestine	ZFIN_anatomy	5
+ZFA:0001376	ZFA:0001376	presumptive ectoderm	ZFIN_anatomy	5
+ZFA:0001377	ZFA:0001377	presumptive mesoderm	ZFIN_anatomy	5
+ZFA:0001379	ZFA:0001379	pharyngeal ectoderm	ZFIN_anatomy	5
+ZFA:0001386	ZFA:0001386	mesoderm pelvic fin bud	ZFIN_anatomy	5
+ZFA:0001407	ZFA:0001407	infraorbital 2	ZFIN_anatomy	5
+ZFA:0001408	ZFA:0001408	infraorbital 3	ZFIN_anatomy	5
+ZFA:0001409	ZFA:0001409	infraorbital 4	ZFIN_anatomy	5
+ZFA:0001463	ZFA:0001463	melanophore stripe	ZFIN_anatomy	5
+ZFA:0001467	ZFA:0001467	pharyngeal mesoderm	ZFIN_anatomy	5
+ZFA:0001496	ZFA:0001496	simple columnar epithelium	ZFIN_anatomy	5
+ZFA:0001497	ZFA:0001497	simple cuboidal epithelium	ZFIN_anatomy	5
+ZFA:0001498	ZFA:0001498	simple squamous epithelium	ZFIN_anatomy	5
+ZFA:0001501	ZFA:0001501	cartilage element	ZFIN_anatomy	5
+ZFA:0001514	ZFA:0001514	bone element	ZFIN_anatomy	5
+ZFA:0001574	ZFA:0001574	autonomic nervous system	ZFIN_anatomy	5
+ZFA:0001597	ZFA:0001597	exoccipital posteroventral region	ZFIN_anatomy	5
+ZFA:0001598	ZFA:0001598	basioccipital posterodorsal region	ZFIN_anatomy	5
+ZFA:0001604	ZFA:0001604	caudal fin upper lobe	ZFIN_anatomy	5
+ZFA:0001605	ZFA:0001605	caudal fin lower lobe	ZFIN_anatomy	5
+ZFA:0001637	ZFA:0001637	bony projection	ZFIN_anatomy	5
+ZFA:0001650	ZFA:0001650	branchial mesenchyme	ZFIN_anatomy	5
+ZFA:0001676	ZFA:0001676	annular ligament	ZFIN_anatomy	5
+ZFA:0001702	ZFA:0001702	apical ectodermal ridge	ZFIN_anatomy	5
+ZFA:0005024	ZFA:0005024	trunk vasculature	ZFIN_anatomy	5
+ZFA:0005037	ZFA:0005037	post-vent vasculature	ZFIN_anatomy	5
+ZFA:0005040	ZFA:0005040	posterior lateral mesoderm	ZFIN_anatomy	5
+ZFA:0005042	ZFA:0005042	posterior lateral plate mesoderm	ZFIN_anatomy	5
+ZFA:0005102	ZFA:0005102	presumptive median fin fold	ZFIN_anatomy	5
+ZFA:0005119	ZFA:0005119	barbel primordium	ZFIN_anatomy	5
+ZFA:0005135	ZFA:0005135	primary dental epithelium	ZFIN_anatomy	5
+ZFA:0005166	ZFA:0005166	cystic duct	ZFIN_anatomy	5
+ZFA:0005167	ZFA:0005167	hepatopancreatic ampulla	ZFIN_anatomy	5
+ZFA:0005264	ZFA:0005264	primordial ligament	ZFIN_anatomy	5
+ZFA:0005265	ZFA:0005265	premaxillary-maxillary ligament	ZFIN_anatomy	5
+ZFA:0005323	ZFA:0005323	ionocyte	ZFIN_anatomy	5
+ZFA:0005336	ZFA:0005336	presumptive swim bladder	ZFIN_anatomy	5
+ZFA:0005435	ZFA:0005435	actinotrichium	ZFIN_anatomy	5
+ZFA:0005462	ZFA:0005462	otic duct	ZFIN_anatomy	5
+ZFA:0005463	ZFA:0005463	oral ectoderm	ZFIN_anatomy	5
+ZFA:0005501	ZFA:0005501	interopercular-mandibular ligament	ZFIN_anatomy	5
+ZFA:0005502	ZFA:0005502	lateral ethmoid-autopalatine ligament	ZFIN_anatomy	5
+ZFA:0005503	ZFA:0005503	lateral ethmoid-ectopterygoid ligament	ZFIN_anatomy	5
+ZFA:0005572	ZFA:0005572	periocular mesenchyme	ZFIN_anatomy	5
+ZFA:0005582	ZFA:0005582	dorsal proneural cluster	ZFIN_anatomy	5
+ZFA:0005583	ZFA:0005583	ventral proneural cluster	ZFIN_anatomy	5
+ZFA:0005620	ZFA:0005620	endochondral element	ZFIN_anatomy	5
+ZFA:0005621	ZFA:0005621	bone tissue	ZFIN_anatomy	5
+ZFA:0005622	ZFA:0005622	cartilage tissue	ZFIN_anatomy	5
+ZFA:0005623	ZFA:0005623	odontoid tissue	ZFIN_anatomy	5
+ZFA:0005624	ZFA:0005624	replacement element	ZFIN_anatomy	5
+ZFA:0005633	ZFA:0005633	lepidotrichium segment	ZFIN_anatomy	5
+ZFA:0005636	ZFA:0005636	interossicular ligament	ZFIN_anatomy	5
+ZFA:0005637	ZFA:0005637	intercostal ligament	ZFIN_anatomy	5
+ZFA:0005638	ZFA:0005638	scapulo-vertebral ligament	ZFIN_anatomy	5
+ZFA:0005641	ZFA:0005641	maxillo-mandibular ligament	ZFIN_anatomy	5
+ZFA:0005642	ZFA:0005642	maxillo-rostroid ligament	ZFIN_anatomy	5
+ZFA:0005643	ZFA:0005643	premaxillo-rostroid ligament	ZFIN_anatomy	5
+ZFA:0005644	ZFA:0005644	ceratobranchial 5 ligament	ZFIN_anatomy	5
+ZFA:0005645	ZFA:0005645	supracleithrum-intercalar ligament	ZFIN_anatomy	5
+ZFA:0005646	ZFA:0005646	preopercle-retroarticular ligament	ZFIN_anatomy	5
+ZFA:0005652	ZFA:0005652	aponeurosis	ZFIN_anatomy	5
+ZFA:0007006	ZFA:0007006	lip	ZFIN_anatomy	5
+ZFA:0007063	ZFA:0007063	neural crest hindbrain	ZFIN_anatomy	5
+ZFA:0007064	ZFA:0007064	mandibular neural crest	ZFIN_anatomy	5
+ZFA:0007065	ZFA:0007065	hyoid neural crest	ZFIN_anatomy	5
+ZFA:0007066	ZFA:0007066	glossopharyngeal neural crest	ZFIN_anatomy	5
+ZFA:0007069	ZFA:0007069	otic squamous epithelium	ZFIN_anatomy	5
+ZFA:0007070	ZFA:0007070	otic sensory epithelium	ZFIN_anatomy	5
+ZFA:0009004	ZFA:0009004	trunk neural crest cell	ZFIN_anatomy	5
+ZFA:0009013	ZFA:0009013	single fate stem cell	ZFIN_anatomy	5
+ZFA:0009014	ZFA:0009014	hematopoietic stem cell	ZFIN_anatomy	5
+ZFA:0009015	ZFA:0009015	erythroid progenitor cell	ZFIN_anatomy	5
+ZFA:0009017	ZFA:0009017	monoblast	ZFIN_anatomy	5
+ZFA:0009020	ZFA:0009020	multi fate stem cell	ZFIN_anatomy	5
+ZFA:0009022	ZFA:0009022	megakaryocyte erythroid progenitor cell	ZFIN_anatomy	5
+ZFA:0009023	ZFA:0009023	common lymphocyte progenitor	ZFIN_anatomy	5
+ZFA:0009024	ZFA:0009024	totipotent stem cell	ZFIN_anatomy	5
+ZFA:0009033	ZFA:0009033	ependymal cell	ZFIN_anatomy	5
+ZFA:0009035	ZFA:0009035	ciliated epithelial cell	ZFIN_anatomy	5
+ZFA:0009038	ZFA:0009038	columnar/cuboidal epithelial cell	ZFIN_anatomy	5
+ZFA:0009039	ZFA:0009039	squamous epithelial cell	ZFIN_anatomy	5
+ZFA:0009042	ZFA:0009042	stratified epithelial cell	ZFIN_anatomy	5
+ZFA:0009044	ZFA:0009044	blood cell	ZFIN_anatomy	5
+ZFA:0009059	ZFA:0009059	autonomic neuron	ZFIN_anatomy	5
+ZFA:0009063	ZFA:0009063	peripheral neuron	ZFIN_anatomy	5
+ZFA:0009091	ZFA:0009091	melanocyte	ZFIN_anatomy	5
+ZFA:0009111	ZFA:0009111	hepatocyte	ZFIN_anatomy	5
+ZFA:0009130	ZFA:0009130	lining cell	ZFIN_anatomy	5
+ZFA:0009133	ZFA:0009133	Sertoli cell	ZFIN_anatomy	5
+ZFA:0009134	ZFA:0009134	insulating cell	ZFIN_anatomy	5
+ZFA:0009135	ZFA:0009135	myelinating Schwann cell	ZFIN_anatomy	5
+ZFA:0009140	ZFA:0009140	phagocyte	ZFIN_anatomy	5
+ZFA:0009141	ZFA:0009141	macrophage	ZFIN_anatomy	5
+ZFA:0009144	ZFA:0009144	stratified squamous epithelial cell	ZFIN_anatomy	5
+ZFA:0009145	ZFA:0009145	stratified cuboidal epithelial cell	ZFIN_anatomy	5
+ZFA:0009148	ZFA:0009148	transitional epithelial cell	ZFIN_anatomy	5
+ZFA:0009156	ZFA:0009156	gamete	ZFIN_anatomy	5
+ZFA:0009158	ZFA:0009158	keratinocyte	ZFIN_anatomy	5
+ZFA:0009162	ZFA:0009162	extracellular matrix secreting cell	ZFIN_anatomy	5
+ZFA:0009169	ZFA:0009169	glioblast (sensu Vertebrata)	ZFIN_anatomy	5
+ZFA:0009170	ZFA:0009170	pigment cell (sensu Vertebrata)	ZFIN_anatomy	5
+ZFA:0009177	ZFA:0009177	blastoderm cell	ZFIN_anatomy	5
+ZFA:0009179	ZFA:0009179	muscle stem cell	ZFIN_anatomy	5
+ZFA:0009182	ZFA:0009182	gastrula cell	ZFIN_anatomy	5
+ZFA:0009190	ZFA:0009190	electrically responsive cell	ZFIN_anatomy	5
+ZFA:0009193	ZFA:0009193	electrically signaling cell	ZFIN_anatomy	5
+ZFA:0009198	ZFA:0009198	xanthophore	ZFIN_anatomy	5
+ZFA:0009199	ZFA:0009199	iridophore	ZFIN_anatomy	5
+ZFA:0009200	ZFA:0009200	reticular cell	ZFIN_anatomy	5
+ZFA:0009228	ZFA:0009228	D cell	ZFIN_anatomy	5
+ZFA:0009229	ZFA:0009229	theca cell	ZFIN_anatomy	5
+ZFA:0009234	ZFA:0009234	cardiac muscle myoblast	ZFIN_anatomy	5
+ZFA:0009235	ZFA:0009235	smooth muscle myoblast	ZFIN_anatomy	5
+ZFA:0009236	ZFA:0009236	skeletal muscle myoblast	ZFIN_anatomy	5
+ZFA:0009238	ZFA:0009238	afferent neuron	ZFIN_anatomy	5
+ZFA:0009239	ZFA:0009239	efferent neuron	ZFIN_anatomy	5
+ZFA:0009248	ZFA:0009248	neuron	ZFIN_anatomy	5
+ZFA:0009251	ZFA:0009251	granulocyte monocyte progenitor cell	ZFIN_anatomy	5
+ZFA:0009253	ZFA:0009253	promonocyte	ZFIN_anatomy	5
+ZFA:0009261	ZFA:0009261	leucophore	ZFIN_anatomy	5
+ZFA:0009263	ZFA:0009263	erythrophore	ZFIN_anatomy	5
+ZFA:0009270	ZFA:0009270	odontoclast	ZFIN_anatomy	5
+ZFA:0009285	ZFA:0009285	podocyte	ZFIN_anatomy	5
+ZFA:0009286	ZFA:0009286	fenestrated cell	ZFIN_anatomy	5
+ZFA:0009288	ZFA:0009288	primordial germ cell	ZFIN_anatomy	5
+ZFA:0009289	ZFA:0009289	gut absorptive cell	ZFIN_anatomy	5
+ZFA:0009293	ZFA:0009293	M cell	ZFIN_anatomy	5
+ZFA:0009296	ZFA:0009296	perijunctional fibroblast	ZFIN_anatomy	5
+ZFA:0009308	ZFA:0009308	urothelial cell	ZFIN_anatomy	5
+ZFA:0009309	ZFA:0009309	leukocyte	ZFIN_anatomy	5
+ZFA:0009317	ZFA:0009317	cyanophore	ZFIN_anatomy	5
+ZFA:0009324	ZFA:0009324	myeloid cell	ZFIN_anatomy	5
+ZFA:0009329	ZFA:0009329	mononuclear osteoclast	ZFIN_anatomy	5
+ZFA:0009348	ZFA:0009348	pro-NK cell	ZFIN_anatomy	5
+ZFA:0009349	ZFA:0009349	pro-B cell	ZFIN_anatomy	5
+ZFA:0009350	ZFA:0009350	pro-T cell	ZFIN_anatomy	5
+ZFA:0009351	ZFA:0009351	thromboblast	ZFIN_anatomy	5
+ZFA:0009352	ZFA:0009352	neutrophil progenitor cell	ZFIN_anatomy	5
+ZFA:0009353	ZFA:0009353	myeloblast	ZFIN_anatomy	5
+ZFA:0009365	ZFA:0009365	interneuromast cell	ZFIN_anatomy	5
+ZFA:0009371	ZFA:0009371	stratified keratinized epithelial stem cell	ZFIN_anatomy	5
+ZFA:0009374	ZFA:0009374	kidney epithelial cell	ZFIN_anatomy	5
+ZFA:0009385	ZFA:0009385	ecto-epithelial cell	ZFIN_anatomy	5
+ZFA:0009388	ZFA:0009388	meso-epithelial cell	ZFIN_anatomy	5
+ZFA:0009389	ZFA:0009389	kidney cell	ZFIN_anatomy	5
+ZFA:0009392	ZFA:0009392	connective tissue cell	ZFIN_anatomy	5
+ZFA:0009394	ZFA:0009394	mesenchymal lymphangioblast	ZFIN_anatomy	5
+ZFA:0000034	ZFA:0000034	lateral line system	ZFIN_anatomy	6
+ZFA:0000048	ZFA:0000048	olfactory placode	ZFIN_anatomy	6
+ZFA:0000072	ZFA:0000072	somite 1	ZFIN_anatomy	6
+ZFA:0000073	ZFA:0000073	somite 5	ZFIN_anatomy	6
+ZFA:0000074	ZFA:0000074	somite 26	ZFIN_anatomy	6
+ZFA:0000085	ZFA:0000085	apical ectodermal ridge pectoral fin bud	ZFIN_anatomy	6
+ZFA:0000089	ZFA:0000089	fin fold actinotrichium	ZFIN_anatomy	6
+ZFA:0000090	ZFA:0000090	apical ectodermal ridge dorsal fin	ZFIN_anatomy	6
+ZFA:0000141	ZFA:0000141	pectoral fin bud	ZFIN_anatomy	6
+ZFA:0000156	ZFA:0000156	somite 20	ZFIN_anatomy	6
+ZFA:0000157	ZFA:0000157	somite 30	ZFIN_anatomy	6
+ZFA:0000202	ZFA:0000202	efferent branchial artery	ZFIN_anatomy	6
+ZFA:0000216	ZFA:0000216	infracarinalis	ZFIN_anatomy	6
+ZFA:0000230	ZFA:0000230	longitudinal hypochordal	ZFIN_anatomy	6
+ZFA:0000232	ZFA:0000232	otic vesicle lateral protrusion	ZFIN_anatomy	6
+ZFA:0000250	ZFA:0000250	opercle	ZFIN_anatomy	6
+ZFA:0000258	ZFA:0000258	pelvic fin musculature	ZFIN_anatomy	6
+ZFA:0000264	ZFA:0000264	preopercle	ZFIN_anatomy	6
+ZFA:0000265	ZFA:0000265	presumptive dorsal mesoderm	ZFIN_anatomy	6
+ZFA:0000284	ZFA:0000284	subopercle	ZFIN_anatomy	6
+ZFA:0000286	ZFA:0000286	superficial lateralis	ZFIN_anatomy	6
+ZFA:0000288	ZFA:0000288	supracarinalis	ZFIN_anatomy	6
+ZFA:0000301	ZFA:0000301	medial rectus	ZFIN_anatomy	6
+ZFA:0000345	ZFA:0000345	dorsal rectus	ZFIN_anatomy	6
+ZFA:0000349	ZFA:0000349	epaxialis	ZFIN_anatomy	6
+ZFA:0000362	ZFA:0000362	hypaxialis	ZFIN_anatomy	6
+ZFA:0000383	ZFA:0000383	lateral rectus	ZFIN_anatomy	6
+ZFA:0000412	ZFA:0000412	otic vesicle posterior protrusion	ZFIN_anatomy	6
+ZFA:0000442	ZFA:0000442	supraneural	ZFIN_anatomy	6
+ZFA:0000457	ZFA:0000457	ventral rectus	ZFIN_anatomy	6
+ZFA:0000469	ZFA:0000469	otic vesicle anterior protrusion	ZFIN_anatomy	6
+ZFA:0000492	ZFA:0000492	coracoradialis	ZFIN_anatomy	6
+ZFA:0000511	ZFA:0000511	extraocular musculature	ZFIN_anatomy	6
+ZFA:0000526	ZFA:0000526	intermuscular bone	ZFIN_anatomy	6
+ZFA:0000528	ZFA:0000528	interradialis	ZFIN_anatomy	6
+ZFA:0000541	ZFA:0000541	marginal blastomere	ZFIN_anatomy	6
+ZFA:0000563	ZFA:0000563	pectoral fin musculature	ZFIN_anatomy	6
+ZFA:0000591	ZFA:0000591	presumptive paraxial mesoderm	ZFIN_anatomy	6
+ZFA:0000628	ZFA:0000628	caudal fin musculature	ZFIN_anatomy	6
+ZFA:0000641	ZFA:0000641	cranial nerve	ZFIN_anatomy	6
+ZFA:0000648	ZFA:0000648	dorsal fin musculature	ZFIN_anatomy	6
+ZFA:0000670	ZFA:0000670	hepatic vein	ZFIN_anatomy	6
+ZFA:0000674	ZFA:0000674	interopercle	ZFIN_anatomy	6
+ZFA:0000716	ZFA:0000716	afferent branchial artery	ZFIN_anatomy	6
+ZFA:0000717	ZFA:0000717	apical ectodermal ridge median fin fold	ZFIN_anatomy	6
+ZFA:0000725	ZFA:0000725	somite 11	ZFIN_anatomy	6
+ZFA:0000726	ZFA:0000726	somite 14	ZFIN_anatomy	6
+ZFA:0000727	ZFA:0000727	somite 17	ZFIN_anatomy	6
+ZFA:0000728	ZFA:0000728	somite 2	ZFIN_anatomy	6
+ZFA:0000730	ZFA:0000730	somite 23	ZFIN_anatomy	6
+ZFA:0000731	ZFA:0000731	somite 27	ZFIN_anatomy	6
+ZFA:0000732	ZFA:0000732	somite 3	ZFIN_anatomy	6
+ZFA:0000733	ZFA:0000733	somite 7	ZFIN_anatomy	6
+ZFA:0000738	ZFA:0000738	dorsal oblique extraocular muscle	ZFIN_anatomy	6
+ZFA:0000851	ZFA:0000851	somite 12	ZFIN_anatomy	6
+ZFA:0000852	ZFA:0000852	somite 15	ZFIN_anatomy	6
+ZFA:0000853	ZFA:0000853	somite 18	ZFIN_anatomy	6
+ZFA:0000854	ZFA:0000854	somite 21	ZFIN_anatomy	6
+ZFA:0000855	ZFA:0000855	somite 24	ZFIN_anatomy	6
+ZFA:0000856	ZFA:0000856	somite 28	ZFIN_anatomy	6
+ZFA:0000857	ZFA:0000857	somite 4	ZFIN_anatomy	6
+ZFA:0000858	ZFA:0000858	somite 8	ZFIN_anatomy	6
+ZFA:0000861	ZFA:0000861	ventral oblique extraocular muscle	ZFIN_anatomy	6
+ZFA:0000902	ZFA:0000902	hypural musculature	ZFIN_anatomy	6
+ZFA:0000974	ZFA:0000974	somite 10	ZFIN_anatomy	6
+ZFA:0000975	ZFA:0000975	somite 13	ZFIN_anatomy	6
+ZFA:0000976	ZFA:0000976	somite 16	ZFIN_anatomy	6
+ZFA:0000977	ZFA:0000977	somite 19	ZFIN_anatomy	6
+ZFA:0000978	ZFA:0000978	somite 22	ZFIN_anatomy	6
+ZFA:0000980	ZFA:0000980	somite 25	ZFIN_anatomy	6
+ZFA:0000981	ZFA:0000981	somite 29	ZFIN_anatomy	6
+ZFA:0000982	ZFA:0000982	somite 6	ZFIN_anatomy	6
+ZFA:0000983	ZFA:0000983	somite 9	ZFIN_anatomy	6
+ZFA:0001056	ZFA:0001056	myotome	ZFIN_anatomy	6
+ZFA:0001073	ZFA:0001073	axial vasculature	ZFIN_anatomy	6
+ZFA:0001084	ZFA:0001084	epaxial myotome region	ZFIN_anatomy	6
+ZFA:0001085	ZFA:0001085	hypaxial myotome region	ZFIN_anatomy	6
+ZFA:0001096	ZFA:0001096	immature anterior macula	ZFIN_anatomy	6
+ZFA:0001097	ZFA:0001097	immature posterior macula	ZFIN_anatomy	6
+ZFA:0001101	ZFA:0001101	gustatory system	ZFIN_anatomy	6
+ZFA:0001123	ZFA:0001123	axial fin skeleton	ZFIN_anatomy	6
+ZFA:0001127	ZFA:0001127	visual system	ZFIN_anatomy	6
+ZFA:0001138	ZFA:0001138	vestibuloauditory system	ZFIN_anatomy	6
+ZFA:0001141	ZFA:0001141	tooth 1V	ZFIN_anatomy	6
+ZFA:0001142	ZFA:0001142	tooth 5V	ZFIN_anatomy	6
+ZFA:0001143	ZFA:0001143	tooth 4V	ZFIN_anatomy	6
+ZFA:0001144	ZFA:0001144	tooth 2V	ZFIN_anatomy	6
+ZFA:0001145	ZFA:0001145	tooth 3V	ZFIN_anatomy	6
+ZFA:0001146	ZFA:0001146	tooth 1MD	ZFIN_anatomy	6
+ZFA:0001147	ZFA:0001147	tooth 2MD	ZFIN_anatomy	6
+ZFA:0001148	ZFA:0001148	tooth 1D	ZFIN_anatomy	6
+ZFA:0001149	ZFA:0001149	olfactory system	ZFIN_anatomy	6
+ZFA:0001150	ZFA:0001150	tooth 2D	ZFIN_anatomy	6
+ZFA:0001151	ZFA:0001151	tooth 4MD	ZFIN_anatomy	6
+ZFA:0001152	ZFA:0001152	tooth 3MD	ZFIN_anatomy	6
+ZFA:0001154	ZFA:0001154	anal fin musculature	ZFIN_anatomy	6
+ZFA:0001155	ZFA:0001155	enteric nervous system	ZFIN_anatomy	6
+ZFA:0001269	ZFA:0001269	regenerating fin	ZFIN_anatomy	6
+ZFA:0001294	ZFA:0001294	epibranchial placode	ZFIN_anatomy	6
+ZFA:0001307	ZFA:0001307	pharyngeal musculature	ZFIN_anatomy	6
+ZFA:0001310	ZFA:0001310	dorsolateral placode	ZFIN_anatomy	6
+ZFA:0001327	ZFA:0001327	abdominal musculature	ZFIN_anatomy	6
+ZFA:0001372	ZFA:0001372	pancreatic duct	ZFIN_anatomy	6
+ZFA:0001384	ZFA:0001384	pelvic fin bud	ZFIN_anatomy	6
+ZFA:0001385	ZFA:0001385	apical ectodermal ridge pelvic fin bud	ZFIN_anatomy	6
+ZFA:0001450	ZFA:0001450	apical ectodermal ridge pelvic fin	ZFIN_anatomy	6
+ZFA:0001457	ZFA:0001457	postcranial axial cartilage	ZFIN_anatomy	6
+ZFA:0001458	ZFA:0001458	cranial cartilage	ZFIN_anatomy	6
+ZFA:0001473	ZFA:0001473	deep blastomere	ZFIN_anatomy	6
+ZFA:0001479	ZFA:0001479	lateral line nerve	ZFIN_anatomy	6
+ZFA:0001484	ZFA:0001484	superficial blastomere	ZFIN_anatomy	6
+ZFA:0001499	ZFA:0001499	esophageal epithelium	ZFIN_anatomy	6
+ZFA:0001543	ZFA:0001543	paired fin cartilage	ZFIN_anatomy	6
+ZFA:0001575	ZFA:0001575	parasympathetic nervous system	ZFIN_anatomy	6
+ZFA:0001576	ZFA:0001576	sympathetic nervous system	ZFIN_anatomy	6
+ZFA:0001591	ZFA:0001591	endochondral bone	ZFIN_anatomy	6
+ZFA:0001611	ZFA:0001611	pharyngeal arch 2	ZFIN_anatomy	6
+ZFA:0001612	ZFA:0001612	pharyngeal arch 1	ZFIN_anatomy	6
+ZFA:0001613	ZFA:0001613	pharyngeal arch 3-7	ZFIN_anatomy	6
+ZFA:0001625	ZFA:0001625	optic nerve head	ZFIN_anatomy	6
+ZFA:0001628	ZFA:0001628	replacement bone	ZFIN_anatomy	6
+ZFA:0001635	ZFA:0001635	intramembranous bone	ZFIN_anatomy	6
+ZFA:0001639	ZFA:0001639	vascular endothelium	ZFIN_anatomy	6
+ZFA:0001652	ZFA:0001652	head muscle	ZFIN_anatomy	6
+ZFA:0001653	ZFA:0001653	pericardial muscle	ZFIN_anatomy	6
+ZFA:0001673	ZFA:0001673	pronephric podocyte	ZFIN_anatomy	6
+ZFA:0001674	ZFA:0001674	mesonephric podocyte	ZFIN_anatomy	6
+ZFA:0001714	ZFA:0001714	presumptive ventral mesoderm	ZFIN_anatomy	6
+ZFA:0001716	ZFA:0001716	otic vesicle ventral protrusion	ZFIN_anatomy	6
+ZFA:0001725	ZFA:0001725	immature Schwann cell	ZFIN_anatomy	6
+ZFA:0005003	ZFA:0005003	pharyngeal vasculature	ZFIN_anatomy	6
+ZFA:0005077	ZFA:0005077	vascular cord	ZFIN_anatomy	6
+ZFA:0005090	ZFA:0005090	hepatic portal vein	ZFIN_anatomy	6
+ZFA:0005095	ZFA:0005095	fin vasculature	ZFIN_anatomy	6
+ZFA:0005103	ZFA:0005103	presumptive ventral fin fold	ZFIN_anatomy	6
+ZFA:0005104	ZFA:0005104	presumptive dorsal fin fold	ZFIN_anatomy	6
+ZFA:0005105	ZFA:0005105	lymph vasculature	ZFIN_anatomy	6
+ZFA:0005124	ZFA:0005124	intestinal epithelium	ZFIN_anatomy	6
+ZFA:0005130	ZFA:0005130	dorsal mesentery	ZFIN_anatomy	6
+ZFA:0005133	ZFA:0005133	ventral mesentery	ZFIN_anatomy	6
+ZFA:0005142	ZFA:0005142	enameloid	ZFIN_anatomy	6
+ZFA:0005143	ZFA:0005143	dentine	ZFIN_anatomy	6
+ZFA:0005144	ZFA:0005144	ampullary nerve	ZFIN_anatomy	6
+ZFA:0005153	ZFA:0005153	synovial joint	ZFIN_anatomy	6
+ZFA:0005155	ZFA:0005155	cartilaginous joint	ZFIN_anatomy	6
+ZFA:0005156	ZFA:0005156	fibrous joint	ZFIN_anatomy	6
+ZFA:0005161	ZFA:0005161	hepatic artery	ZFIN_anatomy	6
+ZFA:0005164	ZFA:0005164	bile ductule	ZFIN_anatomy	6
+ZFA:0005165	ZFA:0005165	common bile duct	ZFIN_anatomy	6
+ZFA:0005168	ZFA:0005168	central vein	ZFIN_anatomy	6
+ZFA:0005169	ZFA:0005169	intrahepatic bile duct	ZFIN_anatomy	6
+ZFA:0005170	ZFA:0005170	extrahepatic duct	ZFIN_anatomy	6
+ZFA:0005253	ZFA:0005253	renal glomerular capsule epithelium	ZFIN_anatomy	6
+ZFA:0005274	ZFA:0005274	smooth muscle	ZFIN_anatomy	6
+ZFA:0005277	ZFA:0005277	skeletal muscle	ZFIN_anatomy	6
+ZFA:0005280	ZFA:0005280	cardiac muscle	ZFIN_anatomy	6
+ZFA:0005305	ZFA:0005305	kidney vasculature	ZFIN_anatomy	6
+ZFA:0005311	ZFA:0005311	pronephric glomerular capsule epithelium	ZFIN_anatomy	6
+ZFA:0005322	ZFA:0005322	renal principal cell	ZFIN_anatomy	6
+ZFA:0005324	ZFA:0005324	gill ionocyte	ZFIN_anatomy	6
+ZFA:0005325	ZFA:0005325	integument ionocyte	ZFIN_anatomy	6
+ZFA:0005326	ZFA:0005326	NaK ionocyte	ZFIN_anatomy	6
+ZFA:0005327	ZFA:0005327	vH ionocyte	ZFIN_anatomy	6
+ZFA:0005346	ZFA:0005346	extrapancreatic duct	ZFIN_anatomy	6
+ZFA:0005397	ZFA:0005397	hyoideomandibular nerve	ZFIN_anatomy	6
+ZFA:0005398	ZFA:0005398	anal fin actinotrichium	ZFIN_anatomy	6
+ZFA:0005421	ZFA:0005421	autopalatine-maxillary joint	ZFIN_anatomy	6
+ZFA:0005422	ZFA:0005422	autopalatine-vomer joint	ZFIN_anatomy	6
+ZFA:0005424	ZFA:0005424	caudal fin actinotrichium	ZFIN_anatomy	6
+ZFA:0005436	ZFA:0005436	pectoral fin nerve	ZFIN_anatomy	6
+ZFA:0005457	ZFA:0005457	dorsal hypohyal-urohyal joint	ZFIN_anatomy	6
+ZFA:0005458	ZFA:0005458	dorsal hypohyal-ventral hypohyal joint	ZFIN_anatomy	6
+ZFA:0005464	ZFA:0005464	dentary-anguloarticular joint	ZFIN_anatomy	6
+ZFA:0005465	ZFA:0005465	ceratohyal-branchiostegal ray joint	ZFIN_anatomy	6
+ZFA:0005466	ZFA:0005466	ceratohyal-ventral hypohyal joint	ZFIN_anatomy	6
+ZFA:0005467	ZFA:0005467	ceratohyal-dorsal hypohyal joint	ZFIN_anatomy	6
+ZFA:0005468	ZFA:0005468	frontal-pterotic joint	ZFIN_anatomy	6
+ZFA:0005469	ZFA:0005469	hyomandibula-metapterygoid joint	ZFIN_anatomy	6
+ZFA:0005470	ZFA:0005470	inter-coracoid joint	ZFIN_anatomy	6
+ZFA:0005471	ZFA:0005471	inter-basipterygium joint	ZFIN_anatomy	6
+ZFA:0005473	ZFA:0005473	interhyal-epihyal joint	ZFIN_anatomy	6
+ZFA:0005474	ZFA:0005474	inter-hypobranchial 3 joint	ZFIN_anatomy	6
+ZFA:0005475	ZFA:0005475	inter-premaxillary joint	ZFIN_anatomy	6
+ZFA:0005476	ZFA:0005476	inter-ventral hypohyal joint	ZFIN_anatomy	6
+ZFA:0005477	ZFA:0005477	lateral ethmoid-frontal joint	ZFIN_anatomy	6
+ZFA:0005478	ZFA:0005478	opercle-interopercle joint	ZFIN_anatomy	6
+ZFA:0005479	ZFA:0005479	orbitosphenoid-lateral ethmoid joint	ZFIN_anatomy	6
+ZFA:0005480	ZFA:0005480	orbitosphenoid-prootic joint	ZFIN_anatomy	6
+ZFA:0005481	ZFA:0005481	prootic-exoccipital joint	ZFIN_anatomy	6
+ZFA:0005483	ZFA:0005483	pterosphenoid-orbitosphenoid joint	ZFIN_anatomy	6
+ZFA:0005485	ZFA:0005485	quadrate-hyomandibula joint	ZFIN_anatomy	6
+ZFA:0005487	ZFA:0005487	ventral hypohyal-urohyal joint	ZFIN_anatomy	6
+ZFA:0005495	ZFA:0005495	skin flap	ZFIN_anatomy	6
+ZFA:0005497	ZFA:0005497	epihyal-ceratohyal joint	ZFIN_anatomy	6
+ZFA:0005498	ZFA:0005498	epihyal-branchiostegal ray joint	ZFIN_anatomy	6
+ZFA:0005545	ZFA:0005545	pectoral fin actinotrichium	ZFIN_anatomy	6
+ZFA:0005546	ZFA:0005546	pelvic fin actinotrichium	ZFIN_anatomy	6
+ZFA:0005579	ZFA:0005579	NCC ionocyte	ZFIN_anatomy	6
+ZFA:0005596	ZFA:0005596	paired fin	ZFIN_anatomy	6
+ZFA:0005597	ZFA:0005597	median fin	ZFIN_anatomy	6
+ZFA:0005605	ZFA:0005605	lymphangioblast cord	ZFIN_anatomy	6
+ZFA:0005610	ZFA:0005610	synostosis	ZFIN_anatomy	6
+ZFA:0005634	ZFA:0005634	lepidotrichium joint	ZFIN_anatomy	6
+ZFA:0005635	ZFA:0005635	predentine	ZFIN_anatomy	6
+ZFA:0005639	ZFA:0005639	supracleithrum-vertebral ligament	ZFIN_anatomy	6
+ZFA:0005640	ZFA:0005640	cleithrum-vertebral ligament	ZFIN_anatomy	6
+ZFA:0005662	ZFA:0005662	spinal nerve	ZFIN_anatomy	6
+ZFA:0007008	ZFA:0007008	ventral intermandibularis anterior	ZFIN_anatomy	6
+ZFA:0007013	ZFA:0007013	preplacodal ectoderm	ZFIN_anatomy	6
+ZFA:0007048	ZFA:0007048	ventral intermandibularis posterior	ZFIN_anatomy	6
+ZFA:0009003	ZFA:0009003	cranial neural crest cell	ZFIN_anatomy	6
+ZFA:0009018	ZFA:0009018	neutrophilic myeloblast	ZFIN_anatomy	6
+ZFA:0009019	ZFA:0009019	neuronal stem cell	ZFIN_anatomy	6
+ZFA:0009036	ZFA:0009036	blood vessel endothelial cell	ZFIN_anatomy	6
+ZFA:0009040	ZFA:0009040	mesothelial cell	ZFIN_anatomy	6
+ZFA:0009041	ZFA:0009041	peridermal cell	ZFIN_anatomy	6
+ZFA:0009050	ZFA:0009050	sensory epithelial cell	ZFIN_anatomy	6
+ZFA:0009065	ZFA:0009065	endothelial cell	ZFIN_anatomy	6
+ZFA:0009078	ZFA:0009078	gut endothelial cell	ZFIN_anatomy	6
+ZFA:0009079	ZFA:0009079	corneal endothelial cell	ZFIN_anatomy	6
+ZFA:0009088	ZFA:0009088	professional antigen presenting cell	ZFIN_anatomy	6
+ZFA:0009089	ZFA:0009089	simple columnar epithelial cell	ZFIN_anatomy	6
+ZFA:0009093	ZFA:0009093	GAG secreting cell	ZFIN_anatomy	6
+ZFA:0009097	ZFA:0009097	enteroendocrine cell	ZFIN_anatomy	6
+ZFA:0009098	ZFA:0009098	neuroendocrine cell	ZFIN_anatomy	6
+ZFA:0009100	ZFA:0009100	peptide hormone secreting cell	ZFIN_anatomy	6
+ZFA:0009102	ZFA:0009102	pancreatic B cell	ZFIN_anatomy	6
+ZFA:0009104	ZFA:0009104	pancreatic A cell	ZFIN_anatomy	6
+ZFA:0009106	ZFA:0009106	steroid hormone secreting cell	ZFIN_anatomy	6
+ZFA:0009113	ZFA:0009113	myoepithelial cell	ZFIN_anatomy	6
+ZFA:0009114	ZFA:0009114	muscle cell	ZFIN_anatomy	6
+ZFA:0009131	ZFA:0009131	synovial cell	ZFIN_anatomy	6
+ZFA:0009143	ZFA:0009143	brush border epithelial cell	ZFIN_anatomy	6
+ZFA:0009147	ZFA:0009147	glial cell (sensu Vertebrata)	ZFIN_anatomy	6
+ZFA:0009171	ZFA:0009171	visual pigment cell (sensu Vertebrata)	ZFIN_anatomy	6
+ZFA:0009178	ZFA:0009178	blastemal cell	ZFIN_anatomy	6
+ZFA:0009183	ZFA:0009183	epidermal cell	ZFIN_anatomy	6
+ZFA:0009184	ZFA:0009184	osteoprogenitor cell	ZFIN_anatomy	6
+ZFA:0009187	ZFA:0009187	nephrogenic mesenchyme stem cell	ZFIN_anatomy	6
+ZFA:0009196	ZFA:0009196	hypodermal cell	ZFIN_anatomy	6
+ZFA:0009210	ZFA:0009210	thyroid hormone secreting cell	ZFIN_anatomy	6
+ZFA:0009212	ZFA:0009212	biogenic amine secreting cell	ZFIN_anatomy	6
+ZFA:0009241	ZFA:0009241	pigmented epithelial cell	ZFIN_anatomy	6
+ZFA:0009242	ZFA:0009242	primary neuron	ZFIN_anatomy	6
+ZFA:0009258	ZFA:0009258	angioblastic mesenchymal cell	ZFIN_anatomy	6
+ZFA:0009264	ZFA:0009264	corneal epithelial cell	ZFIN_anatomy	6
+ZFA:0009272	ZFA:0009272	skeletal muscle satellite cell	ZFIN_anatomy	6
+ZFA:0009279	ZFA:0009279	ito cell	ZFIN_anatomy	6
+ZFA:0009281	ZFA:0009281	folliculostellate cell	ZFIN_anatomy	6
+ZFA:0009284	ZFA:0009284	pinealocyte	ZFIN_anatomy	6
+ZFA:0009287	ZFA:0009287	collagen secreting cell	ZFIN_anatomy	6
+ZFA:0009295	ZFA:0009295	cerebrospinal fluid secreting cell	ZFIN_anatomy	6
+ZFA:0009305	ZFA:0009305	leptomeningeal cell	ZFIN_anatomy	6
+ZFA:0009323	ZFA:0009323	thrombocyte	ZFIN_anatomy	6
+ZFA:0009325	ZFA:0009325	erythroid lineage cell	ZFIN_anatomy	6
+ZFA:0009326	ZFA:0009326	myeloid leukocyte	ZFIN_anatomy	6
+ZFA:0009330	ZFA:0009330	mononuclear odontoclast	ZFIN_anatomy	6
+ZFA:0009357	ZFA:0009357	mononuclear cell	ZFIN_anatomy	6
+ZFA:0009368	ZFA:0009368	slow muscle myoblast	ZFIN_anatomy	6
+ZFA:0009369	ZFA:0009369	fast muscle myoblast	ZFIN_anatomy	6
+ZFA:0009373	ZFA:0009373	renal principal cell	ZFIN_anatomy	6
+ZFA:0009375	ZFA:0009375	renal intercalated cell	ZFIN_anatomy	6
+ZFA:0009384	ZFA:0009384	neurecto-epithelial cell	ZFIN_anatomy	6
+ZFA:0009390	ZFA:0009390	kidney interstitial cell	ZFIN_anatomy	6
+ZFA:0009391	ZFA:0009391	kidney medulla cell	ZFIN_anatomy	6
+ZFA:0009393	ZFA:0009393	lymphangioblast	ZFIN_anatomy	6
+ZFA:0000011	ZFA:0000011	caudal artery	ZFIN_anatomy	7
+ZFA:0000013	ZFA:0000013	cranial ganglion	ZFIN_anatomy	7
+ZFA:0000014	ZFA:0000014	dorsal aorta	ZFIN_anatomy	7
+ZFA:0000044	ZFA:0000044	myotome somite 14	ZFIN_anatomy	7
+ZFA:0000052	ZFA:0000052	dorsal actinotrichium	ZFIN_anatomy	7
+ZFA:0000078	ZFA:0000078	ventral actinotrichium	ZFIN_anatomy	7
+ZFA:0000096	ZFA:0000096	cardinal system	ZFIN_anatomy	7
+ZFA:0000099	ZFA:0000099	brain vasculature	ZFIN_anatomy	7
+ZFA:0000120	ZFA:0000120	lateral line ganglion	ZFIN_anatomy	7
+ZFA:0000138	ZFA:0000138	otic placode	ZFIN_anatomy	7
+ZFA:0000162	ZFA:0000162	trigeminal placode	ZFIN_anatomy	7
+ZFA:0000167	ZFA:0000167	anal fin skeleton	ZFIN_anatomy	7
+ZFA:0000172	ZFA:0000172	branchial muscle	ZFIN_anatomy	7
+ZFA:0000175	ZFA:0000175	posterior lateral line nerve	ZFIN_anatomy	7
+ZFA:0000180	ZFA:0000180	caudal vein	ZFIN_anatomy	7
+ZFA:0000186	ZFA:0000186	common cardinal vein	ZFIN_anatomy	7
+ZFA:0000191	ZFA:0000191	dentary	ZFIN_anatomy	7
+ZFA:0000226	ZFA:0000226	lateral ethmoid	ZFIN_anatomy	7
+ZFA:0000236	ZFA:0000236	mandibular muscle	ZFIN_anatomy	7
+ZFA:0000247	ZFA:0000247	cranial nerve VIII	ZFIN_anatomy	7
+ZFA:0000249	ZFA:0000249	cranial nerve I	ZFIN_anatomy	7
+ZFA:0000253	ZFA:0000253	orbitosphenoid	ZFIN_anatomy	7
+ZFA:0000270	ZFA:0000270	maxilla	ZFIN_anatomy	7
+ZFA:0000278	ZFA:0000278	secondary gustatory nucleus medulla oblongata	ZFIN_anatomy	7
+ZFA:0000308	ZFA:0000308	prevomer	ZFIN_anatomy	7
+ZFA:0000310	ZFA:0000310	cranial nerve VI	ZFIN_anatomy	7
+ZFA:0000323	ZFA:0000323	mesethmoid bone	ZFIN_anatomy	7
+ZFA:0000338	ZFA:0000338	diencephalic white matter	ZFIN_anatomy	7
+ZFA:0000365	ZFA:0000365	nasal bone	ZFIN_anatomy	7
+ZFA:0000376	ZFA:0000376	infraorbital	ZFIN_anatomy	7
+ZFA:0000399	ZFA:0000399	secondary gustatory nucleus trigeminal nucleus	ZFIN_anatomy	7
+ZFA:0000405	ZFA:0000405	cranial nerve III	ZFIN_anatomy	7
+ZFA:0000419	ZFA:0000419	pterosphenoid	ZFIN_anatomy	7
+ZFA:0000425	ZFA:0000425	anterior lateral line nerve	ZFIN_anatomy	7
+ZFA:0000430	ZFA:0000430	secondary gustatory tract	ZFIN_anatomy	7
+ZFA:0000435	ZFA:0000435	cranial nerve II	ZFIN_anatomy	7
+ZFA:0000448	ZFA:0000448	tertiary gustatory nucleus	ZFIN_anatomy	7
+ZFA:0000452	ZFA:0000452	urohyal	ZFIN_anatomy	7
+ZFA:0000453	ZFA:0000453	cranial nerve X	ZFIN_anatomy	7
+ZFA:0000467	ZFA:0000467	anguloarticular	ZFIN_anatomy	7
+ZFA:0000472	ZFA:0000472	basioccipital	ZFIN_anatomy	7
+ZFA:0000474	ZFA:0000474	intercalar	ZFIN_anatomy	7
+ZFA:0000476	ZFA:0000476	branchiostegal ray	ZFIN_anatomy	7
+ZFA:0000477	ZFA:0000477	posterior cardinal vein	ZFIN_anatomy	7
+ZFA:0000493	ZFA:0000493	decussation of medial funicular nucleus	ZFIN_anatomy	7
+ZFA:0000521	ZFA:0000521	hyoid muscle	ZFIN_anatomy	7
+ZFA:0000549	ZFA:0000549	posttemporal	ZFIN_anatomy	7
+ZFA:0000561	ZFA:0000561	parasphenoid	ZFIN_anatomy	7
+ZFA:0000567	ZFA:0000567	premaxilla	ZFIN_anatomy	7
+ZFA:0000575	ZFA:0000575	prootic	ZFIN_anatomy	7
+ZFA:0000576	ZFA:0000576	pterotic	ZFIN_anatomy	7
+ZFA:0000577	ZFA:0000577	renal portal vein	ZFIN_anatomy	7
+ZFA:0000587	ZFA:0000587	sphenotic	ZFIN_anatomy	7
+ZFA:0000588	ZFA:0000588	statoacoustic (VIII) ganglion	ZFIN_anatomy	7
+ZFA:0000597	ZFA:0000597	telencephalic white matter	ZFIN_anatomy	7
+ZFA:0000600	ZFA:0000600	cranial nerve IV	ZFIN_anatomy	7
+ZFA:0000637	ZFA:0000637	claustrum cartilage	ZFIN_anatomy	7
+ZFA:0000639	ZFA:0000639	commissure of the secondary gustatory nucleus	ZFIN_anatomy	7
+ZFA:0000643	ZFA:0000643	rostral cerebellar tract	ZFIN_anatomy	7
+ZFA:0000655	ZFA:0000655	dorsomedial optic tract	ZFIN_anatomy	7
+ZFA:0000656	ZFA:0000656	ectopterygoid	ZFIN_anatomy	7
+ZFA:0000657	ZFA:0000657	entopterygoid	ZFIN_anatomy	7
+ZFA:0000661	ZFA:0000661	exoccipital	ZFIN_anatomy	7
+ZFA:0000664	ZFA:0000664	cranial nerve VII	ZFIN_anatomy	7
+ZFA:0000666	ZFA:0000666	filamental artery	ZFIN_anatomy	7
+ZFA:0000668	ZFA:0000668	cranial nerve IX	ZFIN_anatomy	7
+ZFA:0000684	ZFA:0000684	intertectal commissure	ZFIN_anatomy	7
+ZFA:0000691	ZFA:0000691	supraorbital bone	ZFIN_anatomy	7
+ZFA:0000697	ZFA:0000697	cranial nerve V	ZFIN_anatomy	7
+ZFA:0000778	ZFA:0000778	spinal cord interneuron	ZFIN_anatomy	7
+ZFA:0000801	ZFA:0000801	myotome somite 11	ZFIN_anatomy	7
+ZFA:0000802	ZFA:0000802	myotome somite 15	ZFIN_anatomy	7
+ZFA:0000803	ZFA:0000803	myotome somite 18	ZFIN_anatomy	7
+ZFA:0000804	ZFA:0000804	myotome somite 20	ZFIN_anatomy	7
+ZFA:0000805	ZFA:0000805	myotome somite 23	ZFIN_anatomy	7
+ZFA:0000807	ZFA:0000807	myotome somite 26	ZFIN_anatomy	7
+ZFA:0000808	ZFA:0000808	myotome somite 29	ZFIN_anatomy	7
+ZFA:0000809	ZFA:0000809	myotome somite 4	ZFIN_anatomy	7
+ZFA:0000810	ZFA:0000810	myotome somite 7	ZFIN_anatomy	7
+ZFA:0000862	ZFA:0000862	caudal fin skeleton	ZFIN_anatomy	7
+ZFA:0000924	ZFA:0000924	myotome somite 1	ZFIN_anatomy	7
+ZFA:0000926	ZFA:0000926	myotome somite 12	ZFIN_anatomy	7
+ZFA:0000927	ZFA:0000927	myotome somite 16	ZFIN_anatomy	7
+ZFA:0000928	ZFA:0000928	myotome somite 19	ZFIN_anatomy	7
+ZFA:0000929	ZFA:0000929	myotome somite 21	ZFIN_anatomy	7
+ZFA:0000930	ZFA:0000930	myotome somite 24	ZFIN_anatomy	7
+ZFA:0000931	ZFA:0000931	myotome somite 27	ZFIN_anatomy	7
+ZFA:0000932	ZFA:0000932	myotome somite 3	ZFIN_anatomy	7
+ZFA:0000933	ZFA:0000933	myotome somite 5	ZFIN_anatomy	7
+ZFA:0000934	ZFA:0000934	myotome somite 8	ZFIN_anatomy	7
+ZFA:0000985	ZFA:0000985	ventral rhombencephalic commissure medulla oblongata	ZFIN_anatomy	7
+ZFA:0001013	ZFA:0001013	myotome somite 10	ZFIN_anatomy	7
+ZFA:0001014	ZFA:0001014	myotome somite 13	ZFIN_anatomy	7
+ZFA:0001015	ZFA:0001015	myotome somite 17	ZFIN_anatomy	7
+ZFA:0001016	ZFA:0001016	myotome somite 2	ZFIN_anatomy	7
+ZFA:0001017	ZFA:0001017	myotome somite 22	ZFIN_anatomy	7
+ZFA:0001018	ZFA:0001018	myotome somite 25	ZFIN_anatomy	7
+ZFA:0001019	ZFA:0001019	myotome somite 28	ZFIN_anatomy	7
+ZFA:0001020	ZFA:0001020	myotome somite 30	ZFIN_anatomy	7
+ZFA:0001021	ZFA:0001021	myotome somite 6	ZFIN_anatomy	7
+ZFA:0001022	ZFA:0001022	myotome somite 9	ZFIN_anatomy	7
+ZFA:0001060	ZFA:0001060	basidorsal	ZFIN_anatomy	7
+ZFA:0001063	ZFA:0001063	posterior caudal vein	ZFIN_anatomy	7
+ZFA:0001064	ZFA:0001064	rhombomere	ZFIN_anatomy	7
+ZFA:0001124	ZFA:0001124	dorsal fin skeleton	ZFIN_anatomy	7
+ZFA:0001128	ZFA:0001128	pharyngeal pouch 1	ZFIN_anatomy	7
+ZFA:0001129	ZFA:0001129	pharyngeal pouches 2-6	ZFIN_anatomy	7
+ZFA:0001156	ZFA:0001156	posterior lateral line placode	ZFIN_anatomy	7
+ZFA:0001161	ZFA:0001161	pectoral fin	ZFIN_anatomy	7
+ZFA:0001172	ZFA:0001172	roofing cartilage	ZFIN_anatomy	7
+ZFA:0001173	ZFA:0001173	dorsal fin	ZFIN_anatomy	7
+ZFA:0001184	ZFA:0001184	pelvic fin	ZFIN_anatomy	7
+ZFA:0001189	ZFA:0001189	vertebra	ZFIN_anatomy	7
+ZFA:0001274	ZFA:0001274	coronomeckelian	ZFIN_anatomy	7
+ZFA:0001286	ZFA:0001286	caudal vein plexus	ZFIN_anatomy	7
+ZFA:0001295	ZFA:0001295	facial placode	ZFIN_anatomy	7
+ZFA:0001296	ZFA:0001296	glossopharyngeal placode	ZFIN_anatomy	7
+ZFA:0001297	ZFA:0001297	vagal placode 1	ZFIN_anatomy	7
+ZFA:0001298	ZFA:0001298	vagal placode 2	ZFIN_anatomy	7
+ZFA:0001299	ZFA:0001299	vagal placode 3	ZFIN_anatomy	7
+ZFA:0001300	ZFA:0001300	vagal placode 4	ZFIN_anatomy	7
+ZFA:0001316	ZFA:0001316	anterior lateral line placode	ZFIN_anatomy	7
+ZFA:0001319	ZFA:0001319	myocardium	ZFIN_anatomy	7
+ZFA:0001321	ZFA:0001321	neurocranial trabecula	ZFIN_anatomy	7
+ZFA:0001335	ZFA:0001335	supradorsal	ZFIN_anatomy	7
+ZFA:0001356	ZFA:0001356	terminal nerve	ZFIN_anatomy	7
+ZFA:0001361	ZFA:0001361	basiventral	ZFIN_anatomy	7
+ZFA:0001366	ZFA:0001366	tract of the postoptic commissure	ZFIN_anatomy	7
+ZFA:0001369	ZFA:0001369	anterior pancreatic bud	ZFIN_anatomy	7
+ZFA:0001370	ZFA:0001370	posterior pancreatic bud	ZFIN_anatomy	7
+ZFA:0001403	ZFA:0001403	supraethmoid	ZFIN_anatomy	7
+ZFA:0001404	ZFA:0001404	preethmoid bone	ZFIN_anatomy	7
+ZFA:0001405	ZFA:0001405	ethmoid cartilage	ZFIN_anatomy	7
+ZFA:0001406	ZFA:0001406	kinethmoid bone	ZFIN_anatomy	7
+ZFA:0001411	ZFA:0001411	sclerotic bone	ZFIN_anatomy	7
+ZFA:0001412	ZFA:0001412	epiotic	ZFIN_anatomy	7
+ZFA:0001423	ZFA:0001423	parachordal cartilage	ZFIN_anatomy	7
+ZFA:0001425	ZFA:0001425	basal plate cartilage	ZFIN_anatomy	7
+ZFA:0001443	ZFA:0001443	choroid plexus	ZFIN_anatomy	7
+ZFA:0001460	ZFA:0001460	pharyngeal arch cartilage	ZFIN_anatomy	7
+ZFA:0001461	ZFA:0001461	chondrocranium cartilage	ZFIN_anatomy	7
+ZFA:0001468	ZFA:0001468	anterior lateral line system	ZFIN_anatomy	7
+ZFA:0001471	ZFA:0001471	posterior lateral line system	ZFIN_anatomy	7
+ZFA:0001500	ZFA:0001500	auditory capsule	ZFIN_anatomy	7
+ZFA:0001502	ZFA:0001502	epiphyseal bar	ZFIN_anatomy	7
+ZFA:0001503	ZFA:0001503	lamina orbitonasalis	ZFIN_anatomy	7
+ZFA:0001504	ZFA:0001504	occipital arch cartilage	ZFIN_anatomy	7
+ZFA:0001505	ZFA:0001505	taenia marginalis anterior	ZFIN_anatomy	7
+ZFA:0001506	ZFA:0001506	tectum synoticum	ZFIN_anatomy	7
+ZFA:0001507	ZFA:0001507	trabecula cranii	ZFIN_anatomy	7
+ZFA:0001508	ZFA:0001508	trabecula communis	ZFIN_anatomy	7
+ZFA:0001515	ZFA:0001515	taenia marginalis posterior	ZFIN_anatomy	7
+ZFA:0001535	ZFA:0001535	median fin cartilage	ZFIN_anatomy	7
+ZFA:0001556	ZFA:0001556	sympathetic chain ganglion	ZFIN_anatomy	7
+ZFA:0001572	ZFA:0001572	superior cervical ganglion	ZFIN_anatomy	7
+ZFA:0001573	ZFA:0001573	trunk ganglion	ZFIN_anatomy	7
+ZFA:0001578	ZFA:0001578	anterior dorsomedial process of autopalatine	ZFIN_anatomy	7
+ZFA:0001590	ZFA:0001590	dermal bone	ZFIN_anatomy	7
+ZFA:0001606	ZFA:0001606	pharyngeal arch 3	ZFIN_anatomy	7
+ZFA:0001607	ZFA:0001607	pharyngeal arch 4	ZFIN_anatomy	7
+ZFA:0001608	ZFA:0001608	pharyngeal arch 5	ZFIN_anatomy	7
+ZFA:0001609	ZFA:0001609	pharyngeal arch 6	ZFIN_anatomy	7
+ZFA:0001610	ZFA:0001610	pharyngeal arch 7	ZFIN_anatomy	7
+ZFA:0001629	ZFA:0001629	perichordal bone	ZFIN_anatomy	7
+ZFA:0001636	ZFA:0001636	membrane bone	ZFIN_anatomy	7
+ZFA:0001640	ZFA:0001640	cephalic flexure	ZFIN_anatomy	7
+ZFA:0001651	ZFA:0001651	hypobranchial muscle	ZFIN_anatomy	7
+ZFA:0001657	ZFA:0001657	supraoptic tract	ZFIN_anatomy	7
+ZFA:0001692	ZFA:0001692	hindbrain commissure	ZFIN_anatomy	7
+ZFA:0001693	ZFA:0001693	chondral bone	ZFIN_anatomy	7
+ZFA:0001708	ZFA:0001708	cerebellar white matter	ZFIN_anatomy	7
+ZFA:0005005	ZFA:0005005	aortic arch 1	ZFIN_anatomy	7
+ZFA:0005006	ZFA:0005006	aortic arch 2	ZFIN_anatomy	7
+ZFA:0005015	ZFA:0005015	afferent lamellar arteriole	ZFIN_anatomy	7
+ZFA:0005019	ZFA:0005019	efferent lamellar arteriole	ZFIN_anatomy	7
+ZFA:0005034	ZFA:0005034	parachordal vessel	ZFIN_anatomy	7
+ZFA:0005035	ZFA:0005035	subintestinal vein	ZFIN_anatomy	7
+ZFA:0005038	ZFA:0005038	supraintestinal vein	ZFIN_anatomy	7
+ZFA:0005096	ZFA:0005096	pectoral fin vasculature	ZFIN_anatomy	7
+ZFA:0005097	ZFA:0005097	caudal fin vasculature	ZFIN_anatomy	7
+ZFA:0005106	ZFA:0005106	longitudinal lateral lymphatic vessel	ZFIN_anatomy	7
+ZFA:0005107	ZFA:0005107	pectoral lymphatic vessel	ZFIN_anatomy	7
+ZFA:0005108	ZFA:0005108	facial lymphatic vessel	ZFIN_anatomy	7
+ZFA:0005109	ZFA:0005109	jugular lymphatic vessel	ZFIN_anatomy	7
+ZFA:0005110	ZFA:0005110	thoracic duct	ZFIN_anatomy	7
+ZFA:0005111	ZFA:0005111	medial forebrain bundle	ZFIN_anatomy	7
+ZFA:0005114	ZFA:0005114	middle lateral line system	ZFIN_anatomy	7
+ZFA:0005121	ZFA:0005121	middle lateral line placode	ZFIN_anatomy	7
+ZFA:0005151	ZFA:0005151	gold iridophore	ZFIN_anatomy	7
+ZFA:0005152	ZFA:0005152	silver iridophore	ZFIN_anatomy	7
+ZFA:0005157	ZFA:0005157	tela chorioidea tectal ventricle	ZFIN_anatomy	7
+ZFA:0005158	ZFA:0005158	tela chorioidea fourth ventricle	ZFIN_anatomy	7
+ZFA:0005159	ZFA:0005159	tela chorioidea third ventricle	ZFIN_anatomy	7
+ZFA:0005160	ZFA:0005160	tela chorioidea telencephalic ventricle	ZFIN_anatomy	7
+ZFA:0005220	ZFA:0005220	larval melanophore stripe	ZFIN_anatomy	7
+ZFA:0005225	ZFA:0005225	lower lip	ZFIN_anatomy	7
+ZFA:0005226	ZFA:0005226	upper lip	ZFIN_anatomy	7
+ZFA:0005237	ZFA:0005237	erythroblast	ZFIN_anatomy	7
+ZFA:0005242	ZFA:0005242	multi-ciliated epithelial cell	ZFIN_anatomy	7
+ZFA:0005243	ZFA:0005243	single ciliated epithelial cell	ZFIN_anatomy	7
+ZFA:0005250	ZFA:0005250	capillary	ZFIN_anatomy	7
+ZFA:0005252	ZFA:0005252	lymphatic capillary	ZFIN_anatomy	7
+ZFA:0005257	ZFA:0005257	blood vessel endothelium	ZFIN_anatomy	7
+ZFA:0005258	ZFA:0005258	lymph vessel endothelium	ZFIN_anatomy	7
+ZFA:0005267	ZFA:0005267	erector muscle	ZFIN_anatomy	7
+ZFA:0005268	ZFA:0005268	adductor muscle	ZFIN_anatomy	7
+ZFA:0005269	ZFA:0005269	abductor muscle	ZFIN_anatomy	7
+ZFA:0005270	ZFA:0005270	depressor muscle	ZFIN_anatomy	7
+ZFA:0005271	ZFA:0005271	flexor muscle	ZFIN_anatomy	7
+ZFA:0005273	ZFA:0005273	intestinal mucosal muscle	ZFIN_anatomy	7
+ZFA:0005275	ZFA:0005275	arrector muscle	ZFIN_anatomy	7
+ZFA:0005276	ZFA:0005276	inclinator muscle	ZFIN_anatomy	7
+ZFA:0005278	ZFA:0005278	enteric longitudinal muscle	ZFIN_anatomy	7
+ZFA:0005279	ZFA:0005279	enteric circular muscle	ZFIN_anatomy	7
+ZFA:0005295	ZFA:0005295	axial blood vessel	ZFIN_anatomy	7
+ZFA:0005296	ZFA:0005296	axial lymph vessel	ZFIN_anatomy	7
+ZFA:0005298	ZFA:0005298	cranial lymph vessel	ZFIN_anatomy	7
+ZFA:0005300	ZFA:0005300	fin lymph vessel	ZFIN_anatomy	7
+ZFA:0005303	ZFA:0005303	caudal fin lymph vessel	ZFIN_anatomy	7
+ZFA:0005319	ZFA:0005319	intersegmental lymph vessel	ZFIN_anatomy	7
+ZFA:0005320	ZFA:0005320	dorsal longitudinal lymphatic vessel	ZFIN_anatomy	7
+ZFA:0005341	ZFA:0005341	medial longitudinal catecholaminergic tract	ZFIN_anatomy	7
+ZFA:0005342	ZFA:0005342	anterior catecholaminergic tract	ZFIN_anatomy	7
+ZFA:0005343	ZFA:0005343	endohypothalamic tract	ZFIN_anatomy	7
+ZFA:0005344	ZFA:0005344	preopticohypothalamic tract	ZFIN_anatomy	7
+ZFA:0005390	ZFA:0005390	gill ray	ZFIN_anatomy	7
+ZFA:0005407	ZFA:0005407	anterior nasal barbel	ZFIN_anatomy	7
+ZFA:0005408	ZFA:0005408	maxillary barbel	ZFIN_anatomy	7
+ZFA:0005420	ZFA:0005420	autopalatine-lateral ethmoid joint	ZFIN_anatomy	7
+ZFA:0005423	ZFA:0005423	basioccipital-exoccipital joint	ZFIN_anatomy	7
+ZFA:0005433	ZFA:0005433	mental barbel	ZFIN_anatomy	7
+ZFA:0005452	ZFA:0005452	tract of the caudal commissure	ZFIN_anatomy	7
+ZFA:0005472	ZFA:0005472	inter-frontal joint	ZFIN_anatomy	7
+ZFA:0005482	ZFA:0005482	prootic-pterosphenoid joint	ZFIN_anatomy	7
+ZFA:0005484	ZFA:0005484	quadrate-anguloarticular joint	ZFIN_anatomy	7
+ZFA:0005486	ZFA:0005486	quadrate-metapterygoid joint	ZFIN_anatomy	7
+ZFA:0005488	ZFA:0005488	mandibular symphysis	ZFIN_anatomy	7
+ZFA:0005504	ZFA:0005504	vertebra 4-vertebra 5 joint	ZFIN_anatomy	7
+ZFA:0005505	ZFA:0005505	vertebra 5-vertebra 6 joint	ZFIN_anatomy	7
+ZFA:0005506	ZFA:0005506	vertebra 6 - vertebra 7 joint	ZFIN_anatomy	7
+ZFA:0005508	ZFA:0005508	inner mental barbel	ZFIN_anatomy	7
+ZFA:0005544	ZFA:0005544	hyomandibular-otic region joint	ZFIN_anatomy	7
+ZFA:0005560	ZFA:0005560	parasphenoid-basioccipital joint	ZFIN_anatomy	7
+ZFA:0005568	ZFA:0005568	iris blood vessels	ZFIN_anatomy	7
+ZFA:0005599	ZFA:0005599	ghrelin secreting cell	ZFIN_anatomy	7
+ZFA:0005603	ZFA:0005603	lymphangiogenic sprout	ZFIN_anatomy	7
+ZFA:0005604	ZFA:0005604	angiogenic sprout	ZFIN_anatomy	7
+ZFA:0005607	ZFA:0005607	inter-parietal joint	ZFIN_anatomy	7
+ZFA:0005608	ZFA:0005608	frontal-parietal joint	ZFIN_anatomy	7
+ZFA:0005609	ZFA:0005609	supraoccipital-parietal joint	ZFIN_anatomy	7
+ZFA:0005611	ZFA:0005611	ectopterygoid-quadrate joint	ZFIN_anatomy	7
+ZFA:0005612	ZFA:0005612	ectopterygoid-entopterygoid joint	ZFIN_anatomy	7
+ZFA:0005613	ZFA:0005613	basioccipital-prootic joint	ZFIN_anatomy	7
+ZFA:0005614	ZFA:0005614	entopterygoid-metapterygoid joint	ZFIN_anatomy	7
+ZFA:0005616	ZFA:0005616	quadrate-entopterygoid joint	ZFIN_anatomy	7
+ZFA:0005617	ZFA:0005617	lateral ethmoid-supraethmoid	ZFIN_anatomy	7
+ZFA:0005618	ZFA:0005618	anguloarticular-retroarticular joint	ZFIN_anatomy	7
+ZFA:0005626	ZFA:0005626	hyomandibula-opercle joint	ZFIN_anatomy	7
+ZFA:0005627	ZFA:0005627	hyomandibula-pterotic joint	ZFIN_anatomy	7
+ZFA:0005631	ZFA:0005631	preopercle horizontal limb-symplectic joint	ZFIN_anatomy	7
+ZFA:0005632	ZFA:0005632	preopercle vertical limb-hyomandibula joint	ZFIN_anatomy	7
+ZFA:0005648	ZFA:0005648	mesethmoid-lateral ethmoid joint	ZFIN_anatomy	7
+ZFA:0005649	ZFA:0005649	mesethmoid-vomer joint	ZFIN_anatomy	7
+ZFA:0005655	ZFA:0005655	anterior ventromedial process of autopalatine	ZFIN_anatomy	7
+ZFA:0005656	ZFA:0005656	autopalatine-preethmoid joint	ZFIN_anatomy	7
+ZFA:0005657	ZFA:0005657	anterior lateral process of autopalatine	ZFIN_anatomy	7
+ZFA:0005663	ZFA:0005663	dorsal spinal nerve	ZFIN_anatomy	7
+ZFA:0005665	ZFA:0005665	ventral spinal nerve	ZFIN_anatomy	7
+ZFA:0007012	ZFA:0007012	lateral forebrain bundle	ZFIN_anatomy	7
+ZFA:0009001	ZFA:0009001	receptor cell (sensu Animalia)	ZFIN_anatomy	7
+ZFA:0009011	ZFA:0009011	neuroblast	ZFIN_anatomy	7
+ZFA:0009048	ZFA:0009048	granulocyte	ZFIN_anatomy	7
+ZFA:0009051	ZFA:0009051	interneuron	ZFIN_anatomy	7
+ZFA:0009054	ZFA:0009054	polymodal neuron	ZFIN_anatomy	7
+ZFA:0009056	ZFA:0009056	multipolar neuron	ZFIN_anatomy	7
+ZFA:0009057	ZFA:0009057	pseudounipolar neuron	ZFIN_anatomy	7
+ZFA:0009058	ZFA:0009058	unipolar neuron	ZFIN_anatomy	7
+ZFA:0009064	ZFA:0009064	mononuclear phagocyte	ZFIN_anatomy	7
+ZFA:0009066	ZFA:0009066	pioneer neuron	ZFIN_anatomy	7
+ZFA:0009067	ZFA:0009067	CNS neuron (sensu Vertebrata)	ZFIN_anatomy	7
+ZFA:0009070	ZFA:0009070	granule cell	ZFIN_anatomy	7
+ZFA:0009074	ZFA:0009074	macroglial cell	ZFIN_anatomy	7
+ZFA:0009084	ZFA:0009084	chondrocyte	ZFIN_anatomy	7
+ZFA:0009085	ZFA:0009085	amelocyte	ZFIN_anatomy	7
+ZFA:0009094	ZFA:0009094	goblet cell	ZFIN_anatomy	7
+ZFA:0009099	ZFA:0009099	chromaffin cell	ZFIN_anatomy	7
+ZFA:0009101	ZFA:0009101	insulin secreting cell	ZFIN_anatomy	7
+ZFA:0009103	ZFA:0009103	glucagon secreting cell	ZFIN_anatomy	7
+ZFA:0009105	ZFA:0009105	somatostatin secreting cell	ZFIN_anatomy	7
+ZFA:0009107	ZFA:0009107	testosterone secreting cell	ZFIN_anatomy	7
+ZFA:0009109	ZFA:0009109	progesterone secreting cell	ZFIN_anatomy	7
+ZFA:0009110	ZFA:0009110	estradiol secreting cell	ZFIN_anatomy	7
+ZFA:0009115	ZFA:0009115	skeletal muscle cell	ZFIN_anatomy	7
+ZFA:0009118	ZFA:0009118	smooth muscle cell	ZFIN_anatomy	7
+ZFA:0009125	ZFA:0009125	olfactory receptor cell	ZFIN_anatomy	7
+ZFA:0009155	ZFA:0009155	somatotropin secreting cell	ZFIN_anatomy	7
+ZFA:0009185	ZFA:0009185	sensory processing neuron	ZFIN_anatomy	7
+ZFA:0009202	ZFA:0009202	follicle stimulating hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009203	ZFA:0009203	luteinizing hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009204	ZFA:0009204	prolactin secreting cell	ZFIN_anatomy	7
+ZFA:0009205	ZFA:0009205	melanocyte stimulating hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009206	ZFA:0009206	calcitonin secreting cell	ZFIN_anatomy	7
+ZFA:0009207	ZFA:0009207	parathyroid hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009209	ZFA:0009209	dendritic cell	ZFIN_anatomy	7
+ZFA:0009211	ZFA:0009211	epinephrin secreting cell	ZFIN_anatomy	7
+ZFA:0009213	ZFA:0009213	serotonin secreting cell	ZFIN_anatomy	7
+ZFA:0009214	ZFA:0009214	norepinephrin secreting cell	ZFIN_anatomy	7
+ZFA:0009215	ZFA:0009215	glucocorticoid secreting cell	ZFIN_anatomy	7
+ZFA:0009216	ZFA:0009216	adrenocorticotropic hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009218	ZFA:0009218	thyroid stimulating hormone secreting cell	ZFIN_anatomy	7
+ZFA:0009227	ZFA:0009227	granulosa cell	ZFIN_anatomy	7
+ZFA:0009230	ZFA:0009230	substance P secreting cell	ZFIN_anatomy	7
+ZFA:0009232	ZFA:0009232	endorphin secreting cell	ZFIN_anatomy	7
+ZFA:0009237	ZFA:0009237	perineuronal satellite cell	ZFIN_anatomy	7
+ZFA:0009246	ZFA:0009246	secondary neuron	ZFIN_anatomy	7
+ZFA:0009250	ZFA:0009250	lymphocyte	ZFIN_anatomy	7
+ZFA:0009252	ZFA:0009252	reticulocyte	ZFIN_anatomy	7
+ZFA:0009256	ZFA:0009256	nucleate erythrocyte	ZFIN_anatomy	7
+ZFA:0009265	ZFA:0009265	monocyte	ZFIN_anatomy	7
+ZFA:0009269	ZFA:0009269	enterocyte	ZFIN_anatomy	7
+ZFA:0009271	ZFA:0009271	androgen secreting cell	ZFIN_anatomy	7
+ZFA:0009316	ZFA:0009316	cardiac muscle cell	ZFIN_anatomy	7
+ZFA:0009331	ZFA:0009331	mature B cell	ZFIN_anatomy	7
+ZFA:0009361	ZFA:0009361	serotonergic neuron	ZFIN_anatomy	7
+ZFA:0009377	ZFA:0009377	multi-ciliated epithelial cell	ZFIN_anatomy	7
+ZFA:0009378	ZFA:0009378	single ciliated epithelial cell	ZFIN_anatomy	7
+ZFA:0009381	ZFA:0009381	ghrelin secreting cell	ZFIN_anatomy	7
+ZFA:0009395	ZFA:0009395	vascular lymphangioblast	ZFIN_anatomy	7
+ZFA:0009396	ZFA:0009396	glycinergic neuron	ZFIN_anatomy	7
+ZFA:0000039	ZFA:0000039	median axial vein	ZFIN_anatomy	8
+ZFA:0000097	ZFA:0000097	carotid artery	ZFIN_anatomy	8
+ZFA:0000125	ZFA:0000125	mandibular lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000136	ZFA:0000136	otic lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000170	ZFA:0000170	basibranchial	ZFIN_anatomy	8
+ZFA:0000177	ZFA:0000177	caudal oblique	ZFIN_anatomy	8
+ZFA:0000179	ZFA:0000179	caudal root of abducens nerve	ZFIN_anatomy	8
+ZFA:0000184	ZFA:0000184	cleithrum	ZFIN_anatomy	8
+ZFA:0000192	ZFA:0000192	descending trigeminal root	ZFIN_anatomy	8
+ZFA:0000195	ZFA:0000195	dorsal depressor	ZFIN_anatomy	8
+ZFA:0000197	ZFA:0000197	dorsal habenular nucleus	ZFIN_anatomy	8
+ZFA:0000200	ZFA:0000200	dorsal root ganglion	ZFIN_anatomy	8
+ZFA:0000201	ZFA:0000201	dorsal transverse	ZFIN_anatomy	8
+ZFA:0000205	ZFA:0000205	external ventral flexor	ZFIN_anatomy	8
+ZFA:0000221	ZFA:0000221	internal levator	ZFIN_anatomy	8
+ZFA:0000237	ZFA:0000237	medial forebrain bundle diencephalon	ZFIN_anatomy	8
+ZFA:0000259	ZFA:0000259	mandibular lateral line	ZFIN_anatomy	8
+ZFA:0000261	ZFA:0000261	pharyngohyoid	ZFIN_anatomy	8
+ZFA:0000269	ZFA:0000269	inferior ventral flexor	ZFIN_anatomy	8
+ZFA:0000283	ZFA:0000283	sternohyoid	ZFIN_anatomy	8
+ZFA:0000285	ZFA:0000285	superficial adductor	ZFIN_anatomy	8
+ZFA:0000287	ZFA:0000287	superior dorsal flexor	ZFIN_anatomy	8
+ZFA:0000295	ZFA:0000295	trigeminal ganglion	ZFIN_anatomy	8
+ZFA:0000302	ZFA:0000302	ventral habenular nucleus	ZFIN_anatomy	8
+ZFA:0000311	ZFA:0000311	adductor mandibulae complex	ZFIN_anatomy	8
+ZFA:0000313	ZFA:0000313	anal inclinator	ZFIN_anatomy	8
+ZFA:0000321	ZFA:0000321	caudal levator	ZFIN_anatomy	8
+ZFA:0000331	ZFA:0000331	commissure infima of Haller	ZFIN_anatomy	8
+ZFA:0000341	ZFA:0000341	dorsal flexor	ZFIN_anatomy	8
+ZFA:0000342	ZFA:0000342	dorsal inclinator	ZFIN_anatomy	8
+ZFA:0000344	ZFA:0000344	middle lateral line	ZFIN_anatomy	8
+ZFA:0000356	ZFA:0000356	gill raker	ZFIN_anatomy	8
+ZFA:0000363	ZFA:0000363	hypobranchial bone	ZFIN_anatomy	8
+ZFA:0000369	ZFA:0000369	intermandibularis	ZFIN_anatomy	8
+ZFA:0000371	ZFA:0000371	internal pharyngoclavicularis	ZFIN_anatomy	8
+ZFA:0000379	ZFA:0000379	lateral forebrain bundle diencephalon	ZFIN_anatomy	8
+ZFA:0000384	ZFA:0000384	levator arcus palatini	ZFIN_anatomy	8
+ZFA:0000400	ZFA:0000400	occipital lateral line	ZFIN_anatomy	8
+ZFA:0000410	ZFA:0000410	postcleithrum	ZFIN_anatomy	8
+ZFA:0000415	ZFA:0000415	esophageal sphincter	ZFIN_anatomy	8
+ZFA:0000420	ZFA:0000420	renal artery	ZFIN_anatomy	8
+ZFA:0000423	ZFA:0000423	anterior cardinal vein	ZFIN_anatomy	8
+ZFA:0000424	ZFA:0000424	opercular lateral line	ZFIN_anatomy	8
+ZFA:0000439	ZFA:0000439	superficial pelvic abductor	ZFIN_anatomy	8
+ZFA:0000443	ZFA:0000443	supraorbital lateral line	ZFIN_anatomy	8
+ZFA:0000446	ZFA:0000446	tecto-bulbar tract	ZFIN_anatomy	8
+ZFA:0000455	ZFA:0000455	ventral flexor	ZFIN_anatomy	8
+ZFA:0000462	ZFA:0000462	abductor hyohyoid	ZFIN_anatomy	8
+ZFA:0000463	ZFA:0000463	adductor	ZFIN_anatomy	8
+ZFA:0000464	ZFA:0000464	otic lateral line	ZFIN_anatomy	8
+ZFA:0000465	ZFA:0000465	adductor operculi	ZFIN_anatomy	8
+ZFA:0000466	ZFA:0000466	anal depressor	ZFIN_anatomy	8
+ZFA:0000484	ZFA:0000484	celiacomesenteric artery	ZFIN_anatomy	8
+ZFA:0000488	ZFA:0000488	ceratobranchial bone	ZFIN_anatomy	8
+ZFA:0000497	ZFA:0000497	pelvic adductor profundus	ZFIN_anatomy	8
+ZFA:0000498	ZFA:0000498	dilator operculi	ZFIN_anatomy	8
+ZFA:0000499	ZFA:0000499	dorsal arrector	ZFIN_anatomy	8
+ZFA:0000500	ZFA:0000500	dorsal erector	ZFIN_anatomy	8
+ZFA:0000503	ZFA:0000503	dorsal oblique branchial muscle	ZFIN_anatomy	8
+ZFA:0000504	ZFA:0000504	dorsal retractor	ZFIN_anatomy	8
+ZFA:0000510	ZFA:0000510	external levatores	ZFIN_anatomy	8
+ZFA:0000513	ZFA:0000513	fast muscle cell somite 1	ZFIN_anatomy	8
+ZFA:0000522	ZFA:0000522	inferior hyohyoid	ZFIN_anatomy	8
+ZFA:0000524	ZFA:0000524	infraorbital lateral line	ZFIN_anatomy	8
+ZFA:0000527	ZFA:0000527	pharyngobranchial bone	ZFIN_anatomy	8
+ZFA:0000534	ZFA:0000534	lateral longitudinal fasciculus	ZFIN_anatomy	8
+ZFA:0000537	ZFA:0000537	levator operculi	ZFIN_anatomy	8
+ZFA:0000543	ZFA:0000543	medial longitudinal fasciculus	ZFIN_anatomy	8
+ZFA:0000564	ZFA:0000564	pelvic abductor profundus	ZFIN_anatomy	8
+ZFA:0000585	ZFA:0000585	kinethmoid cartilage	ZFIN_anatomy	8
+ZFA:0000592	ZFA:0000592	superficial pelvic adductor	ZFIN_anatomy	8
+ZFA:0000593	ZFA:0000593	superior reticular formation medial column	ZFIN_anatomy	8
+ZFA:0000594	ZFA:0000594	supracleithrum	ZFIN_anatomy	8
+ZFA:0000604	ZFA:0000604	ventral aorta	ZFIN_anatomy	8
+ZFA:0000606	ZFA:0000606	ventral oblique branchial muscle	ZFIN_anatomy	8
+ZFA:0000607	ZFA:0000607	ventral rhombencephalic commissure	ZFIN_anatomy	8
+ZFA:0000608	ZFA:0000608	ventral transverse	ZFIN_anatomy	8
+ZFA:0000610	ZFA:0000610	vertical myoseptum	ZFIN_anatomy	8
+ZFA:0000612	ZFA:0000612	protractor hyoidei	ZFIN_anatomy	8
+ZFA:0000614	ZFA:0000614	abductor profundus	ZFIN_anatomy	8
+ZFA:0000615	ZFA:0000615	adductor arcus palatini	ZFIN_anatomy	8
+ZFA:0000616	ZFA:0000616	adductor profundus	ZFIN_anatomy	8
+ZFA:0000617	ZFA:0000617	anal erector	ZFIN_anatomy	8
+ZFA:0000618	ZFA:0000618	ansulate commissure	ZFIN_anatomy	8
+ZFA:0000626	ZFA:0000626	bulbo-spinal tract	ZFIN_anatomy	8
+ZFA:0000642	ZFA:0000642	decussation of the medial octavolateralis nucleus	ZFIN_anatomy	8
+ZFA:0000650	ZFA:0000650	dorsal motor root of V	ZFIN_anatomy	8
+ZFA:0000651	ZFA:0000651	dorsal pelvic arrector	ZFIN_anatomy	8
+ZFA:0000658	ZFA:0000658	epibranchial bone	ZFIN_anatomy	8
+ZFA:0000662	ZFA:0000662	external pharyngoclavicularis	ZFIN_anatomy	8
+ZFA:0000663	ZFA:0000663	extrascapula	ZFIN_anatomy	8
+ZFA:0000665	ZFA:0000665	rostral root of abducens nerve	ZFIN_anatomy	8
+ZFA:0000671	ZFA:0000671	horizontal myoseptum	ZFIN_anatomy	8
+ZFA:0000673	ZFA:0000673	hypobranchial artery	ZFIN_anatomy	8
+ZFA:0000677	ZFA:0000677	segmental intercostal artery	ZFIN_anatomy	8
+ZFA:0000679	ZFA:0000679	sensory root of facial nerve	ZFIN_anatomy	8
+ZFA:0000682	ZFA:0000682	spinal artery	ZFIN_anatomy	8
+ZFA:0000685	ZFA:0000685	superficial abductor	ZFIN_anatomy	8
+ZFA:0000698	ZFA:0000698	tripus	ZFIN_anatomy	8
+ZFA:0000701	ZFA:0000701	ventral arrector	ZFIN_anatomy	8
+ZFA:0000704	ZFA:0000704	ventral pelvic arrector	ZFIN_anatomy	8
+ZFA:0000709	ZFA:0000709	vestibulo-spinal tract	ZFIN_anatomy	8
+ZFA:0000715	ZFA:0000715	adductor hyohyoid	ZFIN_anatomy	8
+ZFA:0000718	ZFA:0000718	epaxial region somite 27	ZFIN_anatomy	8
+ZFA:0000719	ZFA:0000719	slow muscle cell somite 21	ZFIN_anatomy	8
+ZFA:0000720	ZFA:0000720	slow muscle cell somite 24	ZFIN_anatomy	8
+ZFA:0000721	ZFA:0000721	slow muscle cell somite 27	ZFIN_anatomy	8
+ZFA:0000722	ZFA:0000722	slow muscle cell somite 3	ZFIN_anatomy	8
+ZFA:0000723	ZFA:0000723	slow muscle cell somite 5	ZFIN_anatomy	8
+ZFA:0000724	ZFA:0000724	slow muscle cell somite 8	ZFIN_anatomy	8
+ZFA:0000729	ZFA:0000729	epaxial region somite 3	ZFIN_anatomy	8
+ZFA:0000739	ZFA:0000739	epaxial region somite 11	ZFIN_anatomy	8
+ZFA:0000740	ZFA:0000740	epaxial region somite 5	ZFIN_anatomy	8
+ZFA:0000741	ZFA:0000741	epaxial region somite 14	ZFIN_anatomy	8
+ZFA:0000742	ZFA:0000742	epaxial region somite 17	ZFIN_anatomy	8
+ZFA:0000743	ZFA:0000743	epaxial region somite 2	ZFIN_anatomy	8
+ZFA:0000744	ZFA:0000744	epaxial region somite 22	ZFIN_anatomy	8
+ZFA:0000745	ZFA:0000745	epaxial region somite 25	ZFIN_anatomy	8
+ZFA:0000746	ZFA:0000746	epaxial region somite 28	ZFIN_anatomy	8
+ZFA:0000747	ZFA:0000747	epaxial region somite 30	ZFIN_anatomy	8
+ZFA:0000748	ZFA:0000748	epaxial region somite 6	ZFIN_anatomy	8
+ZFA:0000749	ZFA:0000749	epaxial region somite 9	ZFIN_anatomy	8
+ZFA:0000750	ZFA:0000750	fast muscle cell somite 10	ZFIN_anatomy	8
+ZFA:0000751	ZFA:0000751	epaxial region somite 8	ZFIN_anatomy	8
+ZFA:0000752	ZFA:0000752	fast muscle cell somite 13	ZFIN_anatomy	8
+ZFA:0000753	ZFA:0000753	fast muscle cell somite 16	ZFIN_anatomy	8
+ZFA:0000754	ZFA:0000754	fast muscle cell somite 19	ZFIN_anatomy	8
+ZFA:0000755	ZFA:0000755	fast muscle cell somite 21	ZFIN_anatomy	8
+ZFA:0000756	ZFA:0000756	fast muscle cell somite 24	ZFIN_anatomy	8
+ZFA:0000757	ZFA:0000757	fast muscle cell somite 27	ZFIN_anatomy	8
+ZFA:0000758	ZFA:0000758	fast muscle cell somite 3	ZFIN_anatomy	8
+ZFA:0000759	ZFA:0000759	fast muscle cell somite 5	ZFIN_anatomy	8
+ZFA:0000760	ZFA:0000760	fast muscle cell somite 8	ZFIN_anatomy	8
+ZFA:0000767	ZFA:0000767	hypaxial region somite 11	ZFIN_anatomy	8
+ZFA:0000768	ZFA:0000768	hypaxial region somite 14	ZFIN_anatomy	8
+ZFA:0000769	ZFA:0000769	hypaxial region somite 17	ZFIN_anatomy	8
+ZFA:0000770	ZFA:0000770	hypaxial region somite 2	ZFIN_anatomy	8
+ZFA:0000771	ZFA:0000771	hypaxial region somite 22	ZFIN_anatomy	8
+ZFA:0000772	ZFA:0000772	hypaxial region somite 25	ZFIN_anatomy	8
+ZFA:0000773	ZFA:0000773	fast muscle cell somite 12	ZFIN_anatomy	8
+ZFA:0000774	ZFA:0000774	hypaxial region somite 28	ZFIN_anatomy	8
+ZFA:0000775	ZFA:0000775	hypaxial region somite 30	ZFIN_anatomy	8
+ZFA:0000776	ZFA:0000776	hypaxial region somite 6	ZFIN_anatomy	8
+ZFA:0000777	ZFA:0000777	hypaxial region somite 9	ZFIN_anatomy	8
+ZFA:0000779	ZFA:0000779	lateral forebrain bundle telencephalon	ZFIN_anatomy	8
+ZFA:0000784	ZFA:0000784	fast muscle cell somite 15	ZFIN_anatomy	8
+ZFA:0000795	ZFA:0000795	fast muscle cell somite 18	ZFIN_anatomy	8
+ZFA:0000806	ZFA:0000806	fast muscle cell somite 20	ZFIN_anatomy	8
+ZFA:0000813	ZFA:0000813	infraorbital lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000814	ZFA:0000814	opercular lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000817	ZFA:0000817	fast muscle cell somite 23	ZFIN_anatomy	8
+ZFA:0000821	ZFA:0000821	primary neuron hindbrain	ZFIN_anatomy	8
+ZFA:0000827	ZFA:0000827	fast muscle cell somite 26	ZFIN_anatomy	8
+ZFA:0000838	ZFA:0000838	fast muscle cell somite 29	ZFIN_anatomy	8
+ZFA:0000840	ZFA:0000840	slow muscle cell somite 11	ZFIN_anatomy	8
+ZFA:0000841	ZFA:0000841	slow muscle cell somite 14	ZFIN_anatomy	8
+ZFA:0000842	ZFA:0000842	slow muscle cell somite 17	ZFIN_anatomy	8
+ZFA:0000843	ZFA:0000843	slow muscle cell somite 2	ZFIN_anatomy	8
+ZFA:0000844	ZFA:0000844	slow muscle cell somite 22	ZFIN_anatomy	8
+ZFA:0000845	ZFA:0000845	slow muscle cell somite 25	ZFIN_anatomy	8
+ZFA:0000846	ZFA:0000846	slow muscle cell somite 28	ZFIN_anatomy	8
+ZFA:0000847	ZFA:0000847	slow muscle cell somite 30	ZFIN_anatomy	8
+ZFA:0000848	ZFA:0000848	slow muscle cell somite 6	ZFIN_anatomy	8
+ZFA:0000849	ZFA:0000849	fast muscle cell somite 4	ZFIN_anatomy	8
+ZFA:0000850	ZFA:0000850	slow muscle cell somite 9	ZFIN_anatomy	8
+ZFA:0000860	ZFA:0000860	fast muscle cell somite 7	ZFIN_anatomy	8
+ZFA:0000864	ZFA:0000864	epaxial region somite 1	ZFIN_anatomy	8
+ZFA:0000865	ZFA:0000865	epaxial region somite 12	ZFIN_anatomy	8
+ZFA:0000866	ZFA:0000866	epaxial region somite 15	ZFIN_anatomy	8
+ZFA:0000867	ZFA:0000867	epaxial region somite 18	ZFIN_anatomy	8
+ZFA:0000868	ZFA:0000868	epaxial region somite 20	ZFIN_anatomy	8
+ZFA:0000869	ZFA:0000869	epaxial region somite 23	ZFIN_anatomy	8
+ZFA:0000870	ZFA:0000870	epaxial region somite 26	ZFIN_anatomy	8
+ZFA:0000872	ZFA:0000872	epaxial region somite 29	ZFIN_anatomy	8
+ZFA:0000873	ZFA:0000873	epaxial region somite 4	ZFIN_anatomy	8
+ZFA:0000874	ZFA:0000874	epaxial region somite 7	ZFIN_anatomy	8
+ZFA:0000876	ZFA:0000876	fast muscle cell somite 11	ZFIN_anatomy	8
+ZFA:0000877	ZFA:0000877	fast muscle cell somite 14	ZFIN_anatomy	8
+ZFA:0000878	ZFA:0000878	fast muscle cell somite 17	ZFIN_anatomy	8
+ZFA:0000879	ZFA:0000879	fast muscle cell somite 2	ZFIN_anatomy	8
+ZFA:0000880	ZFA:0000880	fast muscle cell somite 22	ZFIN_anatomy	8
+ZFA:0000881	ZFA:0000881	fast muscle cell somite 25	ZFIN_anatomy	8
+ZFA:0000883	ZFA:0000883	fast muscle cell somite 28	ZFIN_anatomy	8
+ZFA:0000884	ZFA:0000884	fast muscle cell somite 30	ZFIN_anatomy	8
+ZFA:0000885	ZFA:0000885	fast muscle cell somite 6	ZFIN_anatomy	8
+ZFA:0000886	ZFA:0000886	fast muscle cell somite 9	ZFIN_anatomy	8
+ZFA:0000891	ZFA:0000891	hypaxial region somite 1	ZFIN_anatomy	8
+ZFA:0000892	ZFA:0000892	hypaxial region somite 12	ZFIN_anatomy	8
+ZFA:0000894	ZFA:0000894	hypaxial region somite 15	ZFIN_anatomy	8
+ZFA:0000895	ZFA:0000895	hypaxial region somite 18	ZFIN_anatomy	8
+ZFA:0000896	ZFA:0000896	hypaxial region somite 20	ZFIN_anatomy	8
+ZFA:0000897	ZFA:0000897	hypaxial region somite 23	ZFIN_anatomy	8
+ZFA:0000898	ZFA:0000898	hypaxial region somite 26	ZFIN_anatomy	8
+ZFA:0000899	ZFA:0000899	hypaxial region somite 29	ZFIN_anatomy	8
+ZFA:0000900	ZFA:0000900	hypaxial region somite 4	ZFIN_anatomy	8
+ZFA:0000901	ZFA:0000901	hypaxial region somite 7	ZFIN_anatomy	8
+ZFA:0000910	ZFA:0000910	medial forebrain bundle telencephalon	ZFIN_anatomy	8
+ZFA:0000925	ZFA:0000925	hypaxial region somite 10	ZFIN_anatomy	8
+ZFA:0000937	ZFA:0000937	hypaxial region somite 13	ZFIN_anatomy	8
+ZFA:0000939	ZFA:0000939	middle lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000940	ZFA:0000940	posterior lateral line neuromast	ZFIN_anatomy	8
+ZFA:0000943	ZFA:0000943	pectoral fin skeleton	ZFIN_anatomy	8
+ZFA:0000944	ZFA:0000944	posterior lateral line	ZFIN_anatomy	8
+ZFA:0000946	ZFA:0000946	hypaxial region somite 16	ZFIN_anatomy	8
+ZFA:0000957	ZFA:0000957	hypaxial region somite 19	ZFIN_anatomy	8
+ZFA:0000963	ZFA:0000963	slow muscle cell somite 1	ZFIN_anatomy	8
+ZFA:0000964	ZFA:0000964	slow muscle cell somite 12	ZFIN_anatomy	8
+ZFA:0000965	ZFA:0000965	slow muscle cell somite 15	ZFIN_anatomy	8
+ZFA:0000966	ZFA:0000966	slow muscle cell somite 18	ZFIN_anatomy	8
+ZFA:0000967	ZFA:0000967	slow muscle cell somite 20	ZFIN_anatomy	8
+ZFA:0000968	ZFA:0000968	hypaxial region somite 21	ZFIN_anatomy	8
+ZFA:0000969	ZFA:0000969	slow muscle cell somite 23	ZFIN_anatomy	8
+ZFA:0000970	ZFA:0000970	slow muscle cell somite 26	ZFIN_anatomy	8
+ZFA:0000971	ZFA:0000971	slow muscle cell somite 29	ZFIN_anatomy	8
+ZFA:0000972	ZFA:0000972	slow muscle cell somite 4	ZFIN_anatomy	8
+ZFA:0000973	ZFA:0000973	slow muscle cell somite 7	ZFIN_anatomy	8
+ZFA:0000979	ZFA:0000979	hypaxial region somite 24	ZFIN_anatomy	8
+ZFA:0000984	ZFA:0000984	superior reticular formation tegmentum	ZFIN_anatomy	8
+ZFA:0000986	ZFA:0000986	hypaxial region somite 27	ZFIN_anatomy	8
+ZFA:0000987	ZFA:0000987	hypaxial region somite 3	ZFIN_anatomy	8
+ZFA:0000988	ZFA:0000988	hypaxial region somite 5	ZFIN_anatomy	8
+ZFA:0000989	ZFA:0000989	hypaxial region somite 8	ZFIN_anatomy	8
+ZFA:0000991	ZFA:0000991	epaxial region somite 10	ZFIN_anatomy	8
+ZFA:0001001	ZFA:0001001	epaxial region somite 13	ZFIN_anatomy	8
+ZFA:0001012	ZFA:0001012	epaxial region somite 16	ZFIN_anatomy	8
+ZFA:0001023	ZFA:0001023	epaxial region somite 19	ZFIN_anatomy	8
+ZFA:0001025	ZFA:0001025	occipital lateral line neuromast	ZFIN_anatomy	8
+ZFA:0001026	ZFA:0001026	supraorbital lateral line neuromast	ZFIN_anatomy	8
+ZFA:0001030	ZFA:0001030	epaxial region somite 21	ZFIN_anatomy	8
+ZFA:0001040	ZFA:0001040	epaxial region somite 24	ZFIN_anatomy	8
+ZFA:0001047	ZFA:0001047	slow muscle cell somite 10	ZFIN_anatomy	8
+ZFA:0001048	ZFA:0001048	slow muscle cell somite 13	ZFIN_anatomy	8
+ZFA:0001049	ZFA:0001049	slow muscle cell somite 16	ZFIN_anatomy	8
+ZFA:0001050	ZFA:0001050	slow muscle cell somite 19	ZFIN_anatomy	8
+ZFA:0001051	ZFA:0001051	caudal division of the internal carotid artery	ZFIN_anatomy	8
+ZFA:0001052	ZFA:0001052	primordial hindbrain channel	ZFIN_anatomy	8
+ZFA:0001053	ZFA:0001053	primitive internal carotid artery	ZFIN_anatomy	8
+ZFA:0001054	ZFA:0001054	lateral dorsal aorta	ZFIN_anatomy	8
+ZFA:0001057	ZFA:0001057	intersegmental vein	ZFIN_anatomy	8
+ZFA:0001059	ZFA:0001059	cranial division of the internal carotid artery	ZFIN_anatomy	8
+ZFA:0001061	ZFA:0001061	intersegmental artery	ZFIN_anatomy	8
+ZFA:0001062	ZFA:0001062	primitive mesencephalic artery	ZFIN_anatomy	8
+ZFA:0001067	ZFA:0001067	anterior cerebral vein	ZFIN_anatomy	8
+ZFA:0001068	ZFA:0001068	mesencephalic artery	ZFIN_anatomy	8
+ZFA:0001098	ZFA:0001098	immature hair cell anterior macula	ZFIN_anatomy	8
+ZFA:0001099	ZFA:0001099	immature hair cell posterior macula	ZFIN_anatomy	8
+ZFA:0001130	ZFA:0001130	pharyngeal pouch 2	ZFIN_anatomy	8
+ZFA:0001131	ZFA:0001131	pharyngeal pouch 3	ZFIN_anatomy	8
+ZFA:0001132	ZFA:0001132	pharyngeal pouch 6	ZFIN_anatomy	8
+ZFA:0001133	ZFA:0001133	pharyngeal pouch 5	ZFIN_anatomy	8
+ZFA:0001134	ZFA:0001134	pharyngeal pouch 4	ZFIN_anatomy	8
+ZFA:0001157	ZFA:0001157	posterior lateral line primordium	ZFIN_anatomy	8
+ZFA:0001171	ZFA:0001171	os suspensorium	ZFIN_anatomy	8
+ZFA:0001190	ZFA:0001190	Weberian vertebra	ZFIN_anatomy	8
+ZFA:0001205	ZFA:0001205	Meckel's cartilage	ZFIN_anatomy	8
+ZFA:0001220	ZFA:0001220	copula	ZFIN_anatomy	8
+ZFA:0001387	ZFA:0001387	pelvic fin skeleton	ZFIN_anatomy	8
+ZFA:0001399	ZFA:0001399	palatoquadrate cartilage	ZFIN_anatomy	8
+ZFA:0001400	ZFA:0001400	ceratohyal cartilage	ZFIN_anatomy	8
+ZFA:0001422	ZFA:0001422	hyosymplectic cartilage	ZFIN_anatomy	8
+ZFA:0001470	ZFA:0001470	anterior lateral line	ZFIN_anatomy	8
+ZFA:0001472	ZFA:0001472	anterior lateral line neuromast	ZFIN_anatomy	8
+ZFA:0001480	ZFA:0001480	dorsal anterior lateral line nerve	ZFIN_anatomy	8
+ZFA:0001481	ZFA:0001481	ventral anterior lateral line nerve	ZFIN_anatomy	8
+ZFA:0001482	ZFA:0001482	middle lateral line nerve	ZFIN_anatomy	8
+ZFA:0001483	ZFA:0001483	middle lateral line ganglion	ZFIN_anatomy	8
+ZFA:0001509	ZFA:0001509	sclerotic cartilage	ZFIN_anatomy	8
+ZFA:0001510	ZFA:0001510	basihyal cartilage	ZFIN_anatomy	8
+ZFA:0001511	ZFA:0001511	interhyal cartilage	ZFIN_anatomy	8
+ZFA:0001516	ZFA:0001516	ceratobranchial cartilage	ZFIN_anatomy	8
+ZFA:0001522	ZFA:0001522	hypobranchial cartilage	ZFIN_anatomy	8
+ZFA:0001527	ZFA:0001527	epibranchial cartilage	ZFIN_anatomy	8
+ZFA:0001533	ZFA:0001533	pharyngobranchial cartilage	ZFIN_anatomy	8
+ZFA:0001554	ZFA:0001554	lepidotrichium	ZFIN_anatomy	8
+ZFA:0001555	ZFA:0001555	epibranchial ganglion	ZFIN_anatomy	8
+ZFA:0001577	ZFA:0001577	premaxilla ascending process	ZFIN_anatomy	8
+ZFA:0001592	ZFA:0001592	claustrum bone	ZFIN_anatomy	8
+ZFA:0001594	ZFA:0001594	preopercle horizontal limb	ZFIN_anatomy	8
+ZFA:0001595	ZFA:0001595	preopercle vertical limb	ZFIN_anatomy	8
+ZFA:0001601	ZFA:0001601	manubrium	ZFIN_anatomy	8
+ZFA:0001630	ZFA:0001630	perichondral bone	ZFIN_anatomy	8
+ZFA:0001631	ZFA:0001631	notochordal ossification	ZFIN_anatomy	8
+ZFA:0001638	ZFA:0001638	statoacoustic (VIII) nucleus	ZFIN_anatomy	8
+ZFA:0001644	ZFA:0001644	articular cartilage	ZFIN_anatomy	8
+ZFA:0001645	ZFA:0001645	angular bone	ZFIN_anatomy	8
+ZFA:0001658	ZFA:0001658	hindbrain nucleus	ZFIN_anatomy	8
+ZFA:0001660	ZFA:0001660	telencephalic nucleus	ZFIN_anatomy	8
+ZFA:0001665	ZFA:0001665	midbrain nucleus	ZFIN_anatomy	8
+ZFA:0005000	ZFA:0005000	basal communicating artery	ZFIN_anatomy	8
+ZFA:0005001	ZFA:0005001	posterior communicating artery	ZFIN_anatomy	8
+ZFA:0005002	ZFA:0005002	basilar artery	ZFIN_anatomy	8
+ZFA:0005004	ZFA:0005004	aortic arch	ZFIN_anatomy	8
+ZFA:0005007	ZFA:0005007	aortic arch 3	ZFIN_anatomy	8
+ZFA:0005008	ZFA:0005008	aortic arch 4	ZFIN_anatomy	8
+ZFA:0005009	ZFA:0005009	aortic arch 5	ZFIN_anatomy	8
+ZFA:0005010	ZFA:0005010	mid cerebral vein	ZFIN_anatomy	8
+ZFA:0005011	ZFA:0005011	pseudobranchial artery	ZFIN_anatomy	8
+ZFA:0005012	ZFA:0005012	afferent filamental artery	ZFIN_anatomy	8
+ZFA:0005013	ZFA:0005013	concurrent branch afferent branchial artery	ZFIN_anatomy	8
+ZFA:0005014	ZFA:0005014	recurrent branch afferent branchial artery	ZFIN_anatomy	8
+ZFA:0005016	ZFA:0005016	aortic arch 6	ZFIN_anatomy	8
+ZFA:0005017	ZFA:0005017	primordial midbrain channel	ZFIN_anatomy	8
+ZFA:0005018	ZFA:0005018	efferent filamental artery	ZFIN_anatomy	8
+ZFA:0005020	ZFA:0005020	central artery	ZFIN_anatomy	8
+ZFA:0005022	ZFA:0005022	opercular artery	ZFIN_anatomy	8
+ZFA:0005026	ZFA:0005026	primary head sinus	ZFIN_anatomy	8
+ZFA:0005027	ZFA:0005027	posterior cerebral vein	ZFIN_anatomy	8
+ZFA:0005030	ZFA:0005030	dorsal ciliary vein	ZFIN_anatomy	8
+ZFA:0005031	ZFA:0005031	dorsal longitudinal vein	ZFIN_anatomy	8
+ZFA:0005032	ZFA:0005032	optic vein	ZFIN_anatomy	8
+ZFA:0005033	ZFA:0005033	vertebral artery	ZFIN_anatomy	8
+ZFA:0005036	ZFA:0005036	supraintestinal artery	ZFIN_anatomy	8
+ZFA:0005044	ZFA:0005044	optic artery	ZFIN_anatomy	8
+ZFA:0005045	ZFA:0005045	hyaloid artery	ZFIN_anatomy	8
+ZFA:0005047	ZFA:0005047	hyaloid vein	ZFIN_anatomy	8
+ZFA:0005048	ZFA:0005048	primitive prosencephalic artery	ZFIN_anatomy	8
+ZFA:0005049	ZFA:0005049	prosencephalic artery	ZFIN_anatomy	8
+ZFA:0005050	ZFA:0005050	palatocerebral artery	ZFIN_anatomy	8
+ZFA:0005051	ZFA:0005051	communicating vessel palatocerebral artery	ZFIN_anatomy	8
+ZFA:0005053	ZFA:0005053	nasal ciliary artery	ZFIN_anatomy	8
+ZFA:0005054	ZFA:0005054	inner optic circle	ZFIN_anatomy	8
+ZFA:0005055	ZFA:0005055	median palatocerebral vein	ZFIN_anatomy	8
+ZFA:0005056	ZFA:0005056	palatocerebral vein	ZFIN_anatomy	8
+ZFA:0005080	ZFA:0005080	anterior mesenteric artery	ZFIN_anatomy	8
+ZFA:0005081	ZFA:0005081	internal carotid artery	ZFIN_anatomy	8
+ZFA:0005082	ZFA:0005082	dorsal branch nasal ciliary artery	ZFIN_anatomy	8
+ZFA:0005083	ZFA:0005083	ventral branch nasal ciliary artery	ZFIN_anatomy	8
+ZFA:0005084	ZFA:0005084	metencephalic artery	ZFIN_anatomy	8
+ZFA:0005085	ZFA:0005085	nasal artery	ZFIN_anatomy	8
+ZFA:0005086	ZFA:0005086	pectoral artery	ZFIN_anatomy	8
+ZFA:0005087	ZFA:0005087	pectoral vein	ZFIN_anatomy	8
+ZFA:0005088	ZFA:0005088	posterior mesenteric artery	ZFIN_anatomy	8
+ZFA:0005089	ZFA:0005089	swim bladder artery	ZFIN_anatomy	8
+ZFA:0005092	ZFA:0005092	mesencephalic vein	ZFIN_anatomy	8
+ZFA:0005093	ZFA:0005093	nasal vein	ZFIN_anatomy	8
+ZFA:0005098	ZFA:0005098	central ray artery	ZFIN_anatomy	8
+ZFA:0005099	ZFA:0005099	ray vein	ZFIN_anatomy	8
+ZFA:0005100	ZFA:0005100	intervessel commissure	ZFIN_anatomy	8
+ZFA:0005101	ZFA:0005101	interray vessel	ZFIN_anatomy	8
+ZFA:0005112	ZFA:0005112	dorsal lateral line	ZFIN_anatomy	8
+ZFA:0005113	ZFA:0005113	dorsal lateral line neuromast	ZFIN_anatomy	8
+ZFA:0005117	ZFA:0005117	anterior lateral line primordium	ZFIN_anatomy	8
+ZFA:0005118	ZFA:0005118	middle lateral line primordium	ZFIN_anatomy	8
+ZFA:0005126	ZFA:0005126	intestinal bulb epithelium	ZFIN_anatomy	8
+ZFA:0005127	ZFA:0005127	mid intestine epithelium	ZFIN_anatomy	8
+ZFA:0005128	ZFA:0005128	posterior intestine epithelium	ZFIN_anatomy	8
+ZFA:0005209	ZFA:0005209	hindbrain interneuron	ZFIN_anatomy	8
+ZFA:0005211	ZFA:0005211	MeL	ZFIN_anatomy	8
+ZFA:0005212	ZFA:0005212	MeM	ZFIN_anatomy	8
+ZFA:0005213	ZFA:0005213	MeLr	ZFIN_anatomy	8
+ZFA:0005214	ZFA:0005214	MeLc	ZFIN_anatomy	8
+ZFA:0005215	ZFA:0005215	MeLm	ZFIN_anatomy	8
+ZFA:0005216	ZFA:0005216	MeM1	ZFIN_anatomy	8
+ZFA:0005219	ZFA:0005219	choroid plexus vascular circuit	ZFIN_anatomy	8
+ZFA:0005221	ZFA:0005221	dorsal larval melanophore stripe	ZFIN_anatomy	8
+ZFA:0005222	ZFA:0005222	ventral larval melanophore stripe	ZFIN_anatomy	8
+ZFA:0005223	ZFA:0005223	lateral larval melanophore stripe	ZFIN_anatomy	8
+ZFA:0005224	ZFA:0005224	yolk larval melanophore stripe	ZFIN_anatomy	8
+ZFA:0005236	ZFA:0005236	basophilic erythroblast	ZFIN_anatomy	8
+ZFA:0005238	ZFA:0005238	juxtaglomerular cell	ZFIN_anatomy	8
+ZFA:0005241	ZFA:0005241	polychromatophilic erythroblast	ZFIN_anatomy	8
+ZFA:0005248	ZFA:0005248	trans-choroid plexus branch	ZFIN_anatomy	8
+ZFA:0005259	ZFA:0005259	continuous blood vessel endothelium	ZFIN_anatomy	8
+ZFA:0005260	ZFA:0005260	fenestrated blood vessel endothelium	ZFIN_anatomy	8
+ZFA:0005266	ZFA:0005266	dorsal longitudinal fasciculus	ZFIN_anatomy	8
+ZFA:0005284	ZFA:0005284	glomerular capillary	ZFIN_anatomy	8
+ZFA:0005301	ZFA:0005301	pectoral fin blood vessel	ZFIN_anatomy	8
+ZFA:0005302	ZFA:0005302	pectoral fin lymph vessel	ZFIN_anatomy	8
+ZFA:0005304	ZFA:0005304	caudal fin blood vessel	ZFIN_anatomy	8
+ZFA:0005307	ZFA:0005307	afferent glomerular arteriole	ZFIN_anatomy	8
+ZFA:0005308	ZFA:0005308	efferent glomerular arteriole	ZFIN_anatomy	8
+ZFA:0005309	ZFA:0005309	pronephric glomerular capillary	ZFIN_anatomy	8
+ZFA:0005391	ZFA:0005391	head sensory canal system	ZFIN_anatomy	8
+ZFA:0005392	ZFA:0005392	infraorbital sensory canal	ZFIN_anatomy	8
+ZFA:0005393	ZFA:0005393	otic sensory canal	ZFIN_anatomy	8
+ZFA:0005394	ZFA:0005394	post-otic sensory canal	ZFIN_anatomy	8
+ZFA:0005395	ZFA:0005395	preoperculo-mandibular sensory canal	ZFIN_anatomy	8
+ZFA:0005396	ZFA:0005396	supraorbital sensory canal	ZFIN_anatomy	8
+ZFA:0005444	ZFA:0005444	trunk sensory canal	ZFIN_anatomy	8
+ZFA:0005445	ZFA:0005445	supratemporal sensory canal	ZFIN_anatomy	8
+ZFA:0005447	ZFA:0005447	sensory canal tubule	ZFIN_anatomy	8
+ZFA:0005448	ZFA:0005448	preopercular sensory canal	ZFIN_anatomy	8
+ZFA:0005451	ZFA:0005451	mandibular sensory canal	ZFIN_anatomy	8
+ZFA:0005511	ZFA:0005511	sensory canal tubular ossicle	ZFIN_anatomy	8
+ZFA:0005532	ZFA:0005532	bony plate	ZFIN_anatomy	8
+ZFA:0005537	ZFA:0005537	lateral fontanel of frontal	ZFIN_anatomy	8
+ZFA:0005598	ZFA:0005598	pancreatic epsilon cell	ZFIN_anatomy	8
+ZFA:0005650	ZFA:0005650	primitive pectoral fin adductor	ZFIN_anatomy	8
+ZFA:0005651	ZFA:0005651	primitive pectoral fin abductor	ZFIN_anatomy	8
+ZFA:0005666	ZFA:0005666	ventral spinal nerve septal branch	ZFIN_anatomy	8
+ZFA:0005667	ZFA:0005667	ventral spinal nerve median branch	ZFIN_anatomy	8
+ZFA:0007002	ZFA:0007002	ventro-rostral cluster	ZFIN_anatomy	8
+ZFA:0007003	ZFA:0007003	ventro-caudal cluster	ZFIN_anatomy	8
+ZFA:0007011	ZFA:0007011	vagal root	ZFIN_anatomy	8
+ZFA:0007049	ZFA:0007049	adductor mandibulae	ZFIN_anatomy	8
+ZFA:0007050	ZFA:0007050	constrictor dorsalis	ZFIN_anatomy	8
+ZFA:0007051	ZFA:0007051	ventral interhyoideus	ZFIN_anatomy	8
+ZFA:0007052	ZFA:0007052	hyohyoideus	ZFIN_anatomy	8
+ZFA:0007053	ZFA:0007053	dorsal adductor hyomandibulae	ZFIN_anatomy	8
+ZFA:0007057	ZFA:0007057	ocular blood vessel	ZFIN_anatomy	8
+ZFA:0009046	ZFA:0009046	T cell	ZFIN_anatomy	8
+ZFA:0009052	ZFA:0009052	motor neuron	ZFIN_anatomy	8
+ZFA:0009053	ZFA:0009053	sensory neuron	ZFIN_anatomy	8
+ZFA:0009055	ZFA:0009055	bipolar neuron	ZFIN_anatomy	8
+ZFA:0009060	ZFA:0009060	cholinergic neuron	ZFIN_anatomy	8
+ZFA:0009061	ZFA:0009061	adrenergic neuron	ZFIN_anatomy	8
+ZFA:0009062	ZFA:0009062	peptidergic neuron	ZFIN_anatomy	8
+ZFA:0009068	ZFA:0009068	basket cell	ZFIN_anatomy	8
+ZFA:0009069	ZFA:0009069	Golgi cell	ZFIN_anatomy	8
+ZFA:0009071	ZFA:0009071	Purkinje cell	ZFIN_anatomy	8
+ZFA:0009072	ZFA:0009072	stellate cell	ZFIN_anatomy	8
+ZFA:0009075	ZFA:0009075	astrocyte	ZFIN_anatomy	8
+ZFA:0009076	ZFA:0009076	oligodendrocyte	ZFIN_anatomy	8
+ZFA:0009108	ZFA:0009108	Leydig cell	ZFIN_anatomy	8
+ZFA:0009116	ZFA:0009116	slow muscle cell	ZFIN_anatomy	8
+ZFA:0009117	ZFA:0009117	fast muscle cell	ZFIN_anatomy	8
+ZFA:0009119	ZFA:0009119	pain receptor cell	ZFIN_anatomy	8
+ZFA:0009120	ZFA:0009120	mechanoreceptor cell	ZFIN_anatomy	8
+ZFA:0009121	ZFA:0009121	auditory receptor cell	ZFIN_anatomy	8
+ZFA:0009123	ZFA:0009123	thermoreceptor cell	ZFIN_anatomy	8
+ZFA:0009124	ZFA:0009124	chemoreceptor cell	ZFIN_anatomy	8
+ZFA:0009127	ZFA:0009127	photoreceptor cell	ZFIN_anatomy	8
+ZFA:0009142	ZFA:0009142	B cell	ZFIN_anatomy	8
+ZFA:0009153	ZFA:0009153	eurydendroid cell	ZFIN_anatomy	8
+ZFA:0009168	ZFA:0009168	neuroblast (sensu Vertebrata)	ZFIN_anatomy	8
+ZFA:0009181	ZFA:0009181	vascular associated smooth muscle cell	ZFIN_anatomy	8
+ZFA:0009186	ZFA:0009186	neurosecretory neuron	ZFIN_anatomy	8
+ZFA:0009191	ZFA:0009191	CNS interneuron	ZFIN_anatomy	8
+ZFA:0009225	ZFA:0009225	inhibitory interneuron	ZFIN_anatomy	8
+ZFA:0009231	ZFA:0009231	enkephalin secreting cell	ZFIN_anatomy	8
+ZFA:0009240	ZFA:0009240	nitrergic neuron	ZFIN_anatomy	8
+ZFA:0009244	ZFA:0009244	primary motor neuron	ZFIN_anatomy	8
+ZFA:0009245	ZFA:0009245	primary interneuron	ZFIN_anatomy	8
+ZFA:0009247	ZFA:0009247	secondary motor neuron	ZFIN_anatomy	8
+ZFA:0009255	ZFA:0009255	amacrine cell	ZFIN_anatomy	8
+ZFA:0009273	ZFA:0009273	pyramidal cell	ZFIN_anatomy	8
+ZFA:0009276	ZFA:0009276	GABAergic neuron	ZFIN_anatomy	8
+ZFA:0009278	ZFA:0009278	natural killer cell	ZFIN_anatomy	8
+ZFA:0009290	ZFA:0009290	glutamatergic neuron	ZFIN_anatomy	8
+ZFA:0009297	ZFA:0009297	stellate interneuron	ZFIN_anatomy	8
+ZFA:0009300	ZFA:0009300	Cajal-Retzius cell	ZFIN_anatomy	8
+ZFA:0009301	ZFA:0009301	dopaminergic neuron	ZFIN_anatomy	8
+ZFA:0009304	ZFA:0009304	choroid plexus epithelial cell	ZFIN_anatomy	8
+ZFA:0009310	ZFA:0009310	retinal ganglion cell	ZFIN_anatomy	8
+ZFA:0009312	ZFA:0009312	periarticular chondrocyte	ZFIN_anatomy	8
+ZFA:0009313	ZFA:0009313	hypertrophic chondrocyte	ZFIN_anatomy	8
+ZFA:0009314	ZFA:0009314	columnar chondrocyte	ZFIN_anatomy	8
+ZFA:0009315	ZFA:0009315	horizontal cell	ZFIN_anatomy	8
+ZFA:0009327	ZFA:0009327	neutrophil	ZFIN_anatomy	8
+ZFA:0009332	ZFA:0009332	plasma cell	ZFIN_anatomy	8
+ZFA:0009367	ZFA:0009367	neuromast hair cell	ZFIN_anatomy	8
+ZFA:0009370	ZFA:0009370	stretch receptor cell	ZFIN_anatomy	8
+ZFA:0009376	ZFA:0009376	renal alpha-intercalated cell	ZFIN_anatomy	8
+ZFA:0009382	ZFA:0009382	pancreatic epsilon cell	ZFIN_anatomy	8
+ZFA:0000030	ZFA:0000030	macula utricle	ZFIN_anatomy	9
+ZFA:0000069	ZFA:0000069	rhombomere 6	ZFIN_anatomy	9
+ZFA:0000116	ZFA:0000116	macula lagena	ZFIN_anatomy	9
+ZFA:0000126	ZFA:0000126	centrum	ZFIN_anatomy	9
+ZFA:0000153	ZFA:0000153	rhombomere 8	ZFIN_anatomy	9
+ZFA:0000158	ZFA:0000158	urostyle	ZFIN_anatomy	9
+ZFA:0000168	ZFA:0000168	anterior macula	ZFIN_anatomy	9
+ZFA:0000174	ZFA:0000174	cerebellovestibular tract	ZFIN_anatomy	9
+ZFA:0000206	ZFA:0000206	facial nerve motor nucleus	ZFIN_anatomy	9
+ZFA:0000215	ZFA:0000215	inferior olive	ZFIN_anatomy	9
+ZFA:0000219	ZFA:0000219	intermediate reticular formation	ZFIN_anatomy	9
+ZFA:0000234	ZFA:0000234	macula neglecta	ZFIN_anatomy	9
+ZFA:0000239	ZFA:0000239	mesocoracoid bone	ZFIN_anatomy	9
+ZFA:0000240	ZFA:0000240	metapterygoid	ZFIN_anatomy	9
+ZFA:0000244	ZFA:0000244	nucleus Edinger-Westphal	ZFIN_anatomy	9
+ZFA:0000257	ZFA:0000257	pectoral fin cartilage	ZFIN_anatomy	9
+ZFA:0000271	ZFA:0000271	radial	ZFIN_anatomy	9
+ZFA:0000275	ZFA:0000275	rostral tegmental nucleus	ZFIN_anatomy	9
+ZFA:0000291	ZFA:0000291	medial octavolateralis nucleus	ZFIN_anatomy	9
+ZFA:0000296	ZFA:0000296	uncrossed tecto-bulbar tract	ZFIN_anatomy	9
+ZFA:0000316	ZFA:0000316	basihyal bone	ZFIN_anatomy	9
+ZFA:0000332	ZFA:0000332	coracoid	ZFIN_anatomy	9
+ZFA:0000335	ZFA:0000335	crossed tecto-bulbar tract	ZFIN_anatomy	9
+ZFA:0000346	ZFA:0000346	dorsal tegmental nucleus	ZFIN_anatomy	9
+ZFA:0000366	ZFA:0000366	inferior raphe nucleus	ZFIN_anatomy	9
+ZFA:0000372	ZFA:0000372	interpeduncular nucleus medulla oblongata	ZFIN_anatomy	9
+ZFA:0000380	ZFA:0000380	lateral lemniscus nucleus	ZFIN_anatomy	9
+ZFA:0000381	ZFA:0000381	lateral line sensory nucleus	ZFIN_anatomy	9
+ZFA:0000387	ZFA:0000387	motor nucleus of vagal nerve	ZFIN_anatomy	9
+ZFA:0000389	ZFA:0000389	medial funicular nucleus medulla oblongata	ZFIN_anatomy	9
+ZFA:0000398	ZFA:0000398	nucleus isthmi	ZFIN_anatomy	9
+ZFA:0000401	ZFA:0000401	octaval nerve sensory nucleus	ZFIN_anatomy	9
+ZFA:0000422	ZFA:0000422	retroarticular	ZFIN_anatomy	9
+ZFA:0000429	ZFA:0000429	scaphium	ZFIN_anatomy	9
+ZFA:0000433	ZFA:0000433	sensory trigeminal nucleus	ZFIN_anatomy	9
+ZFA:0000440	ZFA:0000440	superior raphe nucleus	ZFIN_anatomy	9
+ZFA:0000450	ZFA:0000450	trochlear motor nucleus	ZFIN_anatomy	9
+ZFA:0000508	ZFA:0000508	pelvic radial	ZFIN_anatomy	9
+ZFA:0000512	ZFA:0000512	facial lobe	ZFIN_anatomy	9
+ZFA:0000518	ZFA:0000518	griseum centrale	ZFIN_anatomy	9
+ZFA:0000519	ZFA:0000519	hemal arch	ZFIN_anatomy	9
+ZFA:0000523	ZFA:0000523	inferior reticular formation	ZFIN_anatomy	9
+ZFA:0000525	ZFA:0000525	intercalarium	ZFIN_anatomy	9
+ZFA:0000535	ZFA:0000535	lateral reticular nucleus	ZFIN_anatomy	9
+ZFA:0000538	ZFA:0000538	rib	ZFIN_anatomy	9
+ZFA:0000539	ZFA:0000539	locus coeruleus	ZFIN_anatomy	9
+ZFA:0000551	ZFA:0000551	nucleus lateralis valvulae	ZFIN_anatomy	9
+ZFA:0000552	ZFA:0000552	nucleus ruber	ZFIN_anatomy	9
+ZFA:0000553	ZFA:0000553	oculomotor nucleus	ZFIN_anatomy	9
+ZFA:0000558	ZFA:0000558	posterior macula	ZFIN_anatomy	9
+ZFA:0000578	ZFA:0000578	ceratohyal bone	ZFIN_anatomy	9
+ZFA:0000583	ZFA:0000583	scapula	ZFIN_anatomy	9
+ZFA:0000602	ZFA:0000602	uroneural	ZFIN_anatomy	9
+ZFA:0000609	ZFA:0000609	ventrolateral nucleus	ZFIN_anatomy	9
+ZFA:0000620	ZFA:0000620	autopalatine	ZFIN_anatomy	9
+ZFA:0000621	ZFA:0000621	quadrate	ZFIN_anatomy	9
+ZFA:0000623	ZFA:0000623	basipterygium	ZFIN_anatomy	9
+ZFA:0000627	ZFA:0000627	epihyal	ZFIN_anatomy	9
+ZFA:0000660	ZFA:0000660	epural	ZFIN_anatomy	9
+ZFA:0000672	ZFA:0000672	hyomandibula	ZFIN_anatomy	9
+ZFA:0000680	ZFA:0000680	sinoatrial valve	ZFIN_anatomy	9
+ZFA:0000681	ZFA:0000681	neural postzygapophysis	ZFIN_anatomy	9
+ZFA:0000692	ZFA:0000692	symplectic	ZFIN_anatomy	9
+ZFA:0000710	ZFA:0000710	viscerosensory commissural nucleus of Cajal	ZFIN_anatomy	9
+ZFA:0000713	ZFA:0000713	abducens motor nucleus	ZFIN_anatomy	9
+ZFA:0000734	ZFA:0000734	preural vertebra	ZFIN_anatomy	9
+ZFA:0000735	ZFA:0000735	hemal postzygapophysis	ZFIN_anatomy	9
+ZFA:0000815	ZFA:0000815	nucleus of the medial longitudinal fasciculus medulla oblongata	ZFIN_anatomy	9
+ZFA:0000822	ZFA:0000822	rhombomere 2	ZFIN_anatomy	9
+ZFA:0000823	ZFA:0000823	rhombomere 5	ZFIN_anatomy	9
+ZFA:0000826	ZFA:0000826	central nucleus torus semicircularis	ZFIN_anatomy	9
+ZFA:0000859	ZFA:0000859	specialized hemal arch and spine	ZFIN_anatomy	9
+ZFA:0000903	ZFA:0000903	interpeduncular nucleus tegmentum	ZFIN_anatomy	9
+ZFA:0000948	ZFA:0000948	rhombomere 3	ZFIN_anatomy	9
+ZFA:0000949	ZFA:0000949	rhombomere 7	ZFIN_anatomy	9
+ZFA:0001031	ZFA:0001031	rhombomere 1	ZFIN_anatomy	9
+ZFA:0001032	ZFA:0001032	rhombomere 4	ZFIN_anatomy	9
+ZFA:0001066	ZFA:0001066	neural arch	ZFIN_anatomy	9
+ZFA:0001191	ZFA:0001191	supraneural 2	ZFIN_anatomy	9
+ZFA:0001192	ZFA:0001192	supraneural 3	ZFIN_anatomy	9
+ZFA:0001221	ZFA:0001221	copula 1	ZFIN_anatomy	9
+ZFA:0001222	ZFA:0001222	copula 2	ZFIN_anatomy	9
+ZFA:0001233	ZFA:0001233	hypobranchial 1 bone	ZFIN_anatomy	9
+ZFA:0001234	ZFA:0001234	hypobranchial 4 bone	ZFIN_anatomy	9
+ZFA:0001235	ZFA:0001235	hypobranchial 3 bone	ZFIN_anatomy	9
+ZFA:0001236	ZFA:0001236	hypobranchial 2 bone	ZFIN_anatomy	9
+ZFA:0001237	ZFA:0001237	ceratobranchial 1 bone	ZFIN_anatomy	9
+ZFA:0001239	ZFA:0001239	ceratobranchial 5 bone	ZFIN_anatomy	9
+ZFA:0001240	ZFA:0001240	ceratobranchial 4 bone	ZFIN_anatomy	9
+ZFA:0001241	ZFA:0001241	ceratobranchial 3 bone	ZFIN_anatomy	9
+ZFA:0001242	ZFA:0001242	ceratobranchial 2 bone	ZFIN_anatomy	9
+ZFA:0001243	ZFA:0001243	epibranchial 1 bone	ZFIN_anatomy	9
+ZFA:0001244	ZFA:0001244	epibranchial 5	ZFIN_anatomy	9
+ZFA:0001245	ZFA:0001245	epibranchial 4 bone	ZFIN_anatomy	9
+ZFA:0001246	ZFA:0001246	epibranchial 2 bone	ZFIN_anatomy	9
+ZFA:0001247	ZFA:0001247	epibranchial 3 bone	ZFIN_anatomy	9
+ZFA:0001250	ZFA:0001250	pharyngobranchial 2 bone	ZFIN_anatomy	9
+ZFA:0001251	ZFA:0001251	pharyngobranchial 4 cartilage	ZFIN_anatomy	9
+ZFA:0001252	ZFA:0001252	pharyngobranchial 3 bone	ZFIN_anatomy	9
+ZFA:0001287	ZFA:0001287	renal tubule	ZFIN_anatomy	9
+ZFA:0001291	ZFA:0001291	facial ganglion	ZFIN_anatomy	9
+ZFA:0001301	ZFA:0001301	glossopharyngeal ganglion	ZFIN_anatomy	9
+ZFA:0001314	ZFA:0001314	posterior lateral line ganglion	ZFIN_anatomy	9
+ZFA:0001325	ZFA:0001325	neural prezygapophysis	ZFIN_anatomy	9
+ZFA:0001336	ZFA:0001336	neural spine	ZFIN_anatomy	9
+ZFA:0001362	ZFA:0001362	parapophysis	ZFIN_anatomy	9
+ZFA:0001364	ZFA:0001364	hemal spine	ZFIN_anatomy	9
+ZFA:0001365	ZFA:0001365	trigeminal motor nucleus	ZFIN_anatomy	9
+ZFA:0001375	ZFA:0001375	ventriculo bulbo valve	ZFIN_anatomy	9
+ZFA:0001381	ZFA:0001381	hypohyal bone	ZFIN_anatomy	9
+ZFA:0001382	ZFA:0001382	epibranchial uncinate process	ZFIN_anatomy	9
+ZFA:0001391	ZFA:0001391	anterior lateral line ganglion	ZFIN_anatomy	9
+ZFA:0001396	ZFA:0001396	parapophysis/rib	ZFIN_anatomy	9
+ZFA:0001418	ZFA:0001418	dorsal fin lepidotrichium	ZFIN_anatomy	9
+ZFA:0001421	ZFA:0001421	anal fin lepidotrichium	ZFIN_anatomy	9
+ZFA:0001426	ZFA:0001426	posterior naris	ZFIN_anatomy	9
+ZFA:0001427	ZFA:0001427	anterior naris	ZFIN_anatomy	9
+ZFA:0001429	ZFA:0001429	raphe nucleus	ZFIN_anatomy	9
+ZFA:0001444	ZFA:0001444	choroid plexus third ventricle	ZFIN_anatomy	9
+ZFA:0001445	ZFA:0001445	choroid plexus tectal ventricle	ZFIN_anatomy	9
+ZFA:0001446	ZFA:0001446	choroid plexus fourth ventricle	ZFIN_anatomy	9
+ZFA:0001447	ZFA:0001447	choroid plexus telencephalic ventricle	ZFIN_anatomy	9
+ZFA:0001459	ZFA:0001459	pelvic fin cartilage	ZFIN_anatomy	9
+ZFA:0001517	ZFA:0001517	ceratobranchial 2 cartilage	ZFIN_anatomy	9
+ZFA:0001518	ZFA:0001518	ceratobranchial 3 cartilage	ZFIN_anatomy	9
+ZFA:0001519	ZFA:0001519	ceratobranchial 4 cartilage	ZFIN_anatomy	9
+ZFA:0001520	ZFA:0001520	ceratobranchial 1 cartilage	ZFIN_anatomy	9
+ZFA:0001521	ZFA:0001521	ceratobranchial 5 cartilage	ZFIN_anatomy	9
+ZFA:0001523	ZFA:0001523	hypobranchial 4 cartilage	ZFIN_anatomy	9
+ZFA:0001524	ZFA:0001524	hypobranchial 1 cartilage	ZFIN_anatomy	9
+ZFA:0001525	ZFA:0001525	hypobranchial 2 cartilage	ZFIN_anatomy	9
+ZFA:0001526	ZFA:0001526	hypobranchial 3 cartilage	ZFIN_anatomy	9
+ZFA:0001528	ZFA:0001528	epibranchial 1 cartilage	ZFIN_anatomy	9
+ZFA:0001529	ZFA:0001529	epibranchial 3 cartilage	ZFIN_anatomy	9
+ZFA:0001530	ZFA:0001530	epibranchial 2 cartilage	ZFIN_anatomy	9
+ZFA:0001531	ZFA:0001531	epibranchial 4 cartilage	ZFIN_anatomy	9
+ZFA:0001534	ZFA:0001534	pharyngobranchial 3 cartilage	ZFIN_anatomy	9
+ZFA:0001536	ZFA:0001536	pharyngobranchial 2 cartilage	ZFIN_anatomy	9
+ZFA:0001550	ZFA:0001550	caudal fin lepidotrichium	ZFIN_anatomy	9
+ZFA:0001551	ZFA:0001551	pectoral fin lepidotrichium	ZFIN_anatomy	9
+ZFA:0001552	ZFA:0001552	pelvic fin lepidotrichium	ZFIN_anatomy	9
+ZFA:0001579	ZFA:0001579	ural vertebra 2	ZFIN_anatomy	9
+ZFA:0001581	ZFA:0001581	ural centrum 2	ZFIN_anatomy	9
+ZFA:0001583	ZFA:0001583	preural centrum 1+ ural centrum 1	ZFIN_anatomy	9
+ZFA:0001586	ZFA:0001586	pectoral fin radial	ZFIN_anatomy	9
+ZFA:0001593	ZFA:0001593	quadrate ventral process	ZFIN_anatomy	9
+ZFA:0001599	ZFA:0001599	os suspensorium medial flange	ZFIN_anatomy	9
+ZFA:0001602	ZFA:0001602	intercalarium ascending process	ZFIN_anatomy	9
+ZFA:0001603	ZFA:0001603	intercalarium articulating process	ZFIN_anatomy	9
+ZFA:0001614	ZFA:0001614	atrial endocardium	ZFIN_anatomy	9
+ZFA:0001615	ZFA:0001615	ventricular endocardium	ZFIN_anatomy	9
+ZFA:0001616	ZFA:0001616	atrioventricular canal endocardium	ZFIN_anatomy	9
+ZFA:0001691	ZFA:0001691	cerebellar granule cell	ZFIN_anatomy	9
+ZFA:0001694	ZFA:0001694	olfactory granule cell	ZFIN_anatomy	9
+ZFA:0001697	ZFA:0001697	octaval nerve motor nucleus	ZFIN_anatomy	9
+ZFA:0005021	ZFA:0005021	cerebellar central artery	ZFIN_anatomy	9
+ZFA:0005046	ZFA:0005046	hyaloid vessel	ZFIN_anatomy	9
+ZFA:0005052	ZFA:0005052	anterior mesencephalic central artery	ZFIN_anatomy	9
+ZFA:0005064	ZFA:0005064	atrioventricular valve	ZFIN_anatomy	9
+ZFA:0005071	ZFA:0005071	distal conduction system	ZFIN_anatomy	9
+ZFA:0005074	ZFA:0005074	central cardiac conduction system	ZFIN_anatomy	9
+ZFA:0005075	ZFA:0005075	peripheral cardiac conduction system	ZFIN_anatomy	9
+ZFA:0005078	ZFA:0005078	middle mesencephalic central artery	ZFIN_anatomy	9
+ZFA:0005079	ZFA:0005079	posterior mesencephalic central artery	ZFIN_anatomy	9
+ZFA:0005094	ZFA:0005094	optic choroid vascular plexus	ZFIN_anatomy	9
+ZFA:0005115	ZFA:0005115	primary posterior lateral line primordium	ZFIN_anatomy	9
+ZFA:0005116	ZFA:0005116	secondary posterior lateral line primordium	ZFIN_anatomy	9
+ZFA:0005210	ZFA:0005210	midbrain interneuron	ZFIN_anatomy	9
+ZFA:0005261	ZFA:0005261	sinusoidal blood vessel endothelium	ZFIN_anatomy	9
+ZFA:0005290	ZFA:0005290	proximal convoluted tubule	ZFIN_anatomy	9
+ZFA:0005291	ZFA:0005291	proximal straight tubule	ZFIN_anatomy	9
+ZFA:0005292	ZFA:0005292	distal late tubule	ZFIN_anatomy	9
+ZFA:0005293	ZFA:0005293	distal early tubule	ZFIN_anatomy	9
+ZFA:0005294	ZFA:0005294	collecting duct	ZFIN_anatomy	9
+ZFA:0005416	ZFA:0005416	sacculoagenar foramen	ZFIN_anatomy	9
+ZFA:0005417	ZFA:0005417	utriculosaccular foramen	ZFIN_anatomy	9
+ZFA:0005437	ZFA:0005437	pectoral fin motor nerve	ZFIN_anatomy	9
+ZFA:0005438	ZFA:0005438	pectoral fin sensory nerve	ZFIN_anatomy	9
+ZFA:0005456	ZFA:0005456	sinus impar	ZFIN_anatomy	9
+ZFA:0005460	ZFA:0005460	atrium of sinus impar	ZFIN_anatomy	9
+ZFA:0005530	ZFA:0005530	lateral line scale	ZFIN_anatomy	9
+ZFA:0005577	ZFA:0005577	tegmental nucleus	ZFIN_anatomy	9
+ZFA:0005584	ZFA:0005584	developing mesonephric nephron	ZFIN_anatomy	9
+ZFA:0005585	ZFA:0005585	developing mesonephric proximal tubule	ZFIN_anatomy	9
+ZFA:0005591	ZFA:0005591	developing mesonephric distal tubule	ZFIN_anatomy	9
+ZFA:0005592	ZFA:0005592	mesonephric nephron	ZFIN_anatomy	9
+ZFA:0007000	ZFA:0007000	macula saccule	ZFIN_anatomy	9
+ZFA:0007005	ZFA:0007005	hemal prezygapophysis	ZFIN_anatomy	9
+ZFA:0007067	ZFA:0007067	vagal ganglion	ZFIN_anatomy	9
+ZFA:0009049	ZFA:0009049	mature neutrophil	ZFIN_anatomy	9
+ZFA:0009077	ZFA:0009077	microglial cell	ZFIN_anatomy	9
+ZFA:0009126	ZFA:0009126	taste receptor cell	ZFIN_anatomy	9
+ZFA:0009149	ZFA:0009149	Mauthner neuron	ZFIN_anatomy	9
+ZFA:0009152	ZFA:0009152	extramedullary cell	ZFIN_anatomy	9
+ZFA:0009154	ZFA:0009154	eye photoreceptor cell	ZFIN_anatomy	9
+ZFA:0009194	ZFA:0009194	CNS short range interneuron	ZFIN_anatomy	9
+ZFA:0009195	ZFA:0009195	CNS long range interneuron	ZFIN_anatomy	9
+ZFA:0009219	ZFA:0009219	visible light photoreceptor cell	ZFIN_anatomy	9
+ZFA:0009221	ZFA:0009221	UV sensitive photoreceptor cell	ZFIN_anatomy	9
+ZFA:0009267	ZFA:0009267	peritoneal macrophage	ZFIN_anatomy	9
+ZFA:0009274	ZFA:0009274	pressoreceptor cell	ZFIN_anatomy	9
+ZFA:0009280	ZFA:0009280	Muller cell	ZFIN_anatomy	9
+ZFA:0009282	ZFA:0009282	Bergmann glial cell	ZFIN_anatomy	9
+ZFA:0009292	ZFA:0009292	radial glial cell	ZFIN_anatomy	9
+ZFA:0009294	ZFA:0009294	ependymoglial cell	ZFIN_anatomy	9
+ZFA:0009299	ZFA:0009299	neuroglioform cell	ZFIN_anatomy	9
+ZFA:0009303	ZFA:0009303	endothelial tip cell	ZFIN_anatomy	9
+ZFA:0009311	ZFA:0009311	spinal accessory motor neuron	ZFIN_anatomy	9
+ZFA:0009328	ZFA:0009328	immature neutrophil	ZFIN_anatomy	9
+ZFA:0009335	ZFA:0009335	alpha-beta T cell	ZFIN_anatomy	9
+ZFA:0009336	ZFA:0009336	gamma-delta T cell	ZFIN_anatomy	9
+ZFA:0009337	ZFA:0009337	immature gamma-delta T cell	ZFIN_anatomy	9
+ZFA:0009338	ZFA:0009338	mature gamma-delta T cell	ZFIN_anatomy	9
+ZFA:0009342	ZFA:0009342	memory T cell	ZFIN_anatomy	9
+ZFA:0009344	ZFA:0009344	precursor B cell	ZFIN_anatomy	9
+ZFA:0009345	ZFA:0009345	transitional stage B cell	ZFIN_anatomy	9
+ZFA:0009346	ZFA:0009346	immature natural killer cell	ZFIN_anatomy	9
+ZFA:0009347	ZFA:0009347	mature natural killer cell	ZFIN_anatomy	9
+ZFA:0009366	ZFA:0009366	hair cell	ZFIN_anatomy	9
+ZFA:0000043	ZFA:0000043	muscle pioneer somite 1	ZFIN_anatomy	10
+ZFA:0000059	ZFA:0000059	postoptic commissure	ZFIN_anatomy	10
+ZFA:0000181	ZFA:0000181	caudal zone of dorsal telencephalon	ZFIN_anatomy	10
+ZFA:0000182	ZFA:0000182	central caudal thalamic nucleus	ZFIN_anatomy	10
+ZFA:0000193	ZFA:0000193	diffuse nucleus inferior lobe	ZFIN_anatomy	10
+ZFA:0000194	ZFA:0000194	dorsal accessory optic nucleus	ZFIN_anatomy	10
+ZFA:0000196	ZFA:0000196	dorsal hypohyal bone	ZFIN_anatomy	10
+ZFA:0000220	ZFA:0000220	lateral semicircular canal	ZFIN_anatomy	10
+ZFA:0000222	ZFA:0000222	isthmic primary nucleus	ZFIN_anatomy	10
+ZFA:0000227	ZFA:0000227	lateral hypothalamic nucleus	ZFIN_anatomy	10
+ZFA:0000229	ZFA:0000229	lateral olfactory tract	ZFIN_anatomy	10
+ZFA:0000235	ZFA:0000235	magnocellular superficial pretectal nucleus	ZFIN_anatomy	10
+ZFA:0000238	ZFA:0000238	medial olfactory tract	ZFIN_anatomy	10
+ZFA:0000245	ZFA:0000245	nucleus of the descending root	ZFIN_anatomy	10
+ZFA:0000246	ZFA:0000246	nucleus taeniae	ZFIN_anatomy	10
+ZFA:0000248	ZFA:0000248	magnocellular preoptic nucleus	ZFIN_anatomy	10
+ZFA:0000252	ZFA:0000252	optic tract	ZFIN_anatomy	10
+ZFA:0000256	ZFA:0000256	pars subcommissuralis of ventral telencephalon	ZFIN_anatomy	10
+ZFA:0000260	ZFA:0000260	periventricular nucleus	ZFIN_anatomy	10
+ZFA:0000262	ZFA:0000262	posterior semicircular canal	ZFIN_anatomy	10
+ZFA:0000266	ZFA:0000266	pretecto-mammillary tract	ZFIN_anatomy	10
+ZFA:0000268	ZFA:0000268	anal fin proximal radial	ZFIN_anatomy	10
+ZFA:0000274	ZFA:0000274	rostral octaval nucleus	ZFIN_anatomy	10
+ZFA:0000281	ZFA:0000281	hair cell posterior macula	ZFIN_anatomy	10
+ZFA:0000294	ZFA:0000294	torus lateralis	ZFIN_anatomy	10
+ZFA:0000300	ZFA:0000300	ventral hypohyal bone	ZFIN_anatomy	10
+ZFA:0000312	ZFA:0000312	mesencephalic nucleus of trigeminal nerve	ZFIN_anatomy	10
+ZFA:0000314	ZFA:0000314	anterior semicircular canal	ZFIN_anatomy	10
+ZFA:0000315	ZFA:0000315	asteriscus	ZFIN_anatomy	10
+ZFA:0000320	ZFA:0000320	caudal commissure	ZFIN_anatomy	10
+ZFA:0000322	ZFA:0000322	caudal octaval nucleus	ZFIN_anatomy	10
+ZFA:0000324	ZFA:0000324	caudal periventricular hypothalamus	ZFIN_anatomy	10
+ZFA:0000325	ZFA:0000325	caudal thalamic nucleus	ZFIN_anatomy	10
+ZFA:0000326	ZFA:0000326	caudal vertebra	ZFIN_anatomy	10
+ZFA:0000350	ZFA:0000350	epipleural	ZFIN_anatomy	10
+ZFA:0000353	ZFA:0000353	fasciculus retroflexus	ZFIN_anatomy	10
+ZFA:0000359	ZFA:0000359	habenular commissure	ZFIN_anatomy	10
+ZFA:0000364	ZFA:0000364	hypural	ZFIN_anatomy	10
+ZFA:0000391	ZFA:0000391	medial zone of dorsal telencephalon	ZFIN_anatomy	10
+ZFA:0000395	ZFA:0000395	muscle pioneer somite 2	ZFIN_anatomy	10
+ZFA:0000397	ZFA:0000397	nucleus subglomerulosis	ZFIN_anatomy	10
+ZFA:0000404	ZFA:0000404	paracommissural nucleus	ZFIN_anatomy	10
+ZFA:0000406	ZFA:0000406	parvocellular superficial pretectal nucleus	ZFIN_anatomy	10
+ZFA:0000408	ZFA:0000408	periventricular nucleus of caudal tuberculum	ZFIN_anatomy	10
+ZFA:0000426	ZFA:0000426	rostral parvocellular preoptic nucleus	ZFIN_anatomy	10
+ZFA:0000427	ZFA:0000427	rostral thalamic nucleus	ZFIN_anatomy	10
+ZFA:0000438	ZFA:0000438	parhypural	ZFIN_anatomy	10
+ZFA:0000441	ZFA:0000441	suprachiasmatic nucleus	ZFIN_anatomy	10
+ZFA:0000454	ZFA:0000454	ventral accessory optic nucleus	ZFIN_anatomy	10
+ZFA:0000475	ZFA:0000475	paraventricular organ	ZFIN_anatomy	10
+ZFA:0000480	ZFA:0000480	caudal octavolateralis nucleus	ZFIN_anatomy	10
+ZFA:0000482	ZFA:0000482	caudal tuberal nucleus	ZFIN_anatomy	10
+ZFA:0000485	ZFA:0000485	central nucleus inferior lobe	ZFIN_anatomy	10
+ZFA:0000487	ZFA:0000487	central zone of dorsal telencephalon	ZFIN_anatomy	10
+ZFA:0000490	ZFA:0000490	commissura cerebelli	ZFIN_anatomy	10
+ZFA:0000491	ZFA:0000491	commissure of the caudal tuberculum	ZFIN_anatomy	10
+ZFA:0000502	ZFA:0000502	dorsal motor nucleus trigeminal nerve	ZFIN_anatomy	10
+ZFA:0000506	ZFA:0000506	dorsal zone of dorsal telencephalon	ZFIN_anatomy	10
+ZFA:0000507	ZFA:0000507	epineural	ZFIN_anatomy	10
+ZFA:0000520	ZFA:0000520	horizontal commissure	ZFIN_anatomy	10
+ZFA:0000530	ZFA:0000530	lapillus	ZFIN_anatomy	10
+ZFA:0000536	ZFA:0000536	lateral zone of dorsal telencephalon	ZFIN_anatomy	10
+ZFA:0000540	ZFA:0000540	magnocellular octaval nucleus	ZFIN_anatomy	10
+ZFA:0000556	ZFA:0000556	optic chiasm	ZFIN_anatomy	10
+ZFA:0000581	ZFA:0000581	rostral tuberal nucleus	ZFIN_anatomy	10
+ZFA:0000601	ZFA:0000601	pretectal periventricular nucleus	ZFIN_anatomy	10
+ZFA:0000629	ZFA:0000629	caudal motor nucleus	ZFIN_anatomy	10
+ZFA:0000630	ZFA:0000630	caudal parvocellular preoptic nucleus	ZFIN_anatomy	10
+ZFA:0000631	ZFA:0000631	caudal pretectal nucleus	ZFIN_anatomy	10
+ZFA:0000635	ZFA:0000635	central pretectal nucleus	ZFIN_anatomy	10
+ZFA:0000645	ZFA:0000645	descending octaval nucleus	ZFIN_anatomy	10
+ZFA:0000646	ZFA:0000646	anal fin distal radial	ZFIN_anatomy	10
+ZFA:0000647	ZFA:0000647	dorsal caudal thalamic nucleus	ZFIN_anatomy	10
+ZFA:0000654	ZFA:0000654	rostral motor nucleus	ZFIN_anatomy	10
+ZFA:0000676	ZFA:0000676	sagitta	ZFIN_anatomy	10
+ZFA:0000678	ZFA:0000678	hair cell anterior macula	ZFIN_anatomy	10
+ZFA:0000683	ZFA:0000683	subcommissural organ	ZFIN_anatomy	10
+ZFA:0000690	ZFA:0000690	supraoptic commissure	ZFIN_anatomy	10
+ZFA:0000693	ZFA:0000693	tangential nucleus	ZFIN_anatomy	10
+ZFA:0000703	ZFA:0000703	ventral motor nucleus trigeminal nerve	ZFIN_anatomy	10
+ZFA:0000708	ZFA:0000708	ventrolateral optic tract	ZFIN_anatomy	10
+ZFA:0000714	ZFA:0000714	accessory pretectal nucleus	ZFIN_anatomy	10
+ZFA:0000790	ZFA:0000790	muscle pioneer somite 10	ZFIN_anatomy	10
+ZFA:0000791	ZFA:0000791	muscle pioneer somite 13	ZFIN_anatomy	10
+ZFA:0000792	ZFA:0000792	muscle pioneer somite 16	ZFIN_anatomy	10
+ZFA:0000793	ZFA:0000793	muscle pioneer somite 19	ZFIN_anatomy	10
+ZFA:0000794	ZFA:0000794	muscle pioneer somite 22	ZFIN_anatomy	10
+ZFA:0000796	ZFA:0000796	muscle pioneer somite 25	ZFIN_anatomy	10
+ZFA:0000797	ZFA:0000797	muscle pioneer somite 28	ZFIN_anatomy	10
+ZFA:0000798	ZFA:0000798	muscle pioneer somite 30	ZFIN_anatomy	10
+ZFA:0000799	ZFA:0000799	muscle pioneer somite 6	ZFIN_anatomy	10
+ZFA:0000800	ZFA:0000800	muscle pioneer somite 9	ZFIN_anatomy	10
+ZFA:0000915	ZFA:0000915	muscle pioneer somite 11	ZFIN_anatomy	10
+ZFA:0000916	ZFA:0000916	muscle pioneer somite 14	ZFIN_anatomy	10
+ZFA:0000917	ZFA:0000917	muscle pioneer somite 17	ZFIN_anatomy	10
+ZFA:0000918	ZFA:0000918	muscle pioneer somite 20	ZFIN_anatomy	10
+ZFA:0000919	ZFA:0000919	muscle pioneer somite 23	ZFIN_anatomy	10
+ZFA:0000920	ZFA:0000920	muscle pioneer somite 26	ZFIN_anatomy	10
+ZFA:0000921	ZFA:0000921	muscle pioneer somite 29	ZFIN_anatomy	10
+ZFA:0000922	ZFA:0000922	muscle pioneer somite 4	ZFIN_anatomy	10
+ZFA:0000923	ZFA:0000923	muscle pioneer somite 7	ZFIN_anatomy	10
+ZFA:0000936	ZFA:0000936	dorsal fin distal radial	ZFIN_anatomy	10
+ZFA:0000941	ZFA:0000941	nucleus of the medial longitudinal fasciculus synencephalon	ZFIN_anatomy	10
+ZFA:0000947	ZFA:0000947	dorsal fin proximal radial	ZFIN_anatomy	10
+ZFA:0000997	ZFA:0000997	medial funicular nucleus trigeminal nucleus	ZFIN_anatomy	10
+ZFA:0001003	ZFA:0001003	muscle pioneer somite 12	ZFIN_anatomy	10
+ZFA:0001004	ZFA:0001004	muscle pioneer somite 15	ZFIN_anatomy	10
+ZFA:0001005	ZFA:0001005	muscle pioneer somite 18	ZFIN_anatomy	10
+ZFA:0001006	ZFA:0001006	muscle pioneer somite 21	ZFIN_anatomy	10
+ZFA:0001007	ZFA:0001007	muscle pioneer somite 24	ZFIN_anatomy	10
+ZFA:0001008	ZFA:0001008	muscle pioneer somite 27	ZFIN_anatomy	10
+ZFA:0001009	ZFA:0001009	muscle pioneer somite 3	ZFIN_anatomy	10
+ZFA:0001010	ZFA:0001010	muscle pioneer somite 5	ZFIN_anatomy	10
+ZFA:0001011	ZFA:0001011	muscle pioneer somite 8	ZFIN_anatomy	10
+ZFA:0001028	ZFA:0001028	hypurapophysis	ZFIN_anatomy	10
+ZFA:0001108	ZFA:0001108	anterior commissure	ZFIN_anatomy	10
+ZFA:0001223	ZFA:0001223	basibranchial 1	ZFIN_anatomy	10
+ZFA:0001224	ZFA:0001224	basibranchial 2	ZFIN_anatomy	10
+ZFA:0001225	ZFA:0001225	basibranchial 3	ZFIN_anatomy	10
+ZFA:0001226	ZFA:0001226	basibranchial 4	ZFIN_anatomy	10
+ZFA:0001263	ZFA:0001263	ovarian follicle stage I	ZFIN_anatomy	10
+ZFA:0001264	ZFA:0001264	ovarian follicle stage IV	ZFIN_anatomy	10
+ZFA:0001265	ZFA:0001265	ovarian follicle stage II	ZFIN_anatomy	10
+ZFA:0001266	ZFA:0001266	ovarian follicle stage III	ZFIN_anatomy	10
+ZFA:0001279	ZFA:0001279	branchiostegal ray 1	ZFIN_anatomy	10
+ZFA:0001280	ZFA:0001280	branchiostegal ray 3	ZFIN_anatomy	10
+ZFA:0001281	ZFA:0001281	branchiostegal ray 2	ZFIN_anatomy	10
+ZFA:0001302	ZFA:0001302	vagal ganglion 1	ZFIN_anatomy	10
+ZFA:0001303	ZFA:0001303	vagal ganglion 2	ZFIN_anatomy	10
+ZFA:0001304	ZFA:0001304	vagal ganglion 3	ZFIN_anatomy	10
+ZFA:0001305	ZFA:0001305	vagal ganglion 4	ZFIN_anatomy	10
+ZFA:0001312	ZFA:0001312	dorsal anterior lateral line ganglion	ZFIN_anatomy	10
+ZFA:0001313	ZFA:0001313	ventral anterior lateral line ganglion	ZFIN_anatomy	10
+ZFA:0001322	ZFA:0001322	dorsoventral diencephalic tract	ZFIN_anatomy	10
+ZFA:0001339	ZFA:0001339	nucleus of the tract of the anterior commissure	ZFIN_anatomy	10
+ZFA:0001340	ZFA:0001340	nucleus of the tract of the postoptic commissure	ZFIN_anatomy	10
+ZFA:0001397	ZFA:0001397	post-Weberian supraneural	ZFIN_anatomy	10
+ZFA:0001432	ZFA:0001432	anterior sclerotic bone	ZFIN_anatomy	10
+ZFA:0001433	ZFA:0001433	posterior sclerotic bone	ZFIN_anatomy	10
+ZFA:0001455	ZFA:0001455	scapulocoracoid	ZFIN_anatomy	10
+ZFA:0001456	ZFA:0001456	pectoral fin endoskeletal disc	ZFIN_anatomy	10
+ZFA:0001537	ZFA:0001537	mesocoracoid cartilage	ZFIN_anatomy	10
+ZFA:0001538	ZFA:0001538	pelvic radial cartilage	ZFIN_anatomy	10
+ZFA:0001539	ZFA:0001539	basipterygium cartilage	ZFIN_anatomy	10
+ZFA:0001571	ZFA:0001571	postovulatory follicle	ZFIN_anatomy	10
+ZFA:0001584	ZFA:0001584	caudal fin procurrent ray	ZFIN_anatomy	10
+ZFA:0001585	ZFA:0001585	caudal fin principal ray	ZFIN_anatomy	10
+ZFA:0001641	ZFA:0001641	rudimentary neural arch	ZFIN_anatomy	10
+ZFA:0001646	ZFA:0001646	anal fin radial	ZFIN_anatomy	10
+ZFA:0001647	ZFA:0001647	dorsal fin radial	ZFIN_anatomy	10
+ZFA:0001662	ZFA:0001662	preglomerular nucleus	ZFIN_anatomy	10
+ZFA:0001666	ZFA:0001666	periventricular nucleus of ventral telencephalon	ZFIN_anatomy	10
+ZFA:0001667	ZFA:0001667	peripheral nucleus of ventral telencephalon	ZFIN_anatomy	10
+ZFA:0001669	ZFA:0001669	intermediate nucleus	ZFIN_anatomy	10
+ZFA:0001680	ZFA:0001680	parvocellular preoptic nucleus	ZFIN_anatomy	10
+ZFA:0001698	ZFA:0001698	rostral octaval nerve motor nucleus	ZFIN_anatomy	10
+ZFA:0001699	ZFA:0001699	caudal octaval nerve motor nucleus	ZFIN_anatomy	10
+ZFA:0005175	ZFA:0005175	CoPA	ZFIN_anatomy	10
+ZFA:0005176	ZFA:0005176	CoSA	ZFIN_anatomy	10
+ZFA:0005177	ZFA:0005177	VeLD	ZFIN_anatomy	10
+ZFA:0005178	ZFA:0005178	DoLA	ZFIN_anatomy	10
+ZFA:0005179	ZFA:0005179	MiP motor neuron	ZFIN_anatomy	10
+ZFA:0005180	ZFA:0005180	RoP motor neuron	ZFIN_anatomy	10
+ZFA:0005181	ZFA:0005181	VaP motor neuron	ZFIN_anatomy	10
+ZFA:0005182	ZFA:0005182	t-interneuron	ZFIN_anatomy	10
+ZFA:0005183	ZFA:0005183	MiD2i	ZFIN_anatomy	10
+ZFA:0005184	ZFA:0005184	MiD2cl	ZFIN_anatomy	10
+ZFA:0005185	ZFA:0005185	MiD2cm	ZFIN_anatomy	10
+ZFA:0005187	ZFA:0005187	MiM1	ZFIN_anatomy	10
+ZFA:0005188	ZFA:0005188	MiR1	ZFIN_anatomy	10
+ZFA:0005189	ZFA:0005189	MiR2	ZFIN_anatomy	10
+ZFA:0005190	ZFA:0005190	MiV1	ZFIN_anatomy	10
+ZFA:0005191	ZFA:0005191	MiV2	ZFIN_anatomy	10
+ZFA:0005192	ZFA:0005192	RoI2C	ZFIN_anatomy	10
+ZFA:0005193	ZFA:0005193	RoI2R	ZFIN_anatomy	10
+ZFA:0005194	ZFA:0005194	RoL1	ZFIN_anatomy	10
+ZFA:0005195	ZFA:0005195	MiD3cl	ZFIN_anatomy	10
+ZFA:0005196	ZFA:0005196	MiD3cm	ZFIN_anatomy	10
+ZFA:0005197	ZFA:0005197	MiD3i	ZFIN_anatomy	10
+ZFA:0005198	ZFA:0005198	RoL2	ZFIN_anatomy	10
+ZFA:0005199	ZFA:0005199	RoL2r	ZFIN_anatomy	10
+ZFA:0005200	ZFA:0005200	RoL2c	ZFIN_anatomy	10
+ZFA:0005201	ZFA:0005201	RoL3	ZFIN_anatomy	10
+ZFA:0005202	ZFA:0005202	RoM1c	ZFIN_anatomy	10
+ZFA:0005203	ZFA:0005203	RoM1r	ZFIN_anatomy	10
+ZFA:0005204	ZFA:0005204	RoV3	ZFIN_anatomy	10
+ZFA:0005205	ZFA:0005205	RoM2l	ZFIN_anatomy	10
+ZFA:0005206	ZFA:0005206	RoM2m	ZFIN_anatomy	10
+ZFA:0005207	ZFA:0005207	RoM3l	ZFIN_anatomy	10
+ZFA:0005208	ZFA:0005208	RoM3m	ZFIN_anatomy	10
+ZFA:0005217	ZFA:0005217	CaV	ZFIN_anatomy	10
+ZFA:0005218	ZFA:0005218	CaD	ZFIN_anatomy	10
+ZFA:0005231	ZFA:0005231	bifurcate interneuron	ZFIN_anatomy	10
+ZFA:0005232	ZFA:0005232	MCoD	ZFIN_anatomy	10
+ZFA:0005233	ZFA:0005233	CiD	ZFIN_anatomy	10
+ZFA:0005234	ZFA:0005234	CoLA	ZFIN_anatomy	10
+ZFA:0005235	ZFA:0005235	UCoD	ZFIN_anatomy	10
+ZFA:0005240	ZFA:0005240	Kolmer-Agduhr neuron	ZFIN_anatomy	10
+ZFA:0005247	ZFA:0005247	CiA	ZFIN_anatomy	10
+ZFA:0005339	ZFA:0005339	nucleus of the lateral recess	ZFIN_anatomy	10
+ZFA:0005340	ZFA:0005340	nucleus of the posterior recess	ZFIN_anatomy	10
+ZFA:0005355	ZFA:0005355	dorsal fin lepidotrichium 1	ZFIN_anatomy	10
+ZFA:0005356	ZFA:0005356	dorsal fin lepidotrichium 2	ZFIN_anatomy	10
+ZFA:0005357	ZFA:0005357	dorsal fin lepidotrichium 3	ZFIN_anatomy	10
+ZFA:0005358	ZFA:0005358	dorsal fin lepidotrichium 4	ZFIN_anatomy	10
+ZFA:0005359	ZFA:0005359	dorsal fin lepidotrichium 5	ZFIN_anatomy	10
+ZFA:0005360	ZFA:0005360	dorsal fin lepidotrichium 6	ZFIN_anatomy	10
+ZFA:0005361	ZFA:0005361	dorsal fin lepidotrichium 7	ZFIN_anatomy	10
+ZFA:0005364	ZFA:0005364	dorsal fin pterygiophore 1	ZFIN_anatomy	10
+ZFA:0005365	ZFA:0005365	dorsal fin pterygiophore 2	ZFIN_anatomy	10
+ZFA:0005366	ZFA:0005366	dorsal fin pterygiophore 3	ZFIN_anatomy	10
+ZFA:0005367	ZFA:0005367	dorsal fin pterygiophore 4	ZFIN_anatomy	10
+ZFA:0005368	ZFA:0005368	dorsal fin pterygiophore 5	ZFIN_anatomy	10
+ZFA:0005369	ZFA:0005369	dorsal fin pterygiophore 6	ZFIN_anatomy	10
+ZFA:0005370	ZFA:0005370	dorsal fin pterygiophore 7	ZFIN_anatomy	10
+ZFA:0005371	ZFA:0005371	dorsal fin pterygiophore 8	ZFIN_anatomy	10
+ZFA:0005399	ZFA:0005399	anal fin lepidotrichium 1	ZFIN_anatomy	10
+ZFA:0005400	ZFA:0005400	anal fin lepidotrichium 2	ZFIN_anatomy	10
+ZFA:0005401	ZFA:0005401	anal fin lepidotrichium 3	ZFIN_anatomy	10
+ZFA:0005402	ZFA:0005402	anal fin lepidotrichium 4	ZFIN_anatomy	10
+ZFA:0005403	ZFA:0005403	anal fin lepidotrichium 5	ZFIN_anatomy	10
+ZFA:0005404	ZFA:0005404	anal fin lepidotrichium 6	ZFIN_anatomy	10
+ZFA:0005405	ZFA:0005405	anal fin lepidotrichium 7	ZFIN_anatomy	10
+ZFA:0005439	ZFA:0005439	pectoral fin motor nerve 1	ZFIN_anatomy	10
+ZFA:0005440	ZFA:0005440	pectoral fin motor nerve 2	ZFIN_anatomy	10
+ZFA:0005441	ZFA:0005441	pectoral fin motor nerve 3	ZFIN_anatomy	10
+ZFA:0005450	ZFA:0005450	pectoral fin motor nerve 4	ZFIN_anatomy	10
+ZFA:0005533	ZFA:0005533	branched caudal fin ray	ZFIN_anatomy	10
+ZFA:0005534	ZFA:0005534	branched dorsal fin ray	ZFIN_anatomy	10
+ZFA:0005535	ZFA:0005535	branched anal fin ray	ZFIN_anatomy	10
+ZFA:0005547	ZFA:0005547	pectoral fin lepidotrichium 1	ZFIN_anatomy	10
+ZFA:0005548	ZFA:0005548	pectoral fin lepidotrichium 2	ZFIN_anatomy	10
+ZFA:0005549	ZFA:0005549	pectoral fin lepidotrichium 3	ZFIN_anatomy	10
+ZFA:0005550	ZFA:0005550	pectoral fin lepidotrichium 6	ZFIN_anatomy	10
+ZFA:0005551	ZFA:0005551	pectoral fin lepidotrichium 7	ZFIN_anatomy	10
+ZFA:0005552	ZFA:0005552	pectoral fin lepidotrichium 5	ZFIN_anatomy	10
+ZFA:0005553	ZFA:0005553	pectoral fin lepidotrichium 4	ZFIN_anatomy	10
+ZFA:0005554	ZFA:0005554	pelvic fin lepidotrichium 1	ZFIN_anatomy	10
+ZFA:0005555	ZFA:0005555	pelvic fin lepidotrichium 2	ZFIN_anatomy	10
+ZFA:0005556	ZFA:0005556	pelvic fin lepidotrichium 4	ZFIN_anatomy	10
+ZFA:0005557	ZFA:0005557	pelvic fin lepidotrichium 3	ZFIN_anatomy	10
+ZFA:0005565	ZFA:0005565	tether cell	ZFIN_anatomy	10
+ZFA:0005576	ZFA:0005576	ventral thalamus nucleus	ZFIN_anatomy	10
+ZFA:0005588	ZFA:0005588	comma-shaped body	ZFIN_anatomy	10
+ZFA:0005589	ZFA:0005589	s-shaped body	ZFIN_anatomy	10
+ZFA:0005590	ZFA:0005590	capillary loop nephron	ZFIN_anatomy	10
+ZFA:0009220	ZFA:0009220	photopic photoreceptor cell	ZFIN_anatomy	10
+ZFA:0009243	ZFA:0009243	CaP motoneuron	ZFIN_anatomy	10
+ZFA:0009254	ZFA:0009254	band form neutrophil	ZFIN_anatomy	10
+ZFA:0009266	ZFA:0009266	neutrophilic myelocyte	ZFIN_anatomy	10
+ZFA:0009268	ZFA:0009268	neutrophilic metamyelocyte	ZFIN_anatomy	10
+ZFA:0009333	ZFA:0009333	memory B cell	ZFIN_anatomy	10
+ZFA:0009334	ZFA:0009334	naive B cell	ZFIN_anatomy	10
+ZFA:0009343	ZFA:0009343	immature B cell	ZFIN_anatomy	10
+ZFA:0009358	ZFA:0009358	ciliated olfactory receptor neuron	ZFIN_anatomy	10
+ZFA:0009359	ZFA:0009359	microvillous olfactory receptor neuron	ZFIN_anatomy	10
+ZFA:0009360	ZFA:0009360	crypt olfactory receptor neuron	ZFIN_anatomy	10
+ZFA:0000176	ZFA:0000176	lateral nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000185	ZFA:0000185	commissura rostral, pars ventralis	ZFIN_anatomy	11
+ZFA:0000209	ZFA:0000209	lateral preglomerular nucleus	ZFIN_anatomy	11
+ZFA:0000276	ZFA:0000276	rostrolateral thalamic nucleus of Butler & Saidel	ZFIN_anatomy	11
+ZFA:0000299	ZFA:0000299	ventral entopeduncular nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000306	ZFA:0000306	ventrolateral thalamic nucleus	ZFIN_anatomy	11
+ZFA:0000340	ZFA:0000340	dorsal entopeduncular nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000343	ZFA:0000343	dorsal nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000370	ZFA:0000370	intermediate thalamic nucleus	ZFIN_anatomy	11
+ZFA:0000390	ZFA:0000390	medial preglomerular nucleus	ZFIN_anatomy	11
+ZFA:0000456	ZFA:0000456	ventral nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000459	ZFA:0000459	ventromedial thalamic nucleus	ZFIN_anatomy	11
+ZFA:0000481	ZFA:0000481	caudal preglomerular nucleus	ZFIN_anatomy	11
+ZFA:0000580	ZFA:0000580	rostral preglomerular nucleus	ZFIN_anatomy	11
+ZFA:0000638	ZFA:0000638	commissura rostral, pars dorsalis	ZFIN_anatomy	11
+ZFA:0000689	ZFA:0000689	supracommissural nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0000819	ZFA:0000819	postcommissural nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0001163	ZFA:0001163	supraneural 7	ZFIN_anatomy	11
+ZFA:0001164	ZFA:0001164	supraneural 6	ZFIN_anatomy	11
+ZFA:0001165	ZFA:0001165	supraneural 5	ZFIN_anatomy	11
+ZFA:0001166	ZFA:0001166	supraneural 9	ZFIN_anatomy	11
+ZFA:0001193	ZFA:0001193	supraneural 8	ZFIN_anatomy	11
+ZFA:0001394	ZFA:0001394	neural arch 3	ZFIN_anatomy	11
+ZFA:0001395	ZFA:0001395	neural arch 4	ZFIN_anatomy	11
+ZFA:0001415	ZFA:0001415	pelvic radial 2	ZFIN_anatomy	11
+ZFA:0001416	ZFA:0001416	pelvic radial 3	ZFIN_anatomy	11
+ZFA:0001417	ZFA:0001417	pelvic radial 1	ZFIN_anatomy	11
+ZFA:0001540	ZFA:0001540	pelvic radial 3 cartilage	ZFIN_anatomy	11
+ZFA:0001541	ZFA:0001541	pelvic radial 2 cartilage	ZFIN_anatomy	11
+ZFA:0001542	ZFA:0001542	pelvic radial 1 cartilage	ZFIN_anatomy	11
+ZFA:0001560	ZFA:0001560	hypural 1	ZFIN_anatomy	11
+ZFA:0001561	ZFA:0001561	hypural 2	ZFIN_anatomy	11
+ZFA:0001562	ZFA:0001562	hypural 3	ZFIN_anatomy	11
+ZFA:0001563	ZFA:0001563	hypural 4	ZFIN_anatomy	11
+ZFA:0001564	ZFA:0001564	hypural 5	ZFIN_anatomy	11
+ZFA:0001565	ZFA:0001565	oocyte stage II	ZFIN_anatomy	11
+ZFA:0001566	ZFA:0001566	oocyte stage III	ZFIN_anatomy	11
+ZFA:0001567	ZFA:0001567	oocyte stage I	ZFIN_anatomy	11
+ZFA:0001568	ZFA:0001568	oocyte stage IV	ZFIN_anatomy	11
+ZFA:0001569	ZFA:0001569	oocyte stage V	ZFIN_anatomy	11
+ZFA:0001582	ZFA:0001582	non-Weberian precaudal vertebra	ZFIN_anatomy	11
+ZFA:0001587	ZFA:0001587	pectoral fin proximal radial	ZFIN_anatomy	11
+ZFA:0001588	ZFA:0001588	pectoral fin distal radial	ZFIN_anatomy	11
+ZFA:0001668	ZFA:0001668	central nucleus of ventral telencephalon	ZFIN_anatomy	11
+ZFA:0001695	ZFA:0001695	dorsolateral motor nucleus of vagal nerve	ZFIN_anatomy	11
+ZFA:0001696	ZFA:0001696	medial motor nucleus of vagal nerve	ZFIN_anatomy	11
+ZFA:0005186	ZFA:0005186	CoB	ZFIN_anatomy	11
+ZFA:0005230	ZFA:0005230	CoBL	ZFIN_anatomy	11
+ZFA:0005262	ZFA:0005262	caudal fin dorsal procurrent ray	ZFIN_anatomy	11
+ZFA:0005263	ZFA:0005263	caudal fin ventral procurrent ray	ZFIN_anatomy	11
+ZFA:0005362	ZFA:0005362	dorsal fin proximal radial 1	ZFIN_anatomy	11
+ZFA:0005363	ZFA:0005363	dorsal fin proximal radial 2	ZFIN_anatomy	11
+ZFA:0005372	ZFA:0005372	dorsal fin distal radial 1	ZFIN_anatomy	11
+ZFA:0005373	ZFA:0005373	dorsal fin distal radial 2	ZFIN_anatomy	11
+ZFA:0005374	ZFA:0005374	dorsal fin distal radial 3	ZFIN_anatomy	11
+ZFA:0005375	ZFA:0005375	dorsal fin distal radial 4	ZFIN_anatomy	11
+ZFA:0005376	ZFA:0005376	dorsal fin distal radial 5	ZFIN_anatomy	11
+ZFA:0005377	ZFA:0005377	dorsal fin distal radial 6	ZFIN_anatomy	11
+ZFA:0005378	ZFA:0005378	dorsal fin distal radial 7	ZFIN_anatomy	11
+ZFA:0005379	ZFA:0005379	dorsal fin distal radial 8	ZFIN_anatomy	11
+ZFA:0005380	ZFA:0005380	dorsal fin proximal radial 3	ZFIN_anatomy	11
+ZFA:0005381	ZFA:0005381	dorsal fin proximal radial 4	ZFIN_anatomy	11
+ZFA:0005382	ZFA:0005382	dorsal fin proximal radial 5	ZFIN_anatomy	11
+ZFA:0005383	ZFA:0005383	dorsal fin proximal radial 6	ZFIN_anatomy	11
+ZFA:0005384	ZFA:0005384	dorsal fin proximal radial 7	ZFIN_anatomy	11
+ZFA:0005385	ZFA:0005385	dorsal fin proximal radial 8	ZFIN_anatomy	11
+ZFA:0005512	ZFA:0005512	caudal fin principal ray 1	ZFIN_anatomy	11
+ZFA:0005513	ZFA:0005513	caudal fin principal ray 3	ZFIN_anatomy	11
+ZFA:0005514	ZFA:0005514	caudal fin principal ray 2	ZFIN_anatomy	11
+ZFA:0005515	ZFA:0005515	caudal fin principal ray 4	ZFIN_anatomy	11
+ZFA:0005516	ZFA:0005516	caudal fin principal ray 5	ZFIN_anatomy	11
+ZFA:0005517	ZFA:0005517	caudal fin principal ray 6	ZFIN_anatomy	11
+ZFA:0005518	ZFA:0005518	caudal fin principal ray 7	ZFIN_anatomy	11
+ZFA:0005519	ZFA:0005519	caudal fin principal ray 8	ZFIN_anatomy	11
+ZFA:0005520	ZFA:0005520	caudal fin principal ray 9	ZFIN_anatomy	11
+ZFA:0005521	ZFA:0005521	caudal fin principal ray 10	ZFIN_anatomy	11
+ZFA:0005522	ZFA:0005522	caudal fin principal ray 11	ZFIN_anatomy	11
+ZFA:0005523	ZFA:0005523	caudal fin principal ray 12	ZFIN_anatomy	11
+ZFA:0005524	ZFA:0005524	caudal fin principal ray 14	ZFIN_anatomy	11
+ZFA:0005525	ZFA:0005525	caudal fin principal ray 15	ZFIN_anatomy	11
+ZFA:0005526	ZFA:0005526	caudal fin principal ray 16	ZFIN_anatomy	11
+ZFA:0005527	ZFA:0005527	caudal fin principal ray 17	ZFIN_anatomy	11
+ZFA:0005528	ZFA:0005528	caudal fin principal ray 18	ZFIN_anatomy	11
+ZFA:0005529	ZFA:0005529	caudal fin principal ray 19	ZFIN_anatomy	11
+ZFA:0005595	ZFA:0005595	caudal fin principal ray 13	ZFIN_anatomy	11
+ZFA:0005602	ZFA:0005602	supraneural 10	ZFIN_anatomy	11
+ZFA:0007054	ZFA:0007054	pillar of the anterior semicircular canal	ZFIN_anatomy	11
+ZFA:0007055	ZFA:0007055	pillar of the lateral semicircular canal	ZFIN_anatomy	11
+ZFA:0007056	ZFA:0007056	pillar of the posterior semicircular canal	ZFIN_anatomy	11
+ZFA:0009222	ZFA:0009222	blue sensitive photoreceptor cell	ZFIN_anatomy	11
+ZFA:0009223	ZFA:0009223	green sensitive photoreceptor cell	ZFIN_anatomy	11
+ZFA:0009224	ZFA:0009224	red sensitive photoreceptor cell	ZFIN_anatomy	11
+ZFA:0009339	ZFA:0009339	gamma-delta intraepithelial T cell	ZFIN_anatomy	11
+ZFA:0000557	ZFA:0000557	preural 1 vertebra	ZFIN_anatomy	12
+ZFA:0000586	ZFA:0000586	preural 2 vertebra	ZFIN_anatomy	12
+ZFA:0001167	ZFA:0001167	vertebra 1	ZFIN_anatomy	12
+ZFA:0001168	ZFA:0001168	vertebra 2	ZFIN_anatomy	12
+ZFA:0001169	ZFA:0001169	vertebra 3	ZFIN_anatomy	12
+ZFA:0001170	ZFA:0001170	vertebra 4	ZFIN_anatomy	12
+ZFA:0001589	ZFA:0001589	propterygium	ZFIN_anatomy	12
+ZFA:0001600	ZFA:0001600	neural spine 4	ZFIN_anatomy	12
+ZFA:0005347	ZFA:0005347	vertebra 5	ZFIN_anatomy	12
+ZFA:0005348	ZFA:0005348	vertebra 6	ZFIN_anatomy	12
+ZFA:0005349	ZFA:0005349	vertebra 7	ZFIN_anatomy	12
+ZFA:0005350	ZFA:0005350	vertebra 8	ZFIN_anatomy	12
+ZFA:0005351	ZFA:0005351	vertebra 9	ZFIN_anatomy	12
+ZFA:0005352	ZFA:0005352	vertebra 12	ZFIN_anatomy	12
+ZFA:0005353	ZFA:0005353	vertebra 10	ZFIN_anatomy	12
+ZFA:0005354	ZFA:0005354	vertebra 11	ZFIN_anatomy	12
+ZFA:0001392	ZFA:0001392	parapophysis 1	ZFIN_anatomy	13
+ZFA:0001393	ZFA:0001393	parapophysis 2	ZFIN_anatomy	13
+ZFA:0005538	ZFA:0005538	rib of vertebra 1	ZFIN_anatomy	13
+ZFA:0005539	ZFA:0005539	rib of vertebra 2	ZFIN_anatomy	13
+ZFA:0005540	ZFA:0005540	rib of vertebra 3	ZFIN_anatomy	13
+ZFA:0005541	ZFA:0005541	rib of vertebra 4	ZFIN_anatomy	13
+ZFA:0005542	ZFA:0005542	rib of vertebra 5	ZFIN_anatomy	13
+ZFA:0005543	ZFA:0005543	rib of vertebra 6	ZFIN_anatomy	13
+ZFA:0009262	ZFA:0009262	retinal cone cell	ZFIN_anatomy	13
+ZFA:0009275	ZFA:0009275	retinal rod cell	ZFIN_anatomy	13
+ZFA:0009318	ZFA:0009318	retinal bipolar neuron	ZFIN_anatomy	13
+ZFA:0009319	ZFA:0009319	ON-bipolar cell	ZFIN_anatomy	14
+ZFA:0009320	ZFA:0009320	OFF-bipolar cell	ZFIN_anatomy	14
+ZFA:0009321	ZFA:0009321	rod bipolar cell	ZFIN_anatomy	14
+ZFA:0009322	ZFA:0009322	cone retinal bipolar cell	ZFIN_anatomy	14

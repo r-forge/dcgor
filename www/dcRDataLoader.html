@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcRDataLoader @ dcGOR 1.0.4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to load dcGOR built-in RData</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcRDataLoader</code> is supposed to load RData that are used by package
+dcGOR.</p>
+  
+    <h3>Usage</h3>
+    <pre>dcRDataLoader(RData = c(NA, "SCOP.sf", "SCOP.fa", "Pfam", "InterPro", "Rfam", "onto.GOBP", 
+  "onto.GOMF", "onto.GOCC", "onto.DO", "onto.HPPA", "onto.HPMI", "onto.HPON", "onto.MP", 
+      "onto.EC", "onto.KW", "onto.UP", "SCOP.sf2GOBP", "SCOP.sf2GOMF", "SCOP.sf2GOCC", 
+      "SCOP.sf2DO", "SCOP.sf2HPPA", "SCOP.sf2HPMI", "SCOP.sf2HPON", "SCOP.sf2MP", "SCOP.sf2EC", 
+      "SCOP.sf2KW", "SCOP.sf2UP", "SCOP.fa2GOBP", "SCOP.fa2GOMF", "SCOP.fa2GOCC", "SCOP.fa2DO", 
+      "SCOP.fa2HPPA", "SCOP.fa2HPMI", "SCOP.fa2HPON", "SCOP.fa2MP", "SCOP.fa2EC", "SCOP.fa2KW", 
+      "SCOP.fa2UP", "Pfam2GOBP", "Pfam2GOMF", "Pfam2GOCC", "InterPro2GOBP", "InterPro2GOMF", 
+      "InterPro2GOCC", "Rfam2GOBP", "Rfam2GOMF", "Rfam2GOCC", "Ancestral_domainome", 
+      "eTOL", "Feature2GOBP.sf", "Feature2GOMF.sf", "Feature2GOCC.sf", "Feature2HPPA.sf", 
+      "Feature2GOBP.pfam", "Feature2GOMF.pfam", "Feature2GOCC.pfam", "Feature2HPPA.pfam", 
+      "Feature2GOBP.interpro", "Feature2GOMF.interpro", "Feature2GOCC.interpro", "Feature2HPPA.interpro"), 
+      domain = c(NA, "SCOP.sf", "SCOP.fa", "Pfam", "InterPro", "Rfam"), ontology = c(NA, 
+          "GOBP", "GOMF", "GOCC", "DO", "HPPA", "HPMI", "HPON", "MP", "EC", "KW", "UP"), 
+      verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>RData</dt>
+      <dd>which built-in RData to load. If NOT NA, this RData will
+be always loaded. It can be: domains/RNAs (including 'SCOP.sf',
+'SCOP.fa', 'Pfam', 'InterPro', 'Rfam'), ontologies (including
+'onto.GOBP', 'onto.GOMF', 'onto.GOCC', 'onto.DO', 'onto.HPPA',
+'onto.HPMI', 'onto.HPON', 'onto.MP', 'onto.EC', 'onto.KW', 'onto.UP'),
+annotations (including 'SCOP.sf2GOBP', 'SCOP.sf2GOMF', 'SCOP.sf2GOCC',
+'SCOP.sf2DO', 'SCOP.sf2HPPA', 'SCOP.sf2HPMI', 'SCOP.sf2HPON',
+'SCOP.sf2MP', 'SCOP.sf2EC', 'SCOP.sf2KW', 'SCOP.sf2UP', 'SCOP.fa2GOBP',
+'SCOP.fa2GOMF', 'SCOP.fa2GOCC', 'SCOP.fa2DO', 'SCOP.fa2HPPA',
+'SCOP.fa2HPMI', 'SCOP.fa2HPON', 'SCOP.fa2MP', 'SCOP.fa2EC',
+'SCOP.fa2KW', 'SCOP.fa2UP', 'Pfam2GOBP', 'Pfam2GOMF', 'Pfam2GOCC',
+'InterPro2GOBP', 'InterPro2GOMF', 'InterPro2GOCC', 'Rfam2GOBP',
+'Rfam2GOMF', 'Rfam2GOCC'), domainome in eukaryotic genomes (including
+'Ancestral_domainome', 'eTOL'), and databases used for predictiing
+ontology terms from input protein domain contents. On the meanings,
+please refer to the Documentations</dd>
+      <dt>domain</dt>
+      <dd>domain part of annotation RData to load. When RData is NA
+and this plus next are NOT NA, then this plus next one are used to
+specify which annotation RData to load. In addition to NA, it can also
+be: 'SCOP.sf', 'SCOP.fa', 'Pfam' and 'InterPro'</dd>
+      <dt>ontology</dt>
+      <dd>ontology part of annotation RData to load. This only
+works together with the previous 'domain' parameter. In addition to NA,
+it can also be: 'GOBP', 'GOMF', 'GOCC', 'DO', 'HPPA', 'HPMI', 'HPON',
+'MP', 'EC', 'KW', 'UP'</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.location</dt>
+      <dd>the characters to tell the location of built-in
+RData files. By default, it remotely locates at
+"http://supfam.org/dcGOR/data" or
+"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
+with fast internet connection, this option can be just left as default.
+But it is always advisable to download these files locally. Especially
+when the user needs to run this function many times, there is no need
+to ask the function to remotely download every time (also it will
+unnecessarily increase the runtime). For examples, these files (as a
+whole or part of them) can be first downloaded into your current
+working directory, and then set this option as:
+<code class = 'eq'>RData.location="."</code>. If RData to load is already part of package
+itself, this parameter can be ignored (since this function will try to
+load it via function <code>data</code> first)</dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>any use-specified variable that is given on the right side of the
+assigement sign '<-', which contains the loaded RData.</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>If there are no use-specified variable that is given on the right side
+of the assigement sign '<-', then no RData will be loaded onto the
+working environment.</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># Always, load from specified RData directly
+SCOP.sf <- dcRDataLoader(RData='SCOP.sf')
+</div>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>Pfam <- dcRDataLoader(RData='Pfam')
+</div>
+<strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>InterPro <- dcRDataLoader(RData='InterPro')
+</div>
+<strong class='message'>'InterPro' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>Rfam <- dcRDataLoader(RData='Rfam')
+</div>
+<strong class='message'>'Rfam' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'>onto.GOMF <- dcRDataLoader(RData='onto.GOMF')
+</div>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'># But for annotaion data, there are two ways to do so:
+# 1) in a direct way
+SCOP.sf2GOMF <- dcRDataLoader(RData='SCOP.sf2GOMF')
+</div>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<div class='input'># 2) in an indirect way: specify both domain and ontology
+SCOP.sf2GOMF <- dcRDataLoader(domain='SCOP.sf', ontology='GOMF')
+</div>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcRDataLoader</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcRDataLoader.r', 'R/dcRDataLoader.r', '1200', '1200')" title="Click to view"><B><code>dcRDataLoader.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcRDataLoader.txt', 'man/dcRDataLoader.txt', '1200', '1200')" title="Click to view"><B><code>dcRDataLoader.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcRDataLoader.pdf', 'man/dcRDataLoader.pdf', '1200', '1200')" title="Click to view"><B><code>dcRDataLoader.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcEnrichment.html'>dcEnrichment</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

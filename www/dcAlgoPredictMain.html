@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcAlgoPredictMain @ dcGOR 1.0.4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to predict ontology terms given an input file containing domain architectures (including individual domains)</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcAlgoPredictMain</code> is supposed to predict ontology terms given an
+input file containing domain architectures (including individual
+domains).</p>
+  
+    <h3>Usage</h3>
+    <pre>dcAlgoPredictMain(input.file, output.file = NULL, RData.HIS = c("Feature2GOBP.sf", 
+  "Feature2GOMF.sf", "Feature2GOCC.sf", "Feature2HPPA.sf", "Feature2GOBP.pfam", 
+      "Feature2GOMF.pfam", "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", 
+      "Feature2GOMF.interpro", "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
+      "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
+      "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
+      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>input.file</dt>
+      <dd>an input file containing domain architectures
+(including individual domains). For example, a file containing UniProt
+ID and domain architectures for human proteins can be found in
+<a href = 'http://supfam.org/dcGOR/data/Feature/hs.txt'>http://supfam.org/dcGOR/data/Feature/hs.txt</a>. As seen in this
+example, the input file must contain the header (in the first row) and
+two columns: 1st column for 'SeqID' (actually these IDs can be
+anything), 2nd column for 'Architecture' (SCOP domain architectures,
+each represented as comma-separated domains). Alternatively, the
+input.file can be a matrix or data frame, assuming that input file has
+been read</dd>
+      <dt>output.file</dt>
+      <dd>an output file containing predicted results. If not
+NULL, a tab-delimited text file will be also written out; otherwise,
+there is no output file (by default)</dd>
+      <dt>RData.HIS</dt>
+      <dd>RData to load. This RData conveys two bits of
+information: 1) feature (domain) type; 2) ontology. It stores the
+hypergeometric scores (hscore) between features (individual domains or
+consecutive domain combinations) and ontology terms. The RData name
+tells which domain type and which ontology to use. It can be: SCOP sf
+domains/combinations (including "Feature2GOBP.sf", "Feature2GOMF.sf",
+"Feature2GOCC.sf", "Feature2HPPA.sf"), Pfam domains/combinations
+(including "Feature2GOBP.pfam", "Feature2GOMF.pfam",
+"Feature2GOCC.pfam", "Feature2HPPA.pfam"), InterPro domains (including
+"Feature2GOBP.interpro", "Feature2GOMF.interpro",
+"Feature2GOCC.interpro", "Feature2HPPA.interpro")</dd>
+      <dt>weight.method</dt>
+      <dd>the method used how to weight predictions. It can
+be one of "none" (no weighting; by default), "copynum" for weighting
+copynumber of architectures, and "ic" for weighting information content
+(ic) of the term, "both" for weighting both copynumber and ic</dd>
+      <dt>merge.method</dt>
+      <dd>the method used to merge predictions for each
+component feature (individual domains and their combinations derived
+from domain architecture). It can be one of "sum" for summing up, "max"
+for the maximum, and "sequential" for the sequential merging. The
+sequential merging is done via: <code class = 'eq'>\sum_{i=1}{\frac{R_{i}}{i}}</code>,
+where <code class = 'eq'>R_{i}</code> is the <code class = 'eq'>i^{th}</code> ranked highest hscore</dd>
+      <dt>scale.method</dt>
+      <dd>the method used to scale the predictive scores. It
+can be: "none" for no scaling, "linear" for being linearily scaled into
+the range between 0 and 1, "log" for the same as "linear" but being
+first log-transformed before being scaled. The scaling between 0 and 1
+is done via: <code class = 'eq'>\frac{S - S_{min}}{S_{max} - S_{min}}</code>, where
+<code class = 'eq'>S_{min}</code> and <code class = 'eq'>S_{max}</code> are the minimum and maximum values for
+<code class = 'eq'>S</code></dd>
+      <dt>feature.mode</dt>
+      <dd>the mode of how to use the features thereof. It can
+be: "supradomains" for using all possible domain combinations (ie
+supradomains; including individual domains), "domains" for using
+individual domains only</dd>
+      <dt>slim.level</dt>
+      <dd>whether only slim terms are returned. By defaut, it
+is NULL and all predicted terms will be reported. If it is specified as
+a vector containing any values from 1 to 4, then only slim terms at
+these levels will be reported. Here is the meaning of these values: '1'
+for very general terms, '2' for general terms, '3' for specific terms,
+and '4' for very specific terms</dd>
+      <dt>parallel</dt>
+      <dd>logical to indicate whether parallel computation with
+multicores is used. By default, it sets to true, but not necessarily
+does so. Partly because parallel backends available will be
+system-specific (now only Linux or Mac OS). Also, it will depend on
+whether these two packages "foreach" and "doMC" have been installed. It
+can be installed via:
+<code>source("http://bioconductor.org/biocLite.R");
+biocLite(c("foreach","doMC"))</code>. If not yet installed, this option will
+be disabled</dd>
+      <dt>multicores</dt>
+      <dd>an integer to specify how many cores will be
+registered as the multicore parallel backend to the 'foreach' package.
+If NULL, it will use a half of cores available in a user's computer.
+This option only works when parallel computation is enabled</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.location</dt>
+      <dd>the characters to tell the location of built-in
+RData files. By default, it remotely locates at
+"http://supfam.org/dcGOR/data" or
+"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
+with fast internet connection, this option can be just left as default.
+But it is always advisable to download these files locally. Especially
+when the user needs to run this function many times, there is no need
+to ask the function to remotely download every time (also it will
+unnecessarily increase the runtime). For examples, these files (as a
+whole or part of them) can be first downloaded into your current
+working directory, and then set this option as:
+<code class = 'eq'>RData.location="."</code>. If RData to load is already part of package
+itself, this parameter can be ignored (since this function will try to
+load it via function <code>data</code> first)</dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>a term-named vector summarising the predicted scores</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>When 'output.file' is specified, a tab-delimited text file is output,
+with the column names: the first two (the same as input file), 3rd for
+'Term' (predicted ontology terms), 4th for 'Score' (along with
+predicted scores)</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'>input.file <- "http://supfam.org/dcGOR/data/Feature/hs.txt"
+output <- dcAlgoPredictMain(input.file, RData.HIS="Feature2GOMF.sf")
+</div>
+<strong class='message'>Start at 2014-10-22 19:36:51</strong>
+<strong class='message'></strong>
+<strong class='message'>Reading the input file 'http://supfam.org/dcGOR/data/Feature/hs.txt' ...</strong>
+<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:54) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-22 19:37:15)...</strong>
+<strong class='message'>
+End at 2014-10-22 19:37:19</strong>
+<strong class='message'>Runtime in total is: 28 secs
+</strong>
+<div class='input'>length(output)
+</div>
+<div class='output'>[1] 2771
+</div>
+<div class='input'>output[1:10]
+</div>
+<div class='output'>  GO:0000010   GO:0000014   GO:0000030   GO:0000031   GO:0000034   GO:0000049 
+0.0001435188 0.0006605571 0.0119529942 0.0007027570 0.0001484683 0.0079652305 
+  GO:0000062   GO:0000064   GO:0000104   GO:0000107 
+0.0027300532 0.0005894482 0.0030895207 0.0006673527 
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcAlgoPredictMain</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcAlgoPredictMain.r', 'R/dcAlgoPredictMain.r', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcAlgoPredictMain.txt', 'man/dcAlgoPredictMain.txt', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcAlgoPredictMain.pdf', 'man/dcAlgoPredictMain.pdf', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcConverter.html'>dcConverter</a></code>,
+<code><a href='dcAlgoPredict.html'>dcAlgoPredict</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

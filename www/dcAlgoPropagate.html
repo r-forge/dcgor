@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcAlgoPropagate @ dcGOR 1.0.4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to propogate ontology annotations according to an input file</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcAlgoPropagate</code> is supposed to propogate ontology annotations,
+given an input file. This input file contains original annotations
+between domains/features and ontology terms, along with the
+hypergeometric scores (hscore) in support for their annotations. The
+annotations are propogated to the ontology root (retaining the maximum
+hscore). After the propogation, the ontology terms of increasing levels
+are determined based on the concept of Information Content (IC) to
+product a slim version of ontology. It returns an object of S3 class
+"HIS" with three components: "hscore", "ic" and "slim".</p>
+  
+    <h3>Usage</h3>
+    <pre>dcAlgoPropagate(input.file, ontology = c("GOBP", "GOMF", "GOCC", "HPPA", "HPMI", 
+  "HPON"), output.file = "HIS.RData", verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>input.file</dt>
+      <dd>an input file used to build the object. This input
+file contains original annotations between domains/features and
+ontology terms, along with the hypergeometric scores (hscore) in
+support for their annotations. For example, a file containing original
+annotations between SCOP domain architectures and GO terms can be found
+in <a href = 'http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt'>http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt</a>. As
+seen in this example, the input file must contain the header (in the
+first row) and three columns: 1st column for 'Feature_id' (here SCOP
+domain architectures), 2nd column for 'Term_id' (GO terms), and 3rd
+column for 'Score' (hscore)</dd>
+      <dt>ontology</dt>
+      <dd>the ontology identity. It can be "GOBP" for Gene
+Ontology Biological Process, "GOMF" for Gene Ontology Molecular
+Function, "GOCC" for Gene Ontology Cellular Component, "DO" for Disease
+Ontology, "HPPA" for Human Phenotype Phenotypic Abnormality, "HPMI" for
+Human Phenotype Mode of Inheritance, "HPON" for Human Phenotype ONset
+and clinical course</dd>
+      <dt>output.file</dt>
+      <dd>an output file used to save the built object as an
+RData-formatted file. If NULL, this file will be saved into "HIS.RData"
+in the current working local directory</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.location</dt>
+      <dd>the characters to tell the location of built-in
+RData files. By default, it remotely locates at
+"http://supfam.org/dcGOR/data" or
+"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
+with fast internet connection, this option can be just left as default.
+But it is always advisable to download these files locally. Especially
+when the user needs to run this function many times, there is no need
+to ask the function to remotely download every time (also it will
+unnecessarily increase the runtime). For examples, these files (as a
+whole or part of them) can be first downloaded into your current
+working directory, and then set this option as:
+<code class = 'eq'>RData.location="."</code>. If RData to load is already part of package
+itself, this parameter can be ignored (since this function will try to
+load it via function <code>data</code> first)</dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>an object of S3 class <code>HIS</code>, with following components:
+<ul>
+<li><code>hscore</code>: a list of features, each with a term-named vector
+containing hscore
+</li>
+<li><code>ic</code>: a term-named vector containing information content
+(IC). Terms are ordered first by IC and then by longest-path level,
+making sure that for terms with the same IC, parental terms always come
+first
+</li>
+<li><code>slim</code>: a list of four slims, each with a term-named vector
+containing information content (IC). Slim '1' for very general terms,
+'2' for general terms, '3' for specific terms, '4' for very specific
+terms
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>None</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># build an "HIS" object for GO Molecular Function
+Feature2GOMF.sf <-
+dcAlgoPropagate(input.file="http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt",
+ontology="GOMF", output.file="Feature2GOMF.sf.RData")
+</div>
+<strong class='message'>Start at 2014-10-22 19:37:19</strong>
+<strong class='message'></strong>
+<strong class='message'>Reading the file 'http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt' ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>Do propagation ...</strong>
+<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-10-22 19:37:26).</strong>
+<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-10-22 19:37:26).</strong>
+<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-10-22 19:37:26).</strong>
+<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-10-22 19:37:27).</strong>
+<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-10-22 19:37:27).</strong>
+<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-10-22 19:37:27).</strong>
+<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-10-22 19:37:27).</strong>
+<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-10-22 19:37:27).</strong>
+<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-10-22 19:37:28).</strong>
+<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-10-22 19:37:29).</strong>
+<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-10-22 19:37:30).</strong>
+<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-10-22 19:37:31).</strong>
+<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-10-22 19:37:33).</strong>
+<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-10-22 19:37:36).</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors (2014-10-22 19:37:36).</strong>
+<strong class='message'>After propagation, there are 6018 features annotated by 2836 terms.</strong>
+<strong class='message'>Determining IC-based slim levels ...</strong>
+<strong class='message'>	1 level with 6 terms with IC falling around 0.47 (between 0.00 and 0.94).</strong>
+<strong class='message'>	2 level with 38 terms with IC falling around 1.42 (between 1.18 and 1.65).</strong>
+<strong class='message'>	3 level with 217 terms with IC falling around 2.36 (between 2.13 and 2.60).</strong>
+<strong class='message'>	4 level with 838 terms with IC falling around 3.31 (between 3.07 and 3.54).</strong>
+<strong class='message'>An object of S3 class 'HIS' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/Feature2GOMF.sf.RData'.</strong>
+<strong class='message'>
+End at 2014-10-22 19:37:54</strong>
+<strong class='message'>Runtime in total is: 35 secs
+</strong>
+<div class='input'>names(Feature2GOMF.sf)
+</div>
+<div class='output'>[1] "hscore" "ic"     "slim"  
+</div>
+<div class='input'>Feature2GOMF.sf$hscore[1]
+</div>
+<div class='output'>$`100879`
+GO:0003674 GO:0003824 GO:0016740 GO:0016772 GO:0016779 GO:0017125 GO:0034061 
+     14.83      14.83      14.83      14.83      14.83       6.85       8.34 
+GO:0003887 
+      1.84 
+
+</div>
+<div class='input'>Feature2GOMF.sf$ic[1:10]
+</div>
+<div class='output'>GO:0003674 GO:0005488 GO:0005515 GO:0003824 GO:0043167 GO:0016787 GO:0016740 
+ 0.0000000  0.2416331  0.3770188  0.3901089  0.7416274  0.7521026  0.7922330 
+GO:0097159 GO:1901363 GO:0043168 
+ 0.7980867  0.8008152  0.9179178 
+</div>
+<div class='input'>Feature2GOMF.sf$slim[1]
+</div>
+<div class='output'>$`1`
+GO:0003824 GO:0005515 GO:0043167 GO:0097159 GO:1901363 GO:0004872 
+ 0.3901089  0.3770188  0.7416274  0.7980867  0.8008152  0.9331151 
+
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcAlgoPropagate</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcAlgoPropagate.r', 'R/dcAlgoPropagate.r', '1200', '1200')" title="Click to view"><B><code>dcAlgoPropagate.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcAlgoPropagate.txt', 'man/dcAlgoPropagate.txt', '1200', '1200')" title="Click to view"><B><code>dcAlgoPropagate.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcAlgoPropagate.pdf', 'man/dcAlgoPropagate.pdf', '1200', '1200')" title="Click to view"><B><code>dcAlgoPropagate.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcConverter.html'>dcConverter</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>
