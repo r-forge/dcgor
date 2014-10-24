@@ -209,7 +209,7 @@ domains).</p>
       "Feature2GOMF.interpro", "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
-      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -217,9 +217,9 @@ domains).</p>
       <dd>an input file containing domain architectures
 (including individual domains). For example, a file containing UniProt
 ID and domain architectures for human proteins can be found in
-<a href = 'http://supfam.org/dcGOR/data/Feature/hs.txt'>http://supfam.org/dcGOR/data/Feature/hs.txt</a>. As seen in this
-example, the input file must contain the header (in the first row) and
-two columns: 1st column for 'SeqID' (actually these IDs can be
+<a href = 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt'>http://dcgor.r-forge.r-project.org/data/Feature/hs.txt</a>. As seen
+in this example, the input file must contain the header (in the first
+row) and two columns: 1st column for 'SeqID' (actually these IDs can be
 anything), 2nd column for 'Architecture' (SCOP domain architectures,
 each represented as comma-separated domains). Alternatively, the
 input.file can be a matrix or data frame, assuming that input file has
@@ -294,11 +294,11 @@ displayed in the screen. By default, it sets to TRUE for display</dd>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
 "http://supfam.org/dcGOR/data" or
-"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
-with fast internet connection, this option can be just left as default.
-But it is always advisable to download these files locally. Especially
-when the user needs to run this function many times, there is no need
-to ask the function to remotely download every time (also it will
+"http://dcgor.r-forge.r-project.org/data". For the user equipped with
+fast internet connection, this option can be just left as default. But
+it is always advisable to download these files locally. Especially when
+the user needs to run this function many times, there is no need to ask
+the function to remotely download every time (also it will
 unnecessarily increase the runtime). For examples, these files (as a
 whole or part of them) can be first downloaded into your current
 working directory, and then set this option as:
@@ -332,17 +332,17 @@ predicted scores)</p>
     -->
     
     <h3 id="examples">Examples</h3>
-    <pre class="examples"><div class='input'>input.file <- "http://supfam.org/dcGOR/data/Feature/hs.txt"
+    <pre class="examples"><div class='input'>input.file <- "http://dcgor.r-forge.r-project.org/data/Feature/hs.txt"
 output <- dcAlgoPredictMain(input.file, RData.HIS="Feature2GOMF.sf")
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:51</strong>
+<strong class='message'>Start at 2014-10-24 19:26:40</strong>
 <strong class='message'></strong>
-<strong class='message'>Reading the input file 'http://supfam.org/dcGOR/data/Feature/hs.txt' ...</strong>
-<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:54) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-22 19:37:15)...</strong>
+<strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt' ...</strong>
+<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-24 19:26:44) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-24 19:27:04)...</strong>
 <strong class='message'>
-End at 2014-10-22 19:37:19</strong>
-<strong class='message'>Runtime in total is: 28 secs
+End at 2014-10-24 19:27:09</strong>
+<strong class='message'>Runtime in total is: 29 secs
 </strong>
 <div class='input'>length(output)
 </div>

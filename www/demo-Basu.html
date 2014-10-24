@@ -205,12 +205,12 @@ Notes:
       <pre>
       <div class='input'># This is a demo for analysing promiscuous Pfam domains by Basu et al
 # 
-# This list of promiscuous Pfam domains was reported in <a href="http://www.ncbi.nlm.nih.gov/pubmed/18230802" target="18230802">http://www.ncbi.nlm.nih.gov/pubmed/18230802</a>. There are 215 domains identified as strongly promiscuous (a tendency to occur in diverse domain architectures), in which 76 were taken from Pfam domains and thus used for this demo. It can be found in the file <a href="http://supfam.org/dcGOR/data/demo/domain_promiscuity_Basu_et_al_2008.txt">domain_promiscuity_Basu_et_al_2008.txt</a>, containing two columns: 1st column for Pfam domain ID, and 2nd column for promiscuity value (the higher the more promiscuous).
+# This list of promiscuous Pfam domains was reported in <a href="http://www.ncbi.nlm.nih.gov/pubmed/18230802" target="18230802">http://www.ncbi.nlm.nih.gov/pubmed/18230802</a>. There are 215 domains identified as strongly promiscuous (a tendency to occur in diverse domain architectures), in which 76 were taken from Pfam domains and thus used for this demo. It can be found in the file <a href="http://dcgor.r-forge.r-project.org/data/demo/domain_promiscuity_Basu_et_al_2008.txt">domain_promiscuity_Basu_et_al_2008.txt</a>, containing two columns: 1st column for Pfam domain ID, and 2nd column for promiscuity value (the higher the more promiscuous).
 ###############################################################################
 library(dcGOR)
 
 # Read promiscuous Pfam domains
-domains <- read.delim("http://supfam.org/dcGOR/data/demo/domain_promiscuity_Basu_et_al_2008.txt",header=T)
+domains <- read.delim("http://dcgor.r-forge.r-project.org/data/demo/domain_promiscuity_Basu_et_al_2008.txt",header=T)
 domains[1:5,]
 </div>
 <div class='output'>     Pfam Promiscuity
@@ -245,17 +245,17 @@ Pfam <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfa
 ### By default, using all annotatable domains as the background
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2014-10-22 19:35:38</strong>
+<strong class='message'>Start at 2014-10-24 19:25:26</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'Pfam', and their associations (2014-10-22 19:35:38) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'Pfam', and their associations (2014-10-24 19:25:26) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-22 19:35:45) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:25:33) ...</strong>
 <strong class='message'>	There are 722 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-22 19:35:45) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:25:33) ...</strong>
 <strong class='message'>
-End at 2014-10-22 19:35:45</strong>
+End at 2014-10-24 19:25:33</strong>
 <strong class='message'>Runtime in total is: 7 secs
 </strong>
 <div class='input'>eoutput
@@ -321,18 +321,18 @@ PF00106 PF00106  Pfam                               short chain dehydrogenase
 ## 2) GOMF enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-10-22 19:35:48</strong>
+<strong class='message'>Start at 2014-10-24 19:25:36</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2014-10-22 19:35:48) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2014-10-24 19:25:36) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-22 19:35:51) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:25:40) ...</strong>
 <strong class='message'>	There are 334 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-22 19:35:51) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:25:40) ...</strong>
 <strong class='message'>
-End at 2014-10-22 19:35:51</strong>
-<strong class='message'>Runtime in total is: 3 secs
+End at 2014-10-24 19:25:40</strong>
+<strong class='message'>Runtime in total is: 4 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -404,18 +404,18 @@ PF00107 PF00107  Pfam                    Zinc-binding dehydrogenase
 ## 3) GOCC enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOCC")
 </div>
-<strong class='message'>Start at 2014-10-22 19:35:53</strong>
+<strong class='message'>Start at 2014-10-24 19:25:41</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOCC', the domain 'Pfam', and their associations (2014-10-22 19:35:53) ...</strong>
+<strong class='message'>First, load the ontology 'GOCC', the domain 'Pfam', and their associations (2014-10-24 19:25:41) ...</strong>
 <strong class='message'>'onto.GOCC' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOCC' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-22 19:35:54) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:25:43) ...</strong>
 <strong class='message'>	There are 149 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-22 19:35:54) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:25:43) ...</strong>
 <strong class='message'>
-End at 2014-10-22 19:35:54</strong>
-<strong class='message'>Runtime in total is: 1 secs
+End at 2014-10-24 19:25:43</strong>
+<strong class='message'>Runtime in total is: 2 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -525,25 +525,25 @@ dag
 <div class='input'>### calculate GOBP-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:01</strong>
+<strong class='message'>Start at 2014-10-24 19:25:49</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:36:01)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:25:49)...</strong>
 <strong class='message'>	there are 29 input domains amongst 3241 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 20 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:36:01)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 29 domains using BM.average method (2014-10-22 19:36:01)...</strong>
-<strong class='message'>	1 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	3 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	6 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	9 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	12 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	15 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	18 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	21 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	24 out of 29 (2014-10-22 19:36:01)</strong>
-<strong class='message'>	27 out of 29 (2014-10-22 19:36:01)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 20 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:25:49)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 29 domains using BM.average method (2014-10-24 19:25:49)...</strong>
+<strong class='message'>	1 out of 29 (2014-10-24 19:25:49)</strong>
+<strong class='message'>	3 out of 29 (2014-10-24 19:25:49)</strong>
+<strong class='message'>	6 out of 29 (2014-10-24 19:25:49)</strong>
+<strong class='message'>	9 out of 29 (2014-10-24 19:25:49)</strong>
+<strong class='message'>	12 out of 29 (2014-10-24 19:25:50)</strong>
+<strong class='message'>	15 out of 29 (2014-10-24 19:25:50)</strong>
+<strong class='message'>	18 out of 29 (2014-10-24 19:25:50)</strong>
+<strong class='message'>	21 out of 29 (2014-10-24 19:25:50)</strong>
+<strong class='message'>	24 out of 29 (2014-10-24 19:25:50)</strong>
+<strong class='message'>	27 out of 29 (2014-10-24 19:25:50)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:36:01</strong>
-<strong class='message'>Runtime in total is: 0 secs
+<strong class='message'>Finish at 2014-10-24 19:25:50</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -604,24 +604,24 @@ dag
 <div class='input'>### calculate GOMF-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:05</strong>
+<strong class='message'>Start at 2014-10-24 19:25:53</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:36:05)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:25:53)...</strong>
 <strong class='message'>	there are 36 input domains amongst 3359 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 33 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:36:05)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 36 domains using BM.average method (2014-10-22 19:36:05)...</strong>
-<strong class='message'>	1 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	4 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	8 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	12 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	16 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	20 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	24 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	28 out of 36 (2014-10-22 19:36:05)</strong>
-<strong class='message'>	32 out of 36 (2014-10-22 19:36:05)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 33 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:25:53)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 36 domains using BM.average method (2014-10-24 19:25:53)...</strong>
+<strong class='message'>	1 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	4 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	8 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	12 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	16 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	20 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	24 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	28 out of 36 (2014-10-24 19:25:53)</strong>
+<strong class='message'>	32 out of 36 (2014-10-24 19:25:53)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:36:06</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2014-10-24 19:25:53</strong>
+<strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -682,21 +682,21 @@ dag
 <div class='input'>### calculate GOCC-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:07</strong>
+<strong class='message'>Start at 2014-10-24 19:25:55</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:36:07)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:25:55)...</strong>
 <strong class='message'>	there are 8 input domains amongst 2036 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:36:07)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:36:07)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:36:07)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:36:07)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:25:55)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:25:55)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:25:55)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:25:55)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:36:07</strong>
+<strong class='message'>Finish at 2014-10-24 19:25:55</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork

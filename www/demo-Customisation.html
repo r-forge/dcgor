@@ -207,9 +207,9 @@ Notes:
 # 
 # InterPro2GO mapping is derived from manual annotations of InterPro from GO (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22301074" target="22301074">http://www.ncbi.nlm.nih.gov/pubmed/22301074</a>.
 # This demo assumes that the user has collected three bits (files) of information:
-## 1) InterPro domains (see <a href="http://supfam.org/dcGOR/data/InterPro/InterPro.txt">InterPro.txt</a>);
-## 2) GO Molecular Function (see <a href="http://supfam.org/dcGOR/data/onto/igraph_GOMF_nodes.txt">igraph_GOMF_nodes.txt</a> for GOMF term information and <a href="http://supfam.org/dcGOR/data/onto/igraph_GOBP_edges.txt">igraph_GOMF_edges.txt</a> for parent-child relations between GOMF terms);
-## 3) Annotations of InterPro domains by GOMF terms (see <a href="http://supfam.org/dcGOR/data/InterPro/GO.txt">GO.txt</a> for all GO term information and <a href="http://supfam.org/dcGOR/data/InterPro/Domain2GOMF.txt">Domain2GOMF.txt</a> for annotations)
+## 1) InterPro domains (see <a href="http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt">InterPro.txt</a>);
+## 2) GO Molecular Function (see <a href="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOMF_nodes.txt">igraph_GOMF_nodes.txt</a> for GOMF term information and <a href="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOBP_edges.txt">igraph_GOMF_edges.txt</a> for parent-child relations between GOMF terms);
+## 3) Annotations of InterPro domains by GOMF terms (see <a href="http://dcgor.r-forge.r-project.org/data/InterPro/GO.txt">GO.txt</a> for all GO term information and <a href="http://dcgor.r-forge.r-project.org/data/InterPro/Domain2GOMF.txt">Domain2GOMF.txt</a> for annotations)
 #
 # From this demo, the user can learn how to customise analysis based on their own data (domains, ontology and annotations). The key to this customised analysis is to prepare input files exactly the same as those mentioned above. 
 ###############################################################################
@@ -222,7 +222,7 @@ library(dcGOR)
 #---------------------------------------------------------------------------
 
 ## 1) InterPro domains
-domain <- <a href='dcBuildInfoDataFrame.html' target=dcBuildInfoDataFrame>dcBuildInfoDataFrame</a>(input.file="http://supfam.org/dcGOR/data/InterPro/InterPro.txt", output.file="domain.RData")
+domain <- <a href='dcBuildInfoDataFrame.html' target=dcBuildInfoDataFrame>dcBuildInfoDataFrame</a>(input.file="http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt", output.file="domain.RData")
 </div>
 <strong class='message'>An object of S4 class 'InfoDataFrame' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/domain.RData'.</strong>
 <div class='input'>domain
@@ -233,7 +233,7 @@ domain <- <a href='dcBuildInfoDataFrame.html' target=dcBuildInfoDataFrame>dcBuil
   colNames: id level description
 </div>
 <div class='input'>## 2) ontology (GO Molecular Function, GOMF)
-g <- <a href='dcBuildOnto.html' target=dcBuildOnto>dcBuildOnto</a>(relations.file="http://supfam.org/dcGOR/data/onto/igraph_GOMF_edges.txt", nodes.file="http://supfam.org/dcGOR/data/onto/igraph_GOMF_nodes.txt", output.file="ontology.RData")
+g <- <a href='dcBuildOnto.html' target=dcBuildOnto>dcBuildOnto</a>(relations.file="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOMF_edges.txt", nodes.file="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOMF_nodes.txt", output.file="ontology.RData")
 </div>
 <strong class='message'>An object of S4 class 'Onto' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/ontology.RData'.</strong>
 <div class='input'>g
@@ -246,7 +246,7 @@ g <- <a href='dcBuildOnto.html' target=dcBuildOnto>dcBuildOnto</a>(relations.fil
   nodeAttr: term_id term_name term_namespace term_distance
 </div>
 <div class='input'>## 3) annotations (between InterPro domains and GOMF terms)
-Anno <- <a href='dcBuildAnno.html' target=dcBuildAnno>dcBuildAnno</a>(domain_info.file="http://supfam.org/dcGOR/data/InterPro/InterPro.txt", term_info.file="http://supfam.org/dcGOR/data/InterPro/GO.txt", association.file="http://supfam.org/dcGOR/data/InterPro/Domain2GOMF.txt", output.file="annotations.RData")
+Anno <- <a href='dcBuildAnno.html' target=dcBuildAnno>dcBuildAnno</a>(domain_info.file="http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt", term_info.file="http://dcgor.r-forge.r-project.org/data/InterPro/GO.txt", association.file="http://dcgor.r-forge.r-project.org/data/InterPro/Domain2GOMF.txt", output.file="annotations.RData")
 </div>
 <strong class='message'>An object of S4 class 'Anno' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/annotations.RData'.</strong>
 <div class='input'>Anno
@@ -287,63 +287,63 @@ length(background)
 ## perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background=background, domain.RData='domain.RData', ontology.RData='ontology.RData', annotations.RData='annotations.RData')
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:16</strong>
+<strong class='message'>Start at 2014-10-24 19:26:05</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2014-10-22 19:36:16)...</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-22 19:36:22) ...</strong>
-<strong class='message'>	There are 128 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-22 19:36:22) ...</strong>
+<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2014-10-24 19:26:05)...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:26:10) ...</strong>
+<strong class='message'>	There are 135 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:26:10) ...</strong>
 <strong class='message'>
-End at 2014-10-22 19:36:22</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2014-10-24 19:26:10</strong>
+<strong class='message'>Runtime in total is: 5 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'domain.RData'
   @ontology: 'ontology.RData'
-  @term_info: a data.frame of 54 terms X 5 information
-  @anno: a list of 54 terms, each storing annotated domains
-  @data: a vector containing a group of 79 input domains (annotatable)
-  @background: a vector containing a group of 829 background domains (annotatable)
-  @overlap: a list of 54 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 54 terms, containing z-scores
-  @pvalue: a vector of 54 terms, containing p-values
-  @adjp: a vector of 54 terms, containing adjusted p-values
-In summary, a total of 54 terms ('ontology.RData') are analysed for a group of 79 input domains ('domain.RData')
+  @term_info: a data.frame of 55 terms X 5 information
+  @anno: a list of 55 terms, each storing annotated domains
+  @data: a vector containing a group of 75 input domains (annotatable)
+  @background: a vector containing a group of 841 background domains (annotatable)
+  @overlap: a list of 55 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 55 terms, containing z-scores
+  @pvalue: a vector of 55 terms, containing p-values
+  @adjp: a vector of 55 terms, containing adjusted p-values
+In summary, a total of 55 terms ('ontology.RData') are analysed for a group of 75 input domains ('domain.RData')
 </div>
 <div class='input'>
 ## view the top 10 significance terms 
 view(eoutput, top_num=10, sortBy="pvalue", details=FALSE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
-GO:0016779 GO:0016779    20     79        6   3.15 0.0015 0.083
-GO:0070569 GO:0070569    10     79        3   2.22 0.0100 0.230
-GO:0016813 GO:0016813    16     79        4   2.13 0.0130 0.230
-GO:0016879 GO:0016879    14     79        3   1.53 0.0360 0.230
-GO:0051183 GO:0051183    66     79       10   1.62 0.0400 0.230
-GO:0009055 GO:0009055    21     79        4   1.50 0.0420 0.230
-GO:0016772 GO:0016772    76     79       11   1.54 0.0470 0.230
-GO:0045118 GO:0045118    62     79        9   1.39 0.0600 0.230
-GO:0090482 GO:0090482    62     79        9   1.39 0.0600 0.230
-GO:1901474 GO:1901474    62     79        9   1.39 0.0600 0.230
-                                                                                           term_name
-GO:0016779                                                           nucleotidyltransferase activity
-GO:0070569                                                              uridylyltransferase activity
-GO:0016813 hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amidines
-GO:0016879                                            ligase activity, forming carbon-nitrogen bonds
-GO:0051183                                                              vitamin transporter activity
-GO:0009055                                                                 electron carrier activity
-GO:0016772                           transferase activity, transferring phosphorus-containing groups
-GO:0045118                                                                azole transporter activity
-GO:0090482                                                vitamin transmembrane transporter activity
-GO:1901474                                                  azole transmembrane transporter activity
+<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue  adjp
+GO:0016782 GO:0016782    12     75        5   4.01 0.00025 0.014
+GO:0016740 GO:0016740   164     75       21   1.95 0.02100 0.360
+GO:0016746 GO:0016746    19     75        4   1.88 0.02100 0.360
+GO:0016791 GO:0016791    14     75        3   1.66 0.02900 0.360
+GO:0046873 GO:0046873    15     75        3   1.52 0.03700 0.360
+GO:0016779 GO:0016779    22     75        4   1.54 0.03900 0.360
+GO:0008289 GO:0008289    40     75        6   1.38 0.05700 0.360
+GO:0035091 GO:0035091    32     75        5   1.36 0.05700 0.360
+GO:0005543 GO:0005543    33     75        5   1.28 0.06500 0.360
+GO:0070679 GO:0070679    18     75        3   1.17 0.06800 0.360
+                                                             term_name
+GO:0016782 transferase activity, transferring sulfur-containing groups
+GO:0016740                                        transferase activity
+GO:0016746              transferase activity, transferring acyl groups
+GO:0016791                                        phosphatase activity
+GO:0046873                metal ion transmembrane transporter activity
+GO:0016779                             nucleotidyltransferase activity
+GO:0008289                                               lipid binding
+GO:0035091                                phosphatidylinositol binding
+GO:0005543                                        phospholipid binding
+GO:0070679                        inositol 1,4,5 trisphosphate binding
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
-<strong class='message'>Ontology 'ontology.RData' containing 13 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'ontology.RData' containing 16 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
 <a href="javascript:newWin('Customisation-32.png', 'Customisation-32.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Customisation-32.png', width="400" /></a>
 <div class='input'>
 #---------------------------------------------------------------------
@@ -369,21 +369,21 @@ alldomains <- unique(unlist(nInfo(dag)$annotations))
 domains <- sample(alldomains,8)
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=domains, method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:31</strong>
+<strong class='message'>Start at 2014-10-24 19:26:20</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:36:31)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:26:20)...</strong>
 <strong class='message'>	there are 8 input domains amongst 8899 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 10 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:36:31)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:36:31)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:36:31)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:36:31)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 12 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:26:20)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:26:20)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:26:20)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:26:20)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:36:31</strong>
+<strong class='message'>Finish at 2014-10-24 19:26:20</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
@@ -391,7 +391,7 @@ dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: IPR004653 IPR026207 IPR003296 ... IPR004577 IPR000713 (8
+  nodeNames: IPR009458 IPR012130 IPR006338 ... IPR028591 IPR023915 (8
     total)
   nodeAttr: id
 </div>
@@ -401,7 +401,7 @@ ig <- <a href='dcConverter.html' target=dcConverter>dcConverter</a>(dnetwork, fr
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 9 -- 
+<div class='output'>IGRAPH UNW- 8 17 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
 </div>
 <div class='input'>## visualise the domain network

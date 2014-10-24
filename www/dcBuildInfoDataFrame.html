@@ -210,10 +210,10 @@ can, for example, contain the domain information.</p>
       <dt>input.file</dt>
       <dd>an input file used to build the object. For example,
 a file containing InterPro domains (InterPro) can be found in
-<a href = 'http://supfam.org/dcGOR/data/InterPro/InterPro.txt'>http://supfam.org/dcGOR/data/InterPro/InterPro.txt</a>. As seen in
-this example, the input file must contain the header (in the first
-row), and entries in the first column intend to be domain identities
-(and must be unique)</dd>
+<a href = 'http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt'>http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt</a>. As
+seen in this example, the input file must contain the header (in the
+first row), and entries in the first column intend to be domain
+identities (and must be unique)</dd>
       <dt>output.file</dt>
       <dd>an output file used to save the built object as an
 RData-formatted file. If NULL, this file will be saved into
@@ -250,7 +250,7 @@ working environment.</p>
     <h3 id="examples">Examples</h3>
     <pre class="examples"><div class='input'># build an "InfoDataFrame" object that contains information on InterPro domains (InterPro)
 InterPro <-
-dcBuildInfoDataFrame(input.file="http://supfam.org/dcGOR/data/InterPro/InterPro.txt",
+dcBuildInfoDataFrame(input.file="http://dcgor.r-forge.r-project.org/data/InterPro/InterPro.txt",
 output.file="InterPro.RData")
 </div>
 <strong class='message'>An object of S4 class 'InfoDataFrame' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/InterPro.RData'.</strong>

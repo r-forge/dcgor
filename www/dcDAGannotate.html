@@ -283,19 +283,19 @@ annotations <- Anno[,sample(1:dim(Anno)[2], 5)]
 # 4a) based on all possible paths (i.e. the complete subgraph induced)
 dcDAGannotate(g, annotations, path.mode="all_paths", verbose=TRUE)
 </div>
-<strong class='message'>	At level 8, there are 2 nodes, and 2 incoming neighbors.</strong>
-<strong class='message'>	At level 7, there are 2 nodes, and 2 incoming neighbors.</strong>
-<strong class='message'>	At level 6, there are 3 nodes, and 3 incoming neighbors.</strong>
-<strong class='message'>	At level 5, there are 4 nodes, and 6 incoming neighbors.</strong>
-<strong class='message'>	At level 4, there are 4 nodes, and 5 incoming neighbors.</strong>
-<strong class='message'>	At level 3, there are 7 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 8, there are 2 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 2 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 6, there are 3 nodes, and 4 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 7 nodes, and 6 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 6 nodes, and 8 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 8 nodes, and 3 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 4 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
 <div class='output'>An object of S4 class 'Onto'
-@adjMatrix: a direct matrix of 27 terms (parents/from) X 27 terms (children/to) 
+@adjMatrix: a direct matrix of 33 terms (parents/from) X 33 terms (children/to) 
 @nodeInfo (InfoDataFrame)
-  nodeNames: GO:0003674 GO:0003824 GO:0004872 ... GO:0003774 GO:0080025
-    (27 total)
+  nodeNames: GO:0003674 GO:0003824 GO:0004872 ... GO:0003696 GO:0035939
+    (33 total)
   nodeAttr: term_id term_name term_namespace term_distance annotations
     IC
 </div>
@@ -304,10 +304,10 @@ dag <- dcDAGannotate(g, annotations, path.mode="shortest_paths",
 verbose=TRUE)
 </div>
 <strong class='message'>	At level 8, there are 1 nodes, and 1 incoming neighbors.</strong>
-<strong class='message'>	At level 7, there are 2 nodes, and 2 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 1 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 6, there are 2 nodes, and 2 incoming neighbors.</strong>
 <strong class='message'>	At level 5, there are 3 nodes, and 3 incoming neighbors.</strong>
-<strong class='message'>	At level 4, there are 4 nodes, and 4 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 5 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 3, there are 5 nodes, and 3 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 3 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>

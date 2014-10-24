@@ -210,7 +210,7 @@ product a slim version of ontology. It returns an object of S3 class
   
     <h3>Usage</h3>
     <pre>dcAlgoPropagate(input.file, ontology = c("GOBP", "GOMF", "GOCC", "HPPA", "HPMI", 
-  "HPON"), output.file = "HIS.RData", verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+  "HPON"), output.file = "HIS.RData", verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -220,8 +220,9 @@ file contains original annotations between domains/features and
 ontology terms, along with the hypergeometric scores (hscore) in
 support for their annotations. For example, a file containing original
 annotations between SCOP domain architectures and GO terms can be found
-in <a href = 'http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt'>http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt</a>. As
-seen in this example, the input file must contain the header (in the
+in
+<a href = 'http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt'>http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt</a>.
+As seen in this example, the input file must contain the header (in the
 first row) and three columns: 1st column for 'Feature_id' (here SCOP
 domain architectures), 2nd column for 'Term_id' (GO terms), and 3rd
 column for 'Score' (hscore)</dd>
@@ -243,11 +244,11 @@ displayed in the screen. By default, it sets to TRUE for display</dd>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
 "http://supfam.org/dcGOR/data" or
-"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
-with fast internet connection, this option can be just left as default.
-But it is always advisable to download these files locally. Especially
-when the user needs to run this function many times, there is no need
-to ask the function to remotely download every time (also it will
+"http://dcgor.r-forge.r-project.org/data". For the user equipped with
+fast internet connection, this option can be just left as default. But
+it is always advisable to download these files locally. Especially when
+the user needs to run this function many times, there is no need to ask
+the function to remotely download every time (also it will
 unnecessarily increase the runtime). For examples, these files (as a
 whole or part of them) can be first downloaded into your current
 working directory, and then set this option as:
@@ -296,29 +297,29 @@ terms
     <h3 id="examples">Examples</h3>
     <pre class="examples"><div class='input'># build an "HIS" object for GO Molecular Function
 Feature2GOMF.sf <-
-dcAlgoPropagate(input.file="http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt",
+dcAlgoPropagate(input.file="http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt",
 ontology="GOMF", output.file="Feature2GOMF.sf.RData")
 </div>
-<strong class='message'>Start at 2014-10-22 19:37:19</strong>
+<strong class='message'>Start at 2014-10-24 19:27:09</strong>
 <strong class='message'></strong>
-<strong class='message'>Reading the file 'http://supfam.org/dcGOR/data/Feature/Feature2GO.sf.txt' ...</strong>
+<strong class='message'>Reading the file 'http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt' ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>Do propagation ...</strong>
-<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-10-22 19:37:26).</strong>
-<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-10-22 19:37:26).</strong>
-<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-10-22 19:37:26).</strong>
-<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-10-22 19:37:27).</strong>
-<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-10-22 19:37:27).</strong>
-<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-10-22 19:37:27).</strong>
-<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-10-22 19:37:27).</strong>
-<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-10-22 19:37:27).</strong>
-<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-10-22 19:37:28).</strong>
-<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-10-22 19:37:29).</strong>
-<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-10-22 19:37:30).</strong>
-<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-10-22 19:37:31).</strong>
-<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-10-22 19:37:33).</strong>
-<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-10-22 19:37:36).</strong>
-<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors (2014-10-22 19:37:36).</strong>
+<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-10-24 19:27:18).</strong>
+<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-10-24 19:27:19).</strong>
+<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-10-24 19:27:19).</strong>
+<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-10-24 19:27:20).</strong>
+<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-10-24 19:27:21).</strong>
+<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-10-24 19:27:22).</strong>
+<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-10-24 19:27:24).</strong>
+<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-10-24 19:27:27).</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors (2014-10-24 19:27:27).</strong>
 <strong class='message'>After propagation, there are 6018 features annotated by 2836 terms.</strong>
 <strong class='message'>Determining IC-based slim levels ...</strong>
 <strong class='message'>	1 level with 6 terms with IC falling around 0.47 (between 0.00 and 0.94).</strong>
@@ -327,8 +328,8 @@ ontology="GOMF", output.file="Feature2GOMF.sf.RData")
 <strong class='message'>	4 level with 838 terms with IC falling around 3.31 (between 3.07 and 3.54).</strong>
 <strong class='message'>An object of S3 class 'HIS' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/Feature2GOMF.sf.RData'.</strong>
 <strong class='message'>
-End at 2014-10-22 19:37:54</strong>
-<strong class='message'>Runtime in total is: 35 secs
+End at 2014-10-24 19:27:46</strong>
+<strong class='message'>Runtime in total is: 37 secs
 </strong>
 <div class='input'>names(Feature2GOMF.sf)
 </div>

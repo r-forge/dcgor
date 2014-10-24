@@ -211,7 +211,7 @@ into predictive scores across terms.</p>
       "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", "Feature2GOCC.interpro", 
       "Feature2HPPA.interpro"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
-      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://supfam.org/dcGOR/data")</pre>
+      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -279,11 +279,11 @@ displayed in the screen. By default, it sets to TRUE for display</dd>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
 "http://supfam.org/dcGOR/data" or
-"https://github.com/hfang-bristol/dcGOR/data". For the user equipped
-with fast internet connection, this option can be just left as default.
-But it is always advisable to download these files locally. Especially
-when the user needs to run this function many times, there is no need
-to ask the function to remotely download every time (also it will
+"http://dcgor.r-forge.r-project.org/data". For the user equipped with
+fast internet connection, this option can be just left as default. But
+it is always advisable to download these files locally. Especially when
+the user needs to run this function many times, there is no need to ask
+the function to remotely download every time (also it will
 unnecessarily increase the runtime). For examples, these files (as a
 whole or part of them) can be first downloaded into your current
 working directory, and then set this option as:
@@ -317,7 +317,7 @@ load it via function <code>data</code> first)</dd>
     <pre class="examples"><div class='input'># 1) randomly generate 5 domains and/or domain architectures
 x <- dcRDataLoader(RData="Feature2GOMF.sf")
 </div>
-<strong class='message'>'Feature2GOMF.sf' (from http://supfam.org/dcGOR/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
 <div class='input'>data <- sample(names(x$hscore), 5)
 
 # 2) get predictive scores of all predicted terms for this domain architecture
@@ -325,52 +325,52 @@ x <- dcRDataLoader(RData="Feature2GOMF.sf")
 pscore <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:48</strong>
+<strong class='message'>Start at 2014-10-24 19:26:35</strong>
 <strong class='message'></strong>
-<strong class='message'>'Feature2GOMF.sf' (from http://supfam.org/dcGOR/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:48)...</strong>
-<strong class='message'>	1 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	2 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	3 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	4 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	5 out of 5 (2014-10-22 19:36:48)</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-24 19:26:35)...</strong>
+<strong class='message'>	1 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	2 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	3 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	4 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	5 out of 5 (2014-10-24 19:26:35)</strong>
 <strong class='message'>
-End at 2014-10-22 19:36:48</strong>
+End at 2014-10-24 19:26:35</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## using 'max' method
 pscore_max <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 merge.method="max", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:48</strong>
+<strong class='message'>Start at 2014-10-24 19:26:35</strong>
 <strong class='message'></strong>
-<strong class='message'>'Feature2GOMF.sf' (from http://supfam.org/dcGOR/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'max' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:48)...</strong>
-<strong class='message'>	1 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	2 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	3 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	4 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	5 out of 5 (2014-10-22 19:36:48)</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 5 architectures using 'max' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-24 19:26:35)...</strong>
+<strong class='message'>	1 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	2 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	3 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	4 out of 5 (2014-10-24 19:26:35)</strong>
+<strong class='message'>	5 out of 5 (2014-10-24 19:26:35)</strong>
 <strong class='message'>
-End at 2014-10-22 19:36:48</strong>
+End at 2014-10-24 19:26:35</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## using 'sum' method
 pscore_sum <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 merge.method="sum", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:48</strong>
+<strong class='message'>Start at 2014-10-24 19:26:35</strong>
 <strong class='message'></strong>
-<strong class='message'>'Feature2GOMF.sf' (from http://supfam.org/dcGOR/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:48)...</strong>
-<strong class='message'>	1 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	2 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	3 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	4 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	5 out of 5 (2014-10-22 19:36:48)</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-24 19:26:36)...</strong>
+<strong class='message'>	1 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	2 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	3 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	4 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	5 out of 5 (2014-10-24 19:26:36)</strong>
 <strong class='message'>
-End at 2014-10-22 19:36:48</strong>
-<strong class='message'>Runtime in total is: 0 secs
+End at 2014-10-24 19:26:36</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>
 # 3) advanced usage
@@ -378,18 +378,18 @@ End at 2014-10-22 19:36:48</strong>
 pscore <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 slim.level=2, parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:36:48</strong>
+<strong class='message'>Start at 2014-10-24 19:26:36</strong>
 <strong class='message'></strong>
-<strong class='message'>'Feature2GOMF.sf' (from http://supfam.org/dcGOR/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-22 19:36:48)...</strong>
-<strong class='message'>	1 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	2 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	3 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	4 out of 5 (2014-10-22 19:36:48)</strong>
-<strong class='message'>	5 out of 5 (2014-10-22 19:36:48)</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-24 19:26:36)...</strong>
+<strong class='message'>	1 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	2 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	3 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	4 out of 5 (2014-10-24 19:26:36)</strong>
+<strong class='message'>	5 out of 5 (2014-10-24 19:26:36)</strong>
 <strong class='message'>Focus on predicted terms at '2' slim level(s)</strong>
 <strong class='message'>
-End at 2014-10-22 19:36:48</strong>
+End at 2014-10-24 19:26:36</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## b) visualise predictive scores in the ontology hierarchy

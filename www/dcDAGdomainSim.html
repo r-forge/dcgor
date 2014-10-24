@@ -340,29 +340,29 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:38:16</strong>
+<strong class='message'>Start at 2014-10-24 19:28:10</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:38:16)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:28:10)...</strong>
 <strong class='message'>	there are 8 input domains amongst 1083 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 210 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:38:17)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:38:19)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:38:19)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:38:19)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 88 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:28:11)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:28:11)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:28:11)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:28:11)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:38:19</strong>
-<strong class='message'>Runtime in total is: 3 secs
+<strong class='message'>Finish at 2014-10-24 19:28:11</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 90123 88633 55424 ... 143100 48726 (8 total)
+  nodeNames: 46977 143026 55608 ... 54897 47917 (8 total)
   nodeAttr: id
 </div>
 <div class='input'>## 1e) convert it to an object of class 'igraph'
@@ -371,7 +371,7 @@ ig <- dcConverter(dnetwork, from='Dnetwork', to='igraph')
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 21 -- 
+<div class='output'>IGRAPH UNW- 8 15 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
 </div>
 <div class='input'>## 1f) visualise the domain network
@@ -405,21 +405,21 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:38:23</strong>
+<strong class='message'>Start at 2014-10-24 19:28:15</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:38:23)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:28:15)...</strong>
 <strong class='message'>	there are 8 input domains amongst 3359 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 11 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:38:23)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:38:23)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:38:23)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:38:23)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 9 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:28:15)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:28:15)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:28:15)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:28:15)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:38:23</strong>
+<strong class='message'>Finish at 2014-10-24 19:28:15</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
@@ -427,7 +427,7 @@ verbose=TRUE)
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: PF02562 PF00547 PF00380 ... PF00848 PF02232 (8 total)
+  nodeNames: PF04104 PF08493 PF01159 ... PF04042 PF08716 (8 total)
   nodeAttr: id
 </div>
 <div class='input'>## 2e) convert it to an object of class 'igraph'
@@ -436,7 +436,7 @@ ig <- dcConverter(dnetwork, from='Dnetwork', to='igraph')
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 18 -- 
+<div class='output'>IGRAPH UNW- 8 21 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
 </div>
 <div class='input'>## 2f) visualise the domain network
@@ -470,29 +470,29 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:38:31</strong>
+<strong class='message'>Start at 2014-10-24 19:28:23</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:38:31)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:28:23)...</strong>
 <strong class='message'>	there are 8 input domains amongst 8899 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 9 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:38:31)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:38:31)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:38:31)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:38:31)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 10 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:28:24)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:28:24)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:28:24)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:28:24)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:38:31</strong>
-<strong class='message'>Runtime in total is: 0 secs
+<strong class='message'>Finish at 2014-10-24 19:28:24</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: IPR017852 IPR006426 IPR000141 ... IPR018239 IPR014157 (8
+  nodeNames: IPR019843 IPR009033 IPR014052 ... IPR004134 IPR000503 (8
     total)
   nodeAttr: id
 </div>
@@ -502,7 +502,7 @@ ig <- dcConverter(dnetwork, from='Dnetwork', to='igraph')
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 16 -- 
+<div class='output'>IGRAPH UNW- 8 13 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
 </div>
 <div class='input'>## 3f) visualise the domain network
@@ -536,29 +536,29 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:38:33</strong>
+<strong class='message'>Start at 2014-10-24 19:28:26</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:38:33)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:28:26)...</strong>
 <strong class='message'>	there are 8 input domains amongst 1377 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 3 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:38:34)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:38:34)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:38:34)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:38:34)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 3 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:28:26)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:28:26)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:28:26)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:28:26)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:38:34</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2014-10-24 19:28:26</strong>
+<strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: RF00217 RF00921 RF00045 ... RF00929 RF00323 (8 total)
+  nodeNames: RF00792 RF02112 RF01279 ... RF00067 RF00133 (8 total)
   nodeAttr: id
 </div>
 <div class='input'>## 4e) convert it to an object of class 'igraph'
@@ -589,7 +589,9 @@ dcBuildOnto(relations.file="http://supfam.org/dcGOR/data/onto/igraph_GOMF_edges.
 nodes.file="http://supfam.org/dcGOR/data/onto/igraph_GOMF_nodes.txt",
 output.file="ontology.RData")
 </div>
-<strong class='message'>An object of S4 class 'Onto' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/ontology.RData'.</strong>
+<strong class='warning'>Warning message:
+unable to connect to 'supfam.org' on port 80.</strong>
+<strong class='error'>Error in file(file, "rt"): cannot open the connection</strong>
 <div class='input'># 5b) customise Anno
 Anno <-
 dcBuildAnno(domain_info.file="http://supfam.org/dcGOR/data/InterPro/InterPro.txt",
@@ -597,7 +599,9 @@ term_info.file="http://supfam.org/dcGOR/data/InterPro/GO.txt",
 association.file="http://supfam.org/dcGOR/data/InterPro/Domain2GOMF.txt",
 output.file="annotations.RData")
 </div>
-<strong class='message'>An object of S4 class 'Anno' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/annotations.RData'.</strong>
+<strong class='warning'>Warning message:
+unable to connect to 'supfam.org' on port 80.</strong>
+<strong class='error'>Error in file(file, "rt"): cannot open the connection</strong>
 <div class='input'>## 5c) prepare for ontology appended with annotation information
 dag <- dcDAGannotate(g, annotations=Anno, path.mode="shortest_paths",
 verbose=FALSE)
@@ -608,21 +612,21 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-22 19:38:43</strong>
+<strong class='message'>Start at 2014-10-24 19:31:00</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-22 19:38:43)...</strong>
-<strong class='message'>	there are 8 input domains amongst 8899 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 12 terms (forced to be the most specific for each domain) using Resnik method (2014-10-22 19:38:43)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-22 19:38:43)...</strong>
-<strong class='message'>	1 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	2 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	3 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	4 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	5 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	6 out of 8 (2014-10-22 19:38:43)</strong>
-<strong class='message'>	7 out of 8 (2014-10-22 19:38:43)</strong>
+<strong class='message'>First, extract all annotatable domains (2014-10-24 19:31:00)...</strong>
+<strong class='message'>	there are 8 input domains amongst 1377 annotatable domains</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 4 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:31:00)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2014-10-24 19:31:00)...</strong>
+<strong class='message'>	1 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	2 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	3 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	4 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	5 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	6 out of 8 (2014-10-24 19:31:00)</strong>
+<strong class='message'>	7 out of 8 (2014-10-24 19:31:00)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-22 19:38:43</strong>
+<strong class='message'>Finish at 2014-10-24 19:31:00</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
@@ -630,8 +634,7 @@ verbose=TRUE)
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: IPR006653 IPR000629 IPR002871 ... IPR006790 IPR005124 (8
-    total)
+  nodeNames: RF01136 RF00548 RF00774 ... RF00653 RF01188 (8 total)
   nodeAttr: id
 </div>
 <div class='input'>## 5e) convert it to an object of class 'igraph'
@@ -640,7 +643,7 @@ ig <- dcConverter(dnetwork, from='Dnetwork', to='igraph')
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 10 -- 
+<div class='output'>IGRAPH UNW- 8 15 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
 </div>
 <div class='input'>## 5f) visualise the domain network
@@ -652,7 +655,7 @@ edge.width <- 1 + (x-min(x))/(max(x)-min(x))*3
 dnet::visNet(g=ig, vertex.shape="sphere", edge.width=edge.width,
 edge.label=x, edge.label.cex=0.7)
 </div>
-<a href="javascript:newWin('dcDAGdomainSim-145.png', 'dcDAGdomainSim-145.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcDAGdomainSim-145.png', width="400" /></a></pre>
+<a href="javascript:newWin('dcDAGdomainSim-147.png', 'dcDAGdomainSim-147.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcDAGdomainSim-147.png', width="400" /></a></pre>
   </div>
   
   <div class="span4">

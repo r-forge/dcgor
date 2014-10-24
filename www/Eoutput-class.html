@@ -333,17 +333,17 @@ data <- sample(rowNames(SCOP.sf), 20)
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-10-22 19:40:03</strong>
+<strong class='message'>Start at 2014-10-24 19:46:13</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-10-22 19:40:03) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-10-24 19:46:13) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-22 19:40:09) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:46:18) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-22 19:40:09) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:46:19) ...</strong>
 <strong class='message'>
-End at 2014-10-22 19:40:09</strong>
+End at 2014-10-24 19:46:19</strong>
 <strong class='message'>Runtime in total is: 6 secs
 </strong>
 <div class='input'>eoutput
@@ -351,15 +351,15 @@ End at 2014-10-22 19:40:09</strong>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 88 terms X 5 information
-  @anno: a list of 88 terms, each storing annotated domains
+  @term_info: a data.frame of 49 terms X 5 information
+  @anno: a list of 49 terms, each storing annotated domains
   @data: a vector containing a group of 9 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 88 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 88 terms, containing z-scores
-  @pvalue: a vector of 88 terms, containing p-values
-  @adjp: a vector of 88 terms, containing adjusted p-values
-In summary, a total of 88 terms ('GOMF') are analysed for a group of 9 input domains ('SCOP.sf')
+  @overlap: a list of 49 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 49 terms, containing z-scores
+  @pvalue: a vector of 49 terms, containing p-values
+  @adjp: a vector of 49 terms, containing adjusted p-values
+In summary, a total of 49 terms ('GOMF') are analysed for a group of 9 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) write into the file 'Eoutput.txt' in your local directory
@@ -370,41 +370,41 @@ write(eoutput, file='Eoutput.txt')
 # 4) view the top 5 significant terms
 view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue  adjp
-GO:0070577 GO:0070577    50      9        3   4.12 0.00043 0.027
-GO:0016831 GO:0016831   168      9        5   3.33 0.00072 0.027
-GO:0042393 GO:0042393    61      9        3   3.62 0.00093 0.027
-GO:0016773 GO:0016773   284      9        6   2.77 0.00170 0.038
-GO:0016830 GO:0016830   208      9        5   2.78 0.00240 0.041
-                                                        term_name
-GO:0070577                          histone acetyl-lysine binding
-GO:0016831                                 carboxy-lyase activity
-GO:0042393                                        histone binding
-GO:0016773 phosphotransferase activity, alcohol group as acceptor
-GO:0016830                           carbon-carbon lyase activity
-               term_namespace term_distance                             members
-GO:0070577 molecular_function             4                   51419,56176,51730
-GO:0016831 molecular_function             4       51419,74650,56176,51730,47459
-GO:0042393 molecular_function             3                   51419,56176,51730
-GO:0016773 molecular_function             4 50465,55136,74650,56176,51730,47459
-GO:0016830 molecular_function             3       51419,74650,56176,51730,47459
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
+GO:0005253 GO:0005253    97      9        3   2.57 0.0054 0.26
+GO:0005216 GO:0005216   254      9        4   1.49 0.0370 0.37
+GO:0016836 GO:0016836   257      9        4   1.47 0.0390 0.37
+GO:0022838 GO:0022838   261      9        4   1.43 0.0420 0.37
+GO:0071111 GO:0071111   183      9        3   1.32 0.0490 0.37
+                                                      term_name
+GO:0005253                               anion channel activity
+GO:0005216                                 ion channel activity
+GO:0016836                                 hydro-lyase activity
+GO:0022838                  substrate-specific channel activity
+GO:0071111 cyclic-guanylate-specific phosphodiesterase activity
+               term_namespace term_distance                  members
+GO:0005253 molecular_function             6       90073,140924,48371
+GO:0005216 molecular_function             5 53597,90073,140924,48371
+GO:0016836 molecular_function             4 53597,57581,48034,159034
+GO:0022838 molecular_function             4 53597,90073,140924,48371
+GO:0071111 molecular_function             6        53597,90073,48371
 </div>
 <div class='input'>
 # 4) retrieve several slots directly
 zscore(eoutput)[1:5]
 </div>
-<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
-   -0.0934     0.5120     0.5460     1.1100    -0.0934 
+<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
+   -0.2180     0.5460    -0.0596    -0.0317     0.1850 
 </div>
 <div class='input'>pvalue(eoutput)[1:5]
 </div>
-<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
-     0.390      0.190      0.160      0.075      0.390 
+<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
+      0.46       0.16       0.39       0.38       0.31 
 </div>
 <div class='input'>adjp(eoutput)[1:5]
 </div>
-<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
-      0.41       0.23       0.21       0.14       0.41 
+<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
+      0.56       0.43       0.50       0.50       0.48 
 </div></pre>
   </div>
   

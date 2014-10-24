@@ -297,14 +297,14 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=FALSE)
 </div>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 82171 47391 89837 49842 55154
+  nodeNames: 52949 81442 103088 47090 109880
   nodeAttr: id
 </div>
 <div class='input'># 2b) convert the object from 'Dnetwork' to 'igraph' class
@@ -323,7 +323,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 82171 47391 89837 49842 55154
+  nodeNames: 52949 81442 103088 47090 109880
   nodeAttr: id
 </div></pre>
   </div>
