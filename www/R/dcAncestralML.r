@@ -24,26 +24,26 @@
 #' @note
 #' This fast dynamic programming for ancestral discrete state reconstruction is partially inspired by a joint estimation procedure as described in \url{http://mbe.oxfordjournals.org/content/17/6/890.full}
 #' @export
-#' @seealso \code{\link{dcAncestralMP}}
+#' @seealso \code{\link{dcAncestralMP}}, \code{\link{dcDuplicated}}
 #' @include dcAncestralML.r
 #' @examples
-#' # 1) provide the phylo-formatted tree
-#' tree <- "((((t10:5,t2:5):2,(t9:4,t5:4):3):2,(t3:4,t7:4):6):2,((t6:4,t1:4):2,(t8:2,t4:2):4):6);"
-#' phy <- ape::read.tree(text=paste(tree, collapse=""))
+#' # 1) a newick tree that is imported as a phylo-formatted tree
+#' tree <- "(((t1:5,t2:5):2,(t3:4,t4:4):3):2,(t5:4,t6:4):6);"
+#' phy <- ape::read.tree(text=tree)
 #'
-#' # 2) an input data matrix storing discrete states for tips (in rows) X two characters (in columns)
-#' data1 <- matrix(c(0,rep(1,4),rep(0,5)), ncol=1)
-#' data2 <- matrix(c(0,rep(0,4),rep(1,5)), ncol=1)
-#' data <- cbind(data1, data2)
-#' colnames(data) <- c("C1", "C2")
+#' # 2) an input data matrix storing discrete states for tips (in rows) X four characters (in columns)
+#' data1 <- matrix(c(0,rep(1,3),rep(0,2)), ncol=1)
+#' data2 <- matrix(c(rep(0,4),rep(1,2)), ncol=1)
+#' data <- cbind(data1, data1, data1, data2)
+#' colnames(data) <- c("C1", "C2", "C3", "C4")
 #' ## reconstruct ancestral states, without detailed output
 #' res <- dcAncestralML(data, phy, parallel=FALSE)
 #' res
 #'
 #' # 3) an input data matrix storing discrete states for tips (in rows) X only one character
-#' data <- matrix(c(0,rep(0,4),rep(1,5)), ncol=1)
+#' data <- matrix(c(0,rep(1,3),rep(0,2)), ncol=1)
 #' ## reconstruct ancestral states, with detailed output
-#' res <- dcAncestralML(data, phy, parallel=FALSE, output.detail=TRUE, verbose=TRUE)
+#' res <- dcAncestralML(data, phy, parallel=FALSE, output.detail=TRUE)
 #' res
 #' ## get the inner-most list
 #' res <- res[[1]]
@@ -62,8 +62,15 @@
 #' ### labeling reconstructed ancestral states
 #' ape::nodelabels(text=res$states[Ntip+1:Nnode], node=Ntip+1:Nnode, frame="none", col="red", bg="transparent", cex=0.75)
 
-dcAncestralML <- function(data, phy, transition.model=c("different","symmetric","same","customised"), customised.model=NULL, edge.length.power=1, initial.estimate=0.1, output.detail=F, parallel=T, multicores=NULL, verbose=F)
+dcAncestralML <- function(data, phy, transition.model=c("different","symmetric","same","customised"), customised.model=NULL, edge.length.power=1, initial.estimate=0.1, output.detail=F, parallel=T, multicores=NULL, verbose=T)
 {
+
+    startT <- Sys.time()
+    if(verbose){
+        message(paste(c("Start at ",as.character(startT)), collapse=""), appendLF=T)
+        message("", appendLF=T)
+    }
+    ####################################################################################
 
     ## match.arg matches arg against a table of candidate values as specified by choices, where NULL means to take the first one
     transition.model <- match.arg(transition.model)
@@ -117,6 +124,7 @@ dcAncestralML <- function(data, phy, transition.model=c("different","symmetric",
     
     
     ######################################################################################
+    
     ## A function to do prediction
     doReconstruct <- function(x, Ntot, Ntip, Nnode, E, e1, e2, output.detail, verbose){
 
@@ -366,28 +374,56 @@ dcAncestralML <- function(data, phy, transition.model=c("different","symmetric",
     progress_indicate <- function(i, B, step, flag=F){
         if(i %% ceiling(B/step) == 0 | i==B | i==1){
             if(flag & verbose){
-                message(sprintf("%d out of %d (%s)", i, B, as.character(Sys.time())), appendLF=T)
+                message(sprintf("\t%d out of %d (%s)", i, B, as.character(Sys.time())), appendLF=T)
             }
         }
     }
     
     ######################################################################################
+    integer_vec <- suppressMessages(dcDuplicated(data, pattern.wise="column", verbose=verbose))
+    ind_unique <- sort(unique(integer_vec))
+    data_unique <- as.matrix(data[, ind_unique], ncol=length(ind_unique))
+    
+    if(verbose){
+        message(sprintf("The input data has %d characters/columns (with %d distinct patterns).", ncol(data), ncol(data_unique)), appendLF=T)
+    }
+    
     ###### parallel computing
     flag_parallel <- F
     if(parallel){
         flag_parallel <- dnet::dCheckParallel(multicores=multicores, verbose=verbose)
         if(flag_parallel){
             j <- 1
-            res_list <- foreach::`%dopar%` (foreach::foreach(j=1:ncol(data), .inorder=T), {
-                progress_indicate(i=j, B=ncol(data), 10, flag=T)
-                doReconstruct(x=data[,j], Ntot=Ntot, Ntip=Ntip, Nnode=Nnode, E=E, e1=e1, e2=e2, output.detail=output.detail, verbose=verbose)
+            res_list <- foreach::`%dopar%` (foreach::foreach(j=1:ncol(data_unique), .inorder=T), {
+                progress_indicate(i=j, B=ncol(data_unique), 10, flag=T)
+                suppressMessages(doReconstruct(x=data_unique[,j], Ntot=Ntot, Ntip=Ntip, Nnode=Nnode, E=E, e1=e1, e2=e2, output.detail=output.detail, verbose=verbose))
             })
+            
+            ###################################
+            ## return back to input data matrix
+            ind <- match(integer_vec, ind_unique)
+            res_list <- res_list[ind]
+            ###################################      
+            
             if(!is.null(colnames(data))){
                 names(res_list) <- colnames(data)
+            }else{
+                names(res_list) <- 1:ncol(data)
             }
             
             if(!output.detail){
                 res <- do.call(base::cbind, res_list)
+                if(is.numeric(data)){
+                    res_tmp <- matrix(as.numeric(res), ncol=ncol(res), nrow=nrow(res))
+                    if(!is.null(rownames(res))){
+                        rownames(res_tmp) <- rownames(res)
+                    }
+                    if(!is.null(colnames(res))){
+                        colnames(res_tmp) <- colnames(res)
+                    }
+                    res <- res_tmp
+                }
+                
             }else{
                 res <- res_list
             }
@@ -397,21 +433,51 @@ dcAncestralML <- function(data, phy, transition.model=c("different","symmetric",
     
     ###### non-parallel computing
     if(flag_parallel==F){
-        res_list <- lapply(1:ncol(data),function(j) {
-            progress_indicate(i=j, B=ncol(data), 10, flag=T)
-            da <- data[,j]
-            doReconstruct(x=data[,j], Ntot=Ntot, Ntip=Ntip, Nnode=Nnode, E=E, e1=e1, e2=e2, output.detail=output.detail, verbose=verbose)
+        res_list <- lapply(1:ncol(data_unique),function(j) {
+            progress_indicate(i=j, B=ncol(data_unique), 10, flag=T)
+            da <- data_unique[,j]
+            suppressMessages(doReconstruct(x=data_unique[,j], Ntot=Ntot, Ntip=Ntip, Nnode=Nnode, E=E, e1=e1, e2=e2, output.detail=output.detail, verbose=verbose))
         })
+        
+        ###################################
+        ## return back to input data matrix
+        ind <- match(integer_vec, ind_unique)
+        res_list <- res_list[ind]
+        ###################################  
+        
         if(!is.null(colnames(data))){
             names(res_list) <- colnames(data)
+        }else{
+            names(res_list) <- 1:ncol(data)
         }
             
         if(!output.detail){
             res <- do.call(base::cbind, res_list)
+            if(is.numeric(data)){
+                res_tmp <- matrix(as.numeric(res), ncol=ncol(res), nrow=nrow(res))
+                if(!is.null(rownames(res))){
+                    rownames(res_tmp) <- rownames(res)
+                }
+                if(!is.null(colnames(res))){
+                    colnames(res_tmp) <- colnames(res)
+                }
+                res <- res_tmp
+            }
+            
         }else{
             res <- res_list
         }
     }
+    
+    ####################################################################################
+    endT <- Sys.time()
+    if(verbose){
+        message("", appendLF=T)
+        message(paste(c("Finish at ",as.character(endT)), collapse=""), appendLF=T)
+    }
+    
+    runTime <- as.numeric(difftime(strptime(endT, "%Y-%m-%d %H:%M:%S"), strptime(startT, "%Y-%m-%d %H:%M:%S"), units="secs"))
+    message(paste(c("Runtime in total is: ",runTime," secs\n"), collapse=""), appendLF=T)
     
     invisible(res)
 }
