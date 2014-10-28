@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>dcAlgoPredictMain @ dcGOR 1.0.4</title>
+<title>dcAlgoPredictGenome @ dcGOR 1.0.4</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -192,21 +192,20 @@ window.onload = function(){
         
       </header>
       
-      <h2>Function to predict ontology terms given an input file containing domain architectures (including individual domains)</h2>
+      <h2>Function to predict ontology terms for genomes with domain architectures (including individual domains)</h2>
 
 <div class="row">
   <div class="span8">
   
     <h3>Description</h3>
-    <p><code>dcAlgoPredictMain</code> is supposed to predict ontology terms given an
-input file containing domain architectures (including individual
-domains).</p>
+    <p><code>dcAlgoPredictGenome</code> is supposed to predict ontology terms for
+genomes with domain architectures (including individual domains).</p>
   
     <h3>Usage</h3>
-    <pre>dcAlgoPredictMain(input.file, output.file = NULL, RData.HIS = c("Feature2GOBP.sf", 
-  "Feature2GOMF.sf", "Feature2GOCC.sf", "Feature2HPPA.sf", "Feature2GOBP.pfam", 
-      "Feature2GOMF.pfam", "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", 
-      "Feature2GOMF.interpro", "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
+    <pre>dcAlgoPredictGenome(input.file, RData.HIS = c("Feature2GOBP.sf", "Feature2GOMF.sf", 
+  "Feature2GOCC.sf", "Feature2HPPA.sf", "Feature2GOBP.pfam", "Feature2GOMF.pfam", 
+      "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", 
+      "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
       parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
@@ -214,20 +213,17 @@ domains).</p>
     <h3>Arguments</h3>
     <dl>
       <dt>input.file</dt>
-      <dd>an input file containing domain architectures
-(including individual domains). For example, a file containing UniProt
-ID and domain architectures for human proteins can be found in
-<a href = 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt'>http://dcgor.r-forge.r-project.org/data/Feature/hs.txt</a>. As seen
-in this example, the input file must contain the header (in the first
-row) and two columns: 1st column for 'SeqID' (actually these IDs can be
-anything), 2nd column for 'Architecture' (SCOP domain architectures,
+      <dd>an input file containing genomes and their domain
+architectures (including individual domains). For example, a file
+containing Hominidae genomes and their domain architectures can be
+found in
+<a href = 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt'>http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt</a>. As
+seen in this example, the input file must contain the header (in the
+first row) and two columns: 1st column for 'Genome' (a genome like a
+container), 2nd column for 'Architecture' (SCOP domain architectures,
 each represented as comma-separated domains). Alternatively, the
 input.file can be a matrix or data frame, assuming that input file has
 been read</dd>
-      <dt>output.file</dt>
-      <dd>an output file containing predicted results. If not
-NULL, a tab-delimited text file will be also written out; otherwise,
-there is no output file (by default)</dd>
       <dt>RData.HIS</dt>
       <dd>RData to load. This RData conveys two bits of
 information: 1) feature (domain) type; 2) ontology. It stores the
@@ -314,7 +310,8 @@ load it via function <code>data</code> first)</dd>
     -->
       <h3>Value</h3>
       
-      <p>a term-named vector summarising the predicted scores</p>
+      <p>a matrix of terms X genomes, containing the predicted scores (per
+genome) as a whole</p>
     <!-- 
     </div>
     -->
@@ -323,37 +320,43 @@ load it via function <code>data</code> first)</dd>
     -->
       <h3>Note</h3>
       
-      <p>When 'output.file' is specified, a tab-delimited text file is output,
-with the column names: the first two (the same as input file), 3rd for
-'Term' (predicted ontology terms), 4th for 'Score' (along with
-predicted scores)</p>
+      <p>none</p>
     <!-- 
     </div>
     -->
     
     <h3 id="examples">Examples</h3>
-    <pre class="examples"><div class='input'>input.file <- "http://dcgor.r-forge.r-project.org/data/Feature/hs.txt"
-output <- dcAlgoPredictMain(input.file, RData.HIS="Feature2GOMF.sf")
+    <pre class="examples"><div class='input'>input.file <-
+"http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt"
+output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf")
 </div>
-<strong class='message'>Start at 2014-10-28 17:46:52</strong>
+<strong class='message'>Start at 2014-10-28 17:46:20</strong>
 <strong class='message'></strong>
-<strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt' ...</strong>
-<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-28 17:46:56) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-28 17:47:12)...</strong>
+<strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-28 17:46:21) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-28 17:46:45)...</strong>
+<strong class='message'>	do parallel computation using 2 cores ...</strong>
 <strong class='message'>
-End at 2014-10-28 17:47:15</strong>
-<strong class='message'>Runtime in total is: 23 secs
+End at 2014-10-28 17:46:51</strong>
+<strong class='message'>Runtime in total is: 31 secs
 </strong>
-<div class='input'>length(output)
+<div class='input'>dim(output)
 </div>
-<div class='output'>[1] 2771
+<div class='output'>[1] 2836    4
 </div>
-<div class='input'>output[1:10]
+<div class='input'>output[1:10,]
 </div>
-<div class='output'>GO:0000010 GO:0000014 GO:0000030 GO:0000031 GO:0000034 GO:0000049 GO:0000062 
- 0.0001435  0.0006605  0.0119500  0.0007028  0.0001485  0.0079650  0.0027300 
-GO:0000064 GO:0000104 GO:0000107 
- 0.0005895  0.0030890  0.0006673 
+<div class='output'>               gx     hs     of     xp
+GO:0003674 1.0000 1.0000 1.0000 1.0000
+GO:0005488 0.8284 0.8336 0.8269 0.8248
+GO:0005515 0.6857 0.6905 0.6823 0.6833
+GO:0003824 0.7444 0.7341 0.7452 0.7441
+GO:0043167 0.5023 0.4991 0.4985 0.4939
+GO:0016787 0.4838 0.4741 0.4822 0.4808
+GO:0016740 0.5378 0.5213 0.5374 0.5364
+GO:0097159 0.4653 0.4484 0.4640 0.4610
+GO:1901363 0.4541 0.4371 0.4526 0.4505
+GO:0043168 0.4180 0.4229 0.4159 0.4118
 </div></pre>
   </div>
   
@@ -361,7 +364,7 @@ GO:0000064 GO:0000104 GO:0000107
     
     <!-- 
     <ul>
-      <li>dcAlgoPredictMain</li>
+      <li>dcAlgoPredictGenome</li>
     </ul>
     <ul>
       
@@ -369,12 +372,12 @@ GO:0000064 GO:0000104 GO:0000107
     -->
     
     <h2>Source code</h2>
-    <a href="javascript:newWin('R/dcAlgoPredictMain.r', 'R/dcAlgoPredictMain.r', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.r</code></B></a>
+    <a href="javascript:newWin('R/dcAlgoPredictGenome.r', 'R/dcAlgoPredictGenome.r', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictGenome.r</code></B></a>
     
     <h2>Source man</h2>
-    <a href="javascript:newWin('man/dcAlgoPredictMain.txt', 'man/dcAlgoPredictMain.txt', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.Rd</code></B></a>
+    <a href="javascript:newWin('man/dcAlgoPredictGenome.txt', 'man/dcAlgoPredictGenome.txt', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictGenome.Rd</code></B></a>
     
-    <a href="javascript:newWin('man/dcAlgoPredictMain.pdf', 'man/dcAlgoPredictMain.pdf', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictMain.pdf</code></B></a>
+    <a href="javascript:newWin('man/dcAlgoPredictGenome.pdf', 'man/dcAlgoPredictGenome.pdf', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictGenome.pdf</code></B></a>
     
     <h2>See also</h2>
     

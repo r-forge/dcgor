@@ -129,7 +129,6 @@ length(output)
 output[1:10]
 }
 \seealso{
-\code{\link{dcRDataLoader}}, \code{\link{dcConverter}},
-\code{\link{dcAlgoPredict}}
+\code{\link{dcRDataLoader}}, \code{\link{dcAlgoPredict}}
 }
 
