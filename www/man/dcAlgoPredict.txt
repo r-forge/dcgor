@@ -136,6 +136,6 @@ dnet::visDAG(g=subg, data=data, node.info="term_id")
 }
 \seealso{
 \code{\link{dcRDataLoader}}, \code{\link{dcConverter}},
-\code{\link{dcAlgoPredictMain}}
+\code{\link{dcAlgoPredictMain}}, \code{\link{dcAlgoPredictGenome}}
 }
 

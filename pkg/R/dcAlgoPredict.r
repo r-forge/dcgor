@@ -16,7 +16,7 @@
 #' a named list of architectures, each containing predictive scores
 #' @note none
 #' @export
-#' @seealso \code{\link{dcRDataLoader}}, \code{\link{dcConverter}}, \code{\link{dcAlgoPredictMain}}
+#' @seealso \code{\link{dcRDataLoader}}, \code{\link{dcConverter}}, \code{\link{dcAlgoPredictMain}}, \code{\link{dcAlgoPredictGenome}}
 #' @include dcAlgoPredict.r
 #' @examples
 #' \dontrun{

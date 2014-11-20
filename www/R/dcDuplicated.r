@@ -1,4 +1,4 @@
-#' Function to determine the duplicated patterns from inut data matrix
+#' Function to determine the duplicated patterns from input data matrix
 #'
 #' \code{dcDuplicated} is supposed to determine the duplicated vectorised patterns from a matrix or data frame. The patterns can come from column-wise vectors or row-wise vectors. It returns an integer vector, in which the value indicates from which it duplicats.
 #'
