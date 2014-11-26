@@ -209,8 +209,8 @@ product a slim version of ontology. It returns an object of S3 class
 "HIS" with three components: "hscore", "ic" and "slim".</p>
   
     <h3>Usage</h3>
-    <pre>dcAlgoPropagate(input.file, ontology = c("GOBP", "GOMF", "GOCC", "HPPA", "HPMI", 
-  "HPON"), output.file = "HIS.RData", verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
+    <pre>dcAlgoPropagate(input.file, ontology = c("GOBP", "GOMF", "GOCC", "DO", "HPPA", "HPMI", 
+  "HPON", "MP", "EC", "KW", "UP"), output.file = "HIS.RData", verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -232,7 +232,11 @@ Ontology Biological Process, "GOMF" for Gene Ontology Molecular
 Function, "GOCC" for Gene Ontology Cellular Component, "DO" for Disease
 Ontology, "HPPA" for Human Phenotype Phenotypic Abnormality, "HPMI" for
 Human Phenotype Mode of Inheritance, "HPON" for Human Phenotype ONset
-and clinical course</dd>
+and clinical course, "MP" for Mammalian Phenotype, "EC" for Enzyme
+Commission, "KW" for UniProtKB KeyWords, "UP" for UniProtKB UniPathway.
+For details on the eligibility for pairs of input domain and ontology,
+please refer to the online Documentations at
+<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a></dd>
       <dt>output.file</dt>
       <dd>an output file used to save the built object as an
 RData-formatted file. If NULL, this file will be saved into "HIS.RData"
@@ -300,26 +304,26 @@ Feature2GOMF.sf <-
 dcAlgoPropagate(input.file="http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt",
 ontology="GOMF", output.file="Feature2GOMF.sf.RData")
 </div>
-<strong class='message'>Start at 2014-10-24 19:27:09</strong>
+<strong class='message'>Start at 2014-11-26 13:55:57</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the file 'http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt' ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
 <strong class='message'>Do propagation ...</strong>
-<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-10-24 19:27:18).</strong>
-<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-10-24 19:27:19).</strong>
-<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-10-24 19:27:19).</strong>
-<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-10-24 19:27:20).</strong>
-<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-10-24 19:27:21).</strong>
-<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-10-24 19:27:22).</strong>
-<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-10-24 19:27:24).</strong>
-<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-10-24 19:27:27).</strong>
-<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors (2014-10-24 19:27:27).</strong>
+<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-11-26 13:56:05).</strong>
+<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-11-26 13:56:06).</strong>
+<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-11-26 13:56:06).</strong>
+<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-11-26 13:56:07).</strong>
+<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-11-26 13:56:08).</strong>
+<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-11-26 13:56:08).</strong>
+<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-11-26 13:56:10).</strong>
+<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-11-26 13:56:12).</strong>
+<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-11-26 13:56:15).</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors (2014-11-26 13:56:15).</strong>
 <strong class='message'>After propagation, there are 6018 features annotated by 2836 terms.</strong>
 <strong class='message'>Determining IC-based slim levels ...</strong>
 <strong class='message'>	1 level with 6 terms with IC falling around 0.47 (between 0.00 and 0.94).</strong>
@@ -328,8 +332,8 @@ ontology="GOMF", output.file="Feature2GOMF.sf.RData")
 <strong class='message'>	4 level with 838 terms with IC falling around 3.31 (between 3.07 and 3.54).</strong>
 <strong class='message'>An object of S3 class 'HIS' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/Feature2GOMF.sf.RData'.</strong>
 <strong class='message'>
-End at 2014-10-24 19:27:46</strong>
-<strong class='message'>Runtime in total is: 37 secs
+End at 2014-11-26 13:56:31</strong>
+<strong class='message'>Runtime in total is: 34 secs
 </strong>
 <div class='input'>names(Feature2GOMF.sf)
 </div>
@@ -386,7 +390,7 @@ GO:0003824 GO:0005515 GO:0043167 GO:0097159 GO:1901363 GO:0004872
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -394,7 +398,7 @@ GO:0003824 GO:0005515 GO:0043167 GO:0097159 GO:1901363 GO:0004872
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -407,6 +411,9 @@ GO:0003824 GO:0005515 GO:0043167 GO:0097159 GO:1901363 GO:0004872
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

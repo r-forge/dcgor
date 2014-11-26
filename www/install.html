@@ -202,7 +202,7 @@ window.onload = function(){
 <p>R (<a href="http://www.r-project.org">http://www.r-project.org</a>) is a language and environment for statistical computing and graphics. We assume R (version 3.1.0 or higher) has been installed in your local machine. The latest version can be installed following instructions below for different platforms (Windows, Mac, and Linux).</p>
 
 <ul>
-<li>Quick link for <code>Windows</code>: <a href="http://cran.r-project.org/bin/windows/base">Download R for Windows</a>.</li>
+<li>Quick link for <code>Windows</code>: <a href="http://cran.r-project.org/bin/windows/base/R-3.1.2-win.exe">Download R for Windows</a>.</li>
 <li><p>Quick link for <code>Mac</code>: <a href="http://cran.r-project.org/bin/macosx">Download R for Mac OS X 10.6 (Snow Leopard or higher)</a>.</p></li>
 <li><p>Below are <code>shell command lines in Terminal</code> (for <code>Linux</code>):</p></li>
 </ul>
@@ -210,9 +210,9 @@ window.onload = function(){
 <p>Assume you have a <code>ROOT (sudo)</code> privilege:</p>
 
 <pre><code>sudo su
-wget http://www.stats.bris.ac.uk/R/src/base/R-3/R-3.1.1.tar.gz
-tar xvfz R-3.1.1.tar.gz
-cd R-3.1.1
+wget http://www.stats.bris.ac.uk/R/src/base/R-3/R-3.1.2.tar.gz
+tar xvfz R-3.1.2.tar.gz
+cd R-3.1.2
 ./configure
 make
 make check
@@ -222,14 +222,14 @@ R # start R
 
 <p>Assume you do not have a ROOT privilege and want R installation under your home directory (below <code>/home/hfang</code> should be replaced with yours):</p>
 
-<pre><code>wget http://www.stats.bris.ac.uk/R/src/base/R-3/R-3.1.1.tar.gz
-tar xvfz R-3.1.1.tar.gz
-cd R-3.1.1
-./configure --prefix=/home/hfang/R-3.1.1
+<pre><code>wget http://www.stats.bris.ac.uk/R/src/base/R-3/R-3.1.2.tar.gz
+tar xvfz R-3.1.2.tar.gz
+cd R-3.1.2
+./configure --prefix=/home/hfang/R-3.1.2
 make
 make check
 make install
-/home/hfang/R-3.1.1/bin/R # start R
+/home/hfang/R-3.1.2/bin/R # start R
 </code></pre>
 
 <h2>2. Installation of the package</h2>
@@ -252,7 +252,7 @@ biocLite(c(&quot;hexbin&quot;,&quot;ape&quot;,&quot;supraHex&quot;,&quot;graph&q
 <pre><code>library(devtools)
 for(pkg in c(&quot;dcGOR&quot;,&quot;dnet&quot;)){
     if(pkg %in% rownames(installed.packages())) remove.packages(pkg)
-    install_github(pkg, username=&quot;hfang-bristol&quot;)
+    install_github(repo=paste(&quot;hfang-bristol&quot;,pkg,sep=&quot;/&quot;))
 }
 </code></pre>
 
@@ -281,7 +281,7 @@ for(pkg in c(&quot;dcGOR&quot;,&quot;dnet&quot;)){
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>

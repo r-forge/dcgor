@@ -2,7 +2,7 @@ Package: dcGOR
 Type: Package
 Title: Analysis of ontologies and protein domain annotations.
 Version: 1.0.4
-Date: 2014-10-31
+Date: 2014-11-20
 Author: Hai Fang and Julian Gough
 Maintainer: Hai Fang <hfang@cs.bris.ac.uk>
 Depends: R (>= 3.1.0), Matrix, igraph, dnet
@@ -32,5 +32,7 @@ Collate:
     'dcSubtreeTips.r'
     'dcTreeConnectivity.r'
     'dcDuplicated.r'
+    'dcSplitArch.r'
+    'dcAlgo.r'
 License: GPL-2
 biocViews: Bioinformatics

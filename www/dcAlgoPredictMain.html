@@ -208,7 +208,7 @@ domains).</p>
       "Feature2GOMF.pfam", "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", 
       "Feature2GOMF.interpro", "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
-      "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
+      "linear", "none"), feature.mode = c("supra", "individual", "comb"), slim.level = NULL, 
       parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
@@ -261,10 +261,11 @@ is done via: <code class = 'eq'>\frac{S - S_{min}}{S_{max} - S_{min}}</code>, wh
 <code class = 'eq'>S_{min}</code> and <code class = 'eq'>S_{max}</code> are the minimum and maximum values for
 <code class = 'eq'>S</code></dd>
       <dt>feature.mode</dt>
-      <dd>the mode of how to use the features thereof. It can
-be: "supradomains" for using all possible domain combinations (ie
-supradomains; including individual domains), "domains" for using
-individual domains only</dd>
+      <dd>the mode of how to define the features thereof. It
+can be: "supra" for combinations of one or two successive domains
+(including individual domains; considering the order), "individual" for
+individual domains only, and "comb" for all possible combinations
+(including individual domains; ignoring the order)</dd>
       <dt>slim.level</dt>
       <dd>whether only slim terms are returned. By defaut, it
 is NULL and all predicted terms will be reported. If it is specified as
@@ -335,13 +336,13 @@ predicted scores)</p>
     <pre class="examples"><div class='input'>input.file <- "http://dcgor.r-forge.r-project.org/data/Feature/hs.txt"
 output <- dcAlgoPredictMain(input.file, RData.HIS="Feature2GOMF.sf")
 </div>
-<strong class='message'>Start at 2014-10-28 17:46:52</strong>
+<strong class='message'>Start at 2014-11-26 13:55:33</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt' ...</strong>
-<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-28 17:46:56) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-28 17:47:12)...</strong>
+<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 13:55:36) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-26 13:55:54)...</strong>
 <strong class='message'>
-End at 2014-10-28 17:47:15</strong>
+End at 2014-11-26 13:55:56</strong>
 <strong class='message'>Runtime in total is: 23 secs
 </strong>
 <div class='input'>length(output)
@@ -351,7 +352,7 @@ End at 2014-10-28 17:47:15</strong>
 <div class='input'>output[1:10]
 </div>
 <div class='output'>GO:0000010 GO:0000014 GO:0000030 GO:0000031 GO:0000034 GO:0000049 GO:0000062 
- 0.0001435  0.0006605  0.0119500  0.0007028  0.0001485  0.0079650  0.0027300 
+ 0.0001435  0.0006605  0.0120000  0.0007028  0.0001485  0.0079780  0.0027300 
 GO:0000064 GO:0000104 GO:0000107 
  0.0005895  0.0030890  0.0006673 
 </div></pre>
@@ -383,7 +384,7 @@ GO:0000064 GO:0000104 GO:0000107
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -391,7 +392,7 @@ GO:0000064 GO:0000104 GO:0000107
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -403,8 +404,8 @@ GO:0000064 GO:0000104 GO:0000107
     
     <h2>URL</h2>
     <ul>
-      <li><a href="http://dcgor.r-forge.r-project.org">http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://supfam.org/dcGOR"> http://supfam.org/dcGOR</a></li>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
       <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
       <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>

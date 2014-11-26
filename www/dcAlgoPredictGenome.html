@@ -207,7 +207,7 @@ genomes with domain architectures (including individual domains).</p>
       "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", 
       "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
-      "linear", "none"), feature.mode = c("supradomains", "domains"), slim.level = NULL, 
+      "linear", "none"), feature.mode = c("supra", "individual", "comb"), slim.level = NULL, 
       parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
@@ -257,10 +257,11 @@ is done via: <code class = 'eq'>\frac{S - S_{min}}{S_{max} - S_{min}}</code>, wh
 <code class = 'eq'>S_{min}</code> and <code class = 'eq'>S_{max}</code> are the minimum and maximum values for
 <code class = 'eq'>S</code></dd>
       <dt>feature.mode</dt>
-      <dd>the mode of how to use the features thereof. It can
-be: "supradomains" for using all possible domain combinations (ie
-supradomains; including individual domains), "domains" for using
-individual domains only</dd>
+      <dd>the mode of how to define the features thereof. It
+can be: "supra" for combinations of one or two successive domains
+(including individual domains; considering the order), "individual" for
+individual domains only, and "comb" for all possible combinations
+(including individual domains; ignoring the order)</dd>
       <dt>slim.level</dt>
       <dd>whether only slim terms are returned. By defaut, it
 is NULL and all predicted terms will be reported. If it is specified as
@@ -330,15 +331,15 @@ genome) as a whole</p>
 "http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt"
 output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf")
 </div>
-<strong class='message'>Start at 2014-10-28 17:46:20</strong>
+<strong class='message'>Start at 2014-11-26 13:55:06</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
-<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supradomains' feature mode (2014-10-28 17:46:21) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-10-28 17:46:45)...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 13:55:07) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-26 13:55:29)...</strong>
 <strong class='message'>	do parallel computation using 2 cores ...</strong>
 <strong class='message'>
-End at 2014-10-28 17:46:51</strong>
-<strong class='message'>Runtime in total is: 31 secs
+End at 2014-11-26 13:55:32</strong>
+<strong class='message'>Runtime in total is: 26 secs
 </strong>
 <div class='input'>dim(output)
 </div>
@@ -348,15 +349,15 @@ End at 2014-10-28 17:46:51</strong>
 </div>
 <div class='output'>               gx     hs     of     xp
 GO:0003674 1.0000 1.0000 1.0000 1.0000
-GO:0005488 0.8284 0.8336 0.8269 0.8248
-GO:0005515 0.6857 0.6905 0.6823 0.6833
-GO:0003824 0.7444 0.7341 0.7452 0.7441
-GO:0043167 0.5023 0.4991 0.4985 0.4939
-GO:0016787 0.4838 0.4741 0.4822 0.4808
-GO:0016740 0.5378 0.5213 0.5374 0.5364
-GO:0097159 0.4653 0.4484 0.4640 0.4610
-GO:1901363 0.4541 0.4371 0.4526 0.4505
-GO:0043168 0.4180 0.4229 0.4159 0.4118
+GO:0005488 0.8282 0.8334 0.8267 0.8246
+GO:0005515 0.6853 0.6901 0.6819 0.6830
+GO:0003824 0.7433 0.7332 0.7443 0.7430
+GO:0043167 0.5006 0.4976 0.4971 0.4925
+GO:0016787 0.4827 0.4732 0.4812 0.4798
+GO:0016740 0.5363 0.5200 0.5361 0.5350
+GO:0097159 0.4650 0.4481 0.4638 0.4606
+GO:1901363 0.4538 0.4368 0.4524 0.4502
+GO:0043168 0.4166 0.4213 0.4147 0.4107
 </div></pre>
   </div>
   
@@ -386,7 +387,7 @@ GO:0043168 0.4180 0.4229 0.4159 0.4118
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -394,7 +395,7 @@ GO:0043168 0.4180 0.4229 0.4159 0.4118
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -406,8 +407,8 @@ GO:0043168 0.4180 0.4229 0.4159 0.4118
     
     <h2>URL</h2>
     <ul>
-      <li><a href="http://dcgor.r-forge.r-project.org">http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://supfam.org/dcGOR"> http://supfam.org/dcGOR</a></li>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
       <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
       <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
