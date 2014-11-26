@@ -208,7 +208,7 @@ ontology.</p>
     <pre>dcAlgo(anno.file, architecture.file, output.file = NULL, ontology = c(NA, "GOBP", 
   "GOMF", "GOCC", "DO", "HPPA", "HPMI", "HPON", "MP", "EC", "KW", "UP"), feature.mode = c("supra", 
       "individual", "comb"), min.overlap = 3, fdr.cutoff = 0.001, parallel = TRUE, 
-      multicores = NULL, verbose = T, ontology.RData = NULL, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
+      multicores = NULL, verbose = T, RData.ontology.customised = NULL, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -247,7 +247,9 @@ and clinical course, "MP" for Mammalian Phenotype, "EC" for Enzyme
 Commission, "KW" for UniProtKB KeyWords, "UP" for UniProtKB UniPathway.
 For details on the eligibility for pairs of input domain and ontology,
 please refer to the online Documentations at
-<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a></dd>
+<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a>. If NA, then the user has to
+input a customised RData-formatted file (see
+<code>RData.ontology.customised</code> below)</dd>
       <dt>feature.mode</dt>
       <dd>the mode of how to define the features thereof. It
 can be: "supra" for combinations of one or two successive domains
@@ -278,12 +280,12 @@ This option only works when parallel computation is enabled</dd>
       <dt>verbose</dt>
       <dd>logical to indicate whether the messages will be
 displayed in the screen. By default, it sets to TRUE for display</dd>
-      <dt>ontology.RData</dt>
-      <dd>a file name for RData-formatted file containing
-an object of S4 class 'Onto' (i.g. ontology). By default, it is NULL.
-It is only needed when the user wants to perform customised analysis
-using their own ontology. See <code><a href='dcBuildOnto.html'>dcBuildOnto</a></code> for how to
-creat this object</dd>
+      <dt>RData.ontology.customised</dt>
+      <dd>a file name for RData-formatted file
+containing an object of S4 class 'Onto' (i.g. ontology). By default, it
+is NULL. It is only needed when the user wants to perform customised
+analysis using their own ontology. See <code><a href='dcBuildOnto.html'>dcBuildOnto</a></code> for
+how to creat this object</dd>
       <dt>RData.location</dt>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
@@ -335,12 +337,12 @@ architecture.file <-
 res <- dcAlgo(anno.file, architecture.file, ontology="HPPA",
 feature.mode="supra", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 13:54:18</strong>
+<strong class='message'>Start at 2014-11-26 16:21:45</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-11-26 13:54:18) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2014-11-26 16:21:45) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for annotations 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and architectures 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' (2014-11-26 13:54:18) ...</strong>
-<strong class='message'>Third, propagate annotations (2014-11-26 13:54:21) ...</strong>
+<strong class='message'>Second, import files for annotations 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and architectures 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' (2014-11-26 16:21:46) ...</strong>
+<strong class='message'>Third, propagate annotations (2014-11-26 16:21:48) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -357,48 +359,48 @@ feature.mode="supra", parallel=FALSE)
 <strong class='message'>	At level 3, there are 113 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 6438 terms used (2014-11-26 13:54:41).</strong>
-<strong class='message'>Fourth, define groups using feature mode 'supra' (2014-11-26 13:54:41) ...</strong>
-<strong class='message'>	i) split into features (2014-11-26 13:54:41) ...</strong>
-<strong class='message'>	1 out of 4351 (2014-11-26 13:54:41)</strong>
-<strong class='message'>	436 out of 4351 (2014-11-26 13:54:42)</strong>
-<strong class='message'>	872 out of 4351 (2014-11-26 13:54:42)</strong>
-<strong class='message'>	1308 out of 4351 (2014-11-26 13:54:42)</strong>
-<strong class='message'>	1744 out of 4351 (2014-11-26 13:54:43)</strong>
-<strong class='message'>	2180 out of 4351 (2014-11-26 13:54:43)</strong>
-<strong class='message'>	2616 out of 4351 (2014-11-26 13:54:44)</strong>
-<strong class='message'>	3052 out of 4351 (2014-11-26 13:54:44)</strong>
-<strong class='message'>	3488 out of 4351 (2014-11-26 13:54:44)</strong>
-<strong class='message'>	3924 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	4351 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	ii) obtain feature-based groups (2014-11-26 13:54:45) ...</strong>
-<strong class='message'>	1 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	436 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	872 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	1308 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	1744 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	2180 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	2616 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	3052 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	3488 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	3924 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	4351 out of 4351 (2014-11-26 13:54:45)</strong>
-<strong class='message'>	There are 2194 features used (2014-11-26 13:54:45).</strong>
-<strong class='message'>Finally, estimate associations between 2194 features and 6438 terms, with 3 min overlaps and 1.0e-03 fdr cutoff (2014-11-26 13:54:45) ...</strong>
-<strong class='message'>	1 out of 2194 (2014-11-26 13:54:50)</strong>
-<strong class='message'>	220 out of 2194 (2014-11-26 13:54:51)</strong>
-<strong class='message'>	440 out of 2194 (2014-11-26 13:54:52)</strong>
-<strong class='message'>	660 out of 2194 (2014-11-26 13:54:52)</strong>
-<strong class='message'>	880 out of 2194 (2014-11-26 13:54:53)</strong>
-<strong class='message'>	1100 out of 2194 (2014-11-26 13:54:54)</strong>
-<strong class='message'>	1320 out of 2194 (2014-11-26 13:54:55)</strong>
-<strong class='message'>	1540 out of 2194 (2014-11-26 13:54:56)</strong>
-<strong class='message'>	1760 out of 2194 (2014-11-26 13:54:57)</strong>
-<strong class='message'>	1980 out of 2194 (2014-11-26 13:54:58)</strong>
-<strong class='message'>	2194 out of 2194 (2014-11-26 13:54:59)</strong>
+<strong class='message'>	There are 6438 terms used (2014-11-26 16:22:08).</strong>
+<strong class='message'>Fourth, define groups using feature mode 'supra' (2014-11-26 16:22:08) ...</strong>
+<strong class='message'>	i) split into features (2014-11-26 16:22:08) ...</strong>
+<strong class='message'>	1 out of 4351 (2014-11-26 16:22:08)</strong>
+<strong class='message'>	436 out of 4351 (2014-11-26 16:22:09)</strong>
+<strong class='message'>	872 out of 4351 (2014-11-26 16:22:09)</strong>
+<strong class='message'>	1308 out of 4351 (2014-11-26 16:22:10)</strong>
+<strong class='message'>	1744 out of 4351 (2014-11-26 16:22:10)</strong>
+<strong class='message'>	2180 out of 4351 (2014-11-26 16:22:10)</strong>
+<strong class='message'>	2616 out of 4351 (2014-11-26 16:22:11)</strong>
+<strong class='message'>	3052 out of 4351 (2014-11-26 16:22:11)</strong>
+<strong class='message'>	3488 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	3924 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	4351 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	ii) obtain feature-based groups (2014-11-26 16:22:12) ...</strong>
+<strong class='message'>	1 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	436 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	872 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	1308 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	1744 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	2180 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	2616 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	3052 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	3488 out of 4351 (2014-11-26 16:22:12)</strong>
+<strong class='message'>	3924 out of 4351 (2014-11-26 16:22:13)</strong>
+<strong class='message'>	4351 out of 4351 (2014-11-26 16:22:13)</strong>
+<strong class='message'>	There are 2194 features used (2014-11-26 16:22:13).</strong>
+<strong class='message'>Finally, estimate associations between 2194 features and 6438 terms, with 3 min overlaps and 1.0e-03 fdr cutoff (2014-11-26 16:22:13) ...</strong>
+<strong class='message'>	1 out of 2194 (2014-11-26 16:22:17)</strong>
+<strong class='message'>	220 out of 2194 (2014-11-26 16:22:18)</strong>
+<strong class='message'>	440 out of 2194 (2014-11-26 16:22:19)</strong>
+<strong class='message'>	660 out of 2194 (2014-11-26 16:22:20)</strong>
+<strong class='message'>	880 out of 2194 (2014-11-26 16:22:20)</strong>
+<strong class='message'>	1100 out of 2194 (2014-11-26 16:22:22)</strong>
+<strong class='message'>	1320 out of 2194 (2014-11-26 16:22:23)</strong>
+<strong class='message'>	1540 out of 2194 (2014-11-26 16:22:24)</strong>
+<strong class='message'>	1760 out of 2194 (2014-11-26 16:22:25)</strong>
+<strong class='message'>	1980 out of 2194 (2014-11-26 16:22:26)</strong>
+<strong class='message'>	2194 out of 2194 (2014-11-26 16:22:27)</strong>
 <strong class='message'>
-End at 2014-11-26 13:54:59</strong>
-<strong class='message'>Runtime in total is: 41 secs
+End at 2014-11-26 16:22:27</strong>
+<strong class='message'>Runtime in total is: 42 secs
 </strong></pre>
   </div>
   
@@ -424,7 +426,8 @@ End at 2014-11-26 13:54:59</strong>
     <h2>See also</h2>
     
 <code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcSplitArch.html'>dcSplitArch</a></code>,
-<code><a href='dcConverter.html'>dcConverter</a></code>, <code><a href='dcDuplicated.html'>dcDuplicated</a></code>
+<code><a href='dcConverter.html'>dcConverter</a></code>, <code><a href='dcDuplicated.html'>dcDuplicated</a></code>,
+<code><a href='dcAlgoPropagate.html'>dcAlgoPropagate</a></code>
 
     <!--
 

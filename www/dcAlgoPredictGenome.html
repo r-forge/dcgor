@@ -202,13 +202,14 @@ window.onload = function(){
 genomes with domain architectures (including individual domains).</p>
   
     <h3>Usage</h3>
-    <pre>dcAlgoPredictGenome(input.file, RData.HIS = c("Feature2GOBP.sf", "Feature2GOMF.sf", 
+    <pre>dcAlgoPredictGenome(input.file, RData.HIS = c(NA, "Feature2GOBP.sf", "Feature2GOMF.sf", 
   "Feature2GOCC.sf", "Feature2HPPA.sf", "Feature2GOBP.pfam", "Feature2GOMF.pfam", 
       "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", 
       "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supra", "individual", "comb"), slim.level = NULL, 
-      parallel = TRUE, multicores = NULL, verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
+      parallel = TRUE, multicores = NULL, verbose = T, RData.HIS.customised = NULL, 
+      RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -235,7 +236,9 @@ domains/combinations (including "Feature2GOBP.sf", "Feature2GOMF.sf",
 (including "Feature2GOBP.pfam", "Feature2GOMF.pfam",
 "Feature2GOCC.pfam", "Feature2HPPA.pfam"), InterPro domains (including
 "Feature2GOBP.interpro", "Feature2GOMF.interpro",
-"Feature2GOCC.interpro", "Feature2HPPA.interpro")</dd>
+"Feature2GOCC.interpro", "Feature2HPPA.interpro"). If NA, then the user
+has to input a customised RData-formatted file (see
+<code>RData.HIS.customised</code> below)</dd>
       <dt>weight.method</dt>
       <dd>the method used how to weight predictions. It can
 be one of "none" (no weighting; by default), "copynum" for weighting
@@ -287,6 +290,11 @@ This option only works when parallel computation is enabled</dd>
       <dt>verbose</dt>
       <dd>logical to indicate whether the messages will be
 displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.HIS.customised</dt>
+      <dd>a file name for RData-formatted file
+containing an object of S3 class 'HIS'. By default, it is NULL. It is
+only needed when the user wants to perform customised analysis. See
+<code><a href='dcAlgoPropagate.html'>dcAlgoPropagate</a></code> on how this object is created</dd>
       <dt>RData.location</dt>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
@@ -331,15 +339,17 @@ genome) as a whole</p>
 "http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt"
 output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf")
 </div>
-<strong class='message'>Start at 2014-11-26 13:55:06</strong>
+<strong class='message'>Start at 2014-11-26 16:22:34</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
-<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 13:55:07) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-26 13:55:29)...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:35) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-26 16:23:03)...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:23:03) ...</strong>
+<strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
 <strong class='message'>	do parallel computation using 2 cores ...</strong>
 <strong class='message'>
-End at 2014-11-26 13:55:32</strong>
-<strong class='message'>Runtime in total is: 26 secs
+End at 2014-11-26 16:23:07</strong>
+<strong class='message'>Runtime in total is: 33 secs
 </strong>
 <div class='input'>dim(output)
 </div>
@@ -382,7 +392,8 @@ GO:0043168 0.4166 0.4213 0.4147 0.4107
     
     <h2>See also</h2>
     
-<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcAlgoPredict.html'>dcAlgoPredict</a></code>
+<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcAlgoPropagate.html'>dcAlgoPropagate</a></code>,
+<code><a href='dcAlgoPredict.html'>dcAlgoPredict</a></code>
 
     <!--
 
