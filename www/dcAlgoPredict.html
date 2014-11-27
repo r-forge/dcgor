@@ -211,7 +211,7 @@ into predictive scores across terms.</p>
       "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", "Feature2GOCC.interpro", 
       "Feature2HPPA.interpro"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supra", "individual", "comb"), slim.level = NULL, 
-      parallel = TRUE, multicores = NULL, verbose = T, RData.HIS.customised = NULL, 
+      max.num = NULL, parallel = TRUE, multicores = NULL, verbose = T, RData.HIS.customised = NULL, 
       RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
@@ -261,6 +261,12 @@ a vector containing any values from 1 to 4, then only slim terms at
 these levels will be reported. Here is the meaning of these values: '1'
 for very general terms, '2' for general terms, '3' for specific terms,
 and '4' for very specific terms</dd>
+      <dt>max.num</dt>
+      <dd>whether only top terms per sequence are returned. By
+defaut, it is NULL and no constraint is imposed. If an integer is
+specified, then all predicted terms (with scores in a decreasing order)
+beyond this number will be discarded. Notably, this parameter works
+after the preceding parameter <code>slim.level</code></dd>
       <dt>parallel</dt>
       <dd>logical to indicate whether parallel computation with
 multicores is used. By default, it sets to true, but not necessarily
@@ -334,55 +340,55 @@ x <- dcRDataLoader(RData="Feature2GOMF.sf")
 pscore <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 16:22:28</strong>
+<strong class='message'>Start at 2014-11-27 16:48:58</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:22:28) ...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:48:58) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:29)...</strong>
-<strong class='message'>	1 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	2 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	3 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	4 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	5 out of 5 (2014-11-26 16:22:29)</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:48:58)...</strong>
+<strong class='message'>	1 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	2 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	3 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	4 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	5 out of 5 (2014-11-27 16:48:58)</strong>
 <strong class='message'>
-End at 2014-11-26 16:22:29</strong>
-<strong class='message'>Runtime in total is: 1 secs
+End at 2014-11-27 16:48:58</strong>
+<strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## using 'max' method
 pscore_max <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 merge.method="max", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 16:22:29</strong>
+<strong class='message'>Start at 2014-11-27 16:48:58</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:22:29) ...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:48:58) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'max' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:29)...</strong>
-<strong class='message'>	1 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	2 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	3 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	4 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	5 out of 5 (2014-11-26 16:22:29)</strong>
+<strong class='message'>Predictions for 5 architectures using 'max' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:48:58)...</strong>
+<strong class='message'>	1 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	2 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	3 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	4 out of 5 (2014-11-27 16:48:58)</strong>
+<strong class='message'>	5 out of 5 (2014-11-27 16:48:58)</strong>
 <strong class='message'>
-End at 2014-11-26 16:22:29</strong>
+End at 2014-11-27 16:48:58</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## using 'sum' method
 pscore_sum <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 merge.method="sum", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 16:22:29</strong>
+<strong class='message'>Start at 2014-11-27 16:48:58</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:22:29) ...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:48:58) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:29)...</strong>
-<strong class='message'>	1 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	2 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	3 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	4 out of 5 (2014-11-26 16:22:29)</strong>
-<strong class='message'>	5 out of 5 (2014-11-26 16:22:29)</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:48:59)...</strong>
+<strong class='message'>	1 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	2 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	3 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	4 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	5 out of 5 (2014-11-27 16:48:59)</strong>
 <strong class='message'>
-End at 2014-11-26 16:22:29</strong>
-<strong class='message'>Runtime in total is: 0 secs
+End at 2014-11-27 16:48:59</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>
 # 3) advanced usage
@@ -390,20 +396,20 @@ End at 2014-11-26 16:22:29</strong>
 pscore <- dcAlgoPredict(data=data, RData.HIS="Feature2GOMF.sf",
 slim.level=2, parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 16:22:29</strong>
+<strong class='message'>Start at 2014-11-27 16:48:59</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:22:29) ...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:48:59) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:30)...</strong>
-<strong class='message'>	1 out of 5 (2014-11-26 16:22:30)</strong>
-<strong class='message'>	2 out of 5 (2014-11-26 16:22:30)</strong>
-<strong class='message'>	3 out of 5 (2014-11-26 16:22:30)</strong>
-<strong class='message'>	4 out of 5 (2014-11-26 16:22:30)</strong>
-<strong class='message'>	5 out of 5 (2014-11-26 16:22:30)</strong>
+<strong class='message'>Predictions for 5 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:48:59)...</strong>
+<strong class='message'>	1 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	2 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	3 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	4 out of 5 (2014-11-27 16:48:59)</strong>
+<strong class='message'>	5 out of 5 (2014-11-27 16:48:59)</strong>
 <strong class='message'>Focus on predicted terms at '2' slim level(s)</strong>
 <strong class='message'>
-End at 2014-11-26 16:22:30</strong>
-<strong class='message'>Runtime in total is: 1 secs
+End at 2014-11-27 16:48:59</strong>
+<strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>## b) visualise predictive scores in the ontology hierarchy
 ### load the ontology

@@ -202,13 +202,13 @@ window.onload = function(){
 genomes with domain architectures (including individual domains).</p>
   
     <h3>Usage</h3>
-    <pre>dcAlgoPredictGenome(input.file, RData.HIS = c(NA, "Feature2GOBP.sf", "Feature2GOMF.sf", 
+    <pre>dcAlgoPredictGenome(input.file, RData.HIS = c(NULL, "Feature2GOBP.sf", "Feature2GOMF.sf", 
   "Feature2GOCC.sf", "Feature2HPPA.sf", "Feature2GOBP.pfam", "Feature2GOMF.pfam", 
       "Feature2GOCC.pfam", "Feature2HPPA.pfam", "Feature2GOBP.interpro", "Feature2GOMF.interpro", 
       "Feature2GOCC.interpro", "Feature2HPPA.interpro"), weight.method = c("none", 
       "copynum", "ic", "both"), merge.method = c("sum", "max", "sequential"), scale.method = c("log", 
       "linear", "none"), feature.mode = c("supra", "individual", "comb"), slim.level = NULL, 
-      parallel = TRUE, multicores = NULL, verbose = T, RData.HIS.customised = NULL, 
+      max.num = NULL, parallel = TRUE, multicores = NULL, verbose = T, RData.HIS.customised = NULL, 
       RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
@@ -272,6 +272,12 @@ a vector containing any values from 1 to 4, then only slim terms at
 these levels will be reported. Here is the meaning of these values: '1'
 for very general terms, '2' for general terms, '3' for specific terms,
 and '4' for very specific terms</dd>
+      <dt>max.num</dt>
+      <dd>whether only top terms per sequence are returned. By
+defaut, it is NULL and no constraint is imposed. If an integer is
+specified, then all predicted terms (with scores in a decreasing order)
+beyond this number will be discarded. Notably, this parameter works
+after the preceding parameter <code>slim.level</code></dd>
       <dt>parallel</dt>
       <dd>logical to indicate whether parallel computation with
 multicores is used. By default, it sets to true, but not necessarily
@@ -335,21 +341,28 @@ genome) as a whole</p>
     -->
     
     <h3 id="examples">Examples</h3>
-    <pre class="examples"><div class='input'>input.file <-
+    <pre class="examples"><div class='input'># 1) Prepare an input file containing domain architectures
+input.file <-
 "http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt"
-output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf")
+
+# 2) Do prediction using built-in data
+output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf",
+parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-26 16:22:34</strong>
+<strong class='message'>Start at 2014-11-27 16:49:05</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
-<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-26 16:22:35) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-26 16:23:03)...</strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-26 16:23:03) ...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:49:06) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-27 16:49:42)...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:49:42) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>	do parallel computation using 2 cores ...</strong>
+<strong class='message'>	1 out of 4 (2014-11-27 16:49:42)</strong>
+<strong class='message'>	2 out of 4 (2014-11-27 16:49:43)</strong>
+<strong class='message'>	3 out of 4 (2014-11-27 16:49:45)</strong>
+<strong class='message'>	4 out of 4 (2014-11-27 16:49:47)</strong>
 <strong class='message'>
-End at 2014-11-26 16:23:07</strong>
-<strong class='message'>Runtime in total is: 33 secs
+End at 2014-11-27 16:49:48</strong>
+<strong class='message'>Runtime in total is: 43 secs
 </strong>
 <div class='input'>dim(output)
 </div>
@@ -368,6 +381,49 @@ GO:0016740 0.5363 0.5200 0.5361 0.5350
 GO:0097159 0.4650 0.4481 0.4638 0.4606
 GO:1901363 0.4538 0.4368 0.4524 0.4502
 GO:0043168 0.4166 0.4213 0.4147 0.4107
+</div>
+<div class='input'>
+# 3) Advanced usage: using customised data
+x <-
+base::load(base::url("http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData"))
+RData.HIS.customised <- 'Feature2GOMF.sf.RData'
+base::save(list=x, file=RData.HIS.customised)
+## you will see a RData file 'Feature2GOMF.sf.RData' in local directory: list.files(pattern='*.RData')
+output <- dcAlgoPredictGenome(input.file, parallel=FALSE,
+RData.HIS.customised=RData.HIS.customised)
+</div>
+<strong class='message'>Start at 2014-11-27 16:49:48</strong>
+<strong class='message'></strong>
+<strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOBP.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:49:49) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-27 16:53:16)...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOBP.sf' (2014-11-27 16:53:16) ...</strong>
+<strong class='message'>'Feature2GOBP.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOBP.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>	1 out of 4 (2014-11-27 16:53:16)</strong>
+<strong class='message'>	2 out of 4 (2014-11-27 16:53:30)</strong>
+<strong class='message'>	3 out of 4 (2014-11-27 16:53:47)</strong>
+<strong class='message'>	4 out of 4 (2014-11-27 16:53:57)</strong>
+<strong class='message'>
+End at 2014-11-27 16:54:06</strong>
+<strong class='message'>Runtime in total is: 258 secs
+</strong>
+<div class='input'>dim(output)
+</div>
+<div class='output'>[1] 11203     4
+</div>
+<div class='input'>output[1:10,]
+</div>
+<div class='output'>               gx     hs     of     xp
+GO:0008150 1.0000 1.0000 1.0000 1.0000
+GO:0009987 0.9451 0.9440 0.9455 0.9458
+GO:0044699 0.8750 0.8741 0.8725 0.8713
+GO:0044763 0.8430 0.8397 0.8412 0.8404
+GO:0065007 0.8517 0.8472 0.8487 0.8494
+GO:0008152 0.8505 0.8403 0.8490 0.8485
+GO:0050789 0.8296 0.8250 0.8267 0.8272
+GO:0032501 0.7676 0.7672 0.7651 0.7618
+GO:0044707 0.7554 0.7545 0.7519 0.7490
+GO:0032502 0.7531 0.7511 0.7505 0.7466
 </div></pre>
   </div>
   
