@@ -26,7 +26,8 @@ row) and two columns: 1st column for 'SeqID' (actually these IDs can be
 anything), 2nd column for 'Architecture' (SCOP domain architectures,
 each represented as comma-separated domains). Alternatively, the
 input.file can be a matrix or data frame, assuming that input file has
-been read}
+been read. Note: the file should use the tab delimiter as the field
+separator between columns}
 
 \item{output.file}{an output file containing predicted results. If not
 NULL, a tab-delimited text file will be also written out; otherwise,
@@ -148,7 +149,8 @@ x <-
 base::load(base::url("http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData"))
 RData.HIS.customised <- 'Feature2GOMF.sf.RData'
 base::save(list=x, file=RData.HIS.customised)
-## you will see a RData file 'Feature2GOMF.sf.RData' in local directory: list.files(pattern='*.RData')
+#list.files(pattern='*.RData')
+## you will see an RData file 'Feature2GOMF.sf.RData' in local directory
 output <- dcAlgoPredictMain(input.file, parallel=FALSE,
 RData.HIS.customised=RData.HIS.customised)
 output[1:5,]

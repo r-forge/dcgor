@@ -224,7 +224,8 @@ first row) and two columns: 1st column for 'Genome' (a genome like a
 container), 2nd column for 'Architecture' (SCOP domain architectures,
 each represented as comma-separated domains). Alternatively, the
 input.file can be a matrix or data frame, assuming that input file has
-been read</dd>
+been read. Note: the file should use the tab delimiter as the field
+separator between columns</dd>
       <dt>RData.HIS</dt>
       <dd>RData to load. This RData conveys two bits of
 information: 1) feature (domain) type; 2) ontology. It stores the
@@ -349,20 +350,20 @@ input.file <-
 output <- dcAlgoPredictGenome(input.file, RData.HIS="Feature2GOMF.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-27 16:49:05</strong>
+<strong class='message'>Start at 2014-12-03 15:05:56</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
-<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:49:06) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-27 16:49:42)...</strong>
-<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-11-27 16:49:42) ...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-03 15:05:57) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-12-03 15:06:31)...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOMF.sf' (2014-12-03 15:06:31) ...</strong>
 <strong class='message'>'Feature2GOMF.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>	1 out of 4 (2014-11-27 16:49:42)</strong>
-<strong class='message'>	2 out of 4 (2014-11-27 16:49:43)</strong>
-<strong class='message'>	3 out of 4 (2014-11-27 16:49:45)</strong>
-<strong class='message'>	4 out of 4 (2014-11-27 16:49:47)</strong>
+<strong class='message'>	1 out of 4 (2014-12-03 15:06:32)</strong>
+<strong class='message'>	2 out of 4 (2014-12-03 15:06:33)</strong>
+<strong class='message'>	3 out of 4 (2014-12-03 15:06:35)</strong>
+<strong class='message'>	4 out of 4 (2014-12-03 15:06:36)</strong>
 <strong class='message'>
-End at 2014-11-27 16:49:48</strong>
-<strong class='message'>Runtime in total is: 43 secs
+End at 2014-12-03 15:06:37</strong>
+<strong class='message'>Runtime in total is: 41 secs
 </strong>
 <div class='input'>dim(output)
 </div>
@@ -388,24 +389,25 @@ x <-
 base::load(base::url("http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData"))
 RData.HIS.customised <- 'Feature2GOMF.sf.RData'
 base::save(list=x, file=RData.HIS.customised)
-## you will see a RData file 'Feature2GOMF.sf.RData' in local directory: list.files(pattern='*.RData')
+#list.files(pattern='*.RData')
+## you will see an RData file 'Feature2GOMF.sf.RData' in local directory
 output <- dcAlgoPredictGenome(input.file, parallel=FALSE,
 RData.HIS.customised=RData.HIS.customised)
 </div>
-<strong class='message'>Start at 2014-11-27 16:49:48</strong>
+<strong class='message'>Start at 2014-12-03 15:06:38</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Hominidae.txt' ...</strong>
-<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOBP.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:49:49) ...</strong>
-<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-11-27 16:53:16)...</strong>
-<strong class='message'>Load the HIS object 'Feature2GOBP.sf' (2014-11-27 16:53:16) ...</strong>
+<strong class='message'>Predictions for 108206 sequences (9214 distinct architectures) using 'Feature2GOBP.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-03 15:06:39) ...</strong>
+<strong class='message'>A summary in terms of ontology terms using 'none' weight method (2014-12-03 15:10:01)...</strong>
+<strong class='message'>Load the HIS object 'Feature2GOBP.sf' (2014-12-03 15:10:01) ...</strong>
 <strong class='message'>'Feature2GOBP.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2GOBP.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>	1 out of 4 (2014-11-27 16:53:16)</strong>
-<strong class='message'>	2 out of 4 (2014-11-27 16:53:30)</strong>
-<strong class='message'>	3 out of 4 (2014-11-27 16:53:47)</strong>
-<strong class='message'>	4 out of 4 (2014-11-27 16:53:57)</strong>
+<strong class='message'>	1 out of 4 (2014-12-03 15:10:02)</strong>
+<strong class='message'>	2 out of 4 (2014-12-03 15:10:15)</strong>
+<strong class='message'>	3 out of 4 (2014-12-03 15:10:30)</strong>
+<strong class='message'>	4 out of 4 (2014-12-03 15:10:40)</strong>
 <strong class='message'>
-End at 2014-11-27 16:54:06</strong>
-<strong class='message'>Runtime in total is: 258 secs
+End at 2014-12-03 15:10:49</strong>
+<strong class='message'>Runtime in total is: 251 secs
 </strong>
 <div class='input'>dim(output)
 </div>

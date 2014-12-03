@@ -223,7 +223,8 @@ row) and two columns: 1st column for 'SeqID' (actually these IDs can be
 anything), 2nd column for 'Architecture' (SCOP domain architectures,
 each represented as comma-separated domains). Alternatively, the
 input.file can be a matrix or data frame, assuming that input file has
-been read</dd>
+been read. Note: the file should use the tab delimiter as the field
+separator between columns</dd>
       <dt>output.file</dt>
       <dd>an output file containing predicted results. If not
 NULL, a tab-delimited text file will be also written out; otherwise,
@@ -350,14 +351,14 @@ input.file <- "http://dcgor.r-forge.r-project.org/data/Feature/hs.txt"
 output <- dcAlgoPredictMain(input.file, RData.HIS="Feature2GOMF.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-11-27 16:54:07</strong>
+<strong class='message'>Start at 2014-12-03 15:10:50</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt' ...</strong>
-<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:54:11) ...</strong>
-<strong class='message'>Preparations for output (2014-11-27 16:54:40)...</strong>
+<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-03 15:10:53) ...</strong>
+<strong class='message'>Preparations for output (2014-12-03 15:11:21)...</strong>
 <strong class='message'>
-End at 2014-11-27 16:54:46</strong>
-<strong class='message'>Runtime in total is: 39 secs
+End at 2014-12-03 15:11:27</strong>
+<strong class='message'>Runtime in total is: 37 secs
 </strong>
 <div class='input'>output[1:5,]
 </div>
@@ -374,17 +375,18 @@ x <-
 base::load(base::url("http://dcgor.r-forge.r-project.org/data/Feature2GOMF.sf.RData"))
 RData.HIS.customised <- 'Feature2GOMF.sf.RData'
 base::save(list=x, file=RData.HIS.customised)
-## you will see a RData file 'Feature2GOMF.sf.RData' in local directory: list.files(pattern='*.RData')
+#list.files(pattern='*.RData')
+## you will see an RData file 'Feature2GOMF.sf.RData' in local directory
 output <- dcAlgoPredictMain(input.file, parallel=FALSE,
 RData.HIS.customised=RData.HIS.customised)
 </div>
-<strong class='message'>Start at 2014-11-27 16:54:47</strong>
+<strong class='message'>Start at 2014-12-03 15:11:27</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Feature/hs.txt' ...</strong>
-<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf.RData' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-11-27 16:54:50) ...</strong>
-<strong class='message'>Preparations for output (2014-11-27 16:55:19)...</strong>
+<strong class='message'>Predictions for 99458 sequences (7644 distinct architectures) using 'Feature2GOMF.sf.RData' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-03 15:11:31) ...</strong>
+<strong class='message'>Preparations for output (2014-12-03 15:11:59)...</strong>
 <strong class='message'>
-End at 2014-11-27 16:55:25</strong>
+End at 2014-12-03 15:12:05</strong>
 <strong class='message'>Runtime in total is: 38 secs
 </strong>
 <div class='input'>output[1:5,]
