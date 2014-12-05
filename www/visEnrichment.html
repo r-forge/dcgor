@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>visEnrichment @ dcGOR 1.0.4</title>
+<title>visEnrichment @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -400,59 +400,59 @@ node: 0.75 by default
     <pre class="examples"><div class='input'># 1) load SCOP.sf (as 'InfoDataFrame' object)
 SCOP.sf <- dcRDataLoader('SCOP.sf')
 </div>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'># randomly select 20 domains
 data <- sample(rowNames(SCOP.sf), 20)
 
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-10-24 19:46:49</strong>
+<strong class='message'>Start at 2014-12-05 17:19:04</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-10-24 19:46:49) ...</strong>
-<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:46:54) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-12-05 17:19:04) ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:19:10) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:46:54) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:19:10) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:46:54</strong>
-<strong class='message'>Runtime in total is: 5 secs
+End at 2014-12-05 17:19:10</strong>
+<strong class='message'>Runtime in total is: 6 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 46 terms X 5 information
-  @anno: a list of 46 terms, each storing annotated domains
-  @data: a vector containing a group of 8 input domains (annotatable)
+  @term_info: a data.frame of 90 terms X 5 information
+  @anno: a list of 90 terms, each storing annotated domains
+  @data: a vector containing a group of 10 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 46 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 46 terms, containing z-scores
-  @pvalue: a vector of 46 terms, containing p-values
-  @adjp: a vector of 46 terms, containing adjusted p-values
-In summary, a total of 46 terms ('GOMF') are analysed for a group of 8 input domains ('SCOP.sf')
+  @overlap: a list of 90 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 90 terms, containing z-scores
+  @pvalue: a vector of 90 terms, containing p-values
+  @adjp: a vector of 90 terms, containing adjusted p-values
+In summary, a total of 90 terms ('GOMF') are analysed for a group of 10 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) visualise the top 10 significant terms
 # color-coded according to 10-based negative logarithm of p-values
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 23 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
 <a href="javascript:newWin('visEnrichment-19.png', 'visEnrichment-19.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-19.png', width="400" /></a>
 <div class='input'># color-coded according to zscore
 visEnrichment(eoutput, data.type='zscore')
 </div>
-<strong class='message'>Ontology 'GOMF' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating z-scores</strong>
+<strong class='message'>Ontology 'GOMF' containing 23 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating z-scores</strong>
 <a href="javascript:newWin('visEnrichment-22.png', 'visEnrichment-22.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-22.png', width="400" /></a>
 <div class='input'>
 # 4) visualise the top 5 significant terms in the ontology hierarchy
 nodes_query <- names(sort(adjp(eoutput))[1:5])
 visEnrichment(eoutput, nodes_query=nodes_query)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 6 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 23 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
 <a href="javascript:newWin('visEnrichment-25.png', 'visEnrichment-25.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-25.png', width="400" /></a>
 <div class='input'># change the frame color: highlight (framed in blue) nodes/terms in query
 nodes.highlight <- rep("blue", length(nodes_query))
@@ -460,7 +460,7 @@ names(nodes.highlight) <- nodes_query
 visEnrichment(eoutput, nodes_query=nodes_query,
 node.attrs=list(color=nodes.highlight))
 </div>
-<strong class='message'>Ontology 'GOMF' containing 6 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 23 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
 <a href="javascript:newWin('visEnrichment-28.png', 'visEnrichment-28.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-28.png', width="400" /></a></pre>
   </div>
   
@@ -491,7 +491,7 @@ node.attrs=list(color=nodes.highlight))
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -499,7 +499,7 @@ node.attrs=list(color=nodes.highlight))
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -512,6 +512,9 @@ node.attrs=list(color=nodes.highlight))
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

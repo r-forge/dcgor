@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>dcConverter @ dcGOR 1.0.4</title>
+<title>dcConverter @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -249,7 +249,7 @@ between 'Dnetwork' and 'igraph', or between 'Cnetwork' and 'igraph'</p>
 # 1a) load onto.GOMF (as 'Onto' object)
 on <- dcRDataLoader('onto.GOMF')
 </div>
-<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>on
 </div>
 <div class='output'>An object of S4 class 'Onto'
@@ -285,10 +285,10 @@ dcConverter(ig, from='igraph', to='Onto')
 # 2a) computer a domain semantic network (as 'Dnetwork' object)
 g <- dcRDataLoader('onto.GOMF')
 </div>
-<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>Anno <- dcRDataLoader('SCOP.sf2GOMF')
 </div>
-<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>dag <- dcDAGannotate(g, annotations=Anno, path.mode="shortest_paths",
 verbose=FALSE)
 alldomains <- unique(unlist(nInfo(dag)$annotations))
@@ -297,14 +297,14 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=FALSE)
 </div>
-<strong class='message'>Runtime in total is: 0 secs
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 52949 81442 103088 47090 109880
+  nodeNames: 140718 51556 54060 55481 55816
   nodeAttr: id
 </div>
 <div class='input'># 2b) convert the object from 'Dnetwork' to 'igraph' class
@@ -323,7 +323,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 52949 81442 103088 47090 109880
+  nodeNames: 140718 51556 54060 55481 55816
   nodeAttr: id
 </div></pre>
   </div>
@@ -355,7 +355,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -363,7 +363,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -376,6 +376,9 @@ dcConverter(ig, from='igraph', to='Dnetwork')
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

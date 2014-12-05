@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>dcDuplicated @ dcGOR 1.0.4</title>
+<title>dcDuplicated @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -192,7 +192,7 @@ window.onload = function(){
         
       </header>
       
-      <h2>Function to determine the duplicated patterns from inut data matrix</h2>
+      <h2>Function to determine the duplicated patterns from input data matrix</h2>
 
 <div class="row">
   <div class="span8">
@@ -209,7 +209,7 @@ in which the value indicates from which it duplicats.</p>
     <h3>Arguments</h3>
     <dl>
       <dt>data</dt>
-      <dd>an an input data matrix/frame</dd>
+      <dd>an input data matrix/frame</dd>
       <dt>pattern.wise</dt>
       <dd>a character specifying in which wise to define
 patterns from input data. It can be 'column' for column-wise vectors,
@@ -264,7 +264,10 @@ data
 # determine the duplicated patterns from inut data matrix
 res <- dcDuplicated(data, pattern.wise="column")
 </div>
-<strong class='message'>For the input data (with 4 patterns), there are 3 unique 'column'-wise patterns.</strong>
+<strong class='message'>Merge 4 patterns (2014-12-05 17:17:09) ...</strong>
+<strong class='message'>Sort 4 patterns (2014-12-05 17:17:09) ...</strong>
+<strong class='message'>Find index from 4 patterns (2014-12-05 17:17:09) ...</strong>
+<strong class='message'>For the input data (with 4 patterns), there are 3 unique 'column'-wise patterns (2014-12-05 17:17:09)</strong>
 <div class='input'>## return an integer vector
 res
 </div>
@@ -298,12 +301,13 @@ ind <- sort(unique(res))
     
     <h2>See also</h2>
     
-<code><a href='dcAncestralMP.html'>dcAncestralMP</a></code>, <code><a href='dcAncestralMP.html'>dcAncestralMP</a></code>
+<code><a href='dcAncestralMP.html'>dcAncestralMP</a></code>, <code><a href='dcAncestralMP.html'>dcAncestralMP</a></code>,
+<code><a href='dcAlgo.html'>dcAlgo</a></code>
 
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -311,7 +315,7 @@ ind <- sort(unique(res))
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -326,6 +330,7 @@ ind <- sort(unique(res))
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
       <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

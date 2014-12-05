@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>Demo for analysing ancestral domainome in Eukaryotes @ dcGOR 1.0.4</title>
+<title>Demo for analysing ancestral domainome in Eukaryotes @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Hai Fang and Julian Gough">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -195,10 +195,10 @@ window.onload = function(){
       <h2>Demo for analysing ancestral domainome in Eukaryotes</h2>
 
 Notes:
-<li> All results are based on dcGOR (version 1.0.4). </li>
+<li> All results are based on dcGOR (version 1.0.5). </li>
 <li> R scripts (i.e. R expressions) plus necessary comments are highlighted in light cyan, and the rest are outputs in the screen. </li>
 <li> Images displayed below may be distorted, but should be normal in your screen. </li>
-<li> Functions contained in dcGOR 1.0.4 are hyperlinked in-place and also listed on the right side. </li>
+<li> Functions contained in dcGOR 1.0.5 are hyperlinked in-place and also listed on the right side. </li>
 
 <div class="row">
     <div class="span8">
@@ -221,7 +221,7 @@ library(dcGOR)
 # load data as an 'Anno' object
 Ancestral_domainome <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>("Ancestral_domainome")
 </div>
-<strong class='message'>'Ancestral_domainome' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'Ancestral_domainome' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>Ancestral_domainome
 </div>
 <div class='output'>An object of S4 class 'Anno'
@@ -284,18 +284,18 @@ background <- rowNames(domains_metazoa)
 ### By default, using all annotatable domains as the background
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2014-10-24 19:22:03</strong>
+<strong class='message'>Start at 2014-12-05 17:02:10</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-10-24 19:22:03) ...</strong>
-<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:23:10) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-12-05 17:02:10) ...</strong>
+<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:03:23) ...</strong>
 <strong class='message'>	There are 5471 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:23:14) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:03:27) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:23:16</strong>
-<strong class='message'>Runtime in total is: 73 secs
+End at 2014-12-05 17:03:29</strong>
+<strong class='message'>Runtime in total is: 79 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -343,18 +343,18 @@ GO:0002224   toll-like receptor signaling pathway
 ### Alternatively, using all domains in Metazoa as the background (customised)
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background, domain="SCOP.sf", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2014-10-24 19:23:22</strong>
+<strong class='message'>Start at 2014-12-05 17:03:35</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-10-24 19:23:22) ...</strong>
-<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:24:31) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-12-05 17:03:35) ...</strong>
+<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:04:48) ...</strong>
 <strong class='message'>	There are 5453 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:24:34) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:04:51) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:24:36</strong>
-<strong class='message'>Runtime in total is: 74 secs
+End at 2014-12-05 17:04:53</strong>
+<strong class='message'>Runtime in total is: 78 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -406,18 +406,18 @@ GO:0002224   toll-like receptor signaling pathway
 ## 2) GOMF enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-10-24 19:24:44</strong>
+<strong class='message'>Start at 2014-12-05 17:05:02</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-10-24 19:24:44) ...</strong>
-<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:24:50) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:02) ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:07) ...</strong>
 <strong class='message'>	There are 810 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:24:50) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:07) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:24:50</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2014-12-05 17:05:07</strong>
+<strong class='message'>Runtime in total is: 5 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -464,18 +464,18 @@ GO:0016880          acid-ammonia (or amide) ligase activity
 ## 3) HPPA enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-10-24 19:24:53</strong>
+<strong class='message'>Start at 2014-12-05 17:05:10</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA', the domain 'SCOP.sf', and their associations (2014-10-24 19:24:53) ...</strong>
-<strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2HPPA' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:24:54) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:10) ...</strong>
+<strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:12) ...</strong>
 <strong class='message'>	There are 259 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:24:54) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:12) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:24:54</strong>
-<strong class='message'>Runtime in total is: 1 secs
+End at 2014-12-05 17:05:12</strong>
+<strong class='message'>Runtime in total is: 2 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -528,17 +528,17 @@ HP:0002664             1 47686,75399,57581,57630
 ## 4) DO enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="DO")
 </div>
-<strong class='message'>Start at 2014-10-24 19:24:56</strong>
+<strong class='message'>Start at 2014-12-05 17:05:14</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'DO', the domain 'SCOP.sf', and their associations (2014-10-24 19:24:56) ...</strong>
-<strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2DO' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:24:57) ...</strong>
+<strong class='message'>First, load the ontology 'DO', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:14) ...</strong>
+<strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:15) ...</strong>
 <strong class='message'>	There are 219 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:24:57) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:15) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:24:57</strong>
+End at 2014-12-05 17:05:15</strong>
 <strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>eoutput
@@ -598,7 +598,7 @@ DOID:7004                                             47686,57392,54117,47266
 ## 1) load onto.DO (as 'Onto' object)
 g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.DO')
 </div>
-<strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>g
 </div>
 <div class='output'>An object of S4 class 'Onto'
@@ -611,7 +611,7 @@ g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.D
 <div class='input'>## 2) load SCOP superfamilies annotated by DO (as 'Anno' object)
 Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('SCOP.sf2DO')
 </div>
-<strong class='message'>'SCOP.sf2DO' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>Anno
 </div>
 <div class='output'>An object of S4 class 'Anno'
@@ -641,21 +641,21 @@ dag
 domains <- domains_human_unique
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=domains, method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-10-24 19:25:01</strong>
+<strong class='message'>Start at 2014-12-05 17:05:18</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-10-24 19:25:01)...</strong>
+<strong class='message'>First, extract all annotatable domains (2014-12-05 17:05:18)...</strong>
 <strong class='message'>	there are 11 input domains amongst 219 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 129 terms (forced to be the most specific for each domain) using Resnik method (2014-10-24 19:25:01)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 11 domains using BM.average method (2014-10-24 19:25:02)...</strong>
-<strong class='message'>	1 out of 11 (2014-10-24 19:25:02)</strong>
-<strong class='message'>	2 out of 11 (2014-10-24 19:25:02)</strong>
-<strong class='message'>	4 out of 11 (2014-10-24 19:25:02)</strong>
-<strong class='message'>	6 out of 11 (2014-10-24 19:25:02)</strong>
-<strong class='message'>	8 out of 11 (2014-10-24 19:25:02)</strong>
-<strong class='message'>	10 out of 11 (2014-10-24 19:25:02)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 129 terms (forced to be the most specific for each domain) using Resnik method (2014-12-05 17:05:19)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 11 domains using BM.average method (2014-12-05 17:05:19)...</strong>
+<strong class='message'>	1 out of 11 (2014-12-05 17:05:19)</strong>
+<strong class='message'>	2 out of 11 (2014-12-05 17:05:19)</strong>
+<strong class='message'>	4 out of 11 (2014-12-05 17:05:19)</strong>
+<strong class='message'>	6 out of 11 (2014-12-05 17:05:19)</strong>
+<strong class='message'>	8 out of 11 (2014-12-05 17:05:20)</strong>
+<strong class='message'>	10 out of 11 (2014-12-05 17:05:20)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-24 19:25:02</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2014-12-05 17:05:20</strong>
+<strong class='message'>Runtime in total is: 2 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -704,7 +704,7 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="black", vertex
 ### seeds are terms from GOMF
 Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('SCOP.sf2GOMF')
 </div>
-<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'>flag <- match(domainNames(Anno), nodeNames(dnetwork))
 ind <- which(!is.na(flag))
 data <- as.matrix(annoData(Anno)[ind,])
@@ -715,29 +715,29 @@ data <- data[,ind]
 ## 2) assess their contact significance and strength based on RWR
 coutput <- <a href='dcRWRpipeline.html' target=dcRWRpipeline>dcRWRpipeline</a>(data=data, g=dnetwork, permutation="degree", num.permutation=2000, adjp.cutoff=0.1, parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-10-24 19:25:04</strong>
+<strong class='message'>Start at 2014-12-05 17:05:22</strong>
 <strong class='message'></strong>
-<strong class='message'>First, RWR on input graph (11 nodes and 55 edges) using input matrix (10 rows and 12 columns) as seeds (2014-10-24 19:25:04)...</strong>
-<strong class='message'>	using indirect method to do RWR (2014-10-24 19:25:04)...</strong>
-<strong class='message'>Second, calculate contact strength (2014-10-24 19:25:05)...</strong>
-<strong class='message'>Third, generate the distribution of contact strength based on 2000 permutations on nodes respecting degree (2014-10-24 19:25:05)...</strong>
-<strong class='message'>	1 out of 2000 (2014-10-24 19:25:05)</strong>
-<strong class='message'>	200 out of 2000 (2014-10-24 19:25:06)</strong>
-<strong class='message'>	400 out of 2000 (2014-10-24 19:25:08)</strong>
-<strong class='message'>	600 out of 2000 (2014-10-24 19:25:09)</strong>
-<strong class='message'>	800 out of 2000 (2014-10-24 19:25:11)</strong>
-<strong class='message'>	1000 out of 2000 (2014-10-24 19:25:12)</strong>
-<strong class='message'>	1200 out of 2000 (2014-10-24 19:25:13)</strong>
-<strong class='message'>	1400 out of 2000 (2014-10-24 19:25:15)</strong>
-<strong class='message'>	1600 out of 2000 (2014-10-24 19:25:16)</strong>
-<strong class='message'>	1800 out of 2000 (2014-10-24 19:25:18)</strong>
-<strong class='message'>	2000 out of 2000 (2014-10-24 19:25:19)</strong>
-<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2014-10-24 19:25:19)...</strong>
-<strong class='message'>Also, construct the contact graph under the cutoff 1.0e-01 of adjusted-pvalue (2014-10-24 19:25:19)...</strong>
+<strong class='message'>First, RWR on input graph (11 nodes and 55 edges) using input matrix (10 rows and 12 columns) as seeds (2014-12-05 17:05:22)...</strong>
+<strong class='message'>	using indirect method to do RWR (2014-12-05 17:05:22)...</strong>
+<strong class='message'>Second, calculate contact strength (2014-12-05 17:05:22)...</strong>
+<strong class='message'>Third, generate the distribution of contact strength based on 2000 permutations on nodes respecting degree (2014-12-05 17:05:22)...</strong>
+<strong class='message'>	1 out of 2000 (2014-12-05 17:05:22)</strong>
+<strong class='message'>	200 out of 2000 (2014-12-05 17:05:24)</strong>
+<strong class='message'>	400 out of 2000 (2014-12-05 17:05:25)</strong>
+<strong class='message'>	600 out of 2000 (2014-12-05 17:05:27)</strong>
+<strong class='message'>	800 out of 2000 (2014-12-05 17:05:28)</strong>
+<strong class='message'>	1000 out of 2000 (2014-12-05 17:05:30)</strong>
+<strong class='message'>	1200 out of 2000 (2014-12-05 17:05:32)</strong>
+<strong class='message'>	1400 out of 2000 (2014-12-05 17:05:33)</strong>
+<strong class='message'>	1600 out of 2000 (2014-12-05 17:05:35)</strong>
+<strong class='message'>	1800 out of 2000 (2014-12-05 17:05:36)</strong>
+<strong class='message'>	2000 out of 2000 (2014-12-05 17:05:38)</strong>
+<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2014-12-05 17:05:38)...</strong>
+<strong class='message'>Also, construct the contact graph under the cutoff 1.0e-01 of adjusted-pvalue (2014-12-05 17:05:38)...</strong>
 <strong class='message'>Your input object 'icontact' of class 'igraph' has been converted into an object of class 'Cnetwork'.</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-10-24 19:25:19</strong>
-<strong class='message'>Runtime in total is: 15 secs
+<strong class='message'>Finish at 2014-12-05 17:05:38</strong>
+<strong class='message'>Runtime in total is: 16 secs
 </strong>
 <div class='input'>coutput
 </div>
@@ -817,7 +817,7 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.
     <!--
     
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -825,7 +825,7 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -839,6 +839,9 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     <h2>Author</h2>

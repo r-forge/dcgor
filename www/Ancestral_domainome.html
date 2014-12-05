@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>Ancestral_domainome @ dcGOR 1.0.4</title>
+<title>Ancestral_domainome @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -198,24 +198,7 @@ window.onload = function(){
   <div class="span8">
   
     <h3>Description</h3>
-    <p>An object of class "Anno" that contains information about domain
-repertoires (a complete set of domains: domain-ome) in Eukaryotes
-(including extant and ancestral genomes). This data is prepared based
-on 1) SUPERFAMILY database which provides domain and architecture
-assignments to all completely sequenced genomes including eukaryotic
-genomes; 2) ancestral domain architecture repertoires inferred by
-applying Dollo parsimony to eukaryotic part of species tree of life
-(sTOL), from which ancestral superfamily domain and architecture
-repertoires at all branching points in eukaryotic evolution are
-inferred. This allows us to list ancestral domain and architecture
-repertoires that were present at these points. Based on the
-observed/inferred domain and architecture repertoires, we also define
-genome-specific plasticity potential for an individual domain as how
-many different architectures (or architecture diversity) it can be
-formed in an extant/ancestral genome. As a result, for each genome,
-domain repertoires (domainome) are represented as a profile of states
-on domains, where non-zero entry indicates a domain for which how many
-different architectures have occurred in the genome.</p>
+    <p>An object of class "Anno" that contains information about domain repertoires (a complete set of domains: domain-ome) in Eukaryotes (including extant and ancestral genomes). This data is prepared based on 1) SUPERFAMILY database which provides domain and architecture assignments to all completely sequenced genomes including eukaryotic genomes; 2) ancestral domain architecture repertoires inferred by applying Dollo parsimony to eukaryotic part of species tree of life (sTOL), from which ancestral superfamily domain and architecture repertoires at all branching points in eukaryotic evolution are inferred. This allows us to list ancestral domain and architecture repertoires that were present at these points. Based on the observed/inferred domain and architecture repertoires, we also define genome-specific plasticity potential for an individual domain as how many different architectures (or architecture diversity) it can be formed in an extant/ancestral genome. As a result, for each genome, domain repertoires (domainome) are represented as a profile of states on domains, where non-zero entry indicates a domain for which how many different architectures have occurred in the genome.</p>
   
     <h3>Usage</h3>
     <pre>data(Ancestral_domainome)</pre>
@@ -227,30 +210,14 @@ different architectures have occurred in the genome.</p>
     -->
       <h3>Value</h3>
       
-      <p>an object of class <code><a href='Anno-class.html'>Anno</a></code>. It has slots for "annoData",
-"termData" and "domainData":
-<ul>
-<li><code>annoData</code>: a sparse matrix of 2019 domains X 875
-terms/genomes (including 438 extant genomes and 437 ancestral genomes),
-with each entry telling how many different architectures a domain has
-in a genome. Note: zero entry also means that this domain is absent in
-the genome
-</li>
-<li><code>termData</code>: variables describing terms/genomes (i.e. columns
-in annoData), including extant/ancestral genome information: "left_id"
-(unique and used as internal id), "right_id" (used in combination with
-"left_id" to define the post-ordered binary tree structure), "taxon_id"
-(NCBI taxonomy id, if matched), "genome" (2-letter genome identifiers
-used in SUPERFAMILY, if being extant), "name" (NCBI taxonomy name, if
-matched), "rank" (NCBI taxonomy rank, if matched), "branchlength"
-(branch length in relevance to the parent), and "common_name" (NCBI
-taxonomy common name, if matched and existed)
-</li>
-<li><code>domainData</code>: variables describing domains (i.e. rows in
-annoData), including information about domains: "sunid" for SCOP id,
-"level" for SCOP level, "classification" for SCOP classification,
-"description" for SCOP description
-</li>
+      <p>an object of class <code><a href='Anno-class.html'>Anno</a></code>. It has slots for "annoData", "termData" and "domainData": 
+    <ul>
+<li><code>annoData</code>: a sparse matrix of 2019 domains X 875 terms/genomes (including 438 extant genomes and 437 ancestral genomes), with each entry telling how many different architectures a domain has in a genome. Note: zero entry also means that this domain is absent in the genome
+        </li>
+<li><code>termData</code>: variables describing terms/genomes (i.e. columns in annoData), including extant/ancestral genome information: "left_id" (unique and used as internal id), "right_id" (used in combination with "left_id" to define the post-ordered binary tree structure), "taxon_id" (NCBI taxonomy id, if matched), "genome" (2-letter genome identifiers used in SUPERFAMILY, if being extant), "name" (NCBI taxonomy name, if matched), "rank" (NCBI taxonomy rank, if matched), "branchlength" (branch length in relevance to the parent), and "common_name" (NCBI taxonomy common name, if matched and existed)
+        </li>
+<li><code>domainData</code>: variables describing domains (i.e. rows in annoData), including information about domains: "sunid" for SCOP id, "level" for SCOP level, "classification" for SCOP classification, "description" for SCOP description
+    </li>
 </ul></p>
       <p></p>
     <!-- 
@@ -261,12 +228,9 @@ annoData), including information about domains: "sunid" for SCOP id,
     -->
       <h3>References</h3>
       
-      <p>Fang et al. (2013) A daily-updated tree of (sequenced) life as a
-reference for genome research. <em>Scientific reports</em>, 3:2015.</p>
-      <p>Morais et al. (2011) SUPERFAMILY 1.75 including a domain-centric gene
-ontology method. <em>Nucleic Acids Res</em>, 39(Database issue):D427-34.</p>
-      <p>Andreeva et al. (2008) Data growth and its impact on the SCOP database:
-new developments. <em>Nucleic Acids Res</em>, 36(Database issue):D419-425</p>
+      <p>Fang et al. (2013) A daily-updated tree of (sequenced) life as a reference for genome research. <em>Scientific reports</em>, 3:2015.</p>
+      <p>Morais et al. (2011) SUPERFAMILY 1.75 including a domain-centric gene ontology method. <em>Nucleic Acids Res</em>, 39(Database issue):D427-34.</p>
+      <p>Andreeva et al. (2008) Data growth and its impact on the SCOP database: new developments. <em>Nucleic Acids Res</em>, 36(Database issue):D419-425</p>
     <!-- 
     </div>
     -->
@@ -340,7 +304,7 @@ as.matrix(x)
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -348,7 +312,7 @@ as.matrix(x)
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -361,6 +325,9 @@ as.matrix(x)
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

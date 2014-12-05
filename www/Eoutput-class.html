@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>Eoutput-class @ dcGOR 1.0.4</title>
+<title>Eoutput-class @ dcGOR 1.0.5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="">
 
@@ -75,7 +75,7 @@
     <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.html">dcGOR 1.0.4</a>
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
       <div class="nav">
         <ul class="nav">
           <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
@@ -326,24 +326,24 @@ definition code for the method 'f' defined in this class
     <pre class="examples"><div class='input'># 1) load SCOP.sf (as 'InfoDataFrame' object)
 SCOP.sf <- dcRDataLoader('SCOP.sf')
 </div>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <div class='input'># randomly select 20 domains
 data <- sample(rowNames(SCOP.sf), 20)
 
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-10-24 19:46:13</strong>
+<strong class='message'>Start at 2014-12-05 17:18:33</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-10-24 19:46:13) ...</strong>
-<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.4) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-10-24 19:46:18) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-12-05 17:18:33) ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:18:39) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-10-24 19:46:19) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:18:39) ...</strong>
 <strong class='message'>
-End at 2014-10-24 19:46:19</strong>
+End at 2014-12-05 17:18:39</strong>
 <strong class='message'>Runtime in total is: 6 secs
 </strong>
 <div class='input'>eoutput
@@ -351,15 +351,15 @@ End at 2014-10-24 19:46:19</strong>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 49 terms X 5 information
-  @anno: a list of 49 terms, each storing annotated domains
-  @data: a vector containing a group of 9 input domains (annotatable)
+  @term_info: a data.frame of 56 terms X 5 information
+  @anno: a list of 56 terms, each storing annotated domains
+  @data: a vector containing a group of 13 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 49 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 49 terms, containing z-scores
-  @pvalue: a vector of 49 terms, containing p-values
-  @adjp: a vector of 49 terms, containing adjusted p-values
-In summary, a total of 49 terms ('GOMF') are analysed for a group of 9 input domains ('SCOP.sf')
+  @overlap: a list of 56 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 56 terms, containing z-scores
+  @pvalue: a vector of 56 terms, containing p-values
+  @adjp: a vector of 56 terms, containing adjusted p-values
+In summary, a total of 56 terms ('GOMF') are analysed for a group of 13 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) write into the file 'Eoutput.txt' in your local directory
@@ -371,40 +371,40 @@ write(eoutput, file='Eoutput.txt')
 view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
 </div>
 <div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0005253 GO:0005253    97      9        3   2.57 0.0054 0.26
-GO:0005216 GO:0005216   254      9        4   1.49 0.0370 0.37
-GO:0016836 GO:0016836   257      9        4   1.47 0.0390 0.37
-GO:0022838 GO:0022838   261      9        4   1.43 0.0420 0.37
-GO:0071111 GO:0071111   183      9        3   1.32 0.0490 0.37
-                                                      term_name
-GO:0005253                               anion channel activity
-GO:0005216                                 ion channel activity
-GO:0016836                                 hydro-lyase activity
-GO:0022838                  substrate-specific channel activity
-GO:0071111 cyclic-guanylate-specific phosphodiesterase activity
-               term_namespace term_distance                  members
-GO:0005253 molecular_function             6       90073,140924,48371
-GO:0005216 molecular_function             5 53597,90073,140924,48371
-GO:0016836 molecular_function             4 53597,57581,48034,159034
-GO:0022838 molecular_function             4 53597,90073,140924,48371
-GO:0071111 molecular_function             6        53597,90073,48371
+GO:0070628 GO:0070628   274     13        6  1.740  0.025 0.50
+GO:0000981 GO:0000981   103     13        3  1.680  0.028 0.50
+GO:1901618 GO:1901618   105     13        3  1.640  0.030 0.50
+GO:0032403 GO:0032403   293     13        6  1.560  0.036 0.50
+GO:0003700 GO:0003700   150     13        3  0.968  0.092 0.88
+                                                                               term_name
+GO:0070628                                                            proteasome binding
+GO:0000981 sequence-specific DNA binding RNA polymerase II transcription factor activity
+GO:1901618                   organic hydroxy compound transmembrane transporter activity
+GO:0032403                                                       protein complex binding
+GO:0003700                   sequence-specific DNA binding transcription factor activity
+               term_namespace term_distance                             members
+GO:0070628 molecular_function             4 52467,82114,57933,51713,52335,69593
+GO:0000981 molecular_function             3                  144270,52467,51713
+GO:1901618 molecular_function             3                   52467,57933,69593
+GO:0032403 molecular_function             3 52467,82114,57933,51713,52335,69593
+GO:0003700 molecular_function             2                  144270,52467,51713
 </div>
 <div class='input'>
 # 4) retrieve several slots directly
 zscore(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
-   -0.2180     0.5460    -0.0596    -0.0317     0.1850 
+<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
+    0.9560    -0.8930    -0.0601    -0.4690    -0.5170 
 </div>
 <div class='input'>pvalue(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
-      0.46       0.16       0.39       0.38       0.31 
+<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
+     0.094      0.720      0.420      0.570      0.580 
 </div>
 <div class='input'>adjp(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0097159 GO:1901363 GO:0005515 
-      0.56       0.43       0.50       0.50       0.48 
+<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
+      0.88       0.90       0.90       0.90       0.90 
 </div></pre>
   </div>
   
@@ -428,7 +428,7 @@ zscore(eoutput)[1:5]
     <!--
 
     <h2>Citation</h2>
-    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>)</p>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
 
 <p>You may also cite the package as:</p>
 
@@ -436,7 +436,7 @@ zscore(eoutput)[1:5]
 <li><code>database</code></li>
 </ul>
 
-<p>Fang H, Gough J. (2013) dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more. <I>Nucleic Acids Research</I> 41(Database issue):D536-44 (<a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>)</p>
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
 
 <ul>
 <li><code>web link/URL</code></li>
@@ -449,6 +449,9 @@ zscore(eoutput)[1:5]
     <h2>URL</h2>
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
