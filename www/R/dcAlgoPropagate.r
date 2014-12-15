@@ -1,6 +1,6 @@
-#' Function to propogate ontology annotations according to an input file
+#' Function to propagate ontology annotations according to an input file
 #'
-#' \code{dcAlgoPropagate} is supposed to propogate ontology annotations, given an input file. This input file contains original annotations between domains/features and ontology terms, along with the hypergeometric scores (hscore) in support for their annotations. The annotations are propogated to the ontology root (retaining the maximum hscore). After the propogation, the ontology terms of increasing levels are determined based on the concept of Information Content (IC) to product a slim version of ontology. It returns an object of S3 class "HIS" with three components: "hscore", "ic" and "slim".
+#' \code{dcAlgoPropagate} is supposed to propagate ontology annotations, given an input file. This input file contains original annotations between domains/features and ontology terms, along with the hypergeometric scores (hscore) in support for their annotations. The annotations are propagated to the ontology root (retaining the maximum hscore). After the propogation, the ontology terms of increasing levels are determined based on the concept of Information Content (IC) to product a slim version of ontology. It returns an object of S3 class "HIS" with three components: "hscore", "ic" and "slim".
 #'
 #' @param input.file an input file used to build the object. This input file contains original annotations between domains/features and ontology terms, along with the hypergeometric scores (hscore) in support for their annotations. For example, a file containing original annotations between SCOP domain architectures and GO terms can be found in \url{http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt}. As seen in this example, the input file must contain the header (in the first row) and three columns: 1st column for 'Feature_id' (here SCOP domain architectures), 2nd column for 'Term_id' (GO terms), and 3rd column for 'Score' (hscore)
 #' @param ontology the ontology identity. It can be "GOBP" for Gene Ontology Biological Process, "GOMF" for Gene Ontology Molecular Function, "GOCC" for Gene Ontology Cellular Component, "DO" for Disease Ontology, "HPPA" for Human Phenotype Phenotypic Abnormality, "HPMI" for Human Phenotype Mode of Inheritance, "HPON" for Human Phenotype ONset and clinical course, "MP" for Mammalian Phenotype, "EC" for Enzyme Commission, "KW" for UniProtKB KeyWords, "UP" for UniProtKB UniPathway. For details on the eligibility for pairs of input domain and ontology, please refer to the online Documentations at \url{http://supfam.org/dcGOR/docs.html}
@@ -62,16 +62,19 @@ dcAlgoPropagate <- function(input.file, ontology=c("GOBP","GOMF","GOCC","DO","HP
     if(verbose){
         message(sprintf("Reading the file '%s' ...", input.file), appendLF=T)
     }
-    input <- as.matrix(utils::read.delim(input.file, header=T))
     
-    ## original annotations
+    #tab <- read.delim(input.file, header=F, sep="\t", nrows=50, skip=1)
+    #input <- read.table(input.file, header=F, sep="\t", skip=1, colClasses=sapply(tab,class))
+    input <- utils::read.delim(input.file, header=T, sep="\t", colClasses="character")
+    
+    ## original annotations: Feature_id, Term_id, Score
     tmp_feature <- base::split(x=input[,1], f=input[,2], drop=T)
-    tmp_score <- base::split(x=input[,3], f=input[,2], drop=T)
-    oAnnos <- list()
-    for(i in 1:length(tmp_score)){
-        oAnnos[[i]] <- tmp_score[[i]]
-        names(oAnnos[[i]]) <- tmp_feature[[i]]
-    }
+    tmp_score <- base::split(x=as.numeric(input[,3]), f=input[,2], drop=T)
+    oAnnos <- lapply(1:length(tmp_score), function(i){
+        x <- tmp_score[[i]]
+        names(x) <- tmp_feature[[i]]
+        return(x)
+    })
     names(oAnnos) <- names(tmp_score)
     
     ## load ontology information
@@ -184,13 +187,12 @@ dcAlgoPropagate <- function(input.file, ontology=c("GOBP","GOMF","GOCC","DO","HP
     res <- t(rbind(tmp_xxx, as.numeric(all)))
     ### split into a list of features
     tmp_term <- split(x=res[,1], f=res[,2])
-    tmp_score <- split(x=res[,3], f=res[,2])
-    fAnnos <- list()
-    for(i in 1:length(tmp_score)){
-        fAnnos[[i]] <- tmp_score[[i]]
-        fAnnos[[i]] <- as.numeric(as.vector(fAnnos[[i]]))
-        names(fAnnos[[i]]) <- tmp_term[[i]]
-    }
+    tmp_score <- split(x=as.numeric(res[,3]), f=res[,2])
+    fAnnos <- lapply(1:length(tmp_score), function(i){
+        x <- tmp_score[[i]]
+        names(x) <- tmp_term[[i]]
+        return(x)
+    })
     names(fAnnos) <- names(tmp_score)
     
     if(verbose){

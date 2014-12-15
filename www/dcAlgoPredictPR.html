@@ -308,14 +308,43 @@ res <- dcAlgoPredictMain(input.file=architecture.file,
 output.file=prediction.file, RData.HIS="Feature2HPPA.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-12-05 17:15:06</strong>
+<strong class='message'>Start at 2014-12-15 15:55:21</strong>
 <strong class='message'></strong>
 <strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' ...</strong>
-<strong class='message'>Predictions for 17467 sequences (4351 distinct architectures) using 'Feature2HPPA.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-05 17:15:06) ...</strong>
-<strong class='message'>Preparations for output (2014-12-05 17:15:14)...</strong>
+<strong class='message'>Predictions for 17467 sequences (with 4351 distinct architectures) using 'Feature2HPPA.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-15 15:55:21) ...</strong>
+<strong class='message'>
+##############################</strong>
+<strong class='message'>'dcAlgoPredict' is called</strong>
+<strong class='message'>##############################
+</strong>
+<strong class='message'>Start at 2014-12-15 15:55:21</strong>
+<strong class='message'></strong>
+<strong class='message'>Load the HIS object 'Feature2HPPA.sf' (2014-12-15 15:55:21) ...</strong>
+<strong class='message'>'Feature2HPPA.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2HPPA.sf.RData) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 4351 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-15 15:55:21)...</strong>
+<strong class='message'>	1 out of 4351 (2014-12-15 15:55:21)</strong>
+<strong class='message'>	436 out of 4351 (2014-12-15 15:55:22)</strong>
+<strong class='message'>	872 out of 4351 (2014-12-15 15:55:23)</strong>
+<strong class='message'>	1308 out of 4351 (2014-12-15 15:55:24)</strong>
+<strong class='message'>	1744 out of 4351 (2014-12-15 15:55:24)</strong>
+<strong class='message'>	2180 out of 4351 (2014-12-15 15:55:25)</strong>
+<strong class='message'>	2616 out of 4351 (2014-12-15 15:55:26)</strong>
+<strong class='message'>	3052 out of 4351 (2014-12-15 15:55:26)</strong>
+<strong class='message'>	3488 out of 4351 (2014-12-15 15:55:27)</strong>
+<strong class='message'>	3924 out of 4351 (2014-12-15 15:55:28)</strong>
+<strong class='message'>	4351 out of 4351 (2014-12-15 15:55:28)</strong>
+<strong class='message'>
+End at 2014-12-15 15:55:28</strong>
+<strong class='message'>Runtime in total is: 7 secs
+</strong>
+<strong class='message'>##############################</strong>
+<strong class='message'>'dcAlgoPredict' is completed</strong>
+<strong class='message'>##############################
+</strong>
+<strong class='message'>Preparations for output (2014-12-15 15:55:28)...</strong>
 <strong class='message'>The predictions have been saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/SCOP_architecture.txt.HPPA_predicted'.</strong>
 <strong class='message'>
-End at 2014-12-05 17:15:14</strong>
+End at 2014-12-15 15:55:29</strong>
 <strong class='message'>Runtime in total is: 8 secs
 </strong>
 <div class='input'>
@@ -324,12 +353,12 @@ GSP.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 res_PR <- dcAlgoPredictPR(GSP.file=GSP.file,
 prediction.file=prediction.file, ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-05 17:15:14</strong>
+<strong class='message'>Start at 2014-12-15 15:55:29</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-05 17:15:14) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2014-12-15 15:55:29) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and predictions 'SCOP_architecture.txt.HPPA_predicted' (2014-12-05 17:15:15) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-05 17:15:17) ...</strong>
+<strong class='message'>Second, import files for GSP 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and predictions 'SCOP_architecture.txt.HPPA_predicted' (2014-12-15 15:55:30) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2014-12-15 15:55:32) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -346,15 +375,15 @@ prediction.file=prediction.file, ontology="HPPA")
 <strong class='message'>	At level 3, there are 113 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 2647 genes/proteins in GSP (2014-12-05 17:15:37).</strong>
-<strong class='message'>Fourth, process input predictions (2014-12-05 17:15:37) ...</strong>
-<strong class='message'>	There are 7749 genes/proteins in predictions (2014-12-05 17:15:38).</strong>
-<strong class='message'>Fifth, calculate the precision and recall for each of 1379 predicted and GSP genes/proteins (2014-12-05 17:15:38).</strong>
-<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-05 17:15:39).</strong>
+<strong class='message'>	There are 2647 genes/proteins in GSP (2014-12-15 15:55:51).</strong>
+<strong class='message'>Fourth, process input predictions (2014-12-15 15:55:51) ...</strong>
+<strong class='message'>	There are 7749 genes/proteins in predictions (2014-12-15 15:55:51).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 1379 predicted and GSP genes/proteins (2014-12-15 15:55:51).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-15 15:55:52).</strong>
 <strong class='message'>In summary, Prediction coverage: 0.52 (amongst 2647 targets in GSP), and F-measure: 0.18.</strong>
 <strong class='message'>
-End at 2014-12-05 17:15:39</strong>
-<strong class='message'>Runtime in total is: 25 secs
+End at 2014-12-15 15:55:52</strong>
+<strong class='message'>Runtime in total is: 23 secs
 </strong>
 <div class='input'>res_PR
 </div>
@@ -375,7 +404,7 @@ End at 2014-12-05 17:15:39</strong>
 # 3) Plot PR-curve
 plot(res_PR[,2], res_PR[,1], type="b", xlab="Recall", ylab="Precision")
 </div>
-<a href="javascript:newWin('dcAlgoPredictPR-44.png', 'dcAlgoPredictPR-44.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAlgoPredictPR-44.png', width="400" /></a></pre>
+<a href="javascript:newWin('dcAlgoPredictPR-68.png', 'dcAlgoPredictPR-68.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAlgoPredictPR-68.png', width="400" /></a></pre>
   </div>
   
   <div class="span4">

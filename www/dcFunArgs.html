@@ -202,12 +202,16 @@ window.onload = function(){
 default values for an input function.</p>
   
     <h3>Usage</h3>
-    <pre>dcFunArgs(fun, verbose = T)</pre>
+    <pre>dcFunArgs(fun, action = F, verbose = T)</pre>
     
     <h3>Arguments</h3>
     <dl>
       <dt>fun</dt>
       <dd>an input function name (character string)</dd>
+      <dt>action</dt>
+      <dd>logical to indicate whether the function will act as it
+should be (with assigned values in the current environment). By
+default, it sets to FALSE</dd>
       <dt>verbose</dt>
       <dd>logical to indicate whether the messages will be
 displayed in the screen. By default, it sets to TRUE for display</dd>
@@ -240,7 +244,7 @@ except those arguments are of interest</p>
     <pre class="examples"><div class='input'>fun <- "dcAlgoPredictMain"
 dcFunArgs(fun)
 </div>
-<strong class='message'>In function 'dcAlgoPredictMain', 13 arguments have been assigned with default values.</strong></pre>
+<strong class='message'>For the function 'dcAlgoPredictMain', there are 13 arguments.</strong></pre>
   </div>
   
   <div class="span4">
