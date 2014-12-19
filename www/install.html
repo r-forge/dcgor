@@ -250,7 +250,7 @@ biocLite(c(&quot;hexbin&quot;,&quot;ape&quot;,&quot;supraHex&quot;,&quot;graph&q
 <p>Third (<code>highly recommended</code>), update the package <code>dcGOR</code> from <a href="https://github.com/hfang-bristol/dcGOR">latest development version hosted in GitHub</a>:</p>
 
 <pre><code>library(devtools)
-for(pkg in c(&quot;dcGOR&quot;,&quot;dnet&quot;)){
+for(pkg in c(&quot;dnet&quot;,&quot;dcGOR&quot;)){
     if(pkg %in% rownames(installed.packages())) remove.packages(pkg)
     install_github(repo=paste(&quot;hfang-bristol&quot;,pkg,sep=&quot;/&quot;))
 }

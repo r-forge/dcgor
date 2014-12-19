@@ -207,8 +207,8 @@ recursively propagated towards the root of the ontology.</p>
   
     <h3>Usage</h3>
     <pre>dcAlgoPredictPR(GSP.file, prediction.file, ontology = c(NA, "GOBP", "GOMF", "GOCC", 
-  "DO", "HPPA", "HPMI", "HPON", "MP", "EC", "KW", "UP"), num.threshold = 10, verbose = T, 
-      RData.ontology.customised = NULL, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
+  "DO", "HPPA", "HPMI", "HPON", "MP", "EC", "KW", "UP"), num.threshold = 10, bin = c("uniform", 
+      "quantile"), verbose = T, RData.ontology.customised = NULL, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -247,6 +247,11 @@ input a customised RData-formatted file (see
       <dt>num.threshold</dt>
       <dd>an integer to specify how many PR points (as a
 function of the score threshold) will be calculated</dd>
+      <dt>bin</dt>
+      <dd>how to bin the scores. It can be "uniform" for binning
+scores with equal interval (ie with uniform distribution), and
+'quantile' for binning scores with eual frequency (ie with equal
+number)</dd>
       <dt>verbose</dt>
       <dd>logical to indicate whether the messages will be
 displayed in the screen. By default, it sets to TRUE for display</dd>
@@ -303,49 +308,49 @@ along PR curve</p>
     <pre class="examples"><div class='input'># 1) Generate prediction file with HPPA predicitions for human genes
 architecture.file <-
 "http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt"
-prediction.file <- "SCOP_architecture.txt.HPPA_predicted"
+prediction.file <- "SCOP_architecture.HPPA_predicted.txt"
 res <- dcAlgoPredictMain(input.file=architecture.file,
 output.file=prediction.file, RData.HIS="Feature2HPPA.sf",
 parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-12-15 15:55:21</strong>
+<strong class='message'>Start at 2014-12-19 17:21:17</strong>
 <strong class='message'></strong>
-<strong class='message'>Reading the input file 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' ...</strong>
-<strong class='message'>Predictions for 17467 sequences (with 4351 distinct architectures) using 'Feature2HPPA.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-15 15:55:21) ...</strong>
+<strong class='message'>Read the input file 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' ...</strong>
+<strong class='message'>Predictions for 17467 sequences (with 4351 distinct architectures) using 'Feature2HPPA.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-19 17:21:18) ...</strong>
 <strong class='message'>
 ##############################</strong>
 <strong class='message'>'dcAlgoPredict' is called</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Start at 2014-12-15 15:55:21</strong>
+<strong class='message'>Start at 2014-12-19 17:21:18</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the HIS object 'Feature2HPPA.sf' (2014-12-15 15:55:21) ...</strong>
+<strong class='message'>Load the HIS object 'Feature2HPPA.sf' (2014-12-19 17:21:18) ...</strong>
 <strong class='message'>'Feature2HPPA.sf' (from http://dcgor.r-forge.r-project.org/data/Feature2HPPA.sf.RData) has been loaded into the working environment</strong>
-<strong class='message'>Predictions for 4351 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-15 15:55:21)...</strong>
-<strong class='message'>	1 out of 4351 (2014-12-15 15:55:21)</strong>
-<strong class='message'>	436 out of 4351 (2014-12-15 15:55:22)</strong>
-<strong class='message'>	872 out of 4351 (2014-12-15 15:55:23)</strong>
-<strong class='message'>	1308 out of 4351 (2014-12-15 15:55:24)</strong>
-<strong class='message'>	1744 out of 4351 (2014-12-15 15:55:24)</strong>
-<strong class='message'>	2180 out of 4351 (2014-12-15 15:55:25)</strong>
-<strong class='message'>	2616 out of 4351 (2014-12-15 15:55:26)</strong>
-<strong class='message'>	3052 out of 4351 (2014-12-15 15:55:26)</strong>
-<strong class='message'>	3488 out of 4351 (2014-12-15 15:55:27)</strong>
-<strong class='message'>	3924 out of 4351 (2014-12-15 15:55:28)</strong>
-<strong class='message'>	4351 out of 4351 (2014-12-15 15:55:28)</strong>
+<strong class='message'>Predictions for 4351 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2014-12-19 17:21:18)...</strong>
+<strong class='message'>	1 out of 4351 (2014-12-19 17:21:18)</strong>
+<strong class='message'>	436 out of 4351 (2014-12-19 17:21:19)</strong>
+<strong class='message'>	872 out of 4351 (2014-12-19 17:21:20)</strong>
+<strong class='message'>	1308 out of 4351 (2014-12-19 17:21:20)</strong>
+<strong class='message'>	1744 out of 4351 (2014-12-19 17:21:21)</strong>
+<strong class='message'>	2180 out of 4351 (2014-12-19 17:21:22)</strong>
+<strong class='message'>	2616 out of 4351 (2014-12-19 17:21:22)</strong>
+<strong class='message'>	3052 out of 4351 (2014-12-19 17:21:23)</strong>
+<strong class='message'>	3488 out of 4351 (2014-12-19 17:21:24)</strong>
+<strong class='message'>	3924 out of 4351 (2014-12-19 17:21:24)</strong>
+<strong class='message'>	4351 out of 4351 (2014-12-19 17:21:25)</strong>
 <strong class='message'>
-End at 2014-12-15 15:55:28</strong>
+End at 2014-12-19 17:21:25</strong>
 <strong class='message'>Runtime in total is: 7 secs
 </strong>
 <strong class='message'>##############################</strong>
 <strong class='message'>'dcAlgoPredict' is completed</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Preparations for output (2014-12-15 15:55:28)...</strong>
-<strong class='message'>The predictions have been saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/SCOP_architecture.txt.HPPA_predicted'.</strong>
+<strong class='message'>Preparations for output (2014-12-19 17:21:25)...</strong>
+<strong class='message'>The predictions have been saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/SCOP_architecture.HPPA_predicted.txt'.</strong>
 <strong class='message'>
-End at 2014-12-15 15:55:29</strong>
-<strong class='message'>Runtime in total is: 8 secs
+End at 2014-12-19 17:21:27</strong>
+<strong class='message'>Runtime in total is: 10 secs
 </strong>
 <div class='input'>
 # 2) Calculate Precision and Recall
@@ -353,52 +358,52 @@ GSP.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 res_PR <- dcAlgoPredictPR(GSP.file=GSP.file,
 prediction.file=prediction.file, ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-15 15:55:29</strong>
+<strong class='message'>Start at 2014-12-19 17:21:27</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-15 15:55:29) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2014-12-19 17:21:27) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and predictions 'SCOP_architecture.txt.HPPA_predicted' (2014-12-15 15:55:30) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-15 15:55:32) ...</strong>
+<strong class='message'>Second, import files for GSP 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt' and predictions 'SCOP_architecture.HPPA_predicted.txt' (2014-12-19 17:21:28) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2014-12-19 17:21:30) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
-<strong class='message'>	At level 13, there are 52 nodes, and 80 incoming neighbors.</strong>
-<strong class='message'>	At level 12, there are 101 nodes, and 103 incoming neighbors.</strong>
-<strong class='message'>	At level 11, there are 267 nodes, and 184 incoming neighbors.</strong>
-<strong class='message'>	At level 10, there are 440 nodes, and 289 incoming neighbors.</strong>
-<strong class='message'>	At level 9, there are 751 nodes, and 428 incoming neighbors.</strong>
-<strong class='message'>	At level 8, there are 956 nodes, and 517 incoming neighbors.</strong>
-<strong class='message'>	At level 7, there are 1141 nodes, and 571 incoming neighbors.</strong>
-<strong class='message'>	At level 6, there are 1253 nodes, and 517 incoming neighbors.</strong>
-<strong class='message'>	At level 5, there are 915 nodes, and 280 incoming neighbors.</strong>
-<strong class='message'>	At level 4, there are 397 nodes, and 99 incoming neighbors.</strong>
-<strong class='message'>	At level 3, there are 113 nodes, and 21 incoming neighbors.</strong>
+<strong class='message'>	At level 13, there are 54 nodes, and 82 incoming neighbors.</strong>
+<strong class='message'>	At level 12, there are 105 nodes, and 105 incoming neighbors.</strong>
+<strong class='message'>	At level 11, there are 274 nodes, and 188 incoming neighbors.</strong>
+<strong class='message'>	At level 10, there are 463 nodes, and 294 incoming neighbors.</strong>
+<strong class='message'>	At level 9, there are 782 nodes, and 441 incoming neighbors.</strong>
+<strong class='message'>	At level 8, there are 1004 nodes, and 538 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 1182 nodes, and 581 incoming neighbors.</strong>
+<strong class='message'>	At level 6, there are 1295 nodes, and 527 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 940 nodes, and 290 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 408 nodes, and 99 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 2647 genes/proteins in GSP (2014-12-15 15:55:51).</strong>
-<strong class='message'>Fourth, process input predictions (2014-12-15 15:55:51) ...</strong>
-<strong class='message'>	There are 7749 genes/proteins in predictions (2014-12-15 15:55:51).</strong>
-<strong class='message'>Fifth, calculate the precision and recall for each of 1379 predicted and GSP genes/proteins (2014-12-15 15:55:51).</strong>
-<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-15 15:55:52).</strong>
-<strong class='message'>In summary, Prediction coverage: 0.52 (amongst 2647 targets in GSP), and F-measure: 0.18.</strong>
+<strong class='message'>	There are 3048 genes/proteins in GSP (2014-12-19 17:21:49).</strong>
+<strong class='message'>Fourth, process input predictions (2014-12-19 17:21:49) ...</strong>
+<strong class='message'>	There are 7749 genes/proteins in predictions (2014-12-19 17:21:49).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 1561 predicted and GSP genes/proteins (2014-12-19 17:21:49).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-19 17:21:50).</strong>
+<strong class='message'>In summary, Prediction coverage: 0.51 (amongst 3048 targets in GSP), and F-measure: 0.16.</strong>
 <strong class='message'>
-End at 2014-12-15 15:55:52</strong>
+End at 2014-12-19 17:21:50</strong>
 <strong class='message'>Runtime in total is: 23 secs
 </strong>
 <div class='input'>res_PR
 </div>
 <div class='output'>        Precision     Recall
-1       0.7249014 0.03207353
-0.90001 0.6669055 0.03872330
-0.80002 0.5932894 0.04962839
-0.70003 0.5192608 0.06161876
-0.60004 0.4842689 0.07228345
-0.50005 0.4715477 0.08057011
-0.40006 0.4628939 0.08818116
-0.30007 0.4512655 0.09486613
-0.20008 0.4409756 0.09869412
-0.10009 0.4385661 0.10129023
-1e-04   0.4190166 0.11220561
+1       0.7183260 0.02993152
+0.90001 0.6563963 0.03594915
+0.80002 0.5810718 0.04575739
+0.70003 0.5048114 0.05653384
+0.60004 0.4678130 0.06626356
+0.50005 0.4550127 0.07348753
+0.40006 0.4463097 0.08034927
+0.30007 0.4342131 0.08724687
+0.20008 0.4242244 0.09054786
+0.10009 0.4216690 0.09301885
+1e-04   0.4006511 0.10253593
 </div>
 <div class='input'>
 # 3) Plot PR-curve

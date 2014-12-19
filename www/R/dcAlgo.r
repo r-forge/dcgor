@@ -29,11 +29,11 @@
 #' anno.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 #' architecture.file <- "http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt"
 #'
-#' # 2) Do inference using built-in data
+#' # 2) Do inference using built-in ontology
 #' res <- dcAlgo(anno.file, architecture.file, ontology="HPPA", feature.mode="supra", parallel=FALSE)
 #' res[1:5,]
 #' 
-#' # 3) Advanced usage: using customised data
+#' # 3) Advanced usage: using customised ontology
 #' x <- base::load(base::url("http://dcgor.r-forge.r-project.org/data/onto.HPPA.RData"))
 #' RData.ontology.customised <- 'onto.HPPA.RData'
 #' base::save(list=x, file=RData.ontology.customised)
@@ -451,6 +451,12 @@ dcAlgo <- function(anno.file, architecture.file, output.file=NULL, ontology=c(NA
     feature2term_score <- base::do.call(base::rbind, res_list)
     rownames(feature2term_score) <- NULL
     colnames(feature2term_score) <- c("Feature_id", "Term_id", "Score")
+    
+    # how to deal with non-positive scores
+    if(1){
+        ## only retain all entries with positive score (otherwise, there will be problematic for prediction)
+        feature2term_score <- feature2term_score[as.numeric(feature2term_score[,3])>0, ]
+    }
     
     if(!is.null(output.file)){
     
