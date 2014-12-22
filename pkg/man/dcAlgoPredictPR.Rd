@@ -18,17 +18,20 @@ found in
 \url{http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt}. As seen
 in this example, the input file must contain the header (in the first
 row) and two columns: 1st column for 'SeqID' (actually these IDs can be
-anything), 2nd column for 'termID' (HP terms). Note: the file should
-use the tab delimiter as the field separator between columns}
+anything), 2nd column for 'termID' (HP terms). Alternatively, the
+GSP.file can be a matrix or data frame, assuming that GSP file has been
+read. Note: the file should use the tab delimiter as the field
+separator between columns}
 
 \item{prediction.file}{a prediction file containing proteins/genes,
 their predicted terms along with predictive scores. As seen in an
 example below, this file is usually created via
 \code{\link{dcAlgoPredictMain}}, containing three columns: 1st column
 for 'SeqID' (actually these IDs can be anything), 2nd column for 'Term'
-(ontology terms), 3rd column for 'Score' (predictive score). Note: the
-file should use the tab delimiter as the field separator between
-columns}
+(ontology terms), 3rd column for 'Score' (predictive score).
+Alternatively, the prediction.file can be a matrix or data frame,
+assuming that prediction file has been read. Note: the file should use
+the tab delimiter as the field separator between columns}
 
 \item{ontology}{the ontology identity. It can be "GOBP" for Gene
 Ontology Biological Process, "GOMF" for Gene Ontology Molecular
@@ -111,7 +114,8 @@ prediction.file=prediction.file, ontology="HPPA")
 res_PR
 
 # 3) Plot PR-curve
-plot(res_PR[,2], res_PR[,1], type="b", xlab="Recall", ylab="Precision")
+plot(res_PR[,2], res_PR[,1], xlim=c(0,1), ylim=c(0,1), type="b",
+xlab="Recall", ylab="Precision")
 }
 }
 \seealso{
