@@ -192,13 +192,13 @@ window.onload = function(){
         
       </header>
       
-      <h2>Function to perform naive prediction from an input known annotations</h2>
+      <h2>Function to perform naive prediction from input known annotations</h2>
 
 <div class="row">
   <div class="span8">
   
     <h3>Description</h3>
-    <p><code>dcNaivePredict</code> is supposed to perform naive prediction from an
+    <p><code>dcNaivePredict</code> is supposed to perform naive prediction from
 input known annotations. For each gene/protein, a term to be predicted
 are simply the frequency of that term appearing in the known
 annotations.</p>
@@ -309,12 +309,12 @@ data <- unique(input[,1])
 GSP.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 res <- dcNaivePredict(data=data, GSP.file=GSP.file, ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-22 17:34:39</strong>
+<strong class='message'>Start at 2014-12-23 14:46:21</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-22 17:34:39) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2014-12-23 14:46:21) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP (2014-12-22 17:34:39) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-22 17:34:40) ...</strong>
+<strong class='message'>Second, import files for GSP (2014-12-23 14:46:21) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2014-12-23 14:46:22) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -331,12 +331,12 @@ res <- dcNaivePredict(data=data, GSP.file=GSP.file, ontology="HPPA")
 <strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 6673 terms in GSP (2014-12-22 17:34:58).</strong>
-<strong class='message'>Fourth, do naive predictions for 3085 genes/proteins (2014-12-22 17:34:58) ...</strong>
+<strong class='message'>	There are 6673 terms in GSP (2014-12-23 14:46:41).</strong>
+<strong class='message'>Fourth, do naive predictions for 3085 genes/proteins (2014-12-23 14:46:41) ...</strong>
 <strong class='message'>	Focus on top 1000 predicted terms for each gene/protein</strong>
 <strong class='message'>
-End at 2014-12-22 17:35:00</strong>
-<strong class='message'>Runtime in total is: 21 secs
+End at 2014-12-23 14:46:44</strong>
+<strong class='message'>Runtime in total is: 23 secs
 </strong>
 <div class='input'>res[1:10,]
 </div>
@@ -357,12 +357,12 @@ End at 2014-12-22 17:35:00</strong>
 res_PR <- dcAlgoPredictPR(GSP.file=GSP.file, prediction.file=res,
 ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-22 17:35:00</strong>
+<strong class='message'>Start at 2014-12-23 14:46:44</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-22 17:35:00) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2014-12-23 14:46:44) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP and predictions (2014-12-22 17:35:01) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-22 17:35:03) ...</strong>
+<strong class='message'>Second, import files for GSP and predictions (2014-12-23 14:46:44) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2014-12-23 14:46:47) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -379,14 +379,14 @@ ontology="HPPA")
 <strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 3048 genes/proteins in GSP (2014-12-22 17:35:24).</strong>
-<strong class='message'>Fourth, process input predictions (2014-12-22 17:35:24) ...</strong>
-<strong class='message'>	There are 3085 genes/proteins in predictions (2014-12-22 17:35:31).</strong>
-<strong class='message'>Fifth, calculate the precision and recall for each of 3048 predicted and GSP genes/proteins (2014-12-22 17:35:31).</strong>
-<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-22 17:35:34).</strong>
+<strong class='message'>	There are 3048 genes/proteins in GSP (2014-12-23 14:47:08).</strong>
+<strong class='message'>Fourth, process input predictions (2014-12-23 14:47:08) ...</strong>
+<strong class='message'>	There are 3085 genes/proteins in predictions (2014-12-23 14:47:15).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 3048 predicted and GSP genes/proteins (2014-12-23 14:47:15).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-23 14:47:18).</strong>
 <strong class='message'>In summary, Prediction coverage: 1.00 (amongst 3048 targets in GSP), and F-measure: 0.35.</strong>
 <strong class='message'>
-End at 2014-12-22 17:35:34</strong>
+End at 2014-12-23 14:47:18</strong>
 <strong class='message'>Runtime in total is: 34 secs
 </strong>
 <div class='input'>res_PR

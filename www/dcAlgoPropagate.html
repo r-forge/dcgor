@@ -202,15 +202,17 @@ window.onload = function(){
 given an input file. This input file contains original annotations
 between domains/features and ontology terms, along with the
 hypergeometric scores (hscore) in support for their annotations. The
-annotations are propagated to the ontology root (retaining the maximum
-hscore). After the propogation, the ontology terms of increasing levels
-are determined based on the concept of Information Content (IC) to
-product a slim version of ontology. It returns an object of S3 class
-"HIS" with three components: "hscore", "ic" and "slim".</p>
+annotations are propagated to the ontology root (either retaining the
+maximum hscore or additively accumulating the hscore). After the
+propogation, the ontology terms of increasing levels are determined
+based on the concept of Information Content (IC) to product a slim
+version of ontology. It returns an object of S3 class "HIS" with three
+components: "hscore", "ic" and "slim".</p>
   
     <h3>Usage</h3>
-    <pre>dcAlgoPropagate(input.file, ontology = c("GOBP", "GOMF", "GOCC", "DO", "HPPA", "HPMI", 
-  "HPON", "MP", "EC", "KW", "UP"), output.file = "HIS.RData", verbose = T, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
+    <pre>dcAlgoPropagate(input.file, ontology = c(NA, "GOBP", "GOMF", "GOCC", "DO", "HPPA", 
+  "HPMI", "HPON", "MP", "EC", "KW", "UP"), propagation = c("max", "sum"), output.file = "HIS.RData", 
+      verbose = T, RData.ontology.customised = NULL, RData.location = "http://dcgor.r-forge.r-project.org/data")</pre>
     
     <h3>Arguments</h3>
     <dl>
@@ -239,7 +241,13 @@ and clinical course, "MP" for Mammalian Phenotype, "EC" for Enzyme
 Commission, "KW" for UniProtKB KeyWords, "UP" for UniProtKB UniPathway.
 For details on the eligibility for pairs of input domain and ontology,
 please refer to the online Documentations at
-<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a></dd>
+<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a>. If NA, then the user has to
+input a customised RData-formatted file (see
+<code>RData.ontology.customised</code> below)</dd>
+      <dt>propagation</dt>
+      <dd>how to propagate the score. It can be "max" for
+retaining the maximum hscore (by default), "sum" for additively
+accumulating the hscore</dd>
       <dt>output.file</dt>
       <dd>an output file used to save the <code>HIS</code> object as
 an RData-formatted file (see 'Value' for details). If NULL, this file
@@ -248,6 +256,12 @@ If NA, there will be no output file</dd>
       <dt>verbose</dt>
       <dd>logical to indicate whether the messages will be
 displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.ontology.customised</dt>
+      <dd>a file name for RData-formatted file
+containing an object of S4 class 'Onto' (i.g. ontology). By default, it
+is NULL. It is only needed when the user wants to perform customised
+analysis using their own ontology. See <code><a href='dcBuildOnto.html'>dcBuildOnto</a></code> for
+how to creat this object</dd>
       <dt>RData.location</dt>
       <dd>the characters to tell the location of built-in
 RData files. By default, it remotely locates at
@@ -309,35 +323,36 @@ input.file <-
 Feature2GOMF.sf <- dcAlgoPropagate(input.file=input.file,
 ontology="GOMF", output.file="Feature2GOMF.sf.RData")
 </div>
-<strong class='message'>Start at 2014-12-19 17:21:51</strong>
+<strong class='message'>Start at 2014-12-23 14:43:44</strong>
 <strong class='message'></strong>
-<strong class='message'>Read the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt' (2014-12-19 17:21:51) ...</strong>
+<strong class='message'>Read the input file 'http://dcgor.r-forge.r-project.org/data/Feature/Feature2GO.sf.txt' (2014-12-23 14:43:44) ...</strong>
+<strong class='message'>Load the ontology 'GOMF' (2014-12-23 14:43:50) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Do propagation (2014-12-19 17:21:55) ...</strong>
-<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-12-19 17:21:56).</strong>
-<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-12-19 17:21:56).</strong>
-<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-12-19 17:21:56).</strong>
-<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-12-19 17:21:56).</strong>
-<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-12-19 17:21:56).</strong>
-<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-12-19 17:21:57).</strong>
-<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-12-19 17:21:57).</strong>
-<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-12-19 17:21:57).</strong>
-<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-12-19 17:21:58).</strong>
-<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-12-19 17:22:00).</strong>
-<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-12-19 17:22:01).</strong>
-<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-12-19 17:22:03).</strong>
-<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-12-19 17:22:04).</strong>
-<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-12-19 17:22:05).</strong>
+<strong class='message'>Do propagation via 'max' operation (2014-12-23 14:43:50) ...</strong>
+<strong class='message'>	At level 15, there are 3 nodes, and 4 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 14, there are 6 nodes, and 7 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 13, there are 10 nodes, and 12 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 12, there are 24 nodes, and 28 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 11, there are 32 nodes, and 34 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 10, there are 76 nodes, and 63 incoming neighbors (2014-12-23 14:43:51).</strong>
+<strong class='message'>	At level 9, there are 132 nodes, and 99 incoming neighbors (2014-12-23 14:43:52).</strong>
+<strong class='message'>	At level 8, there are 270 nodes, and 175 incoming neighbors (2014-12-23 14:43:52).</strong>
+<strong class='message'>	At level 7, there are 459 nodes, and 229 incoming neighbors (2014-12-23 14:43:53).</strong>
+<strong class='message'>	At level 6, there are 842 nodes, and 254 incoming neighbors (2014-12-23 14:43:55).</strong>
+<strong class='message'>	At level 5, there are 568 nodes, and 172 incoming neighbors (2014-12-23 14:43:56).</strong>
+<strong class='message'>	At level 4, there are 273 nodes, and 60 incoming neighbors (2014-12-23 14:43:58).</strong>
+<strong class='message'>	At level 3, there are 120 nodes, and 13 incoming neighbors (2014-12-23 14:43:59).</strong>
+<strong class='message'>	At level 2, there are 20 nodes, and 1 incoming neighbors (2014-12-23 14:44:00).</strong>
 <strong class='message'>	after propagation, there are 6018 features annotated by 2836 terms.</strong>
-<strong class='message'>Determining IC-based slim levels (2014-12-19 17:22:05) ...</strong>
+<strong class='message'>Determining IC-based slim levels (2014-12-23 14:44:00) ...</strong>
 <strong class='message'>	1 level with 6 terms with IC falling around 0.47 (between 0.00 and 0.94).</strong>
 <strong class='message'>	2 level with 38 terms with IC falling around 1.42 (between 1.18 and 1.65).</strong>
 <strong class='message'>	3 level with 217 terms with IC falling around 2.36 (between 2.13 and 2.60).</strong>
 <strong class='message'>	4 level with 838 terms with IC falling around 3.31 (between 3.07 and 3.54).</strong>
 <strong class='message'>An object of S3 class 'HIS' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/Feature2GOMF.sf.RData'.</strong>
 <strong class='message'>
-End at 2014-12-19 17:22:20</strong>
-<strong class='message'>Runtime in total is: 29 secs
+End at 2014-12-23 14:44:15</strong>
+<strong class='message'>Runtime in total is: 31 secs
 </strong>
 <div class='input'>names(Feature2GOMF.sf)
 </div>
