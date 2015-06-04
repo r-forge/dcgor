@@ -297,14 +297,14 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=FALSE)
 </div>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Runtime in total is: 2 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 140718 51556 54060 55481 55816
+  nodeNames: 55424 57850 52080 101941 57667
   nodeAttr: id
 </div>
 <div class='input'># 2b) convert the object from 'Dnetwork' to 'igraph' class
@@ -323,7 +323,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 140718 51556 54060 55481 55816
+  nodeNames: 55424 57850 52080 101941 57667
   nodeAttr: id
 </div></pre>
   </div>
@@ -377,8 +377,12 @@ dcConverter(ig, from='igraph', to='Dnetwork')
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href="
+http://cran.r-project.org/package=dcGOR">
+http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href="
+https://github.com/hfang-bristol/dcGOR">
+https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
@@ -391,7 +395,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
 
-<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
 <p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
 
 

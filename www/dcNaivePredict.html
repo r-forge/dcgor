@@ -301,20 +301,20 @@ out, with the column names: 1st column the same as the input file (e.g.
 input.file <-
 "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 #input.file <- "http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt"
-input <- utils::read.delim(input.file, header=T, sep="\t",
+input <- utils::read.delim(input.file, header=TRUE, sep="\t",
 colClasses="character")
 data <- unique(input[,1])
 
-# 2) Calculate Precision and Recall
+# 2) do naive prediction
 GSP.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
 res <- dcNaivePredict(data=data, GSP.file=GSP.file, ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-23 14:46:21</strong>
+<strong class='message'>Start at 2015-06-04 16:18:32</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-23 14:46:21) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2015-06-04 16:18:32) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP (2014-12-23 14:46:21) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-23 14:46:22) ...</strong>
+<strong class='message'>Second, import files for GSP (2015-06-04 16:18:32) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2015-06-04 16:18:33) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -331,12 +331,12 @@ res <- dcNaivePredict(data=data, GSP.file=GSP.file, ontology="HPPA")
 <strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 6673 terms in GSP (2014-12-23 14:46:41).</strong>
-<strong class='message'>Fourth, do naive predictions for 3085 genes/proteins (2014-12-23 14:46:41) ...</strong>
+<strong class='message'>	There are 6673 terms in GSP (2015-06-04 16:18:52).</strong>
+<strong class='message'>Fourth, do naive predictions for 3085 genes/proteins (2015-06-04 16:18:52) ...</strong>
 <strong class='message'>	Focus on top 1000 predicted terms for each gene/protein</strong>
 <strong class='message'>
-End at 2014-12-23 14:46:44</strong>
-<strong class='message'>Runtime in total is: 23 secs
+End at 2015-06-04 16:18:54</strong>
+<strong class='message'>Runtime in total is: 22 secs
 </strong>
 <div class='input'>res[1:10,]
 </div>
@@ -357,12 +357,12 @@ End at 2014-12-23 14:46:44</strong>
 res_PR <- dcAlgoPredictPR(GSP.file=GSP.file, prediction.file=res,
 ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-23 14:46:44</strong>
+<strong class='message'>Start at 2015-06-04 16:18:54</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-23 14:46:44) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2015-06-04 16:18:54) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP and predictions (2014-12-23 14:46:44) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-23 14:46:47) ...</strong>
+<strong class='message'>Second, import files for GSP and predictions (2015-06-04 16:18:55) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2015-06-04 16:18:57) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -379,15 +379,15 @@ ontology="HPPA")
 <strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 3048 genes/proteins in GSP (2014-12-23 14:47:08).</strong>
-<strong class='message'>Fourth, process input predictions (2014-12-23 14:47:08) ...</strong>
-<strong class='message'>	There are 3085 genes/proteins in predictions (2014-12-23 14:47:15).</strong>
-<strong class='message'>Fifth, calculate the precision and recall for each of 3048 predicted and GSP genes/proteins (2014-12-23 14:47:15).</strong>
-<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-23 14:47:18).</strong>
+<strong class='message'>	There are 3048 genes/proteins in GSP (2015-06-04 16:19:19).</strong>
+<strong class='message'>Fourth, process input predictions (2015-06-04 16:19:19) ...</strong>
+<strong class='message'>	There are 3085 genes/proteins in predictions (2015-06-04 16:19:27).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 3048 predicted and GSP genes/proteins (2015-06-04 16:19:27).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2015-06-04 16:19:29).</strong>
 <strong class='message'>In summary, Prediction coverage: 1.00 (amongst 3048 targets in GSP), and F-measure: 0.35.</strong>
 <strong class='message'>
-End at 2014-12-23 14:47:18</strong>
-<strong class='message'>Runtime in total is: 34 secs
+End at 2015-06-04 16:19:30</strong>
+<strong class='message'>Runtime in total is: 36 secs
 </strong>
 <div class='input'>res_PR
 </div>
@@ -405,7 +405,7 @@ End at 2014-12-23 14:47:18</strong>
 0.01476  0.07161905 0.84493817
 </div>
 <div class='input'>
-# 4) Plot PR-curve
+# 4) plot PR-curve
 plot(res_PR[,2], res_PR[,1], xlim=c(0,1), ylim=c(0,1), type="b",
 xlab="Recall", ylab="Precision")
 </div>
@@ -460,8 +460,12 @@ xlab="Recall", ylab="Precision")
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href="
+http://cran.r-project.org/package=dcGOR">
+http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href="
+https://github.com/hfang-bristol/dcGOR">
+https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
@@ -474,7 +478,7 @@ xlab="Recall", ylab="Precision")
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
 
-<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
 <p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
 
 

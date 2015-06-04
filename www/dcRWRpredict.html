@@ -387,88 +387,88 @@ data <- dcSparseMatrix(anno.file)
 # 3) perform RWR-based ontology term predictions
 res <- dcRWRpredict(data=data, g=g, ontology="HPPA", parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-12-23 14:47:30</strong>
+<strong class='message'>Start at 2015-06-04 16:19:42</strong>
 <strong class='message'></strong>
-<strong class='message'>First, RWR on input graph (999 nodes and 1932 edges) using input matrix (3085 rows and 5715 columns) as seeds (2014-12-23 14:47:30)...</strong>
-<strong class='message'>	using 'indirect' method to do RWR with leave-one-out test (2014-12-23 14:47:30)...</strong>
+<strong class='message'>First, RWR on input graph (999 nodes and 1932 edges) using input matrix (3085 rows and 5715 columns) as seeds (2015-06-04 16:19:42)...</strong>
+<strong class='message'>	using 'indirect' method to do RWR with leave-one-out test (2015-06-04 16:19:42)...</strong>
 <strong class='message'>
 ##############################</strong>
 <strong class='message'>'dnet::dRWR' is being called...</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Start at 2014-12-23 14:47:30</strong>
+<strong class='message'>Start at 2015-06-04 16:19:42</strong>
 <strong class='message'></strong>
-<strong class='message'>First, get the adjacency matrix of the input graph (2014-12-23 14:47:30) ...</strong>
+<strong class='message'>First, get the adjacency matrix of the input graph (2015-06-04 16:19:42) ...</strong>
 <strong class='message'>	Notes: using weighted graph!</strong>
-<strong class='message'>Then, normalise the adjacency matrix using laplacian normalisation (2014-12-23 14:47:30) ...</strong>
-<strong class='message'>Third, RWR of 999 sets of seeds using 7.5e-01 restart probability (2014-12-23 14:47:30) ...</strong>
-<strong class='message'>	1 out of 999 seed sets (2014-12-23 14:47:30)</strong>
-<strong class='message'>	100 out of 999 seed sets (2014-12-23 14:47:38)</strong>
-<strong class='message'>	200 out of 999 seed sets (2014-12-23 14:47:46)</strong>
-<strong class='message'>	300 out of 999 seed sets (2014-12-23 14:47:54)</strong>
-<strong class='message'>	400 out of 999 seed sets (2014-12-23 14:48:02)</strong>
-<strong class='message'>	500 out of 999 seed sets (2014-12-23 14:48:10)</strong>
-<strong class='message'>	600 out of 999 seed sets (2014-12-23 14:48:19)</strong>
-<strong class='message'>	700 out of 999 seed sets (2014-12-23 14:48:27)</strong>
-<strong class='message'>	800 out of 999 seed sets (2014-12-23 14:48:36)</strong>
-<strong class='message'>	900 out of 999 seed sets (2014-12-23 14:48:44)</strong>
-<strong class='message'>	999 out of 999 seed sets (2014-12-23 14:48:53)</strong>
-<strong class='message'>Fourth, rescale steady probability vector (2014-12-23 14:48:53) ...</strong>
-<strong class='message'>Finally, output 999 by 999 affinity matrix normalised by none (2014-12-23 14:48:53) ...</strong>
+<strong class='message'>Then, normalise the adjacency matrix using laplacian normalisation (2015-06-04 16:19:42) ...</strong>
+<strong class='message'>Third, RWR of 999 sets of seeds using 7.5e-01 restart probability (2015-06-04 16:19:43) ...</strong>
+<strong class='message'>	1 out of 999 seed sets (2015-06-04 16:19:43)</strong>
+<strong class='message'>	100 out of 999 seed sets (2015-06-04 16:19:51)</strong>
+<strong class='message'>	200 out of 999 seed sets (2015-06-04 16:19:59)</strong>
+<strong class='message'>	300 out of 999 seed sets (2015-06-04 16:20:08)</strong>
+<strong class='message'>	400 out of 999 seed sets (2015-06-04 16:20:17)</strong>
+<strong class='message'>	500 out of 999 seed sets (2015-06-04 16:20:25)</strong>
+<strong class='message'>	600 out of 999 seed sets (2015-06-04 16:20:34)</strong>
+<strong class='message'>	700 out of 999 seed sets (2015-06-04 16:20:43)</strong>
+<strong class='message'>	800 out of 999 seed sets (2015-06-04 16:20:52)</strong>
+<strong class='message'>	900 out of 999 seed sets (2015-06-04 16:21:01)</strong>
+<strong class='message'>	999 out of 999 seed sets (2015-06-04 16:21:11)</strong>
+<strong class='message'>Fourth, rescale steady probability vector (2015-06-04 16:21:11) ...</strong>
+<strong class='message'>Finally, output 999 by 999 affinity matrix normalised by none (2015-06-04 16:21:11) ...</strong>
 <strong class='message'>
-Finish at 2014-12-23 14:48:54</strong>
-<strong class='message'>Runtime in total is: 84 secs
+Finish at 2015-06-04 16:21:11</strong>
+<strong class='message'>Runtime in total is: 89 secs
 </strong>
 <strong class='message'>##############################</strong>
 <strong class='message'>'dnet::dRWR' has been completed!</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Second, propagate 'HPPA' ontology annotations (2014-12-23 14:48:56)...</strong>
+<strong class='message'>Second, propagate 'HPPA' ontology annotations via 'max' operation (2015-06-04 16:21:13)...Second, propagate 'HPPA' ontology annotations via 'sum' operation (2015-06-04 16:21:13)...</strong>
 <strong class='message'>
 ##############################</strong>
 <strong class='message'>'dcAlgoPropagate' is being called...</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Start at 2014-12-23 14:48:59</strong>
+<strong class='message'>Start at 2015-06-04 16:21:16</strong>
 <strong class='message'></strong>
-<strong class='message'>Load the input file (2014-12-23 14:48:59) ...</strong>
-<strong class='message'>Load the ontology 'HPPA' (2014-12-23 14:49:01) ...</strong>
+<strong class='message'>Load the input file (2015-06-04 16:21:16) ...</strong>
+<strong class='message'>Load the ontology 'HPPA' (2015-06-04 16:21:18) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Do propagation via 'max' operation (2014-12-23 14:49:02) ...</strong>
-<strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors (2014-12-23 14:49:03).</strong>
-<strong class='message'>	At level 15, there are 5 nodes, and 9 incoming neighbors (2014-12-23 14:49:03).</strong>
-<strong class='message'>	At level 14, there are 5 nodes, and 12 incoming neighbors (2014-12-23 14:49:03).</strong>
-<strong class='message'>	At level 13, there are 15 nodes, and 24 incoming neighbors (2014-12-23 14:49:03).</strong>
-<strong class='message'>	At level 12, there are 25 nodes, and 34 incoming neighbors (2014-12-23 14:49:04).</strong>
-<strong class='message'>	At level 11, there are 68 nodes, and 75 incoming neighbors (2014-12-23 14:49:04).</strong>
-<strong class='message'>	At level 10, there are 165 nodes, and 143 incoming neighbors (2014-12-23 14:49:06).</strong>
-<strong class='message'>	At level 9, there are 281 nodes, and 210 incoming neighbors (2014-12-23 14:49:09).</strong>
-<strong class='message'>	At level 8, there are 439 nodes, and 315 incoming neighbors (2014-12-23 14:49:14).</strong>
-<strong class='message'>	At level 7, there are 534 nodes, and 319 incoming neighbors (2014-12-23 14:49:19).</strong>
-<strong class='message'>	At level 6, there are 619 nodes, and 324 incoming neighbors (2014-12-23 14:49:25).</strong>
-<strong class='message'>	At level 5, there are 522 nodes, and 199 incoming neighbors (2014-12-23 14:49:30).</strong>
-<strong class='message'>	At level 4, there are 266 nodes, and 82 incoming neighbors (2014-12-23 14:49:32).</strong>
-<strong class='message'>	At level 3, there are 92 nodes, and 21 incoming neighbors (2014-12-23 14:49:32).</strong>
-<strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors (2014-12-23 14:49:32).</strong>
+<strong class='message'>Do propagation via 'max' operation (2015-06-04 16:21:19) ...</strong>
+<strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors (2015-06-04 16:21:20).</strong>
+<strong class='message'>	At level 15, there are 5 nodes, and 9 incoming neighbors (2015-06-04 16:21:20).</strong>
+<strong class='message'>	At level 14, there are 5 nodes, and 12 incoming neighbors (2015-06-04 16:21:20).</strong>
+<strong class='message'>	At level 13, there are 15 nodes, and 24 incoming neighbors (2015-06-04 16:21:21).</strong>
+<strong class='message'>	At level 12, there are 25 nodes, and 34 incoming neighbors (2015-06-04 16:21:21).</strong>
+<strong class='message'>	At level 11, there are 68 nodes, and 75 incoming neighbors (2015-06-04 16:21:22).</strong>
+<strong class='message'>	At level 10, there are 165 nodes, and 143 incoming neighbors (2015-06-04 16:21:24).</strong>
+<strong class='message'>	At level 9, there are 281 nodes, and 210 incoming neighbors (2015-06-04 16:21:27).</strong>
+<strong class='message'>	At level 8, there are 439 nodes, and 315 incoming neighbors (2015-06-04 16:21:32).</strong>
+<strong class='message'>	At level 7, there are 534 nodes, and 319 incoming neighbors (2015-06-04 16:21:37).</strong>
+<strong class='message'>	At level 6, there are 619 nodes, and 324 incoming neighbors (2015-06-04 16:21:43).</strong>
+<strong class='message'>	At level 5, there are 522 nodes, and 199 incoming neighbors (2015-06-04 16:21:48).</strong>
+<strong class='message'>	At level 4, there are 266 nodes, and 82 incoming neighbors (2015-06-04 16:21:50).</strong>
+<strong class='message'>	At level 3, there are 92 nodes, and 21 incoming neighbors (2015-06-04 16:21:51).</strong>
+<strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors (2015-06-04 16:21:51).</strong>
 <strong class='message'>	after propagation, there are 999 features annotated by 3060 terms.</strong>
-<strong class='message'>Determining IC-based slim levels (2014-12-23 14:49:38) ...</strong>
+<strong class='message'>Determining IC-based slim levels (2015-06-04 16:21:56) ...</strong>
 <strong class='message'>	1 level with 703 terms with IC falling around 0.00 (between 0.00 and 0.00).</strong>
 <strong class='message'>	2 level with 8 terms with IC falling around 0.00 (between 0.00 and 0.00).</strong>
 <strong class='message'>	3 level with 0 terms with IC falling around 0.00 (between 0.00 and 0.01).</strong>
 <strong class='message'>	4 level with 3 terms with IC falling around 0.01 (between 0.01 and 0.01).</strong>
 <strong class='message'>
-End at 2014-12-23 14:50:15</strong>
-<strong class='message'>Runtime in total is: 76 secs
+End at 2015-06-04 16:22:37</strong>
+<strong class='message'>Runtime in total is: 81 secs
 </strong>
 <strong class='message'>##############################</strong>
 <strong class='message'>'dcAlgoPropagate' has been completed!</strong>
 <strong class='message'>##############################
 </strong>
-<strong class='message'>Third, rescale predictive score using 'log' method (2014-12-23 14:50:15)...</strong>
+<strong class='message'>Third, rescale predictive score using 'log' method (2015-06-04 16:22:37)...</strong>
 <strong class='message'>The input list has been converted into a matrix of 3055826 X 3.</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-12-23 14:50:19</strong>
-<strong class='message'>Runtime in total is: 169 secs
+<strong class='message'>Finish at 2015-06-04 16:22:41</strong>
+<strong class='message'>Runtime in total is: 179 secs
 </strong>
 <div class='input'>res[1:10,]
 </div>
@@ -490,12 +490,12 @@ prediction.file <- res
 res_PR <- dcAlgoPredictPR(GSP.file=GSP.file,
 prediction.file=prediction.file, ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-23 14:50:19</strong>
+<strong class='message'>Start at 2015-06-04 16:22:41</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA' (2014-12-23 14:50:19) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA' (2015-06-04 16:22:41) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, import files for GSP and predictions (2014-12-23 14:50:20) ...</strong>
-<strong class='message'>Third, propagate GSP annotations (2014-12-23 14:50:22) ...</strong>
+<strong class='message'>Second, import files for GSP and predictions (2015-06-04 16:22:41) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2015-06-04 16:22:43) ...</strong>
 <strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
 <strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
 <strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
@@ -512,14 +512,14 @@ prediction.file=prediction.file, ontology="HPPA")
 <strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
 <strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
 <strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
-<strong class='message'>	There are 3048 genes/proteins in GSP (2014-12-23 14:50:42).</strong>
-<strong class='message'>Fourth, process input predictions (2014-12-23 14:50:42) ...</strong>
-<strong class='message'>	There are 999 genes/proteins in predictions (2014-12-23 14:50:47).</strong>
-<strong class='message'>Fifth, calculate the precision and recall for each of 301 predicted and GSP genes/proteins (2014-12-23 14:50:47).</strong>
-<strong class='message'>Finally, calculate the averaged precision and recall (2014-12-23 14:50:48).</strong>
+<strong class='message'>	There are 3048 genes/proteins in GSP (2015-06-04 16:23:03).</strong>
+<strong class='message'>Fourth, process input predictions (2015-06-04 16:23:03) ...</strong>
+<strong class='message'>	There are 999 genes/proteins in predictions (2015-06-04 16:23:09).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 301 predicted and GSP genes/proteins (2015-06-04 16:23:09).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2015-06-04 16:23:10).</strong>
 <strong class='message'>In summary, Prediction coverage: 0.10 (amongst 3048 targets in GSP), and F-measure: 0.10.</strong>
 <strong class='message'>
-End at 2014-12-23 14:50:48</strong>
+End at 2015-06-04 16:23:10</strong>
 <strong class='message'>Runtime in total is: 29 secs
 </strong>
 <div class='input'>res_PR
@@ -594,8 +594,12 @@ xlab="Recall", ylab="Precision")
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href="
+http://cran.r-project.org/package=dcGOR">
+http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href="
+https://github.com/hfang-bristol/dcGOR">
+https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
@@ -608,7 +612,7 @@ xlab="Recall", ylab="Precision")
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
 
-<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
 <p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
 
 

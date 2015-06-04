@@ -333,17 +333,17 @@ data <- sample(rowNames(SCOP.sf), 20)
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-12-05 17:18:33</strong>
+<strong class='message'>Start at 2015-06-04 16:24:22</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-12-05 17:18:33) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:24:22) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:18:39) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:24:28) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:18:39) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:24:28) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:18:39</strong>
+End at 2015-06-04 16:24:28</strong>
 <strong class='message'>Runtime in total is: 6 secs
 </strong>
 <div class='input'>eoutput
@@ -351,15 +351,15 @@ End at 2014-12-05 17:18:39</strong>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 56 terms X 5 information
-  @anno: a list of 56 terms, each storing annotated domains
-  @data: a vector containing a group of 13 input domains (annotatable)
+  @term_info: a data.frame of 15 terms X 5 information
+  @anno: a list of 15 terms, each storing annotated domains
+  @data: a vector containing a group of 11 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 56 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 56 terms, containing z-scores
-  @pvalue: a vector of 56 terms, containing p-values
-  @adjp: a vector of 56 terms, containing adjusted p-values
-In summary, a total of 56 terms ('GOMF') are analysed for a group of 13 input domains ('SCOP.sf')
+  @overlap: a list of 15 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 15 terms, containing z-scores
+  @pvalue: a vector of 15 terms, containing p-values
+  @adjp: a vector of 15 terms, containing adjusted p-values
+In summary, a total of 15 terms ('GOMF') are analysed for a group of 11 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) write into the file 'Eoutput.txt' in your local directory
@@ -371,40 +371,40 @@ write(eoutput, file='Eoutput.txt')
 view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
 </div>
 <div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0070628 GO:0070628   274     13        6  1.740  0.025 0.50
-GO:0000981 GO:0000981   103     13        3  1.680  0.028 0.50
-GO:1901618 GO:1901618   105     13        3  1.640  0.030 0.50
-GO:0032403 GO:0032403   293     13        6  1.560  0.036 0.50
-GO:0003700 GO:0003700   150     13        3  0.968  0.092 0.88
-                                                                               term_name
-GO:0070628                                                            proteasome binding
-GO:0000981 sequence-specific DNA binding RNA polymerase II transcription factor activity
-GO:1901618                   organic hydroxy compound transmembrane transporter activity
-GO:0032403                                                       protein complex binding
-GO:0003700                   sequence-specific DNA binding transcription factor activity
-               term_namespace term_distance                             members
-GO:0070628 molecular_function             4 52467,82114,57933,51713,52335,69593
-GO:0000981 molecular_function             3                  144270,52467,51713
-GO:1901618 molecular_function             3                   52467,57933,69593
-GO:0032403 molecular_function             3 52467,82114,57933,51713,52335,69593
-GO:0003700 molecular_function             2                  144270,52467,51713
+GO:0004309 GO:0004309   392     11        3 -0.619   0.61 0.99
+GO:0030234 GO:0030234   408     11        3 -0.715   0.65 0.99
+GO:0016817 GO:0016817   591     11        4 -1.220   0.82 0.99
+GO:0016818 GO:0016818   590     11        4 -1.210   0.82 0.99
+GO:0016462 GO:0016462   590     11        4 -1.210   0.82 0.99
+                                                                                    term_name
+GO:0004309                                                        exopolyphosphatase activity
+GO:0030234                                                          enzyme regulator activity
+GO:0016817                                      hydrolase activity, acting on acid anhydrides
+GO:0016818 hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+GO:0016462                                                           pyrophosphatase activity
+               term_namespace term_distance                  members
+GO:0004309 molecular_function             6       111479,55724,49854
+GO:0030234 molecular_function             1        55387,51391,49854
+GO:0016817 molecular_function             3 111479,52279,55724,49854
+GO:0016818 molecular_function             4 111479,52279,55724,49854
+GO:0016462 molecular_function             5 111479,52279,55724,49854
 </div>
 <div class='input'>
 # 4) retrieve several slots directly
 zscore(eoutput)[1:5]
 </div>
-<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
-    0.9560    -0.8930    -0.0601    -0.4690    -0.5170 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
+    -1.780     -2.370     -0.715     -2.530     -2.420 
 </div>
 <div class='input'>pvalue(eoutput)[1:5]
 </div>
-<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
-     0.094      0.720      0.420      0.570      0.580 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
+      0.92       0.97       0.65       0.98       0.97 
 </div>
 <div class='input'>adjp(eoutput)[1:5]
 </div>
-<div class='output'>GO:0001071 GO:0004872 GO:0005215 GO:0005488 GO:0030234 
-      0.88       0.90       0.90       0.90       0.90 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
+      0.99       0.99       0.99       0.99       0.99 
 </div></pre>
   </div>
   
@@ -450,8 +450,12 @@ zscore(eoutput)[1:5]
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href="
+http://cran.r-project.org/package=dcGOR">
+http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href="
+https://github.com/hfang-bristol/dcGOR">
+https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
@@ -464,7 +468,7 @@ zscore(eoutput)[1:5]
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
 
-<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
 <p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
 
 

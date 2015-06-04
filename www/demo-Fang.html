@@ -284,18 +284,18 @@ background <- rowNames(domains_metazoa)
 ### By default, using all annotatable domains as the background
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2014-12-05 17:02:10</strong>
+<strong class='message'>Start at 2015-06-04 16:01:15</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-12-05 17:02:10) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2015-06-04 16:01:15) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:03:23) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:02:22) ...</strong>
 <strong class='message'>	There are 5471 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:03:27) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:02:26) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:03:29</strong>
-<strong class='message'>Runtime in total is: 79 secs
+End at 2015-06-04 16:02:28</strong>
+<strong class='message'>Runtime in total is: 73 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -337,25 +337,25 @@ GO:0002224   toll-like receptor signaling pathway
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
 <strong class='message'>Ontology 'GOBP' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-31.png', 'Fang-31.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-31.png', width="400" /></a>
 <div class='input'>
 ## 1b) GOBP enrichment analysis, producing an object of S4 class 'Eoutput'
 ### Alternatively, using all domains in Metazoa as the background (customised)
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background, domain="SCOP.sf", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2014-12-05 17:03:35</strong>
+<strong class='message'>Start at 2015-06-04 16:02:33</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2014-12-05 17:03:35) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'SCOP.sf', and their associations (2015-06-04 16:02:33) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:04:48) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:03:43) ...</strong>
 <strong class='message'>	There are 5453 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:04:51) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:03:47) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:04:53</strong>
-<strong class='message'>Runtime in total is: 78 secs
+End at 2015-06-04 16:03:48</strong>
+<strong class='message'>Runtime in total is: 75 secs
 </strong>
+<a href="javascript:newWin('Fang-43.png', 'Fang-43.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-43.png', width="400" /></a>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
@@ -396,29 +396,28 @@ GO:0002224   toll-like receptor signaling pathway
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
 <strong class='message'>Ontology 'GOBP' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-52.png', 'Fang-52.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-52.png', width="400" /></a>
 <div class='input'>
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput,height=10, width=10,graph.node.attrs=list(fontsize=20),node.attrs=list(fontsize=28), node.info = c("both", "none","term_id", "term_name", "full_term_name")[3])
 </div>
 <strong class='message'>Ontology 'GOBP' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-55.png', 'Fang-55.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-55.png', width="400" /></a>
 <div class='input'>
 ## 2) GOMF enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2014-12-05 17:05:02</strong>
+<strong class='message'>Start at 2015-06-04 16:03:57</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:02) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:03:57) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:07) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:02) ...</strong>
 <strong class='message'>	There are 810 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:07) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:02) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:05:07</strong>
+End at 2015-06-04 16:04:02</strong>
 <strong class='message'>Runtime in total is: 5 secs
 </strong>
+<a href="javascript:newWin('Fang-66.png', 'Fang-66.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-66.png', width="400" /></a>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
@@ -459,24 +458,24 @@ GO:0016880          acid-ammonia (or amide) ligase activity
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
 <strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-76.png', 'Fang-76.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-76.png', width="400" /></a>
 <div class='input'>
 ## 3) HPPA enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="HPPA")
 </div>
-<strong class='message'>Start at 2014-12-05 17:05:10</strong>
+<strong class='message'>Start at 2015-06-04 16:04:05</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'HPPA', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:10) ...</strong>
+<strong class='message'>First, load the ontology 'HPPA', the domain 'SCOP.sf', and their associations (2015-06-04 16:04:05) ...</strong>
 <strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:12) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:07) ...</strong>
 <strong class='message'>	There are 259 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:12) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:07) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:05:12</strong>
+End at 2015-06-04 16:04:07</strong>
 <strong class='message'>Runtime in total is: 2 secs
 </strong>
+<a href="javascript:newWin('Fang-87.png', 'Fang-87.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-87.png', width="400" /></a>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
@@ -523,24 +522,24 @@ HP:0002664             1 47686,75399,57581,57630
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, path.mode="all_paths", node.info="full_term_name")
 </div>
 <strong class='message'>Ontology 'HPPA' containing 6 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-97.png', 'Fang-97.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-97.png', width="400" /></a>
 <div class='input'>
 ## 4) DO enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="SCOP.sf", ontology="DO")
 </div>
-<strong class='message'>Start at 2014-12-05 17:05:14</strong>
+<strong class='message'>Start at 2015-06-04 16:04:08</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'DO', the domain 'SCOP.sf', and their associations (2014-12-05 17:05:14) ...</strong>
+<strong class='message'>First, load the ontology 'DO', the domain 'SCOP.sf', and their associations (2015-06-04 16:04:08) ...</strong>
 <strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2014-12-05 17:05:15) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:09) ...</strong>
 <strong class='message'>	There are 219 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2014-12-05 17:05:15) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:09) ...</strong>
 <strong class='message'>
-End at 2014-12-05 17:05:15</strong>
+End at 2015-06-04 16:04:09</strong>
 <strong class='message'>Runtime in total is: 1 secs
 </strong>
+<a href="javascript:newWin('Fang-108.png', 'Fang-108.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-108.png', width="400" /></a>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
@@ -587,7 +586,6 @@ DOID:7004                                             47686,57392,54117,47266
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, path.mode="all_paths")
 </div>
 <strong class='message'>Ontology 'DO' containing 15 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
-<a href="javascript:newWin('Fang-118.png', 'Fang-118.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-118.png', width="400" /></a>
 <div class='input'>
 #---------------------------------------------------------------------
 #---------------------------------------------------------------------
@@ -599,6 +597,7 @@ DOID:7004                                             47686,57392,54117,47266
 g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.DO')
 </div>
 <strong class='message'>'onto.DO' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<a href="javascript:newWin('Fang-119.png', 'Fang-119.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-119.png', width="400" /></a>
 <div class='input'>g
 </div>
 <div class='output'>An object of S4 class 'Onto'
@@ -641,21 +640,21 @@ dag
 domains <- domains_human_unique
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=domains, method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2014-12-05 17:05:18</strong>
+<strong class='message'>Start at 2015-06-04 16:04:13</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2014-12-05 17:05:18)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-06-04 16:04:13)...</strong>
 <strong class='message'>	there are 11 input domains amongst 219 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 129 terms (forced to be the most specific for each domain) using Resnik method (2014-12-05 17:05:19)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 11 domains using BM.average method (2014-12-05 17:05:19)...</strong>
-<strong class='message'>	1 out of 11 (2014-12-05 17:05:19)</strong>
-<strong class='message'>	2 out of 11 (2014-12-05 17:05:19)</strong>
-<strong class='message'>	4 out of 11 (2014-12-05 17:05:19)</strong>
-<strong class='message'>	6 out of 11 (2014-12-05 17:05:19)</strong>
-<strong class='message'>	8 out of 11 (2014-12-05 17:05:20)</strong>
-<strong class='message'>	10 out of 11 (2014-12-05 17:05:20)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 129 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:04:13)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 11 domains using BM.average method (2015-06-04 16:04:14)...</strong>
+<strong class='message'>	1 out of 11 (2015-06-04 16:04:14)</strong>
+<strong class='message'>	2 out of 11 (2015-06-04 16:04:14)</strong>
+<strong class='message'>	4 out of 11 (2015-06-04 16:04:14)</strong>
+<strong class='message'>	6 out of 11 (2015-06-04 16:04:14)</strong>
+<strong class='message'>	8 out of 11 (2015-06-04 16:04:14)</strong>
+<strong class='message'>	10 out of 11 (2015-06-04 16:04:14)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-12-05 17:05:20</strong>
-<strong class='message'>Runtime in total is: 2 secs
+<strong class='message'>Finish at 2015-06-04 16:04:14</strong>
+<strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -670,7 +669,7 @@ dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</
 D <- as.matrix(adjMatrix(dnetwork))
 supraHex::visHeatmapAdv(D, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.2), KeyValueName="DO semantic similarity")
 </div>
-<a href="javascript:newWin('Fang-148.png', 'Fang-148.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-148.png', width="400" /></a>
+<a href="javascript:newWin('Fang-147.png', 'Fang-147.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-147.png', width="400" /></a>
 <div class='input'>
 ## 6) visualise the domain network as a graph
 ### convert it to an object of class 'igraph' (for subsequent visualisation)
@@ -691,9 +690,7 @@ ind <- match(V(ig)$name,domainNames(Anno))
 vertex.label <- paste(V(ig)$name, '\n', as.character(dData(Anno)[ind,]$description), sep='')
 ### do visualisation
 dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="black", vertex.label.cex=0.7, vertex.shape="sphere", edge.width=edge.width, edge.label=x, edge.label.cex=0.7)
-</div>
-<a href="javascript:newWin('Fang-154.png', 'Fang-154.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-154.png', width="400" /></a>
-<div class='input'>
+
 #------------------------------------------------------------
 #------------------------------------------------------------
 # Random Walk with Restart (RWR)-based contacts between terms
@@ -705,6 +702,7 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="black", vertex
 Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('SCOP.sf2GOMF')
 </div>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<a href="javascript:newWin('Fang-154.png', 'Fang-154.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-154.png', width="400" /></a>
 <div class='input'>flag <- match(domainNames(Anno), nodeNames(dnetwork))
 ind <- which(!is.na(flag))
 data <- as.matrix(annoData(Anno)[ind,])
@@ -715,29 +713,29 @@ data <- data[,ind]
 ## 2) assess their contact significance and strength based on RWR
 coutput <- <a href='dcRWRpipeline.html' target=dcRWRpipeline>dcRWRpipeline</a>(data=data, g=dnetwork, permutation="degree", num.permutation=2000, adjp.cutoff=0.1, parallel=FALSE)
 </div>
-<strong class='message'>Start at 2014-12-05 17:05:22</strong>
+<strong class='message'>Start at 2015-06-04 16:04:16</strong>
 <strong class='message'></strong>
-<strong class='message'>First, RWR on input graph (11 nodes and 55 edges) using input matrix (10 rows and 12 columns) as seeds (2014-12-05 17:05:22)...</strong>
-<strong class='message'>	using indirect method to do RWR (2014-12-05 17:05:22)...</strong>
-<strong class='message'>Second, calculate contact strength (2014-12-05 17:05:22)...</strong>
-<strong class='message'>Third, generate the distribution of contact strength based on 2000 permutations on nodes respecting degree (2014-12-05 17:05:22)...</strong>
-<strong class='message'>	1 out of 2000 (2014-12-05 17:05:22)</strong>
-<strong class='message'>	200 out of 2000 (2014-12-05 17:05:24)</strong>
-<strong class='message'>	400 out of 2000 (2014-12-05 17:05:25)</strong>
-<strong class='message'>	600 out of 2000 (2014-12-05 17:05:27)</strong>
-<strong class='message'>	800 out of 2000 (2014-12-05 17:05:28)</strong>
-<strong class='message'>	1000 out of 2000 (2014-12-05 17:05:30)</strong>
-<strong class='message'>	1200 out of 2000 (2014-12-05 17:05:32)</strong>
-<strong class='message'>	1400 out of 2000 (2014-12-05 17:05:33)</strong>
-<strong class='message'>	1600 out of 2000 (2014-12-05 17:05:35)</strong>
-<strong class='message'>	1800 out of 2000 (2014-12-05 17:05:36)</strong>
-<strong class='message'>	2000 out of 2000 (2014-12-05 17:05:38)</strong>
-<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2014-12-05 17:05:38)...</strong>
-<strong class='message'>Also, construct the contact graph under the cutoff 1.0e-01 of adjusted-pvalue (2014-12-05 17:05:38)...</strong>
+<strong class='message'>First, RWR on input graph (11 nodes and 55 edges) using input matrix (10 rows and 12 columns) as seeds (2015-06-04 16:04:16)...</strong>
+<strong class='message'>	using 'indirect' method to do RWR (2015-06-04 16:04:16)...</strong>
+<strong class='message'>Second, calculate contact strength (2015-06-04 16:04:17)...</strong>
+<strong class='message'>Third, generate the distribution of contact strength based on 2000 permutations on nodes respecting 'degree' (2015-06-04 16:04:17)...</strong>
+<strong class='message'>	1 out of 2000 (2015-06-04 16:04:17)</strong>
+<strong class='message'>	200 out of 2000 (2015-06-04 16:04:17)</strong>
+<strong class='message'>	400 out of 2000 (2015-06-04 16:04:18)</strong>
+<strong class='message'>	600 out of 2000 (2015-06-04 16:04:18)</strong>
+<strong class='message'>	800 out of 2000 (2015-06-04 16:04:18)</strong>
+<strong class='message'>	1000 out of 2000 (2015-06-04 16:04:19)</strong>
+<strong class='message'>	1200 out of 2000 (2015-06-04 16:04:19)</strong>
+<strong class='message'>	1400 out of 2000 (2015-06-04 16:04:20)</strong>
+<strong class='message'>	1600 out of 2000 (2015-06-04 16:04:20)</strong>
+<strong class='message'>	1800 out of 2000 (2015-06-04 16:04:21)</strong>
+<strong class='message'>	2000 out of 2000 (2015-06-04 16:04:21)</strong>
+<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2015-06-04 16:04:21)...</strong>
+<strong class='message'>Also, construct the contact graph under the cutoff 1.0e-01 of adjusted-pvalue (2015-06-04 16:04:21)...</strong>
 <strong class='message'>Your input object 'icontact' of class 'igraph' has been converted into an object of class 'Cnetwork'.</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2014-12-05 17:05:38</strong>
-<strong class='message'>Runtime in total is: 16 secs
+<strong class='message'>Finish at 2015-06-04 16:04:21</strong>
+<strong class='message'>Runtime in total is: 5 secs
 </strong>
 <div class='input'>coutput
 </div>
@@ -794,7 +792,6 @@ ind <- match(V(ig)$name,termNames(Anno))
 vertex.label <- paste(V(ig)$name, '\n', tData(Anno)[ind,]$Name, sep='')
 ### do visualisation
 dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.label.cex=0.7, vertex.shape="sphere", vertex.color="blue", edge.width=edge.width, edge.label=x, edge.label.cex=0.7)</div>
-<a href="javascript:newWin('Fang-194.png', 'Fang-194.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Fang-194.png', width="400" /></a>
       </pre>
     </div>
 
@@ -840,8 +837,12 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href="
+http://cran.r-project.org/package=dcGOR">
+http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href="
+https://github.com/hfang-bristol/dcGOR">
+https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     <h2>Author</h2>
@@ -856,7 +857,7 @@ dnet::visNet(g=ig, vertex.label=vertex.label, vertex.label.color="blue", vertex.
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
 
-<p><a href="mailto:hfang@cs.bris.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
 <p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
 
 
