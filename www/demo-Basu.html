@@ -245,18 +245,18 @@ Pfam <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfa
 ### By default, using all annotatable domains as the background
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2015-06-04 16:04:31</strong>
+<strong class='message'>Start at 2015-07-21 18:11:43</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'Pfam', and their associations (2015-06-04 16:04:31) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'Pfam', and their associations (2015-07-21 18:11:43) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:38) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:12:04) ...</strong>
 <strong class='message'>	There are 722 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:38) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:12:04) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:04:38</strong>
-<strong class='message'>Runtime in total is: 7 secs
+End at 2015-07-21 18:12:04</strong>
+<strong class='message'>Runtime in total is: 21 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -304,11 +304,10 @@ GO:0016051         PF02902,PF01421,PF00082,PF00085
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, num_top_nodes=4, layout.orientation="top_bottom", zlim=c(0,4))
 </div>
 <strong class='message'>Ontology 'GOBP' containing 13 nodes/terms (including 4 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-27.png', 'Basu-27.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-27.png', width="400" /></a>
 <div class='input'>#### look at Pfam domains annotated by the most signficant term
 tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
-</div>
-<a href="javascript:newWin('Basu-28.png', 'Basu-28.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-28.png', width="400" /></a>
-<div class='input'>tmp <- unlist(strsplit(tmp,","))
+tmp <- unlist(strsplit(tmp,","))
 Data(Pfam)[match(tmp,rowNames(Pfam)),]
 </div>
 <div class='output'>             id level                                             description
@@ -322,18 +321,18 @@ PF00106 PF00106  Pfam                               short chain dehydrogenase
 ## 2) GOMF enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:04:42</strong>
+<strong class='message'>Start at 2015-07-21 18:12:56</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-06-04 16:04:42) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-07-21 18:12:56) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:44) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:13:06) ...</strong>
 <strong class='message'>	There are 334 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:44) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:13:06) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:04:45</strong>
-<strong class='message'>Runtime in total is: 3 secs
+End at 2015-07-21 18:13:06</strong>
+<strong class='message'>Runtime in total is: 10 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -387,11 +386,10 @@ GO:0016817 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, layout.orientation="top_bottom", zlim=c(0,4))
 </div>
 <strong class='message'>Ontology 'GOMF' containing 8 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-50.png', 'Basu-50.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-50.png', width="400" /></a>
 <div class='input'>#### look at Pfam domains annotated by the most signficant term
 tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
-</div>
-<a href="javascript:newWin('Basu-52.png', 'Basu-52.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-52.png', width="400" /></a>
-<div class='input'>tmp <- unlist(strsplit(tmp,","))
+tmp <- unlist(strsplit(tmp,","))
 Data(Pfam)[match(tmp,rowNames(Pfam)),]
 </div>
 <div class='output'>             id level                                   description
@@ -406,18 +404,18 @@ PF00107 PF00107  Pfam                    Zinc-binding dehydrogenase
 ## 3) GOCC enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOCC")
 </div>
-<strong class='message'>Start at 2015-06-04 16:04:46</strong>
+<strong class='message'>Start at 2015-07-21 18:13:18</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOCC', the domain 'Pfam', and their associations (2015-06-04 16:04:46) ...</strong>
+<strong class='message'>First, load the ontology 'GOCC', the domain 'Pfam', and their associations (2015-07-21 18:13:18) ...</strong>
 <strong class='message'>'onto.GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:04:48) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:13:23) ...</strong>
 <strong class='message'>	There are 149 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:04:48) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:13:23) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:04:48</strong>
-<strong class='message'>Runtime in total is: 2 secs
+End at 2015-07-21 18:13:23</strong>
+<strong class='message'>Runtime in total is: 5 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -459,11 +457,10 @@ GO:0005623                   cell
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
 <strong class='message'>Ontology 'GOCC' containing 9 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-73.png', 'Basu-73.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-73.png', width="400" /></a>
 <div class='input'>#### look at Pfam domains annotated by the most signficant term
 tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
-</div>
-<a href="javascript:newWin('Basu-76.png', 'Basu-76.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-76.png', width="400" /></a>
-<div class='input'>tmp <- unlist(strsplit(tmp,","))
+tmp <- unlist(strsplit(tmp,","))
 Data(Pfam)[match(tmp,rowNames(Pfam)),]
 </div>
 <div class='output'>             id level                               description
@@ -528,25 +525,25 @@ dag
 <div class='input'>### calculate GOBP-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:04:54</strong>
+<strong class='message'>Start at 2015-07-21 18:14:26</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2015-06-04 16:04:54)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-21 18:14:26)...</strong>
 <strong class='message'>	there are 29 input domains amongst 3241 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 20 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:04:54)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 29 domains using BM.average method (2015-06-04 16:04:54)...</strong>
-<strong class='message'>	1 out of 29 (2015-06-04 16:04:54)</strong>
-<strong class='message'>	3 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	6 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	9 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	12 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	15 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	18 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	21 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	24 out of 29 (2015-06-04 16:04:55)</strong>
-<strong class='message'>	27 out of 29 (2015-06-04 16:04:55)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 20 terms (forced to be the most specific for each domain) using Resnik method (2015-07-21 18:14:39)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 29 domains using BM.average method (2015-07-21 18:14:40)...</strong>
+<strong class='message'>	1 out of 29 (2015-07-21 18:14:40)</strong>
+<strong class='message'>	3 out of 29 (2015-07-21 18:14:40)</strong>
+<strong class='message'>	6 out of 29 (2015-07-21 18:14:40)</strong>
+<strong class='message'>	9 out of 29 (2015-07-21 18:14:40)</strong>
+<strong class='message'>	12 out of 29 (2015-07-21 18:14:41)</strong>
+<strong class='message'>	15 out of 29 (2015-07-21 18:14:41)</strong>
+<strong class='message'>	18 out of 29 (2015-07-21 18:14:41)</strong>
+<strong class='message'>	21 out of 29 (2015-07-21 18:14:41)</strong>
+<strong class='message'>	24 out of 29 (2015-07-21 18:14:41)</strong>
+<strong class='message'>	27 out of 29 (2015-07-21 18:14:41)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:04:55</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2015-07-21 18:14:41</strong>
+<strong class='message'>Runtime in total is: 15 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -560,7 +557,7 @@ dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</
 Adj_GOBP <- as.matrix(adjMatrix(dnetwork))
 visHeatmapAdv(Adj_GOBP, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOBP semantic similarity")
 </div>
-<a href="javascript:newWin('Basu-112.png', 'Basu-112.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-112.png', width="400" /></a>
+<a href="javascript:newWin('Basu-109.png', 'Basu-109.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-109.png', width="400" /></a>
 <div class='input'>
 ## 2) GOMF-based semantic similarity
 ### load onto.GOMF (as 'Onto' object)
@@ -607,24 +604,24 @@ dag
 <div class='input'>### calculate GOMF-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:04:58</strong>
+<strong class='message'>Start at 2015-07-21 18:14:59</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2015-06-04 16:04:58)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-21 18:14:59)...</strong>
 <strong class='message'>	there are 36 input domains amongst 3359 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 33 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:04:58)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 36 domains using BM.average method (2015-06-04 16:04:58)...</strong>
-<strong class='message'>	1 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	4 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	8 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	12 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	16 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	20 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	24 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	28 out of 36 (2015-06-04 16:04:58)</strong>
-<strong class='message'>	32 out of 36 (2015-06-04 16:04:59)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 33 terms (forced to be the most specific for each domain) using Resnik method (2015-07-21 18:15:04)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 36 domains using BM.average method (2015-07-21 18:15:06)...</strong>
+<strong class='message'>	1 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	4 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	8 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	12 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	16 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	20 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	24 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	28 out of 36 (2015-07-21 18:15:06)</strong>
+<strong class='message'>	32 out of 36 (2015-07-21 18:15:07)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:04:59</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2015-07-21 18:15:07</strong>
+<strong class='message'>Runtime in total is: 8 secs
 </strong>
 <div class='input'>dnetwork
 </div>
@@ -638,7 +635,7 @@ dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</
 Adj_GOMF <- as.matrix(adjMatrix(dnetwork))
 visHeatmapAdv(Adj_GOMF, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOMF semantic similarity")
 </div>
-<a href="javascript:newWin('Basu-145.png', 'Basu-145.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-145.png', width="400" /></a>
+<a href="javascript:newWin('Basu-142.png', 'Basu-142.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-142.png', width="400" /></a>
 <div class='input'>
 ## 3) GOCC-based semantic similarity
 ### load onto.GOCC (as 'Onto' object)
@@ -685,21 +682,21 @@ dag
 <div class='input'>### calculate GOCC-based pair-wise semantic similarity between domains
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:05:00</strong>
+<strong class='message'>Start at 2015-07-21 18:15:16</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2015-06-04 16:05:00)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-21 18:15:16)...</strong>
 <strong class='message'>	there are 8 input domains amongst 2036 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:05:00)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2015-06-04 16:05:00)...</strong>
-<strong class='message'>	1 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	2 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	3 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	4 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	5 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	6 out of 8 (2015-06-04 16:05:00)</strong>
-<strong class='message'>	7 out of 8 (2015-06-04 16:05:00)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2015-07-21 18:15:16)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2015-07-21 18:15:16)...</strong>
+<strong class='message'>	1 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	2 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	3 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	4 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	5 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	6 out of 8 (2015-07-21 18:15:16)</strong>
+<strong class='message'>	7 out of 8 (2015-07-21 18:15:16)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:05:00</strong>
+<strong class='message'>Finish at 2015-07-21 18:15:16</strong>
 <strong class='message'>Runtime in total is: 0 secs
 </strong>
 <div class='input'>dnetwork
@@ -714,7 +711,7 @@ dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</
 Adj_GOCC <- as.matrix(adjMatrix(dnetwork))
 visHeatmapAdv(Adj_GOCC, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOCC semantic similarity")
 </div>
-<a href="javascript:newWin('Basu-176.png', 'Basu-176.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-176.png', width="400" /></a>
+<a href="javascript:newWin('Basu-173.png', 'Basu-173.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-173.png', width="400" /></a>
 <div class='input'>
 ## 4) Obtain GO-based overall semantic similarity via merging all three subontology (GOBP, GOMF and GOCC) based semantic similarity
 allnodes <- sort(unique(c(rownames(Adj_GOBP), rownames(Adj_GOMF), rownames(Adj_GOCC))))
@@ -731,7 +728,7 @@ ind <- match(rownames(Adj_GOCC), allnodes)
 D[ind,ind] <- D[ind,ind]+Adj_GOCC
 ### heatmap the GO-based overall semantic similarity
 visHeatmapAdv(D, Rowv=T, Colv=T, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,2), cexRow=0.5, cexCol=0.5, KeyValueName="GO overall semantic similarity")</div>
-<a href="javascript:newWin('Basu-178.png', 'Basu-178.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-178.png', width="400" /></a>
+<a href="javascript:newWin('Basu-175.png', 'Basu-175.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-175.png', width="400" /></a>
       </pre>
     </div>
 
@@ -775,12 +772,10 @@ visHeatmapAdv(D, Rowv=T, Colv=T, dendrogram="none", colormap="white-lightpink-da
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     <h2>Author</h2>

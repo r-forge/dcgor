@@ -428,155 +428,155 @@ data <- sample(rowNames(SCOP.sf), 50)
 ## 1b) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:23</strong>
+<strong class='message'>Start at 2015-07-21 18:46:02</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:17:23) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-07-21 18:46:02) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:17:29) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:46:18) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:17:30) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:46:19) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:17:30</strong>
-<strong class='message'>Runtime in total is: 7 secs
+End at 2015-07-21 18:46:19</strong>
+<strong class='message'>Runtime in total is: 17 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 152 terms X 5 information
-  @anno: a list of 152 terms, each storing annotated domains
-  @data: a vector containing a group of 25 input domains (annotatable)
+  @term_info: a data.frame of 135 terms X 5 information
+  @anno: a list of 135 terms, each storing annotated domains
+  @data: a vector containing a group of 19 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 152 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 152 terms, containing z-scores
-  @pvalue: a vector of 152 terms, containing p-values
-  @adjp: a vector of 152 terms, containing adjusted p-values
-In summary, a total of 152 terms ('GOMF') are analysed for a group of 25 input domains ('SCOP.sf')
+  @overlap: a list of 135 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 135 terms, containing z-scores
+  @pvalue: a vector of 135 terms, containing p-values
+  @adjp: a vector of 135 terms, containing adjusted p-values
+In summary, a total of 135 terms ('GOMF') are analysed for a group of 19 input domains ('SCOP.sf')
 </div>
 <div class='input'>## 1c) view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue  adjp
-GO:0032559 GO:0032559    18     25        3   4.09 0.00055 0.039
-GO:0030554 GO:0030554    19     25        3   3.95 0.00068 0.039
-GO:0005487 GO:0005487    34     25        4   3.73 0.00076 0.039
-GO:0043021 GO:0043021    28     25        3   3.00 0.00310 0.120
-GO:0008409 GO:0008409    34     25        3   2.57 0.00640 0.200
-GO:0051540 GO:0051540    69     25        4   1.99 0.01800 0.450
-GO:0016298 GO:0016298   101     25        5   1.86 0.02300 0.480
-GO:0051538 GO:0051538    55     25        3   1.59 0.03400 0.480
-GO:0043565 GO:0043565   111     25        5   1.63 0.03500 0.480
-GO:0019237 GO:0019237    84     25        4   1.56 0.03800 0.480
-                                        term_name     term_namespace
-GO:0032559          adenyl ribonucleotide binding molecular_function
-GO:0030554              adenyl nucleotide binding molecular_function
-GO:0005487 nucleocytoplasmic transporter activity molecular_function
-GO:0043021      ribonucleoprotein complex binding molecular_function
-GO:0008409             5'-3' exonuclease activity molecular_function
-GO:0051540                  metal cluster binding molecular_function
-GO:0016298                        lipase activity molecular_function
-GO:0051538       3 iron, 4 sulfur cluster binding molecular_function
-GO:0043565          sequence-specific DNA binding molecular_function
-GO:0019237                centromeric DNA binding molecular_function
-           term_distance                          members
-GO:0032559             7                46955,53092,47719
-GO:0030554             6                46955,53092,47719
-GO:0005487             2       109885,161070,90096,143575
-GO:0043021             2               46955,161070,50715
-GO:0008409             6               161070,90096,56219
-GO:0051540             2        158457,46955,47719,143575
-GO:0016298             4   46955,161070,47719,56219,50715
-GO:0051538             4               158457,46955,47719
-GO:0043565             5 52029,109885,161070,90096,143575
-GO:0019237             6       109885,161070,90096,143575
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
+GO:0032553 GO:0032553    65     19        4   2.79 0.0040 0.29
+GO:0008187 GO:0008187    45     19        3   2.56 0.0064 0.29
+GO:0008266 GO:0008266    45     19        3   2.56 0.0064 0.29
+GO:1900750 GO:1900750    57     19        3   2.07 0.0150 0.40
+GO:0032555 GO:0032555    62     19        3   1.90 0.0200 0.40
+GO:0000166 GO:0000166   100     19        4   1.79 0.0250 0.40
+GO:0017076 GO:0017076    68     19        3   1.72 0.0270 0.40
+GO:0042277 GO:0042277   105     19        4   1.69 0.0300 0.40
+GO:0004666 GO:0004666    70     19        3   1.67 0.0300 0.40
+GO:0004764 GO:0004764    71     19        3   1.64 0.0310 0.40
+                                              term_name     term_namespace
+GO:0032553                       ribonucleotide binding molecular_function
+GO:0008187                poly-pyrimidine tract binding molecular_function
+GO:0008266                          poly(U) RNA binding molecular_function
+GO:1900750                         oligopeptide binding molecular_function
+GO:0032555                purine ribonucleotide binding molecular_function
+GO:0000166                           nucleotide binding molecular_function
+GO:0017076                    purine nucleotide binding molecular_function
+GO:0042277                              peptide binding molecular_function
+GO:0004666 prostaglandin-endoperoxide synthase activity molecular_function
+GO:0004764   shikimate 3-dehydrogenase (NADP+) activity molecular_function
+           term_distance                 members
+GO:0032553             5 47216,53901,46689,53300
+GO:0008187             6       46689,53300,48092
+GO:0008266             7       46689,53300,48092
+GO:1900750             4       53901,46689,49309
+GO:0032555             6       47216,46689,53300
+GO:0000166             3 47216,53901,46689,53300
+GO:0017076             5       47216,46689,53300
+GO:0042277             3 53901,46689,49309,48092
+GO:0004666             4       46689,53300,48092
+GO:0004764             5      116846,54585,53300
 </div>
 <div class='input'>## 1d) visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 17 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-21.png', 'dcEnrichment-21.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-21.png', width="400" /></a>
 <div class='input'>## 1e) the same as above but using a customised background
 ### randomly select 500 domains as background
 background <- sample(rowNames(SCOP.sf), 500)
-</div>
-<a href="javascript:newWin('dcEnrichment-22.png', 'dcEnrichment-22.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-22.png', width="400" /></a>
-<div class='input'>### perform enrichment analysis, producing an object of S4 class 'Eoutput'
+### perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, background=background, domain="SCOP.sf",
 ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:32</strong>
+<strong class='message'>Start at 2015-07-21 18:46:29</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:17:32) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-07-21 18:46:29) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:17:37) ...</strong>
-<strong class='message'>	There are 432 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:17:37) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:46:45) ...</strong>
+<strong class='message'>	There are 412 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:46:45) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:17:37</strong>
-<strong class='message'>Runtime in total is: 5 secs
+End at 2015-07-21 18:46:45</strong>
+<strong class='message'>Runtime in total is: 16 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 147 terms X 5 information
-  @anno: a list of 147 terms, each storing annotated domains
-  @data: a vector containing a group of 25 input domains (annotatable)
-  @background: a vector containing a group of 268 background domains (annotatable)
-  @overlap: a list of 147 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 147 terms, containing z-scores
-  @pvalue: a vector of 147 terms, containing p-values
-  @adjp: a vector of 147 terms, containing adjusted p-values
-In summary, a total of 147 terms ('GOMF') are analysed for a group of 25 input domains ('SCOP.sf')
+  @term_info: a data.frame of 135 terms X 5 information
+  @anno: a list of 135 terms, each storing annotated domains
+  @data: a vector containing a group of 19 input domains (annotatable)
+  @background: a vector containing a group of 251 background domains (annotatable)
+  @overlap: a list of 135 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 135 terms, containing z-scores
+  @pvalue: a vector of 135 terms, containing p-values
+  @adjp: a vector of 135 terms, containing adjusted p-values
+In summary, a total of 135 terms ('GOMF') are analysed for a group of 19 input domains ('SCOP.sf')
 </div>
 <div class='input'>### view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
 <div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0019237 GO:0019237    19     25        4   1.82  0.022 0.79
-GO:0032555 GO:0032555    13     25        3   1.74  0.024 0.79
-GO:0016298 GO:0016298    27     25        5   1.73  0.027 0.79
-GO:0017076 GO:0017076    14     25        3   1.60  0.031 0.79
-GO:0043565 GO:0043565    29     25        5   1.55  0.038 0.79
-GO:0032553 GO:0032553    15     25        3   1.46  0.040 0.79
-GO:0004620 GO:0004620    22     25        4   1.49  0.041 0.79
-GO:0051540 GO:0051540    23     25        4   1.39  0.049 0.79
-GO:0003677 GO:0003677    59     25        8   1.26  0.069 0.79
-GO:0051538 GO:0051538    18     25        3   1.11  0.073 0.79
-                                  term_name     term_namespace term_distance
-GO:0019237          centromeric DNA binding molecular_function             6
-GO:0032555    purine ribonucleotide binding molecular_function             6
-GO:0016298                  lipase activity molecular_function             4
-GO:0017076        purine nucleotide binding molecular_function             5
-GO:0043565    sequence-specific DNA binding molecular_function             5
-GO:0032553           ribonucleotide binding molecular_function             5
-GO:0004620           phospholipase activity molecular_function             5
-GO:0051540            metal cluster binding molecular_function             2
-GO:0003677                      DNA binding molecular_function             4
-GO:0051538 3 iron, 4 sulfur cluster binding molecular_function             4
-                                                      members
-GO:0019237                         90096,161070,143575,109885
-GO:0032555                                  47719,46955,53092
-GO:0016298                     47719,46955,161070,56219,50715
-GO:0017076                                  47719,46955,53092
-GO:0043565                   90096,161070,143575,109885,52029
-GO:0032553                                  47719,46955,53092
-GO:0004620                           47719,46955,161070,50715
-GO:0051540                          47719,46955,143575,158457
-GO:0003677 54782,90096,53092,47027,161070,143575,109885,52029
-GO:0051538                                 47719,46955,158457
+GO:0008187 GO:0008187    12     19        3   2.33  0.008 0.49
+GO:0008266 GO:0008266    12     19        3   2.33  0.008 0.49
+GO:0032553 GO:0032553    20     19        4   2.19  0.011 0.49
+GO:0004666 GO:0004666    17     19        3   1.62  0.030 0.51
+GO:0032555 GO:0032555    19     19        3   1.41  0.044 0.51
+GO:0016831 GO:0016831    38     19        5   1.41  0.049 0.51
+GO:1900750 GO:1900750    20     19        3   1.31  0.052 0.51
+GO:0004638 GO:0004638    20     19        3   1.31  0.052 0.51
+GO:0015103 GO:0015103    20     19        3   1.31  0.052 0.51
+GO:0000166 GO:0000166    31     19        4   1.20  0.068 0.51
+                                                    term_name
+GO:0008187                      poly-pyrimidine tract binding
+GO:0008266                                poly(U) RNA binding
+GO:0032553                             ribonucleotide binding
+GO:0004666       prostaglandin-endoperoxide synthase activity
+GO:0032555                      purine ribonucleotide binding
+GO:0016831                             carboxy-lyase activity
+GO:1900750                               oligopeptide binding
+GO:0004638  phosphoribosylaminoimidazole carboxylase activity
+GO:0015103 inorganic anion transmembrane transporter activity
+GO:0000166                                 nucleotide binding
+               term_namespace term_distance                        members
+GO:0008187 molecular_function             6              53300,46689,48092
+GO:0008266 molecular_function             7              53300,46689,48092
+GO:0032553 molecular_function             5        53300,46689,53901,47216
+GO:0004666 molecular_function             4              53300,46689,48092
+GO:0032555 molecular_function             6              53300,46689,47216
+GO:0016831 molecular_function             4 63380,53300,46689,48092,101912
+GO:1900750 molecular_function             4              49309,46689,53901
+GO:0004638 molecular_function             5             46689,48092,101912
+GO:0015103 molecular_function             6             53300,46689,101912
+GO:0000166 molecular_function             3        53300,46689,53901,47216
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 17 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-40.png', 'dcEnrichment-40.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-40.png', width="400" /></a>
 <div class='input'>
 ###########################################################
 # 2) Enrichment analysis for Pfam domains (Pfam)
@@ -584,24 +584,23 @@ visEnrichment(eoutput)
 Pfam <- dcRDataLoader('Pfam')
 </div>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<a href="javascript:newWin('dcEnrichment-43.png', 'dcEnrichment-43.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-43.png', width="400" /></a>
 <div class='input'>### randomly select 100 domains as a list of domains of interest
 data <- sample(rowNames(Pfam), 100)
 ## 2b) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="Pfam", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:40</strong>
+<strong class='message'>Start at 2015-07-21 18:46:59</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-06-04 16:17:40) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-07-21 18:46:59) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:17:43) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:47:07) ...</strong>
 <strong class='message'>	There are 334 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:17:43) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:47:08) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:17:43</strong>
-<strong class='message'>Runtime in total is: 3 secs
+End at 2015-07-21 18:47:08</strong>
+<strong class='message'>Runtime in total is: 9 secs
 </strong>
 <div class='input'>eoutput
 </div>
@@ -610,146 +609,157 @@ End at 2015-06-04 16:17:43</strong>
   @ontology: 'GOMF'
   @term_info: a data.frame of 16 terms X 5 information
   @anno: a list of 16 terms, each storing annotated domains
-  @data: a vector containing a group of 22 input domains (annotatable)
+  @data: a vector containing a group of 24 input domains (annotatable)
   @background: a vector containing a group of 3359 background domains (annotatable)
   @overlap: a list of 16 terms, each containing domains overlapped with input domains
   @zscore: a vector of 16 terms, containing z-scores
   @pvalue: a vector of 16 terms, containing p-values
   @adjp: a vector of 16 terms, containing adjusted p-values
-In summary, a total of 16 terms ('GOMF') are analysed for a group of 22 input domains ('Pfam')
+In summary, a total of 16 terms ('GOMF') are analysed for a group of 24 input domains ('Pfam')
 </div>
 <div class='input'>## 2c) view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue   adjp
-GO:0019210 GO:0019210    82     22        3  3.410 0.0017 0.0082
-GO:0004860 GO:0004860    82     22        3  3.410 0.0017 0.0082
-GO:0019887 GO:0019887    85     22        3  3.330 0.0020 0.0082
-GO:0019207 GO:0019207    86     22        3  3.300 0.0021 0.0082
-GO:0004857 GO:0004857   106     22        3  2.820 0.0044 0.0140
-GO:0030234 GO:0030234   198     22        3  1.550 0.0370 0.0990
-GO:0022891 GO:0022891   273     22        3  0.949 0.0980 0.2000
-GO:0016740 GO:0016740   767     22        7  1.010 0.1100 0.2000
-GO:0022857 GO:0022857   290     22        3  0.838 0.1200 0.2000
-GO:0022892 GO:0022892   296     22        3  0.801 0.1200 0.2000
-                                                       term_name
-GO:0019210                             kinase inhibitor activity
-GO:0004860                     protein kinase inhibitor activity
-GO:0019887                     protein kinase regulator activity
-GO:0019207                             kinase regulator activity
-GO:0004857                             enzyme inhibitor activity
-GO:0030234                             enzyme regulator activity
-GO:0022891 substrate-specific transmembrane transporter activity
-GO:0016740                                  transferase activity
-GO:0022857                    transmembrane transporter activity
-GO:0022892               substrate-specific transporter activity
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
+GO:0043167 GO:0043167   124     24        3  2.300  0.011 0.057
+GO:0016818 GO:0016818   133     24        3  2.150  0.013 0.057
+GO:0016462 GO:0016462   132     24        3  2.170  0.013 0.057
+GO:0016817 GO:0016817   135     24        3  2.120  0.014 0.057
+GO:0031369 GO:0031369   205     24        3  1.310  0.055 0.140
+GO:0005488 GO:0005488   730     24        8  1.380  0.057 0.140
+GO:0003824 GO:0003824  2241     24       19  1.300  0.059 0.140
+GO:0005515 GO:0005515   445     24        5  1.100  0.087 0.170
+GO:0016787 GO:0016787   690     24        7  1.050  0.100 0.180
+GO:0016740 GO:0016740   767     24        7  0.742  0.160 0.230
+                                                                                    term_name
+GO:0043167                                                                        ion binding
+GO:0016818 hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+GO:0016462                                                           pyrophosphatase activity
+GO:0016817                                      hydrolase activity, acting on acid anhydrides
+GO:0031369                                              translation initiation factor binding
+GO:0005488                                                                            binding
+GO:0003824                                                                 catalytic activity
+GO:0005515                                                                    protein binding
+GO:0016787                                                                 hydrolase activity
+GO:0016740                                                               transferase activity
                term_namespace term_distance
-GO:0019210 molecular_function             3
-GO:0004860 molecular_function             4
-GO:0019887 molecular_function             3
-GO:0019207 molecular_function             2
-GO:0004857 molecular_function             2
-GO:0030234 molecular_function             1
-GO:0022891 molecular_function             3
+GO:0043167 molecular_function             2
+GO:0016818 molecular_function             4
+GO:0016462 molecular_function             5
+GO:0016817 molecular_function             3
+GO:0031369 molecular_function             3
+GO:0005488 molecular_function             1
+GO:0003824 molecular_function             1
+GO:0005515 molecular_function             2
+GO:0016787 molecular_function             2
 GO:0016740 molecular_function             2
-GO:0022857 molecular_function             2
-GO:0022892 molecular_function             2
-                                                           members
-GO:0019210                                 PF06452,PF05148,PF04616
-GO:0004860                                 PF06452,PF05148,PF04616
-GO:0019887                                 PF06452,PF05148,PF04616
-GO:0019207                                 PF06452,PF05148,PF04616
-GO:0004857                                 PF06452,PF05148,PF04616
-GO:0030234                                 PF06452,PF05148,PF04616
-GO:0022891                                 PF03418,PF15291,PF05388
-GO:0016740 PF00328,PF00444,PF03418,PF06452,PF15291,PF09478,PF02172
-GO:0022857                                 PF03418,PF15291,PF05388
-GO:0022892                                 PF03418,PF15291,PF05388
+                                                                                                                                                           members
+GO:0043167                                                                                                                                 PF01207,PF08015,PF03147
+GO:0016818                                                                                                                                 PF01025,PF02776,PF01070
+GO:0016462                                                                                                                                 PF01025,PF02776,PF01070
+GO:0016817                                                                                                                                 PF01025,PF02776,PF01070
+GO:0031369                                                                                                                                 PF08465,PF00288,PF03147
+GO:0005488                                                                                         PF08465,PF00288,PF00389,PF08675,PF01207,PF08015,PF08273,PF03147
+GO:0003824 PF00178,PF08465,PF14372,PF00389,PF01025,PF08661,PF02776,PF08675,PF06367,PF01070,PF04145,PF09497,PF01245,PF01207,PF10385,PF02302,PF08273,PF03089,PF03147
+GO:0005515                                                                                                                 PF08465,PF00288,PF00389,PF08273,PF03147
+GO:0016787                                                                                                 PF08465,PF01025,PF02776,PF08675,PF06367,PF01070,PF10385
+GO:0016740                                                                                                 PF00178,PF01025,PF09497,PF01245,PF02302,PF08273,PF03147
 </div>
 <div class='input'>## 2d) visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 7 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 10 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-61.png', 'dcEnrichment-61.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-61.png', width="400" /></a>
 <div class='input'>## 2e) the same as above but using a customised background
 ### randomly select 1000 domains as background
 background <- sample(rowNames(Pfam), 1000)
-</div>
-<a href="javascript:newWin('dcEnrichment-63.png', 'dcEnrichment-63.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-63.png', width="400" /></a>
-<div class='input'>### perform enrichment analysis, producing an object of S4 class 'Eoutput'
+### perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, background=background, domain="Pfam",
 ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:45</strong>
+<strong class='message'>Start at 2015-07-21 18:47:20</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-06-04 16:17:45) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-07-21 18:47:20) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:17:48) ...</strong>
-<strong class='message'>	There are 44 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:17:48) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:47:28) ...</strong>
+<strong class='message'>	There are 36 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:47:28) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:17:48</strong>
-<strong class='message'>Runtime in total is: 3 secs
+End at 2015-07-21 18:47:28</strong>
+<strong class='message'>Runtime in total is: 8 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'Pfam'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 16 terms X 5 information
-  @anno: a list of 16 terms, each storing annotated domains
-  @data: a vector containing a group of 22 input domains (annotatable)
-  @background: a vector containing a group of 252 background domains (annotatable)
-  @overlap: a list of 16 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 16 terms, containing z-scores
-  @pvalue: a vector of 16 terms, containing p-values
-  @adjp: a vector of 16 terms, containing adjusted p-values
-In summary, a total of 16 terms ('GOMF') are analysed for a group of 22 input domains ('Pfam')
+  @term_info: a data.frame of 13 terms X 5 information
+  @anno: a list of 13 terms, each storing annotated domains
+  @data: a vector containing a group of 24 input domains (annotatable)
+  @background: a vector containing a group of 249 background domains (annotatable)
+  @overlap: a list of 13 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 13 terms, containing z-scores
+  @pvalue: a vector of 13 terms, containing p-values
+  @adjp: a vector of 13 terms, containing adjusted p-values
+In summary, a total of 13 terms ('GOMF') are analysed for a group of 24 input domains ('Pfam')
 </div>
 <div class='input'>### view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
-GO:0019210 GO:0019210    12     22        3  2.040  0.014 0.059
-GO:0004860 GO:0004860    12     22        3  2.040  0.014 0.059
-GO:0004857 GO:0004857    13     22        3  1.880  0.019 0.059
-GO:0019207 GO:0019207    13     22        3  1.880  0.019 0.059
-GO:0019887 GO:0019887    13     22        3  1.880  0.019 0.059
-GO:0030234 GO:0030234    19     22        3  1.130  0.070 0.180
-GO:0005215 GO:0005215    22     22        3  0.852  0.110 0.180
-GO:0022857 GO:0022857    22     22        3  0.852  0.110 0.180
-GO:0022892 GO:0022892    22     22        3  0.852  0.110 0.180
-GO:0022891 GO:0022891    22     22        3  0.852  0.110 0.180
-                                                       term_name
-GO:0019210                             kinase inhibitor activity
-GO:0004860                     protein kinase inhibitor activity
-GO:0004857                             enzyme inhibitor activity
-GO:0019207                             kinase regulator activity
-GO:0019887                     protein kinase regulator activity
-GO:0030234                             enzyme regulator activity
-GO:0005215                                  transporter activity
-GO:0022857                    transmembrane transporter activity
-GO:0022892               substrate-specific transporter activity
-GO:0022891 substrate-specific transmembrane transporter activity
-               term_namespace term_distance                 members
-GO:0019210 molecular_function             3 PF05148,PF04616,PF06452
-GO:0004860 molecular_function             4 PF05148,PF04616,PF06452
-GO:0004857 molecular_function             2 PF05148,PF04616,PF06452
-GO:0019207 molecular_function             2 PF05148,PF04616,PF06452
-GO:0019887 molecular_function             3 PF05148,PF04616,PF06452
-GO:0030234 molecular_function             1 PF05148,PF04616,PF06452
-GO:0005215 molecular_function             1 PF03418,PF15291,PF05388
-GO:0022857 molecular_function             2 PF03418,PF15291,PF05388
-GO:0022892 molecular_function             2 PF03418,PF15291,PF05388
-GO:0022891 molecular_function             3 PF03418,PF15291,PF05388
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
+GO:0043167 GO:0043167    11     24        3  2.020  0.014 0.18
+GO:0003824 GO:0003824   163     24       19  1.480  0.039 0.25
+GO:0005488 GO:0005488    57     24        8  1.280  0.067 0.25
+GO:0031369 GO:0031369    18     24        3  1.050  0.081 0.25
+GO:0016787 GO:0016787    55     24        7  0.878  0.130 0.25
+GO:0005515 GO:0005515    38     24        5  0.797  0.140 0.25
+GO:0016740 GO:0016740    57     24        7  0.768  0.150 0.25
+GO:0016833 GO:0016833    24     24        3  0.499  0.190 0.25
+GO:0004451 GO:0004451    24     24        3  0.499  0.190 0.25
+GO:0016491 GO:0016491    25     24        3  0.421  0.210 0.25
+                                       term_name     term_namespace
+GO:0043167                           ion binding molecular_function
+GO:0003824                    catalytic activity molecular_function
+GO:0005488                               binding molecular_function
+GO:0031369 translation initiation factor binding molecular_function
+GO:0016787                    hydrolase activity molecular_function
+GO:0005515                       protein binding molecular_function
+GO:0016740                  transferase activity molecular_function
+GO:0016833               oxo-acid-lyase activity molecular_function
+GO:0004451             isocitrate lyase activity molecular_function
+GO:0016491               oxidoreductase activity molecular_function
+           term_distance
+GO:0043167             2
+GO:0003824             1
+GO:0005488             1
+GO:0031369             3
+GO:0016787             2
+GO:0005515             2
+GO:0016740             2
+GO:0016833             4
+GO:0004451             5
+GO:0016491             2
+                                                                                                                                                           members
+GO:0043167                                                                                                                                 PF08015,PF01207,PF03147
+GO:0003824 PF02302,PF04145,PF00178,PF08675,PF00389,PF01070,PF01025,PF06367,PF14372,PF01245,PF10385,PF03089,PF01207,PF08465,PF09497,PF08273,PF03147,PF08661,PF02776
+GO:0005488                                                                                         PF00288,PF08675,PF00389,PF08015,PF01207,PF08465,PF08273,PF03147
+GO:0031369                                                                                                                                 PF00288,PF08465,PF03147
+GO:0016787                                                                                                 PF08675,PF01070,PF01025,PF06367,PF10385,PF08465,PF02776
+GO:0005515                                                                                                                 PF00288,PF00389,PF08465,PF08273,PF03147
+GO:0016740                                                                                                 PF02302,PF00178,PF01025,PF01245,PF09497,PF08273,PF03147
+GO:0016833                                                                                                                                 PF14372,PF03089,PF08661
+GO:0004451                                                                                                                                 PF14372,PF03089,PF08661
+GO:0016491                                                                                                                                 PF00178,PF08675,PF00389
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
 <strong class='message'>Ontology 'GOMF' containing 7 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-80.png', 'dcEnrichment-80.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-80.png', width="400" /></a>
 <div class='input'>
 ###########################################################
 # 3) Enrichment analysis for InterPro domains (InterPro)
@@ -757,183 +767,182 @@ visEnrichment(eoutput)
 InterPro <- dcRDataLoader('InterPro')
 </div>
 <strong class='message'>'InterPro' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<a href="javascript:newWin('dcEnrichment-84.png', 'dcEnrichment-84.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-84.png', width="400" /></a>
 <div class='input'>### randomly select 100 domains as a list of domains of interest
 data <- sample(rowNames(InterPro), 100)
 ## 3b) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="InterPro", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:49</strong>
+<strong class='message'>Start at 2015-07-21 18:47:43</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'InterPro', and their associations (2015-06-04 16:17:49) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'InterPro', and their associations (2015-07-21 18:47:43) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'InterPro' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'InterPro2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:17:56) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:48:07) ...</strong>
 <strong class='message'>	There are 630 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:17:57) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:48:07) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:17:57</strong>
-<strong class='message'>Runtime in total is: 8 secs
+End at 2015-07-21 18:48:07</strong>
+<strong class='message'>Runtime in total is: 24 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'InterPro'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 60 terms X 5 information
-  @anno: a list of 60 terms, each storing annotated domains
-  @data: a vector containing a group of 71 input domains (annotatable)
+  @term_info: a data.frame of 57 terms X 5 information
+  @anno: a list of 57 terms, each storing annotated domains
+  @data: a vector containing a group of 68 input domains (annotatable)
   @background: a vector containing a group of 8899 background domains (annotatable)
-  @overlap: a list of 60 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 60 terms, containing z-scores
-  @pvalue: a vector of 60 terms, containing p-values
-  @adjp: a vector of 60 terms, containing adjusted p-values
-In summary, a total of 60 terms ('GOMF') are analysed for a group of 71 input domains ('InterPro')
+  @overlap: a list of 57 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 57 terms, containing z-scores
+  @pvalue: a vector of 57 terms, containing p-values
+  @adjp: a vector of 57 terms, containing adjusted p-values
+In summary, a total of 57 terms ('GOMF') are analysed for a group of 68 input domains ('InterPro')
 </div>
 <div class='input'>## 3c) view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
 <div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue  adjp
-GO:0016832 GO:0016832    47     71        3   4.32 0.00051 0.031
-GO:0008173 GO:0008173    86     71        3   2.82 0.00480 0.140
-GO:0004494 GO:0004494   101     71        3   2.47 0.00850 0.170
-GO:0032266 GO:0032266   208     71        4   1.85 0.02500 0.260
-GO:1901981 GO:1901981   210     71        4   1.82 0.02600 0.260
-GO:0016866 GO:0016866   154     71        3   1.62 0.03400 0.260
-GO:0035091 GO:0035091   236     71        4   1.57 0.04000 0.260
-GO:0016830 GO:0016830   404     71        6   1.59 0.04100 0.260
-GO:0005543 GO:0005543   239     71        4   1.54 0.04200 0.260
-GO:0008757 GO:0008757   166     71        3   1.48 0.04300 0.260
-                                                           term_name
-GO:0016832                                   aldehyde-lyase activity
-GO:0008173                            RNA methyltransferase activity
-GO:0004494                         methylmalonyl-CoA mutase activity
-GO:0032266                  phosphatidylinositol-3-phosphate binding
-GO:1901981                    phosphatidylinositol phosphate binding
-GO:0016866                       intramolecular transferase activity
-GO:0035091                              phosphatidylinositol binding
-GO:0016830                              carbon-carbon lyase activity
-GO:0005543                                      phospholipid binding
-GO:0008757 S-adenosylmethionine-dependent methyltransferase activity
+GO:0016853 GO:0016853   375     68        9   3.72 0.00051 0.015
+GO:0016645 GO:0016645    49     68        3   4.32 0.00051 0.015
+GO:0015631 GO:0015631    72     68        3   3.33 0.00220 0.041
+GO:0016860 GO:0016860    87     68        3   2.89 0.00430 0.051
+GO:0008092 GO:0008092    88     68        3   2.86 0.00450 0.051
+GO:0016866 GO:0016866   154     68        4   2.64 0.00630 0.060
+GO:0070569 GO:0070569   126     68        3   2.10 0.01600 0.130
+GO:0015078 GO:0015078   209     68        4   1.93 0.02100 0.140
+GO:0016675 GO:0016675   149     68        3   1.77 0.02700 0.140
+GO:0004129 GO:0004129   149     68        3   1.77 0.02700 0.140
+                                                              term_name
+GO:0016853                                           isomerase activity
+GO:0016645 oxidoreductase activity, acting on the CH-NH group of donors
+GO:0015631                                              tubulin binding
+GO:0016860                       intramolecular oxidoreductase activity
+GO:0008092                                 cytoskeletal protein binding
+GO:0016866                          intramolecular transferase activity
+GO:0070569                                 uridylyltransferase activity
+GO:0015078              hydrogen ion transmembrane transporter activity
+GO:0016675    oxidoreductase activity, acting on a heme group of donors
+GO:0004129                                cytochrome-c oxidase activity
                term_namespace term_distance
-GO:0016832 molecular_function             4
-GO:0008173 molecular_function             5
-GO:0004494 molecular_function             4
-GO:0032266 molecular_function             7
-GO:1901981 molecular_function             6
+GO:0016853 molecular_function             2
+GO:0016645 molecular_function             3
+GO:0015631 molecular_function             4
+GO:0016860 molecular_function             3
+GO:0008092 molecular_function             3
 GO:0016866 molecular_function             3
-GO:0035091 molecular_function             5
-GO:0016830 molecular_function             3
-GO:0005543 molecular_function             3
-GO:0008757 molecular_function             5
-                                                               members
-GO:0016832                               IPR028380,IPR001711,IPR020469
-GO:0008173                               IPR005869,IPR012805,IPR020097
-GO:0004494                               IPR004764,IPR005292,IPR000463
-GO:0032266                     IPR004930,IPR027516,IPR017705,IPR020097
-GO:1901981                     IPR004930,IPR027516,IPR017705,IPR020097
-GO:0016866                               IPR004764,IPR005292,IPR000463
-GO:0035091                     IPR004930,IPR027516,IPR017705,IPR020097
-GO:0016830 IPR004708,IPR028380,IPR007871,IPR013705,IPR001711,IPR020469
-GO:0005543                     IPR004930,IPR027516,IPR017705,IPR020097
-GO:0008757                               IPR005869,IPR012805,IPR020097
+GO:0070569 molecular_function             5
+GO:0015078 molecular_function             8
+GO:0016675 molecular_function             3
+GO:0004129 molecular_function             4
+                                                                                             members
+GO:0016853 IPR002969,IPR009415,IPR010592,IPR028609,IPR005395,IPR002394,IPR004491,IPR024448,IPR012720
+GO:0016645                                                             IPR028747,IPR026274,IPR029568
+GO:0015631                                                             IPR000026,IPR001308,IPR017679
+GO:0016860                                                             IPR009415,IPR028609,IPR012720
+GO:0008092                                                             IPR000026,IPR001308,IPR017679
+GO:0016866                                                   IPR002969,IPR010592,IPR005395,IPR024448
+GO:0070569                                                             IPR008899,IPR001114,IPR021604
+GO:0015078                                                   IPR002957,IPR000662,IPR003927,IPR017679
+GO:0016675                                                             IPR002957,IPR000662,IPR003927
+GO:0004129                                                             IPR002957,IPR000662,IPR003927
 </div>
 <div class='input'>## 3d) visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 10 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-101.png', 'dcEnrichment-101.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-101.png', width="400" /></a>
 <div class='input'>## 3e) the same as above but using a customised background
 ### randomly select 1000 domains as background
 background <- sample(rowNames(InterPro), 1000)
-</div>
-<a href="javascript:newWin('dcEnrichment-104.png', 'dcEnrichment-104.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-104.png', width="400" /></a>
-<div class='input'>### perform enrichment analysis, producing an object of S4 class 'Eoutput'
+### perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, background=background, domain="InterPro",
 ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:17:59</strong>
+<strong class='message'>Start at 2015-07-21 18:48:19</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'InterPro', and their associations (2015-06-04 16:17:59) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'InterPro', and their associations (2015-07-21 18:48:19) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'InterPro' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'InterPro2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:18:05) ...</strong>
-<strong class='message'>	There are 149 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:18:05) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:48:40) ...</strong>
+<strong class='message'>	There are 137 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:48:40) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:18:05</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2015-07-21 18:48:41</strong>
+<strong class='message'>Runtime in total is: 22 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'InterPro'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 58 terms X 5 information
-  @anno: a list of 58 terms, each storing annotated domains
-  @data: a vector containing a group of 71 input domains (annotatable)
+  @term_info: a data.frame of 55 terms X 5 information
+  @anno: a list of 55 terms, each storing annotated domains
+  @data: a vector containing a group of 68 input domains (annotatable)
   @background: a vector containing a group of 834 background domains (annotatable)
-  @overlap: a list of 58 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 58 terms, containing z-scores
-  @pvalue: a vector of 58 terms, containing p-values
-  @adjp: a vector of 58 terms, containing adjusted p-values
-In summary, a total of 58 terms ('GOMF') are analysed for a group of 71 input domains ('InterPro')
+  @overlap: a list of 55 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 55 terms, containing z-scores
+  @pvalue: a vector of 55 terms, containing p-values
+  @adjp: a vector of 55 terms, containing adjusted p-values
+In summary, a total of 55 terms ('GOMF') are analysed for a group of 68 input domains ('InterPro')
 </div>
 <div class='input'>### view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0008757 GO:0008757    11     71        3   2.24  0.010 0.26
-GO:0008168 GO:0008168    13     71        3   1.90  0.019 0.26
-GO:0016741 GO:0016741    14     71        3   1.75  0.025 0.26
-GO:0004494 GO:0004494    14     71        3   1.75  0.025 0.26
-GO:1901981 GO:1901981    21     71        4   1.75  0.027 0.26
-GO:0032266 GO:0032266    21     71        4   1.75  0.027 0.26
-GO:0005543 GO:0005543    23     71        4   1.55  0.039 0.28
-GO:0035091 GO:0035091    23     71        4   1.55  0.039 0.28
-GO:0016830 GO:0016830    40     71        6   1.51  0.046 0.29
-GO:0004672 GO:0004672    18     71        3   1.25  0.059 0.34
-                                                           term_name
-GO:0008757 S-adenosylmethionine-dependent methyltransferase activity
-GO:0008168                                methyltransferase activity
-GO:0016741      transferase activity, transferring one-carbon groups
-GO:0004494                         methylmalonyl-CoA mutase activity
-GO:1901981                    phosphatidylinositol phosphate binding
-GO:0032266                  phosphatidylinositol-3-phosphate binding
-GO:0005543                                      phospholipid binding
-GO:0035091                              phosphatidylinositol binding
-GO:0016830                              carbon-carbon lyase activity
-GO:0004672                                   protein kinase activity
-               term_namespace term_distance
-GO:0008757 molecular_function             5
-GO:0008168 molecular_function             4
-GO:0016741 molecular_function             3
-GO:0004494 molecular_function             4
-GO:1901981 molecular_function             6
-GO:0032266 molecular_function             7
-GO:0005543 molecular_function             3
-GO:0035091 molecular_function             5
-GO:0016830 molecular_function             3
-GO:0004672 molecular_function             5
-                                                               members
-GO:0008757                               IPR012805,IPR005869,IPR020097
-GO:0008168                               IPR012805,IPR005869,IPR020097
-GO:0016741                               IPR012805,IPR005869,IPR020097
-GO:0004494                               IPR000463,IPR004764,IPR005292
-GO:1901981                     IPR004930,IPR017705,IPR027516,IPR020097
-GO:0032266                     IPR004930,IPR017705,IPR027516,IPR020097
-GO:0005543                     IPR004930,IPR017705,IPR027516,IPR020097
-GO:0035091                     IPR004930,IPR017705,IPR027516,IPR020097
-GO:0016830 IPR028380,IPR007871,IPR020469,IPR001711,IPR013705,IPR004708
-GO:0004672                               IPR004768,IPR017128,IPR018150
+<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue  adjp
+GO:0016853 GO:0016853    35     68        9   3.88 0.00024 0.013
+GO:0016866 GO:0016866    13     68        4   3.00 0.00240 0.066
+GO:0015631 GO:0015631    12     68        3   2.15 0.01200 0.200
+GO:0016788 GO:0016788    42     68        7   2.07 0.01600 0.200
+GO:0042578 GO:0042578    14     68        3   1.83 0.02200 0.200
+GO:0070569 GO:0070569    14     68        3   1.83 0.02200 0.200
+GO:0008092 GO:0008092    15     68        3   1.69 0.02800 0.220
+GO:0009055 GO:0009055    25     68        4   1.45 0.04600 0.310
+GO:0015078 GO:0015078    26     68        4   1.37 0.05300 0.320
+GO:0016651 GO:0016651    19     68        3   1.23 0.06200 0.330
+                                                 term_name     term_namespace
+GO:0016853                              isomerase activity molecular_function
+GO:0016866             intramolecular transferase activity molecular_function
+GO:0015631                                 tubulin binding molecular_function
+GO:0016788       hydrolase activity, acting on ester bonds molecular_function
+GO:0042578             phosphoric ester hydrolase activity molecular_function
+GO:0070569                    uridylyltransferase activity molecular_function
+GO:0008092                    cytoskeletal protein binding molecular_function
+GO:0009055                       electron carrier activity molecular_function
+GO:0015078 hydrogen ion transmembrane transporter activity molecular_function
+GO:0016651      oxidoreductase activity, acting on NAD(P)H molecular_function
+           term_distance
+GO:0016853             2
+GO:0016866             3
+GO:0015631             4
+GO:0016788             3
+GO:0042578             4
+GO:0070569             5
+GO:0008092             3
+GO:0009055             1
+GO:0015078             8
+GO:0016651             3
+                                                                                             members
+GO:0016853 IPR010592,IPR005395,IPR009415,IPR028609,IPR002969,IPR024448,IPR012720,IPR004491,IPR002394
+GO:0016866                                                   IPR010592,IPR005395,IPR002969,IPR024448
+GO:0015631                                                             IPR001308,IPR000026,IPR017679
+GO:0016788                     IPR001528,IPR002490,IPR025782,IPR017820,IPR020884,IPR001095,IPR008389
+GO:0042578                                                             IPR001528,IPR017820,IPR020884
+GO:0070569                                                             IPR001114,IPR021604,IPR008899
+GO:0008092                                                             IPR001308,IPR000026,IPR017679
+GO:0009055                                                   IPR018130,IPR005729,IPR005716,IPR023518
+GO:0015078                                                   IPR000662,IPR003927,IPR017679,IPR002957
+GO:0016651                                                             IPR003716,IPR003919,IPR007081
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOMF' containing 14 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 11 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-120.png', 'dcEnrichment-120.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-120.png', width="400" /></a>
 <div class='input'>
 ###########################################################
 # 4) Enrichment analysis for Rfam RNA families (Rfam)
@@ -941,139 +950,138 @@ visEnrichment(eoutput)
 Rfam <- dcRDataLoader('Rfam')
 </div>
 <strong class='message'>'Rfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<a href="javascript:newWin('dcEnrichment-125.png', 'dcEnrichment-125.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-125.png', width="400" /></a>
 <div class='input'>### randomly select 100 RNAs as a list of RNAs of interest
 data <- sample(rowNames(Rfam), 100)
 ## 4b) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="Rfam", ontology="GOBP")
 </div>
-<strong class='message'>Start at 2015-06-04 16:18:07</strong>
+<strong class='message'>Start at 2015-07-21 18:48:57</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'Rfam', and their associations (2015-06-04 16:18:07) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'Rfam', and their associations (2015-07-21 18:48:57) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Rfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Rfam2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:18:09) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:49:17) ...</strong>
 <strong class='message'>	There are 114 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:18:09) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:49:17) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:18:09</strong>
-<strong class='message'>Runtime in total is: 2 secs
+End at 2015-07-21 18:49:17</strong>
+<strong class='message'>Runtime in total is: 20 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'Rfam'
   @ontology: 'GOBP'
-  @term_info: a data.frame of 23 terms X 5 information
-  @anno: a list of 23 terms, each storing annotated domains
-  @data: a vector containing a group of 51 input domains (annotatable)
+  @term_info: a data.frame of 41 terms X 5 information
+  @anno: a list of 41 terms, each storing annotated domains
+  @data: a vector containing a group of 66 input domains (annotatable)
   @background: a vector containing a group of 1377 background domains (annotatable)
-  @overlap: a list of 23 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 23 terms, containing z-scores
-  @pvalue: a vector of 23 terms, containing p-values
-  @adjp: a vector of 23 terms, containing adjusted p-values
-In summary, a total of 23 terms ('GOBP') are analysed for a group of 51 input domains ('Rfam')
+  @overlap: a list of 41 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 41 terms, containing z-scores
+  @pvalue: a vector of 41 terms, containing p-values
+  @adjp: a vector of 41 terms, containing adjusted p-values
+In summary, a total of 41 terms ('GOBP') are analysed for a group of 66 input domains ('Rfam')
 </div>
 <div class='input'>## 4c) view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=FALSE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap  zscore pvalue adjp
-GO:0050789 GO:0050789    81     51        3  0.0000   0.35  0.7
-GO:0065007 GO:0065007    85     51        3 -0.0878   0.39  0.7
-GO:1901360 GO:1901360  1246     51       46 -0.0720   0.46  0.7
-GO:0006725 GO:0006725  1246     51       46 -0.0720   0.46  0.7
-GO:0046483 GO:0046483  1246     51       46 -0.0720   0.46  0.7
-GO:0034641 GO:0034641  1247     51       46 -0.0903   0.46  0.7
-GO:0006807 GO:0006807  1251     51       46 -0.1650   0.49  0.7
-GO:0006396 GO:0006396  1225     51       45 -0.1690   0.50  0.7
-GO:0008380 GO:0008380   542     51       19 -0.3140   0.56  0.7
-GO:0000375 GO:0000375   541     51       19 -0.3030   0.56  0.7
-                                                 term_name
-GO:0050789                regulation of biological process
-GO:0065007                           biological regulation
-GO:1901360       organic cyclic compound metabolic process
-GO:0006725    cellular aromatic compound metabolic process
-GO:0046483                   heterocycle metabolic process
-GO:0034641    cellular nitrogen compound metabolic process
-GO:0006807             nitrogen compound metabolic process
-GO:0006396                                  RNA processing
-GO:0008380                                    RNA splicing
-GO:0000375 RNA splicing, via transesterification reactions
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
+GO:0048523 GO:0048523    11     66        3   3.50 0.0012 0.031
+GO:0000377 GO:0000377    19     66        4   3.34 0.0015 0.031
+GO:0000398 GO:0000398    13     66        3   3.10 0.0025 0.034
+GO:0048519 GO:0048519    16     66        3   2.63 0.0057 0.039
+GO:0016071 GO:0016071    17     66        3   2.50 0.0071 0.039
+GO:0006397 GO:0006397    17     66        3   2.50 0.0071 0.039
+GO:0031323 GO:0031323    29     66        4   2.29 0.0110 0.039
+GO:0009889 GO:0009889    29     66        4   2.29 0.0110 0.039
+GO:0031326 GO:0031326    29     66        4   2.29 0.0110 0.039
+GO:0010556 GO:0010556    29     66        4   2.29 0.0110 0.039
+                                                                                      term_name
+GO:0048523                                              negative regulation of cellular process
+GO:0000377 RNA splicing, via transesterification reactions with bulged adenosine as nucleophile
+GO:0000398                                                       mRNA splicing, via spliceosome
+GO:0048519                                            negative regulation of biological process
+GO:0016071                                                               mRNA metabolic process
+GO:0006397                                                                      mRNA processing
+GO:0031323                                             regulation of cellular metabolic process
+GO:0009889                                                   regulation of biosynthetic process
+GO:0031326                                          regulation of cellular biosynthetic process
+GO:0010556                                     regulation of macromolecule biosynthetic process
 </div>
 <div class='input'>## 4d) visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOBP' containing 10 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOBP' containing 21 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-141.png', 'dcEnrichment-141.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-141.png', width="400" /></a>
 <div class='input'>## 4e) the same as above but using a customised background
 ### randomly select 1000 RNAs as background
 background <- sample(rowNames(Rfam), 1000)
-</div>
-<a href="javascript:newWin('dcEnrichment-145.png', 'dcEnrichment-145.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-145.png', width="400" /></a>
-<div class='input'>### perform enrichment analysis, producing an object of S4 class 'Eoutput'
+### perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, background=background, domain="Rfam",
 ontology="GOBP")
 </div>
-<strong class='message'>Start at 2015-06-04 16:18:12</strong>
+<strong class='message'>Start at 2015-07-21 18:50:03</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOBP', the domain 'Rfam', and their associations (2015-06-04 16:18:12) ...</strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'Rfam', and their associations (2015-07-21 18:50:03) ...</strong>
 <strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Rfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'Rfam2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:18:13) ...</strong>
-<strong class='message'>	There are 70 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:18:13) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:50:11) ...</strong>
+<strong class='message'>	There are 50 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:50:11) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:18:13</strong>
-<strong class='message'>Runtime in total is: 1 secs
+End at 2015-07-21 18:50:11</strong>
+<strong class='message'>Runtime in total is: 8 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'Rfam'
   @ontology: 'GOBP'
-  @term_info: a data.frame of 23 terms X 5 information
-  @anno: a list of 23 terms, each storing annotated domains
-  @data: a vector containing a group of 51 input domains (annotatable)
-  @background: a vector containing a group of 644 background domains (annotatable)
-  @overlap: a list of 23 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 23 terms, containing z-scores
-  @pvalue: a vector of 23 terms, containing p-values
-  @adjp: a vector of 23 terms, containing adjusted p-values
-In summary, a total of 23 terms ('GOBP') are analysed for a group of 51 input domains ('Rfam')
+  @term_info: a data.frame of 35 terms X 5 information
+  @anno: a list of 35 terms, each storing annotated domains
+  @data: a vector containing a group of 66 input domains (annotatable)
+  @background: a vector containing a group of 663 background domains (annotatable)
+  @overlap: a list of 35 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 35 terms, containing z-scores
+  @pvalue: a vector of 35 terms, containing p-values
+  @adjp: a vector of 35 terms, containing adjusted p-values
+In summary, a total of 35 terms ('GOBP') are analysed for a group of 66 input domains ('Rfam')
 </div>
 <div class='input'>### view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=FALSE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap  zscore pvalue adjp
-GO:0050789 GO:0050789    37     51        3  0.0438   0.34 0.74
-GO:0065007 GO:0065007    40     51        3 -0.1010   0.39 0.74
-GO:1901360 GO:1901360   580     51       46  0.0333   0.41 0.74
-GO:0006725 GO:0006725   580     51       46  0.0333   0.41 0.74
-GO:0046483 GO:0046483   580     51       46  0.0333   0.41 0.74
-GO:0034641 GO:0034641   582     51       46 -0.0445   0.44 0.74
-GO:0006807 GO:0006807   583     51       46 -0.0843   0.46 0.74
-GO:0006396 GO:0006396   574     51       45 -0.2140   0.51 0.74
-GO:0016070 GO:0016070   576     51       45 -0.2920   0.54 0.74
-GO:0044238 GO:0044238   589     51       46 -0.3360   0.55 0.74
-                                              term_name
-GO:0050789             regulation of biological process
-GO:0065007                        biological regulation
-GO:1901360    organic cyclic compound metabolic process
-GO:0006725 cellular aromatic compound metabolic process
-GO:0046483                heterocycle metabolic process
-GO:0034641 cellular nitrogen compound metabolic process
-GO:0006807          nitrogen compound metabolic process
-GO:0006396                               RNA processing
-GO:0016070                        RNA metabolic process
-GO:0044238                    primary metabolic process
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
+GO:0060255 GO:0060255    19     66        5   2.42 0.0074 0.050
+GO:0010468 GO:0010468    19     66        5   2.42 0.0074 0.050
+GO:0019222 GO:0019222    20     66        5   2.28 0.0098 0.050
+GO:0031323 GO:0031323    15     66        4   2.19 0.0110 0.050
+GO:0009889 GO:0009889    15     66        4   2.19 0.0110 0.050
+GO:0031326 GO:0031326    15     66        4   2.19 0.0110 0.050
+GO:0010556 GO:0010556    15     66        4   2.19 0.0110 0.050
+GO:2000112 GO:2000112    15     66        4   2.19 0.0110 0.050
+GO:0050794 GO:0050794    28     66        6   2.07 0.0150 0.053
+GO:0080090 GO:0080090    16     66        4   2.03 0.0150 0.053
+                                                           term_name
+GO:0060255             regulation of macromolecule metabolic process
+GO:0010468                             regulation of gene expression
+GO:0019222                           regulation of metabolic process
+GO:0031323                  regulation of cellular metabolic process
+GO:0009889                        regulation of biosynthetic process
+GO:0031326               regulation of cellular biosynthetic process
+GO:0010556          regulation of macromolecule biosynthetic process
+GO:2000112 regulation of cellular macromolecule biosynthetic process
+GO:0050794                            regulation of cellular process
+GO:0080090                   regulation of primary metabolic process
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'GOBP' containing 10 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOBP' containing 9 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-160.png', 'dcEnrichment-160.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-160.png', width="400" /></a>
 <div class='input'>
 ###########################################################
 # 5) Advanced usage: customised data for domain, ontology and annotations
@@ -1084,7 +1092,6 @@ dcBuildInfoDataFrame(input.file="http://dcgor.r-forge.r-project.org/data/InterPr
 output.file="domain.RData")
 </div>
 <strong class='message'>An object of S4 class 'InfoDataFrame' has been built and saved into '/Users/hfang/Sites/SUPERFAMILY/dcGOR/domain.RData'.</strong>
-<a href="javascript:newWin('dcEnrichment-166.png', 'dcEnrichment-166.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-166.png', width="400" /></a>
 <div class='input'>## for ontology
 dcBuildOnto(relations.file="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOMF_edges.txt",
 nodes.file="http://dcgor.r-forge.r-project.org/data/onto/igraph_GOMF_nodes.txt",
@@ -1108,84 +1115,85 @@ eoutput <- dcEnrichment(data, background=background,
 domain.RData='domain.RData', ontology.RData='ontology.RData',
 annotations.RData='annotations.RData')
 </div>
-<strong class='message'>Start at 2015-06-04 16:18:20</strong>
+<strong class='message'>Start at 2015-07-21 18:51:00</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2015-06-04 16:18:20)...</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:18:25) ...</strong>
-<strong class='message'>	There are 130 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:18:25) ...</strong>
+<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2015-07-21 18:51:00)...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:51:22) ...</strong>
+<strong class='message'>	There are 141 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:51:22) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:18:25</strong>
-<strong class='message'>Runtime in total is: 5 secs
+End at 2015-07-21 18:51:22</strong>
+<strong class='message'>Runtime in total is: 22 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'domain.RData'
   @ontology: 'ontology.RData'
-  @term_info: a data.frame of 72 terms X 5 information
-  @anno: a list of 72 terms, each storing annotated domains
-  @data: a vector containing a group of 81 input domains (annotatable)
-  @background: a vector containing a group of 818 background domains (annotatable)
-  @overlap: a list of 72 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 72 terms, containing z-scores
-  @pvalue: a vector of 72 terms, containing p-values
-  @adjp: a vector of 72 terms, containing adjusted p-values
-In summary, a total of 72 terms ('ontology.RData') are analysed for a group of 81 input domains ('domain.RData')
+  @term_info: a data.frame of 70 terms X 5 information
+  @anno: a list of 70 terms, each storing annotated domains
+  @data: a vector containing a group of 78 input domains (annotatable)
+  @background: a vector containing a group of 837 background domains (annotatable)
+  @overlap: a list of 70 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 70 terms, containing z-scores
+  @pvalue: a vector of 70 terms, containing p-values
+  @adjp: a vector of 70 terms, containing adjusted p-values
+In summary, a total of 70 terms ('ontology.RData') are analysed for a group of 78 input domains ('domain.RData')
 </div>
 <div class='input'>## 5d) view the top 10 significance terms
 view(eoutput, top_num=10, sortBy="pvalue", details=TRUE)
 </div>
 <div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0016829 GO:0016829    66     81       12   2.35 0.0088 0.21
-GO:0030515 GO:0030515    10     81        3   2.14 0.0120 0.21
-GO:1901363 GO:1901363    28     81        6   2.08 0.0150 0.21
-GO:0016835 GO:0016835    16     81        4   2.04 0.0150 0.21
-GO:0003723 GO:0003723    16     81        4   2.04 0.0150 0.21
-GO:0008092 GO:0008092    11     81        3   1.94 0.0170 0.21
-GO:0097159 GO:0097159    30     81        6   1.89 0.0220 0.21
-GO:0016651 GO:0016651    12     81        3   1.76 0.0240 0.21
-GO:0016830 GO:0016830    45     81        8   1.82 0.0260 0.21
-GO:0003676 GO:0003676    19     81        4   1.65 0.0320 0.21
-                                            term_name     term_namespace
-GO:0016829                             lyase activity molecular_function
-GO:0030515                             snoRNA binding molecular_function
-GO:1901363              heterocyclic compound binding molecular_function
-GO:0016835               carbon-oxygen lyase activity molecular_function
-GO:0003723                                RNA binding molecular_function
-GO:0008092               cytoskeletal protein binding molecular_function
-GO:0097159            organic cyclic compound binding molecular_function
-GO:0016651 oxidoreductase activity, acting on NAD(P)H molecular_function
-GO:0016830               carbon-carbon lyase activity molecular_function
-GO:0003676                       nucleic acid binding molecular_function
-           term_distance
-GO:0016829             2
-GO:0030515             5
-GO:1901363             2
-GO:0016835             3
-GO:0003723             4
-GO:0008092             3
-GO:0097159             2
-GO:0016651             3
-GO:0016830             3
-GO:0003676             3
-                                                                                                                           members
-GO:0016829 IPR007072,IPR006324,IPR002401,IPR019614,IPR000807,IPR015555,IPR011808,IPR002002,IPR000878,IPR011888,IPR023530,IPR017726
-GO:0030515                                                                                           IPR018028,IPR002401,IPR023530
-GO:1901363                                                             IPR018028,IPR002401,IPR008128,IPR008698,IPR019015,IPR023530
-GO:0016835                                                                                 IPR006324,IPR000807,IPR002002,IPR011888
-GO:0003723                                                                                 IPR018028,IPR002401,IPR008698,IPR023530
-GO:0008092                                                                                           IPR006324,IPR000321,IPR014307
-GO:0097159                                                             IPR018028,IPR002401,IPR008128,IPR008698,IPR019015,IPR023530
-GO:0016651                                                                                           IPR006886,IPR006443,IPR007083
-GO:0016830                                         IPR007072,IPR002401,IPR019614,IPR011808,IPR000878,IPR011888,IPR023530,IPR017726
-GO:0003676                                                                                 IPR018028,IPR002401,IPR008698,IPR023530
+GO:0016740 GO:0016740   145     78       22   2.67 0.0037 0.26
+GO:0008168 GO:0008168    12     78        3   1.88 0.0190 0.46
+GO:0016741 GO:0016741    13     78        3   1.72 0.0260 0.46
+GO:0016772 GO:0016772    64     78       10   1.80 0.0280 0.46
+GO:0016866 GO:0016866    14     78        3   1.57 0.0340 0.46
+GO:0016746 GO:0016746    15     78        3   1.44 0.0430 0.46
+GO:0016616 GO:0016616    38     78        6   1.40 0.0550 0.46
+GO:0016782 GO:0016782    17     78        3   1.19 0.0650 0.46
+GO:0015078 GO:0015078    17     78        3   1.19 0.0650 0.46
+GO:0003824 GO:0003824   545     78       56   1.30 0.0750 0.46
+                                                                                       term_name
+GO:0016740                                                                  transferase activity
+GO:0008168                                                            methyltransferase activity
+GO:0016741                                  transferase activity, transferring one-carbon groups
+GO:0016772                       transferase activity, transferring phosphorus-containing groups
+GO:0016866                                                   intramolecular transferase activity
+GO:0016746                                        transferase activity, transferring acyl groups
+GO:0016616 oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor
+GO:0016782                           transferase activity, transferring sulfur-containing groups
+GO:0015078                                       hydrogen ion transmembrane transporter activity
+GO:0003824                                                                    catalytic activity
+               term_namespace term_distance
+GO:0016740 molecular_function             2
+GO:0008168 molecular_function             4
+GO:0016741 molecular_function             3
+GO:0016772 molecular_function             3
+GO:0016866 molecular_function             3
+GO:0016746 molecular_function             3
+GO:0016616 molecular_function             4
+GO:0016782 molecular_function             3
+GO:0015078 molecular_function             8
+GO:0003824 molecular_function             1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   members
+GO:0016740                                                                                                                                                                                                                                                                                                                                                     IPR028885,IPR018019,IPR003457,IPR005923,IPR020629,IPR011791,IPR015262,IPR017130,IPR000941,IPR003929,IPR000832,IPR026232,IPR027252,IPR013257,IPR002795,IPR017679,IPR010615,IPR002001,IPR020879,IPR026603,IPR012142,IPR007087
+GO:0008168                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR018019,IPR005923,IPR002795
+GO:0016741                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR018019,IPR005923,IPR002795
+GO:0016772                                                                                                                                                                                                                                                                                                                                                                                                                                                                             IPR003457,IPR020629,IPR011791,IPR000941,IPR013257,IPR017679,IPR010615,IPR020879,IPR026603,IPR007087
+GO:0016866                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR015851,IPR004812,IPR009150
+GO:0016746                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR003929,IPR027252,IPR002001
+GO:0016616                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     IPR022880,IPR012682,IPR011791,IPR018366,IPR000394,IPR013697
+GO:0016782                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR000832,IPR026232,IPR012142
+GO:0015078                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   IPR023717,IPR008110,IPR017679
+GO:0003824 IPR022880,IPR028885,IPR018019,IPR015851,IPR003457,IPR005923,IPR000602,IPR020629,IPR023717,IPR004812,IPR009150,IPR012682,IPR014280,IPR005774,IPR011791,IPR008723,IPR015262,IPR017130,IPR000941,IPR003929,IPR010426,IPR028725,IPR003935,IPR000832,IPR026232,IPR027252,IPR003819,IPR013257,IPR008110,IPR004976,IPR002115,IPR002795,IPR017679,IPR015556,IPR018366,IPR011179,IPR015631,IPR003088,IPR000394,IPR010615,IPR002001,IPR008909,IPR010122,IPR010600,IPR016067,IPR021117,IPR020879,IPR015827,IPR000505,IPR012745,IPR013697,IPR023532,IPR026128,IPR026603,IPR012142,IPR007087
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 visEnrichment(eoutput)
 </div>
-<strong class='message'>Ontology 'ontology.RData' containing 10 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong></pre>
+<strong class='message'>Ontology 'ontology.RData' containing 8 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('dcEnrichment-182.png', 'dcEnrichment-182.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcEnrichment-182.png', width="400" /></a></pre>
   </div>
   
   <div class="span4">
@@ -1238,12 +1246,10 @@ visEnrichment(eoutput)
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

@@ -339,31 +339,31 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=TRUE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:07:14</strong>
+<strong class='message'>Start at 2015-07-21 18:22:20</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2015-06-04 16:07:14)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-21 18:22:20)...</strong>
 <strong class='message'>	there are 10 input domains amongst 1083 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 115 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:07:14)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 10 domains using BM.average method (2015-06-04 16:07:15)...</strong>
-<strong class='message'>	1 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	2 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	3 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	4 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	5 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	6 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	7 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	8 out of 10 (2015-06-04 16:07:15)</strong>
-<strong class='message'>	9 out of 10 (2015-06-04 16:07:15)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 117 terms (forced to be the most specific for each domain) using Resnik method (2015-07-21 18:22:28)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 10 domains using BM.average method (2015-07-21 18:22:30)...</strong>
+<strong class='message'>	1 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	2 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	3 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	4 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	5 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	6 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	7 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	8 out of 10 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	9 out of 10 (2015-07-21 18:22:30)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:07:15</strong>
-<strong class='message'>Runtime in total is: 1 secs
+<strong class='message'>Finish at 2015-07-21 18:22:30</strong>
+<strong class='message'>Runtime in total is: 10 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 10 domains X 10 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 50692 48008 63712 ... 55326 50386 (10 total)
+  nodeNames: 54862 161070 69203 ... 55821 50386 (10 total)
   nodeAttr: id
 </div>
 <div class='input'>
@@ -375,28 +375,28 @@ rownames(data) <- id(dnetwork)[1:5]
 # calcualte their two contact graph
 coutput <- dcRWRpipeline(data=data, g=dnetwork, parallel=FALSE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:07:15</strong>
+<strong class='message'>Start at 2015-07-21 18:22:30</strong>
 <strong class='message'></strong>
-<strong class='message'>First, RWR on input graph (10 nodes and 34 edges) using input matrix (5 rows and 2 columns) as seeds (2015-06-04 16:07:15)...</strong>
-<strong class='message'>	using 'indirect' method to do RWR (2015-06-04 16:07:15)...</strong>
-<strong class='message'>Second, calculate contact strength (2015-06-04 16:07:16)...</strong>
-<strong class='message'>Third, generate the distribution of contact strength based on 100 permutations on nodes respecting 'random' (2015-06-04 16:07:16)...</strong>
-<strong class='message'>	1 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	10 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	20 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	30 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	40 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	50 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	60 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	70 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	80 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	90 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>	100 out of 100 (2015-06-04 16:07:16)</strong>
-<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2015-06-04 16:07:16)...</strong>
-<strong class='message'>Also, construct the contact graph under the cutoff 5.0e-02 of adjusted-pvalue (2015-06-04 16:07:16)...</strong>
+<strong class='message'>First, RWR on input graph (10 nodes and 45 edges) using input matrix (5 rows and 2 columns) as seeds (2015-07-21 18:22:30)...</strong>
+<strong class='message'>	using 'indirect' method to do RWR (2015-07-21 18:22:30)...</strong>
+<strong class='message'>Second, calculate contact strength (2015-07-21 18:22:30)...</strong>
+<strong class='message'>Third, generate the distribution of contact strength based on 100 permutations on nodes respecting 'random' (2015-07-21 18:22:30)...</strong>
+<strong class='message'>	1 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	10 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	20 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	30 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	40 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	50 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	60 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	70 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	80 out of 100 (2015-07-21 18:22:30)</strong>
+<strong class='message'>	90 out of 100 (2015-07-21 18:22:31)</strong>
+<strong class='message'>	100 out of 100 (2015-07-21 18:22:31)</strong>
+<strong class='message'>Last, estimate the significance of contact strength: zscore, pvalue, and BH adjusted-pvalue (2015-07-21 18:22:31)...</strong>
+<strong class='message'>Also, construct the contact graph under the cutoff 5.0e-02 of adjusted-pvalue (2015-07-21 18:22:31)...</strong>
 <strong class='message'>Your input object 'icontact' of class 'igraph' has been converted into an object of class 'Cnetwork'.</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:07:16</strong>
+<strong class='message'>Finish at 2015-07-21 18:22:31</strong>
 <strong class='message'>Runtime in total is: 1 secs
 </strong>
 <div class='input'>coutput
@@ -417,27 +417,27 @@ write(coutput, file='Coutput.txt', saveBy="adjp")
 # 7) retrieve several slots directly
 ratio(coutput)
 </div>
-<div class='output'>          aSeeds    bSeeds
-aSeeds 0.9965363 1.0067876
-bSeeds 1.0067876 0.9813486
+<div class='output'>         aSeeds   bSeeds
+aSeeds 1.012587 1.019554
+bSeeds 1.019554 1.019910
 </div>
 <div class='input'>zscore(coutput)
 </div>
-<div class='output'>           aSeeds     bSeeds
-aSeeds -0.2631681  0.2955883
-bSeeds  0.2955883 -0.7635374
+<div class='output'>         aSeeds   bSeeds
+aSeeds 1.003397 1.184960
+bSeeds 1.184960 1.107552
 </div>
 <div class='input'>pvalue(coutput)
 </div>
 <div class='output'>       aSeeds bSeeds
-aSeeds   0.47   0.27
-bSeeds   0.27   0.73
+aSeeds   0.14   0.11
+bSeeds   0.11   0.15
 </div>
 <div class='input'>adjp(coutput)
 </div>
 <div class='output'>       aSeeds bSeeds
-aSeeds   0.47   0.27
-bSeeds   0.27   0.73
+aSeeds   0.14   0.11
+bSeeds   0.11   0.15
 </div>
 <div class='input'>cnetwork(coutput)
 </div>
@@ -489,12 +489,10 @@ nodeInfo (NULL)
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

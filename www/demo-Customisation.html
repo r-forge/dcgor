@@ -287,63 +287,64 @@ length(background)
 ## perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, background=background, domain.RData='domain.RData', ontology.RData='ontology.RData', annotations.RData='annotations.RData')
 </div>
-<strong class='message'>Start at 2015-06-04 16:05:12</strong>
+<strong class='message'>Start at 2015-07-21 18:15:24</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2015-06-04 16:05:12)...</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:05:17) ...</strong>
-<strong class='message'>	There are 134 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:05:17) ...</strong>
+<strong class='message'>First, load customised ontology 'ontology.RData', the domain 'domain.RData', and their associations 'annotations.RData' (2015-07-21 18:15:24)...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 18:15:40) ...</strong>
+<strong class='message'>	There are 149 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 18:15:40) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:05:18</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2015-07-21 18:15:40</strong>
+<strong class='message'>Runtime in total is: 16 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'domain.RData'
   @ontology: 'ontology.RData'
-  @term_info: a data.frame of 78 terms X 5 information
-  @anno: a list of 78 terms, each storing annotated domains
-  @data: a vector containing a group of 79 input domains (annotatable)
-  @background: a vector containing a group of 818 background domains (annotatable)
-  @overlap: a list of 78 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 78 terms, containing z-scores
-  @pvalue: a vector of 78 terms, containing p-values
-  @adjp: a vector of 78 terms, containing adjusted p-values
-In summary, a total of 78 terms ('ontology.RData') are analysed for a group of 79 input domains ('domain.RData')
+  @term_info: a data.frame of 70 terms X 5 information
+  @anno: a list of 70 terms, each storing annotated domains
+  @data: a vector containing a group of 81 input domains (annotatable)
+  @background: a vector containing a group of 824 background domains (annotatable)
+  @overlap: a list of 70 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 70 terms, containing z-scores
+  @pvalue: a vector of 70 terms, containing p-values
+  @adjp: a vector of 70 terms, containing adjusted p-values
+In summary, a total of 70 terms ('ontology.RData') are analysed for a group of 81 input domains ('domain.RData')
 </div>
 <div class='input'>
 ## view the top 10 significance terms 
 view(eoutput, top_num=10, sortBy="pvalue", details=FALSE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
-GO:0046873 GO:0046873    15     79        5   3.13 0.0017 0.058
-GO:0022890 GO:0022890    32     79        8   3.00 0.0021 0.058
-GO:0008324 GO:0008324    80     79       15   2.90 0.0022 0.058
-GO:0015075 GO:0015075    93     79       16   2.62 0.0045 0.063
-GO:0016887 GO:0016887    18     79        5   2.63 0.0048 0.063
-GO:0042623 GO:0042623    18     79        5   2.63 0.0048 0.063
-GO:0017111 GO:0017111    20     79        5   2.35 0.0086 0.096
-GO:0022804 GO:0022804    28     79        6   2.14 0.0130 0.120
-GO:0048037 GO:0048037    11     79        3   1.99 0.0160 0.120
-GO:0016817 GO:0016817    23     79        5   1.99 0.0180 0.120
-                                                     term_name
-GO:0046873        metal ion transmembrane transporter activity
-GO:0022890 inorganic cation transmembrane transporter activity
-GO:0008324           cation transmembrane transporter activity
-GO:0015075              ion transmembrane transporter activity
-GO:0016887                                     ATPase activity
-GO:0042623                            ATPase activity, coupled
-GO:0017111                  nucleoside-triphosphatase activity
-GO:0022804           active transmembrane transporter activity
-GO:0048037                                    cofactor binding
-GO:0016817       hydrolase activity, acting on acid anhydrides
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
+GO:0016758 GO:0016758    18     81        5   2.58 0.0053 0.24
+GO:0008194 GO:0008194    10     81        3   2.15 0.0120 0.24
+GO:0016798 GO:0016798    11     81        3   1.96 0.0170 0.24
+GO:0016829 GO:0016829    68     81       11   1.83 0.0260 0.24
+GO:0022804 GO:0022804    25     81        5   1.73 0.0290 0.24
+GO:0016757 GO:0016757    25     81        5   1.73 0.0290 0.24
+GO:0015399 GO:0015399    13     81        3   1.62 0.0310 0.24
+GO:0015405 GO:0015405    13     81        3   1.62 0.0310 0.24
+GO:0004713 GO:0004713    13     81        3   1.62 0.0310 0.24
+GO:0030234 GO:0030234    20     81        4   1.55 0.0390 0.27
+                                                               term_name
+GO:0016758             transferase activity, transferring hexosyl groups
+GO:0008194                              UDP-glycosyltransferase activity
+GO:0016798                  hydrolase activity, acting on glycosyl bonds
+GO:0016829                                                lyase activity
+GO:0022804                     active transmembrane transporter activity
+GO:0016757            transferase activity, transferring glycosyl groups
+GO:0015399             primary active transmembrane transporter activity
+GO:0015405 P-P-bond-hydrolysis-driven transmembrane transporter activity
+GO:0004713                              protein tyrosine kinase activity
+GO:0030234                                     enzyme regulator activity
 </div>
 <div class='input'>### visualise the top 10 significant terms in the ontology hierarchy
 ### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
 <a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
 </div>
-<strong class='message'>Ontology 'ontology.RData' containing 16 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'ontology.RData' containing 12 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Customisation-32.png', 'Customisation-32.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Customisation-32.png', width="400" /></a>
 <div class='input'>
 #---------------------------------------------------------------------
 #---------------------------------------------------------------------
@@ -353,9 +354,7 @@ GO:0016817       hydrolase activity, acting on acid anhydrides
 
 ## prepare for ontology appended with annotation information
 dag <- <a href='dcDAGannotate.html' target=dcDAGannotate>dcDAGannotate</a>(g, annotations=Anno, path.mode="shortest_paths", verbose=FALSE)
-</div>
-<a href="javascript:newWin('Customisation-33.png', 'Customisation-33.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Customisation-33.png', width="400" /></a>
-<div class='input'>dag
+dag
 </div>
 <div class='output'>An object of S4 class 'Onto'
 @adjMatrix: a direct matrix of 2578 terms (parents/from) X 2578 terms (children/to) 
@@ -370,29 +369,29 @@ alldomains <- unique(unlist(nInfo(dag)$annotations))
 domains <- sample(alldomains,8)
 dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=domains, method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
 </div>
-<strong class='message'>Start at 2015-06-04 16:05:27</strong>
+<strong class='message'>Start at 2015-07-21 18:16:16</strong>
 <strong class='message'></strong>
-<strong class='message'>First, extract all annotatable domains (2015-06-04 16:05:27)...</strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-21 18:16:16)...</strong>
 <strong class='message'>	there are 8 input domains amongst 8899 annotatable domains</strong>
-<strong class='message'>Second, pre-compute semantic similarity between 17 terms (forced to be the most specific for each domain) using Resnik method (2015-06-04 16:05:27)...</strong>
-<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2015-06-04 16:05:27)...</strong>
-<strong class='message'>	1 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	2 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	3 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	4 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	5 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	6 out of 8 (2015-06-04 16:05:27)</strong>
-<strong class='message'>	7 out of 8 (2015-06-04 16:05:27)</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2015-07-21 18:16:17)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2015-07-21 18:16:18)...</strong>
+<strong class='message'>	1 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	2 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	3 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	4 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	5 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	6 out of 8 (2015-07-21 18:16:18)</strong>
+<strong class='message'>	7 out of 8 (2015-07-21 18:16:18)</strong>
 <strong class='message'></strong>
-<strong class='message'>Finish at 2015-06-04 16:05:27</strong>
-<strong class='message'>Runtime in total is: 0 secs
+<strong class='message'>Finish at 2015-07-21 18:16:18</strong>
+<strong class='message'>Runtime in total is: 2 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: IPR012884 IPR003268 IPR022383 ... IPR000626 IPR001707 (8
+  nodeNames: IPR027292 IPR018027 IPR016398 ... IPR004631 IPR000391 (8
     total)
   nodeAttr: id
 </div>
@@ -402,8 +401,13 @@ ig <- <a href='dcConverter.html' target=dcConverter>dcConverter</a>(dnetwork, fr
 <strong class='message'>Your input object 'dnetwork' of class 'Dnetwork' has been converted into an object of class 'igraph'.</strong>
 <div class='input'>ig
 </div>
-<div class='output'>IGRAPH UNW- 8 13 -- 
+<div class='output'>IGRAPH UNW- 8 11 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
++ edges (vertex names):
+ [1] IPR027292--IPR018027 IPR027292--IPR016398 IPR018027--IPR016398
+ [4] IPR023733--IPR019103 IPR027292--IPR004631 IPR018027--IPR004631
+ [7] IPR016398--IPR004631 IPR027292--IPR000391 IPR018027--IPR000391
+[10] IPR016398--IPR000391 IPR004631--IPR000391
 </div>
 <div class='input'>## visualise the domain network
 ### extract edge weight (with 2-digit precision)
@@ -412,6 +416,7 @@ x <- signif(E(ig)$weight, digits=2)
 edge.width <- 1 + (x-min(x))/(max(x)-min(x))*3
 ### do visualisation
 dnet::visNet(g=ig, vertex.shape="sphere", edge.width=edge.width, edge.label=x, edge.label.cex=0.7)</div>
+<a href="javascript:newWin('Customisation-59.png', 'Customisation-59.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Customisation-59.png', width="400" /></a>
       </pre>
     </div>
 
@@ -458,12 +463,10 @@ dnet::visNet(g=ig, vertex.shape="sphere", edge.width=edge.width, edge.label=x, e
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     <h2>Author</h2>

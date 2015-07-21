@@ -267,7 +267,16 @@ ig <- dcConverter(on, from='Onto', to='igraph')
 </div>
 <div class='output'>IGRAPH DN-- 9595 11543 -- 
 + attr: name (v/c), term_id (v/c), term_name (v/c), term_namespace
-  (v/c), term_distance (v/c)
+| (v/c), term_distance (v/c)
++ edges (vertex names):
+ [1] GO:0003674->GO:0000988 GO:0003674->GO:0001071 GO:0003674->GO:0003824
+ [4] GO:0003674->GO:0004872 GO:0003674->GO:0005198 GO:0003674->GO:0005215
+ [7] GO:0003674->GO:0005488 GO:0003674->GO:0009055 GO:0003674->GO:0016015
+[10] GO:0003674->GO:0016209 GO:0003674->GO:0016247 GO:0003674->GO:0016530
+[13] GO:0003674->GO:0030234 GO:0003674->GO:0030545 GO:0003674->GO:0031386
+[16] GO:0003674->GO:0036370 GO:0003674->GO:0042056 GO:0003674->GO:0045182
+[19] GO:0003674->GO:0045499 GO:0003674->GO:0045735 GO:0003674->GO:0060089
++ ... omitted several edges
 </div>
 <div class='input'># 1c) convert the object from 'igraph' to 'Onto' class
 dcConverter(ig, from='igraph', to='Onto')
@@ -297,14 +306,14 @@ dnetwork <- dcDAGdomainSim(g=dag, domains=domains,
 method.domain="BM.average", method.term="Resnik", parallel=FALSE,
 verbose=FALSE)
 </div>
-<strong class='message'>Runtime in total is: 2 secs
+<strong class='message'>Runtime in total is: 5 secs
 </strong>
 <div class='input'>dnetwork
 </div>
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 55424 57850 52080 101941 57667
+  nodeNames: 50814 46689 111126 47676 82931
   nodeAttr: id
 </div>
 <div class='input'># 2b) convert the object from 'Dnetwork' to 'igraph' class
@@ -315,6 +324,9 @@ ig <- dcConverter(dnetwork, from='Dnetwork', to='igraph')
 </div>
 <div class='output'>IGRAPH UNW- 5 10 -- 
 + attr: name (v/c), id (v/c), weight (e/n)
++ edges (vertex names):
+ [1] 50814 --46689  50814 --111126 46689 --111126 50814 --47676  46689 --47676 
+ [6] 111126--47676  50814 --82931  46689 --82931  111126--82931  47676 --82931 
 </div>
 <div class='input'># 2c) convert the object from 'igraph' to 'Dnetwork' class
 dcConverter(ig, from='igraph', to='Dnetwork')
@@ -323,7 +335,7 @@ dcConverter(ig, from='igraph', to='Dnetwork')
 <div class='output'>An object of S4 class 'Dnetwork'
 @adjMatrix: a weighted symmetric matrix of 5 domains X 5 domains 
 @nodeInfo (InfoDataFrame)
-  nodeNames: 55424 57850 52080 101941 57667
+  nodeNames: 50814 46689 111126 47676 82931
   nodeAttr: id
 </div></pre>
   </div>
@@ -377,12 +389,10 @@ dcConverter(ig, from='igraph', to='Dnetwork')
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

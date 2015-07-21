@@ -407,33 +407,33 @@ data <- sample(rowNames(SCOP.sf), 20)
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:24:51</strong>
+<strong class='message'>Start at 2015-07-21 19:14:44</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:24:51) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-07-21 19:14:44) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:24:57) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 19:14:58) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:24:57) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 19:14:59) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:24:57</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2015-07-21 19:14:59</strong>
+<strong class='message'>Runtime in total is: 15 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 87 terms X 5 information
-  @anno: a list of 87 terms, each storing annotated domains
-  @data: a vector containing a group of 12 input domains (annotatable)
+  @term_info: a data.frame of 56 terms X 5 information
+  @anno: a list of 56 terms, each storing annotated domains
+  @data: a vector containing a group of 11 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 87 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 87 terms, containing z-scores
-  @pvalue: a vector of 87 terms, containing p-values
-  @adjp: a vector of 87 terms, containing adjusted p-values
-In summary, a total of 87 terms ('GOMF') are analysed for a group of 12 input domains ('SCOP.sf')
+  @overlap: a list of 56 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 56 terms, containing z-scores
+  @pvalue: a vector of 56 terms, containing p-values
+  @adjp: a vector of 56 terms, containing adjusted p-values
+In summary, a total of 56 terms ('GOMF') are analysed for a group of 11 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) visualise the top 10 significant terms
@@ -441,27 +441,27 @@ In summary, a total of 87 terms ('GOMF') are analysed for a group of 12 input do
 visEnrichment(eoutput)
 </div>
 <strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('visEnrichment-19.png', 'visEnrichment-19.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-19.png', width="400" /></a>
 <div class='input'># color-coded according to zscore
 visEnrichment(eoutput, data.type='zscore')
 </div>
 <strong class='message'>Ontology 'GOMF' containing 18 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating z-scores</strong>
+<a href="javascript:newWin('visEnrichment-22.png', 'visEnrichment-22.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-22.png', width="400" /></a>
 <div class='input'>
 # 4) visualise the top 5 significant terms in the ontology hierarchy
 nodes_query <- names(sort(adjp(eoutput))[1:5])
+visEnrichment(eoutput, nodes_query=nodes_query)
 </div>
-<a href="javascript:newWin('visEnrichment-22.png', 'visEnrichment-22.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-22.png', width="400" /></a>
-<div class='input'>visEnrichment(eoutput, nodes_query=nodes_query)
-</div>
-<strong class='message'>Ontology 'GOMF' containing 9 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<strong class='message'>Ontology 'GOMF' containing 12 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('visEnrichment-25.png', 'visEnrichment-25.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-25.png', width="400" /></a>
 <div class='input'># change the frame color: highlight (framed in blue) nodes/terms in query
 nodes.highlight <- rep("blue", length(nodes_query))
-</div>
-<a href="javascript:newWin('visEnrichment-26.png', 'visEnrichment-26.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-26.png', width="400" /></a>
-<div class='input'>names(nodes.highlight) <- nodes_query
+names(nodes.highlight) <- nodes_query
 visEnrichment(eoutput, nodes_query=nodes_query,
 node.attrs=list(color=nodes.highlight))
 </div>
-<strong class='message'>Ontology 'GOMF' containing 9 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong></pre>
+<strong class='message'>Ontology 'GOMF' containing 12 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('visEnrichment-28.png', 'visEnrichment-28.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='visEnrichment-28.png', width="400" /></a></pre>
   </div>
   
   <div class="span4">
@@ -513,12 +513,10 @@ node.attrs=list(color=nodes.highlight))
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     

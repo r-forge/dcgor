@@ -333,33 +333,33 @@ data <- sample(rowNames(SCOP.sf), 20)
 # 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
 eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
 </div>
-<strong class='message'>Start at 2015-06-04 16:24:22</strong>
+<strong class='message'>Start at 2015-07-21 19:13:45</strong>
 <strong class='message'></strong>
-<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-06-04 16:24:22) ...</strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-07-21 19:13:45) ...</strong>
 <strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
 <strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
-<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-06-04 16:24:28) ...</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-21 19:14:16) ...</strong>
 <strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
-<strong class='message'>Last, adjust the p-values using the BH method (2015-06-04 16:24:28) ...</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-21 19:14:16) ...</strong>
 <strong class='message'>
-End at 2015-06-04 16:24:28</strong>
-<strong class='message'>Runtime in total is: 6 secs
+End at 2015-07-21 19:14:16</strong>
+<strong class='message'>Runtime in total is: 31 secs
 </strong>
 <div class='input'>eoutput
 </div>
 <div class='output'>An object of S4 class 'Eoutput', containing following slots:
   @domain: 'SCOP.sf'
   @ontology: 'GOMF'
-  @term_info: a data.frame of 15 terms X 5 information
-  @anno: a list of 15 terms, each storing annotated domains
-  @data: a vector containing a group of 11 input domains (annotatable)
+  @term_info: a data.frame of 64 terms X 5 information
+  @anno: a list of 64 terms, each storing annotated domains
+  @data: a vector containing a group of 9 input domains (annotatable)
   @background: a vector containing a group of 1083 background domains (annotatable)
-  @overlap: a list of 15 terms, each containing domains overlapped with input domains
-  @zscore: a vector of 15 terms, containing z-scores
-  @pvalue: a vector of 15 terms, containing p-values
-  @adjp: a vector of 15 terms, containing adjusted p-values
-In summary, a total of 15 terms ('GOMF') are analysed for a group of 11 input domains ('SCOP.sf')
+  @overlap: a list of 64 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 64 terms, containing z-scores
+  @pvalue: a vector of 64 terms, containing p-values
+  @adjp: a vector of 64 terms, containing adjusted p-values
+In summary, a total of 64 terms ('GOMF') are analysed for a group of 9 input domains ('SCOP.sf')
 </div>
 <div class='input'>
 # 3) write into the file 'Eoutput.txt' in your local directory
@@ -370,41 +370,41 @@ write(eoutput, file='Eoutput.txt')
 # 4) view the top 5 significant terms
 view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
 </div>
-<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
-GO:0004309 GO:0004309   392     11        3 -0.619   0.61 0.99
-GO:0030234 GO:0030234   408     11        3 -0.715   0.65 0.99
-GO:0016817 GO:0016817   591     11        4 -1.220   0.82 0.99
-GO:0016818 GO:0016818   590     11        4 -1.210   0.82 0.99
-GO:0016462 GO:0016462   590     11        4 -1.210   0.82 0.99
-                                                                                    term_name
-GO:0004309                                                        exopolyphosphatase activity
-GO:0030234                                                          enzyme regulator activity
-GO:0016817                                      hydrolase activity, acting on acid anhydrides
-GO:0016818 hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
-GO:0016462                                                           pyrophosphatase activity
-               term_namespace term_distance                  members
-GO:0004309 molecular_function             6       111479,55724,49854
-GO:0030234 molecular_function             1        55387,51391,49854
-GO:0016817 molecular_function             3 111479,52279,55724,49854
-GO:0016818 molecular_function             4 111479,52279,55724,49854
-GO:0016462 molecular_function             5 111479,52279,55724,49854
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
+GO:0008484 GO:0008484    75      9        3   3.13 0.0021 0.073
+GO:0046872 GO:0046872    77      9        3   3.07 0.0023 0.073
+GO:0043169 GO:0043169   100      9        3   2.51 0.0060 0.130
+GO:0004856 GO:0004856   117      9        3   2.19 0.0110 0.140
+GO:0035368 GO:0035368   117      9        3   2.19 0.0110 0.140
+                                           term_name     term_namespace
+GO:0008484         sulfuric ester hydrolase activity molecular_function
+GO:0046872                         metal ion binding molecular_function
+GO:0043169                            cation binding molecular_function
+GO:0004856                     xylulokinase activity molecular_function
+GO:0035368 selenocysteine insertion sequence binding molecular_function
+           term_distance            members
+GO:0008484             4  55271,52343,81324
+GO:0046872             4 143885,49313,52343
+GO:0043169             3 143885,49313,52343
+GO:0004856             5  55271,52343,81324
+GO:0035368             6  55271,52343,81324
 </div>
 <div class='input'>
 # 4) retrieve several slots directly
 zscore(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
-    -1.780     -2.370     -0.715     -2.530     -2.420 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0097159 GO:1901363 
+   -0.9480    -1.1900    -0.2700    -0.0596    -0.0317 
 </div>
 <div class='input'>pvalue(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
-      0.92       0.97       0.65       0.98       0.97 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0097159 GO:1901363 
+      0.73       0.79       0.46       0.39       0.38 
 </div>
 <div class='input'>adjp(eoutput)[1:5]
 </div>
-<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0005515 GO:0016787 
-      0.99       0.99       0.99       0.99       0.99 
+<div class='output'>GO:0005215 GO:0005488 GO:0030234 GO:0097159 GO:1901363 
+      0.79       0.84       0.60       0.54       0.54 
 </div></pre>
   </div>
   
@@ -450,12 +450,10 @@ zscore(eoutput)[1:5]
     <ul>
       <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
       <li><a href=" http://dcgor.r-forge.r-project.org"> http://dcgor.r-forge.r-project.org</a></li>
-      <li><a href="
-http://cran.r-project.org/package=dcGOR">
-http://cran.r-project.org/package=dcGOR</a></li>
-      <li><a href="
-https://github.com/hfang-bristol/dcGOR">
-https://github.com/hfang-bristol/dcGOR</a></li>
+      <li><a href=" http://cran.r-
+project.org/package=dcGOR"> http://cran.r-
+project.org/package=dcGOR</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
     </ul>
     
     
