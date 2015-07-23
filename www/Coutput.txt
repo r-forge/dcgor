@@ -1,0 +1,3 @@
+""	"aSeeds"	"bSeeds"
+"aSeeds"	"0.14"	"0.11"
+"bSeeds"	"0.11"	"0.15"

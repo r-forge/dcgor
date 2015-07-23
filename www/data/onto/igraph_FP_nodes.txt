@@ -1,0 +1,193 @@
+name	term_id	term_name	term_namespace	term_distance
+FBcv:0000347	FBcv:0000347	phenotypic class	root	0
+FBcv:0001347	FBcv:0001347	phenotype	Fly_phenotype	1
+FBcv:0000374	FBcv:0000374	fertile	Fly_phenotype	1
+FBcv:0000349	FBcv:0000349	viable	Fly_phenotype	1
+FBcv:0000348	FBcv:0000348	wild-type	Fly_phenotype	1
+FBcv:0000428	FBcv:0000428	cell size defective	Fly_phenotype	2
+FBcv:0000429	FBcv:0000429	cell shape defective	Fly_phenotype	2
+FBcv:0000389	FBcv:0000389	paralytic	Fly_phenotype	2
+FBcv:0000430	FBcv:0000430	cell polarity defective	Fly_phenotype	2
+FBcv:0000434	FBcv:0000434	neurophysiology defective	Fly_phenotype	2
+FBcv:0000435	FBcv:0000435	neuroanatomy defective	Fly_phenotype	2
+FBcv:0000436	FBcv:0000436	sex-determination defective	Fly_phenotype	2
+FBcv:0000437	FBcv:0000437	dosage compensation defective	Fly_phenotype	2
+FBcv:0000427	FBcv:0000427	cell growth defective	Fly_phenotype	2
+FBcv:0000424	FBcv:0000424	cell death defective	Fly_phenotype	2
+FBcv:0000417	FBcv:0000417	flight defective	Fly_phenotype	2
+FBcv:0000390	FBcv:0000390	hypoactive	Fly_phenotype	2
+FBcv:0000392	FBcv:0000392	hyperactive	Fly_phenotype	2
+FBcv:0000394	FBcv:0000394	circadian rhythm defective	Fly_phenotype	2
+FBcv:0000400	FBcv:0000400	mating defective	Fly_phenotype	2
+FBcv:0000408	FBcv:0000408	stress response defective	Fly_phenotype	2
+FBcv:0000681	FBcv:0000681	sensory perception defective	Fly_phenotype	2
+FBcv:0000413	FBcv:0000413	phototaxis defective	Fly_phenotype	2
+FBcv:0000415	FBcv:0000415	jumping defective	Fly_phenotype	2
+FBcv:0000438	FBcv:0000438	electrophoretic variant	Fly_phenotype	2
+FBcv:0000439	FBcv:0000439	chemical resistant	Fly_phenotype	2
+FBcv:0000440	FBcv:0000440	chemical sensitive	Fly_phenotype	2
+FBcv:0000686	FBcv:0000686	axis specification defective	Fly_phenotype	2
+FBcv:0000698	FBcv:0000698	embryonic/larval segmentation phenotype	Fly_phenotype	2
+FBcv:0000705	FBcv:0000705	sleep defective	Fly_phenotype	2
+FBcv:0000706	FBcv:0000706	diapause defective	Fly_phenotype	2
+FBcv:0000709	FBcv:0000709	cell number defective	Fly_phenotype	2
+FBcv:0000716	FBcv:0000716	cell migration defective	Fly_phenotype	2
+FBcv:0001324	FBcv:0001324	endocytosis defective	Fly_phenotype	2
+FBcv:0001325	FBcv:0001325	exocytosis defective	Fly_phenotype	2
+FBcv:0000683	FBcv:0000683	temperature response defective	Fly_phenotype	2
+FBcv:0000671	FBcv:0000671	cell cycle defective	Fly_phenotype	2
+FBcv:0000670	FBcv:0000670	eclosion defective	Fly_phenotype	2
+FBcv:0000441	FBcv:0000441	radiation resistant	Fly_phenotype	2
+FBcv:0000442	FBcv:0000442	radiation sensitive	Fly_phenotype	2
+FBcv:0000446	FBcv:0000446	melanotic mass phenotype	Fly_phenotype	2
+FBcv:0000447	FBcv:0000447	melanotic necrosis	Fly_phenotype	2
+FBcv:0000448	FBcv:0000448	immune response defective	Fly_phenotype	2
+FBcv:0000449	FBcv:0000449	planar polarity defective	Fly_phenotype	2
+FBcv:0000450	FBcv:0000450	developmental rate defective	Fly_phenotype	2
+FBcv:0000668	FBcv:0000668	cell adhesion defective	Fly_phenotype	2
+FBcv:0002004	FBcv:0002004	increased mortality	Fly_phenotype	2
+FBcv:0000387	FBcv:0000387	behavior defective	Fly_phenotype	2
+FBcv:0000365	FBcv:0000365	semi-sterile	Fly_phenotype	2
+FBcv:0000380	FBcv:0000380	non-enhancer of variegation	Fly_phenotype	2
+FBcv:0000325	FBcv:0000325	neurogenic phenotype	Fly_phenotype	2
+FBcv:0000378	FBcv:0000378	grandchildless	Fly_phenotype	2
+FBcv:0000350	FBcv:0000350	partially lethal - majority live	Fly_phenotype	2
+FBcv:0000377	FBcv:0000377	female fertile	Fly_phenotype	2
+FBcv:0000353	FBcv:0000353	cell lethal	Fly_phenotype	2
+FBcv:0000354	FBcv:0000354	visible	Fly_phenotype	2
+FBcv:0000375	FBcv:0000375	semi-fertile	Fly_phenotype	2
+FBcv:0000364	FBcv:0000364	sterile	Fly_phenotype	2
+FBcv:0000357	FBcv:0000357	size defective	Fly_phenotype	2
+FBcv:0000316	FBcv:0000316	homeotic	Fly_phenotype	2
+FBcv:0000382	FBcv:0000382	non-suppressor of variegation	Fly_phenotype	2
+FBcv:0000383	FBcv:0000383	auxotroph	Fly_phenotype	2
+FBcv:0000376	FBcv:0000376	male fertile	Fly_phenotype	2
+FBcv:0000388	FBcv:0000388	gravitaxis defective	Fly_phenotype	2
+FBcv:0000008	FBcv:0000008	modifier of variegation	Fly_phenotype	2
+FBcv:0000386	FBcv:0000386	long lived	Fly_phenotype	2
+FBcv:0000384	FBcv:0000384	aging defective	Fly_phenotype	2
+FBcv:0000725	FBcv:0000725	oxidative stress response defective	Fly_phenotype	3
+FBcv:0000679	FBcv:0000679	circadian behavior defective	Fly_phenotype	3
+FBcv:0000717	FBcv:0000717	increased cell growth	Fly_phenotype	3
+FBcv:0000682	FBcv:0000682	touch perception defective	Fly_phenotype	3
+FBcv:0002019	FBcv:0002019	increased mortality during development	Fly_phenotype	3
+FBcv:0000669	FBcv:0000669	hatching behavior defective	Fly_phenotype	3
+FBcv:0000356	FBcv:0000356	body color defective	Fly_phenotype	3
+FBcv:0000665	FBcv:0000665	body size defective	Fly_phenotype	3
+FBcv:0000451	FBcv:0000451	wound healing defective	Fly_phenotype	3
+FBcv:0000359	FBcv:0000359	decreased cell number	Fly_phenotype	3
+FBcv:0000360	FBcv:0000360	decreased cell size	Fly_phenotype	3
+FBcv:0000444	FBcv:0000444	hyperplasia	Fly_phenotype	3
+FBcv:0000443	FBcv:0000443	Minute	Fly_phenotype	3
+FBcv:0000362	FBcv:0000362	increased cell number	Fly_phenotype	3
+FBcv:0000006	FBcv:0000006	male semi-fertile	Fly_phenotype	3
+FBcv:0000684	FBcv:0000684	cold stress response defective	Fly_phenotype	3
+FBcv:0000724	FBcv:0000724	hypoplasia	Fly_phenotype	3
+FBcv:0000723	FBcv:0000723	neoplasia	Fly_phenotype	3
+FBcv:0000721	FBcv:0000721	mating behavior defective	Fly_phenotype	3
+FBcv:0000720	FBcv:0000720	jump response defective	Fly_phenotype	3
+FBcv:0000719	FBcv:0000719	atrophy	Fly_phenotype	3
+FBcv:0000718	FBcv:0000718	decreased cell growth	Fly_phenotype	3
+FBcv:0000734	FBcv:0000734	terminal phenotype	Fly_phenotype	3
+FBcv:0000713	FBcv:0000713	jumpless	Fly_phenotype	3
+FBcv:0000324	FBcv:0000324	dorsal/ventral axis specification defective	Fly_phenotype	3
+FBcv:0000708	FBcv:0000708	starvation stress response defective	Fly_phenotype	3
+FBcv:0000791	FBcv:0000791	delayed aging	Fly_phenotype	3
+FBcv:0000707	FBcv:0000707	reproductive diapause defective	Fly_phenotype	3
+FBcv:0000792	FBcv:0000792	premature aging	Fly_phenotype	3
+FBcv:0000007	FBcv:0000007	female semi-fertile	Fly_phenotype	3
+FBcv:0000703	FBcv:0000703	gap phenotype	Fly_phenotype	3
+FBcv:0000702	FBcv:0000702	segment polarity phenotype	Fly_phenotype	3
+FBcv:0000699	FBcv:0000699	pair rule phenotype	Fly_phenotype	3
+FBcv:0000355	FBcv:0000355	eye color defective	Fly_phenotype	3
+FBcv:0000363	FBcv:0000363	increased cell size	Fly_phenotype	3
+FBcv:0000385	FBcv:0000385	short lived	Fly_phenotype	3
+FBcv:0000409	FBcv:0000409	osmotic stress response defective	Fly_phenotype	3
+FBcv:0000410	FBcv:0000410	heat stress response defective	Fly_phenotype	3
+FBcv:0000411	FBcv:0000411	visual behavior defective	Fly_phenotype	3
+FBcv:0000379	FBcv:0000379	enhancer of variegation	Fly_phenotype	3
+FBcv:0000414	FBcv:0000414	locomotor behavior defective	Fly_phenotype	3
+FBcv:0000418	FBcv:0000418	flightless	Fly_phenotype	3
+FBcv:0000419	FBcv:0000419	feeding behavior defective	Fly_phenotype	3
+FBcv:0000420	FBcv:0000420	grooming behavior defective	Fly_phenotype	3
+FBcv:0000381	FBcv:0000381	suppressor of variegation	Fly_phenotype	3
+FBcv:0000407	FBcv:0000407	auditory perception defective	Fly_phenotype	3
+FBcv:0000002	FBcv:0000002	thermotaxis behavior defective	Fly_phenotype	3
+FBcv:0000391	FBcv:0000391	bang sensitive	Fly_phenotype	3
+FBcv:0000393	FBcv:0000393	pain response defective	Fly_phenotype	3
+FBcv:0000396	FBcv:0000396	eclosion rhythm defective	Fly_phenotype	3
+FBcv:0000397	FBcv:0000397	learning defective	Fly_phenotype	3
+FBcv:0000398	FBcv:0000398	memory defective	Fly_phenotype	3
+FBcv:0000403	FBcv:0000403	chemosensitive behavior defective	Fly_phenotype	3
+FBcv:0000404	FBcv:0000404	smell perception defective	Fly_phenotype	3
+FBcv:0000405	FBcv:0000405	taste perception defective	Fly_phenotype	3
+FBcv:0000421	FBcv:0000421	touch sensitivity defective	Fly_phenotype	3
+FBcv:0000422	FBcv:0000422	photoperiod response variant	Fly_phenotype	3
+FBcv:0000370	FBcv:0000370	male sterile	Fly_phenotype	3
+FBcv:0000433	FBcv:0000433	cytokinesis defective	Fly_phenotype	3
+FBcv:0000432	FBcv:0000432	mitotic cell cycle defective	Fly_phenotype	3
+FBcv:0000371	FBcv:0000371	male semi-sterile	Fly_phenotype	3
+FBcv:0000426	FBcv:0000426	decreased cell death	Fly_phenotype	3
+FBcv:0000425	FBcv:0000425	increased cell death	Fly_phenotype	3
+FBcv:0000431	FBcv:0000431	meiotic cell cycle defective	Fly_phenotype	3
+FBcv:0000367	FBcv:0000367	female semi-sterile	Fly_phenotype	3
+FBcv:0000366	FBcv:0000366	female sterile	Fly_phenotype	3
+FBcv:0000423	FBcv:0000423	DNA repair defective	Fly_phenotype	3
+FBcv:0002023	FBcv:0002023	some die during larval stage	Fly_phenotype	4
+FBcv:0000399	FBcv:0000399	courtship behavior defective	Fly_phenotype	4
+FBcv:0002020	FBcv:0002020	some die during P-stage	Fly_phenotype	4
+FBcv:0000369	FBcv:0000369	female sterile soma-dependent	Fly_phenotype	4
+FBcv:0000361	FBcv:0000361	large body	Fly_phenotype	4
+FBcv:0002015	FBcv:0002015	partially lethal	Fly_phenotype	4
+FBcv:0002051	FBcv:0002051	some die during immature adult stage	Fly_phenotype	4
+FBcv:0000395	FBcv:0000395	locomotor rhythm defective	Fly_phenotype	4
+FBcv:0000368	FBcv:0000368	female sterile germline-dependent	Fly_phenotype	4
+FBcv:0002041	FBcv:0002041	some die during embryonic stage	Fly_phenotype	4
+FBcv:0000401	FBcv:0000401	mating rhythm defective	Fly_phenotype	4
+FBcv:0000701	FBcv:0000701	odd pair-rule phenotype	Fly_phenotype	4
+FBcv:0000351	FBcv:0000351	lethal	Fly_phenotype	4
+FBcv:0000373	FBcv:0000373	male sterile soma-dependent	Fly_phenotype	4
+FBcv:0000700	FBcv:0000700	even pair-rule phenotype	Fly_phenotype	4
+FBcv:0000672	FBcv:0000672	endomitotic cell cycle defective	Fly_phenotype	4
+FBcv:0000372	FBcv:0000372	male sterile germline-dependent	Fly_phenotype	4
+FBcv:0000412	FBcv:0000412	optomotor response defective	Fly_phenotype	4
+FBcv:0000416	FBcv:0000416	uncoordinated	Fly_phenotype	4
+FBcv:0000358	FBcv:0000358	small body	Fly_phenotype	4
+FBcv:0000680	FBcv:0000680	proboscis extension reflex defective	Fly_phenotype	4
+FBcv:0002012	FBcv:0002012	majority die during larval stage	Fly_phenotype	5
+FBcv:0002010	FBcv:0002010	majority die during P-stage	Fly_phenotype	5
+FBcv:0002021	FBcv:0002021	some die during first instar larval stage	Fly_phenotype	5
+FBcv:0002022	FBcv:0002022	some die during second instar larval stage	Fly_phenotype	5
+FBcv:0000352	FBcv:0000352	partially lethal - majority die	Fly_phenotype	5
+FBcv:0002024	FBcv:0002024	some die during third instar larval stage	Fly_phenotype	5
+FBcv:0000402	FBcv:0000402	song defective	Fly_phenotype	5
+FBcv:0002037	FBcv:0002037	majority die during embryonic stage	Fly_phenotype	5
+FBcv:0000406	FBcv:0000406	tarsal response defective	Fly_phenotype	5
+FBcv:0002000	FBcv:0002000	lethal - all die before end of P-stage	Fly_phenotype	5
+FBcv:0002050	FBcv:0002050	majority die during immature adult stage	Fly_phenotype	5
+FBcv:0002042	FBcv:0002042	lethal - all die during immature adult stage	Fly_phenotype	5
+FBcv:0000445	FBcv:0000445	tumorigenic	Fly_phenotype	5
+FBcv:0002040	FBcv:0002040	some die during prepupal stage	Fly_phenotype	5
+FBcv:0002039	FBcv:0002039	some die during pupal stage	Fly_phenotype	5
+FBcv:0002038	FBcv:0002038	some die during pharate adult stage	Fly_phenotype	5
+FBcv:0002033	FBcv:0002033	lethal - all die during embryonic stage	Fly_phenotype	6
+FBcv:0002034	FBcv:0002034	majority die during pupal stage	Fly_phenotype	6
+FBcv:0002035	FBcv:0002035	majority die during prepupal stage	Fly_phenotype	6
+FBcv:0002027	FBcv:0002027	lethal - all die before end of pupal stage	Fly_phenotype	6
+FBcv:0002036	FBcv:0002036	majority die during pharate adult stage	Fly_phenotype	6
+FBcv:0002005	FBcv:0002005	lethal - all die during P-stage	Fly_phenotype	6
+FBcv:0002007	FBcv:0002007	lethal - all die during larval stage	Fly_phenotype	6
+FBcv:0002014	FBcv:0002014	majority die during third instar larval stage	Fly_phenotype	6
+FBcv:0002013	FBcv:0002013	majority die during second instar larval stage	Fly_phenotype	6
+FBcv:0002011	FBcv:0002011	majority die during first instar larval stage	Fly_phenotype	6
+FBcv:0002025	FBcv:0002025	lethal - all die during pharate adult stage	Fly_phenotype	7
+FBcv:0002006	FBcv:0002006	lethal - all die during first instar larval stage	Fly_phenotype	7
+FBcv:0002008	FBcv:0002008	lethal - all die during second instar larval stage	Fly_phenotype	7
+FBcv:0002009	FBcv:0002009	lethal - all die during third instar larval stage	Fly_phenotype	7
+FBcv:0002026	FBcv:0002026	lethal - all die before end of prepupal stage	Fly_phenotype	7
+FBcv:0002031	FBcv:0002031	lethal - all die during prepupal stage	Fly_phenotype	7
+FBcv:0002030	FBcv:0002030	lethal - all die during pupal stage	Fly_phenotype	7
+FBcv:0002002	FBcv:0002002	lethal - all die before end of larval stage	Fly_phenotype	8
+FBcv:0002003	FBcv:0002003	lethal - all die before end of second instar larval stage	Fly_phenotype	9
+FBcv:0002001	FBcv:0002001	lethal - all die before end of first instar larval stage	Fly_phenotype	10
+FBcv:0002032	FBcv:0002032	lethal - all die before end of embryonic stage	Fly_phenotype	11

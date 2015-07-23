@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Cnetwork-class @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Definition for S4 class Cnetwork</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>Cnetwork</code> is an S4 class to store a contact network, such as the
+one from RWR-based contact between samples/terms by
+<code><a href='dcRWRpipeline.html'>dcRWRpipeline</a></code>. It has 2 slots: nodeInfo and adjMatrix</p>
+  
+        <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>Class Cnetwork</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Slots">
+    -->
+      <h3>Slots</h3>
+      
+      <p></p>
+      <p><span class='describe'>
+<code>nodeInfo</code>An object of S4 class
+<code><a href='InfoDataFrame-class.html'>InfoDataFrame</a></code>, describing information on nodes/domains.</p>
+      <p><code>adjMatrix</code>An object of S4 class <code><a href='AdjData-class.html'>AdjData</a></code>,
+containing symmetric adjacency data matrix for an indirect domain
+network
+</span></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Creation">
+    -->
+      <h3>Creation</h3>
+      
+      <p></p>
+      <p>An object of this class can be created via: <code>new("Cnetwork",
+nodeInfo, adjMatrix)</code></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Methods">
+    -->
+      <h3>Methods</h3>
+      
+      <p></p>
+      <p>Class-specific methods:
+<ul>
+<li><code>dim()</code>: retrieve the dimension in the object
+</li>
+<li><code>adjMatrix()</code>: retrieve the slot 'adjMatrix' in the
+object
+</li>
+<li><code>nodeInfo()</code>: retrieve the slot 'nodeInfo' (as class
+InfoDataFrame) in the object
+</li>
+<li><code>nInfo()</code>: retrieve nodeInfo (as data.frame) in the
+object
+</li>
+<li><code>nodeNames()</code>: retrieve node/term names (ie, row names of
+nodeInfo) in the object
+</li>
+</ul></p>
+      <p>Standard generic methods:
+<ul>
+<li><code>str()</code>: compact display of the content in the object
+</li>
+<li><code>show()</code>: abbreviated display of the object
+</li>
+<li><code>as(matrix, "Cnetwork")</code>: convert a matrix to an object of
+class Cnetwork
+</li>
+<li><code>as(dgCMatrix, "Cnetwork")</code>: convert a dgCMatrix (a sparse
+matrix) to an object of class Cnetwork
+</li>
+<li><code>[i]</code>: get the subset of the same class
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Access">
+    -->
+      <h3>Access</h3>
+      
+      <p></p>
+      <p>Ways to access information on this class:
+<ul>
+<li><code>showClass("Cnetwork")</code>: show the class definition
+</li>
+<li><code>showMethods(classes="Cnetwork")</code>: show the method
+definition upon this class
+</li>
+<li><code>getSlots("Cnetwork")</code>: get the name and class of each
+slot in this class
+</li>
+<li><code>slotNames("Cnetwork")</code>: get the name of each slot in this
+class
+</li>
+<li><code>selectMethod(f, signature="Cnetwork")</code>: retrieve the
+definition code for the method 'f' defined in this class
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># create an object of class Cnetwork, only given a matrix
+adjM <- matrix(runif(25),nrow=5,ncol=5)
+as(adjM, "Cnetwork")
+</div>
+<div class='output'>An object of S4 class 'Cnetwork'
+@adjMatrix: a weighted symmetric matrix of 5 samples/terms X 5 samples/terms 
+@nodeInfo (InfoDataFrame)
+  nodeNames: 1 2 3 4 5
+  nodeAttr: id
+</div>
+<div class='input'>
+# create an object of class Cnetwork, given a matrix plus information on nodes
+# 1) create nodeI: an object of class InfoDataFrame
+data <- data.frame(id=paste("Domain", 1:5, sep="_"),
+level=rep("SCOP",5), description=I(LETTERS[1:5]),
+row.names=paste("Domain", 1:5, sep="_"))
+nodeI <- new("InfoDataFrame", data=data)
+nodeI
+</div>
+<div class='output'>An object of S4 class 'InfoDataFrame'
+  rowNames: Domain_1 Domain_2 Domain_3 Domain_4 Domain_5
+  colNames: id level description
+</div>
+<div class='input'># 2) create an object of class Cnetwork
+# VERY IMPORTANT: make sure having consistent names between nodeInfo and adjMatrix
+adjM <- matrix(runif(25),nrow=5,ncol=5)
+colnames(adjM) <- rownames(adjM) <- rowNames(nodeI)
+x <- new("Cnetwork", adjMatrix=adjM, nodeInfo=nodeI)
+x
+</div>
+<div class='output'>An object of S4 class 'Cnetwork'
+@adjMatrix: a weighted symmetric matrix of 5 samples/terms X 5 samples/terms 
+@nodeInfo (InfoDataFrame)
+  nodeNames: Domain_1 Domain_2 Domain_3 Domain_4 Domain_5
+  nodeAttr: id level description
+</div>
+<div class='input'># 3) look at various methods defined on class Cnetwork
+dim(x)
+</div>
+<div class='output'>[1] 5 5
+</div>
+<div class='input'>adjMatrix(x)
+</div>
+<div class='output'>           Domain_1   Domain_2  Domain_3  Domain_4  Domain_5
+Domain_1 0.28674904 0.67940568 0.2612663 0.3498324 0.2858638
+Domain_2 0.07508181 0.02144015 0.8738172 0.5003737 0.4241023
+Domain_3 0.85388949 0.99335998 0.6187192 0.1840178 0.4115077
+Domain_4 0.64491955 0.88064373 0.4329641 0.6983444 0.6659519
+Domain_5 0.78162055 0.23141078 0.2724255 0.6361669 0.6488376
+</div>
+<div class='input'>nodeInfo(x)
+</div>
+<div class='output'>An object of S4 class 'InfoDataFrame'
+  rowNames: Domain_1 Domain_2 Domain_3 Domain_4 Domain_5
+  colNames: id level description
+</div>
+<div class='input'>nInfo(x)
+</div>
+<div class='output'>               id level description
+Domain_1 Domain_1  SCOP           A
+Domain_2 Domain_2  SCOP           B
+Domain_3 Domain_3  SCOP           C
+Domain_4 Domain_4  SCOP           D
+Domain_5 Domain_5  SCOP           E
+</div>
+<div class='input'>nodeNames(x)
+</div>
+<div class='output'>[1] "Domain_1" "Domain_2" "Domain_3" "Domain_4" "Domain_5"
+</div>
+<div class='input'># 4) get the subset
+x[1:2]
+</div>
+<div class='output'>An object of S4 class 'Cnetwork'
+@adjMatrix: a weighted symmetric matrix of 2 samples/terms X 2 samples/terms 
+@nodeInfo (InfoDataFrame)
+  nodeNames: Domain_1 Domain_2
+  nodeAttr: id level description
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>Cnetwork</li><li>Cnetwork-class</li>
+    </ul>
+    <ul>
+      <li>S4</li><li>classes</li>
+    </ul> 
+    -->
+    
+    
+        
+    <h2>See also</h2>
+    
+<code><a href='Cnetwork-method.html'>Cnetwork-method</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

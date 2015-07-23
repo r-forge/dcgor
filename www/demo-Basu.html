@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Demo for analysing promiscuous Pfam domains @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Hai Fang and Julian Gough">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Demo for analysing promiscuous Pfam domains</h2>
+
+Notes:
+<li> All results are based on dcGOR (version 1.0.5). </li>
+<li> R scripts (i.e. R expressions) plus necessary comments are highlighted in light cyan, and the rest are outputs in the screen. </li>
+<li> Images displayed below may be distorted, but should be normal in your screen. </li>
+<li> Functions contained in dcGOR 1.0.5 are hyperlinked in-place and also listed on the right side. </li>
+
+<div class="row">
+    <div class="span8">
+      <pre>
+      <div class='input'># This is a demo for analysing promiscuous Pfam domains by Basu et al
+# 
+# This list of promiscuous Pfam domains was reported in <a href="http://www.ncbi.nlm.nih.gov/pubmed/18230802" target="18230802">http://www.ncbi.nlm.nih.gov/pubmed/18230802</a>. There are 215 domains identified as strongly promiscuous (a tendency to occur in diverse domain architectures), in which 76 were taken from Pfam domains and thus used for this demo. It can be found in the file <a href="http://dcgor.r-forge.r-project.org/data/demo/domain_promiscuity_Basu_et_al_2008.txt">domain_promiscuity_Basu_et_al_2008.txt</a>, containing two columns: 1st column for Pfam domain ID, and 2nd column for promiscuity value (the higher the more promiscuous).
+###############################################################################
+library(dcGOR)
+
+# Read promiscuous Pfam domains
+domains <- read.delim("http://dcgor.r-forge.r-project.org/data/demo/domain_promiscuity_Basu_et_al_2008.txt",header=T)
+domains[1:5,]
+</div>
+<div class='output'>     Pfam Promiscuity
+1 PF00117      304.56
+2 PF00364      222.74
+3 PF00443      201.48
+4 PF00769      195.98
+5 PF00173      182.43
+</div>
+<div class='input'>
+#---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
+# Enrichment analysis for Pfam domains
+#---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
+
+## define the input data
+data <- as.character(domains$Pfam)
+
+### load Pfam domain informtion (as 'InfoDataFrame' object)
+Pfam <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfam')
+</div>
+<strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>Pfam
+</div>
+<div class='output'>An object of S4 class 'InfoDataFrame'
+  rowNames: PF00001 PF00002 PF00003 ... PF15659 PF15660 (14831 total)
+  colNames: id level description
+</div>
+<div class='input'>
+## 1) GOBP enrichment analysis, producing an object of S4 class 'Eoutput'
+### By default, using all annotatable domains as the background
+eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOBP")
+</div>
+<strong class='message'>Start at 2015-07-23 12:15:20</strong>
+<strong class='message'></strong>
+<strong class='message'>First, load the ontology 'GOBP', the domain 'Pfam', and their associations (2015-07-23 12:15:20) ...</strong>
+<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-23 12:15:41) ...</strong>
+<strong class='message'>	There are 722 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-23 12:15:41) ...</strong>
+<strong class='message'>
+End at 2015-07-23 12:15:41</strong>
+<strong class='message'>Runtime in total is: 21 secs
+</strong>
+<div class='input'>eoutput
+</div>
+<div class='output'>An object of S4 class 'Eoutput', containing following slots:
+  @domain: 'Pfam'
+  @ontology: 'GOBP'
+  @term_info: a data.frame of 74 terms X 5 information
+  @anno: a list of 74 terms, each storing annotated domains
+  @data: a vector containing a group of 29 input domains (annotatable)
+  @background: a vector containing a group of 3241 background domains (annotatable)
+  @overlap: a list of 74 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 74 terms, containing z-scores
+  @pvalue: a vector of 74 terms, containing p-values
+  @adjp: a vector of 74 terms, containing adjusted p-values
+In summary, a total of 74 terms ('GOBP') are analysed for a group of 29 input domains ('Pfam')
+</div>
+<div class='input'>### write into a local file <a href="Basu_GOBP_enrichments.txt">Basu_GOBP_enrichments.txt</a>
+write(eoutput, file='Basu_GOBP_enrichments.txt')
+</div>
+<strong class='message'>A file ('Basu_GOBP_enrichments.txt') has been written into your local directory ('/Users/hfang/Sites/SUPERFAMILY/dcGO/dcGOR')</strong>
+<div class='input'>### view the top 5 significant terms
+view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
+</div>
+<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue    adjp
+GO:0006298 GO:0006298    62     29        5   6.05 1.3e-05 0.00096
+GO:0006281 GO:0006281    88     29        5   4.83 9.7e-05 0.00310
+GO:0006974 GO:0006974    92     29        5   4.69 1.2e-04 0.00310
+GO:0033554 GO:0033554   145     29        5   3.34 1.5e-03 0.02700
+GO:0016051 GO:0016051   119     29        4   2.91 3.6e-03 0.05000
+                                   term_name     term_namespace term_distance
+GO:0006298                   mismatch repair biological_process             8
+GO:0006281                        DNA repair biological_process             6
+GO:0006974   response to DNA damage stimulus biological_process             5
+GO:0033554       cellular response to stress biological_process             3
+GO:0016051 carbohydrate biosynthetic process biological_process             4
+                                           members
+GO:0006298 PF00289,PF00310,PF00549,PF01546,PF00106
+GO:0006281 PF00289,PF00310,PF00549,PF01546,PF00106
+GO:0006974 PF00289,PF00310,PF00549,PF01546,PF00106
+GO:0033554 PF00289,PF00310,PF00549,PF01546,PF00106
+GO:0016051         PF02902,PF01421,PF00082,PF00085
+</div>
+<div class='input'>### visualise the top 4 significant terms (adjp < 0.05) in GOBP DAG
+#### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
+<a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, num_top_nodes=4, layout.orientation="top_bottom", zlim=c(0,4))
+</div>
+<strong class='message'>Ontology 'GOBP' containing 13 nodes/terms (including 4 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-27.png', 'Basu-27.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-27.png', width="400" /></a>
+<div class='input'>#### look at Pfam domains annotated by the most signficant term
+tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
+tmp <- unlist(strsplit(tmp,","))
+Data(Pfam)[match(tmp,rowNames(Pfam)),]
+</div>
+<div class='output'>             id level                                             description
+PF00289 PF00289  Pfam Carbamoyl-phosphate synthase L chain, N-terminal domain
+PF00310 PF00310  Pfam                    Glutamine amidotransferases class-II
+PF00549 PF00549  Pfam                                              CoA-ligase
+PF01546 PF01546  Pfam                            Peptidase family M20/M25/M40
+PF00106 PF00106  Pfam                               short chain dehydrogenase
+</div>
+<div class='input'>
+## 2) GOMF enrichment analysis, producing an object of S4 class 'Eoutput'
+eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOMF")
+</div>
+<strong class='message'>Start at 2015-07-23 12:16:35</strong>
+<strong class='message'></strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'Pfam', and their associations (2015-07-23 12:16:35) ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-23 12:16:46) ...</strong>
+<strong class='message'>	There are 334 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-23 12:16:46) ...</strong>
+<strong class='message'>
+End at 2015-07-23 12:16:46</strong>
+<strong class='message'>Runtime in total is: 11 secs
+</strong>
+<div class='input'>eoutput
+</div>
+<div class='output'>An object of S4 class 'Eoutput', containing following slots:
+  @domain: 'Pfam'
+  @ontology: 'GOMF'
+  @term_info: a data.frame of 24 terms X 5 information
+  @anno: a list of 24 terms, each storing annotated domains
+  @data: a vector containing a group of 36 input domains (annotatable)
+  @background: a vector containing a group of 3359 background domains (annotatable)
+  @overlap: a list of 24 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 24 terms, containing z-scores
+  @pvalue: a vector of 24 terms, containing p-values
+  @adjp: a vector of 24 terms, containing adjusted p-values
+In summary, a total of 24 terms ('GOMF') are analysed for a group of 36 input domains ('Pfam')
+</div>
+<div class='input'>### write into a local file <a href="Basu_GOMF_enrichments.txt">Basu_GOMF_enrichments.txt</a>
+write(eoutput, file='Basu_GOMF_enrichments.txt')
+</div>
+<strong class='message'>A file ('Basu_GOMF_enrichments.txt') has been written into your local directory ('/Users/hfang/Sites/SUPERFAMILY/dcGO/dcGOR')</strong>
+<div class='input'>### view the top 5 significant terms
+view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
+</div>
+<div class='output'>              term_id nAnno nGroup nOverlap zscore  pvalue   adjp
+GO:0016887 GO:0016887   106     36        6   4.66 0.00010 0.0022
+GO:0017111 GO:0017111   121     36        6   4.23 0.00023 0.0022
+GO:0016462 GO:0016462   132     36        6   3.95 0.00040 0.0022
+GO:0016818 GO:0016818   133     36        6   3.93 0.00042 0.0022
+GO:0016817 GO:0016817   135     36        6   3.88 0.00046 0.0022
+                                                                                    term_name
+GO:0016887                                                                    ATPase activity
+GO:0017111                                                 nucleoside-triphosphatase activity
+GO:0016462                                                           pyrophosphatase activity
+GO:0016818 hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+GO:0016817                                      hydrolase activity, acting on acid anhydrides
+               term_namespace term_distance
+GO:0016887 molecular_function             7
+GO:0017111 molecular_function             6
+GO:0016462 molecular_function             5
+GO:0016818 molecular_function             4
+GO:0016817 molecular_function             3
+                                                   members
+GO:0016887 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
+GO:0017111 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
+GO:0016462 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
+GO:0016818 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
+GO:0016817 PF00175,PF00258,PF01565,PF00070,PF00106,PF00107
+</div>
+<div class='input'>### visualise the top 5 significant terms in GOMF DAG
+#### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
+<a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput, layout.orientation="top_bottom", zlim=c(0,4))
+</div>
+<strong class='message'>Ontology 'GOMF' containing 8 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-50.png', 'Basu-50.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-50.png', width="400" /></a>
+<div class='input'>#### look at Pfam domains annotated by the most signficant term
+tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
+tmp <- unlist(strsplit(tmp,","))
+Data(Pfam)[match(tmp,rowNames(Pfam)),]
+</div>
+<div class='output'>             id level                                   description
+PF00175 PF00175  Pfam            Oxidoreductase NAD-binding domain 
+PF00258 PF00258  Pfam                                    Flavodoxin
+PF01565 PF01565  Pfam                           FAD binding domain 
+PF00070 PF00070  Pfam Pyridine nucleotide-disulphide oxidoreductase
+PF00106 PF00106  Pfam                     short chain dehydrogenase
+PF00107 PF00107  Pfam                    Zinc-binding dehydrogenase
+</div>
+<div class='input'>
+## 3) GOCC enrichment analysis, producing an object of S4 class 'Eoutput'
+eoutput <- <a href='dcEnrichment.html' target=dcEnrichment>dcEnrichment</a>(data, domain="Pfam", ontology="GOCC")
+</div>
+<strong class='message'>Start at 2015-07-23 12:16:59</strong>
+<strong class='message'></strong>
+<strong class='message'>First, load the ontology 'GOCC', the domain 'Pfam', and their associations (2015-07-23 12:16:59) ...</strong>
+<strong class='message'>'onto.GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'Pfam2GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-23 12:17:03) ...</strong>
+<strong class='message'>	There are 149 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-23 12:17:03) ...</strong>
+<strong class='message'>
+End at 2015-07-23 12:17:03</strong>
+<strong class='message'>Runtime in total is: 4 secs
+</strong>
+<div class='input'>eoutput
+</div>
+<div class='output'>An object of S4 class 'Eoutput', containing following slots:
+  @domain: 'Pfam'
+  @ontology: 'GOCC'
+  @term_info: a data.frame of 10 terms X 5 information
+  @anno: a list of 10 terms, each storing annotated domains
+  @data: a vector containing a group of 8 input domains (annotatable)
+  @background: a vector containing a group of 2036 background domains (annotatable)
+  @overlap: a list of 10 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 10 terms, containing z-scores
+  @pvalue: a vector of 10 terms, containing p-values
+  @adjp: a vector of 10 terms, containing adjusted p-values
+In summary, a total of 10 terms ('GOCC') are analysed for a group of 8 input domains ('Pfam')
+</div>
+<div class='input'>### write into a local file <a href="Basu_GOCC_enrichments.txt">Basu_GOCC_enrichments.txt</a>
+write(eoutput, file='Basu_GOCC_enrichments.txt')
+</div>
+<strong class='message'>A file ('Basu_GOCC_enrichments.txt') has been written into your local directory ('/Users/hfang/Sites/SUPERFAMILY/dcGO/dcGOR')</strong>
+<div class='input'>### view the top 5 significant terms
+view(eoutput, top_num=5, sortBy="pvalue", details=FALSE)
+</div>
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue  adjp
+GO:0043234 GO:0043234  1246      8        7  1.530  0.020 0.083
+GO:0044445 GO:0044445   326      8        3  1.660  0.026 0.083
+GO:0005829 GO:0005829   327      8        3  1.650  0.027 0.083
+GO:0032991 GO:0032991  1332      8        7  1.320  0.033 0.083
+GO:0005623 GO:0005623  1613      8        7  0.578  0.150 0.260
+                        term_name
+GO:0043234        protein complex
+GO:0044445         cytosolic part
+GO:0005829                cytosol
+GO:0032991 macromolecular complex
+GO:0005623                   cell
+</div>
+<div class='input'>### visualise the top 5 significant terms in GOMF DAG
+#### color-coded according to 10-based negative logarithm of adjusted p-values (adjp)
+<a href='visEnrichment.html' target=visEnrichment>visEnrichment</a>(eoutput)
+</div>
+<strong class='message'>Ontology 'GOCC' containing 9 nodes/terms (including 5 in query; also highlighted in frame) has been shown in your screen, with colorbar indicating -1*log10(adjusted p-values)</strong>
+<a href="javascript:newWin('Basu-73.png', 'Basu-73.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-73.png', width="400" /></a>
+<div class='input'>#### look at Pfam domains annotated by the most signficant term
+tmp <- as.character(view(eoutput, top_num=1, sortBy="pvalue", details=T)$members)
+tmp <- unlist(strsplit(tmp,","))
+Data(Pfam)[match(tmp,rowNames(Pfam)),]
+</div>
+<div class='output'>             id level                               description
+PF06247 PF06247  Pfam Plasmodium ookinete surface protein Pvs28
+PF00520 PF00520  Pfam                     Ion transport protein
+PF01496 PF01496  Pfam     V-type ATPase 116kDa subunit family  
+PF00038 PF00038  Pfam             Intermediate filament protein
+PF05955 PF05955  Pfam       Equine herpesvirus glycoprotein gp2
+PF00083 PF00083  Pfam             Sugar (and other) transporter
+PF00769 PF00769  Pfam               Ezrin/radixin/moesin family
+</div>
+<div class='input'>
+
+#---------------------------------------------------------------------
+#---------------------------------------------------------------------
+# Pair-wise semantic similarity between promiscuous Pfam domains
+#---------------------------------------------------------------------
+#---------------------------------------------------------------------
+
+## 1) GOBP-based semantic similarity
+### load onto.GOBP (as 'Onto' object)
+g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.GOBP')
+</div>
+<strong class='message'>'onto.GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>g
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 25154 terms (parents/from) X 25154 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0008150 GO:0000003 GO:0001906 ... GO:0021810 GO:0021811
+    (25154 total)
+  nodeAttr: term_id term_name term_namespace term_distance
+</div>
+<div class='input'>### load Pfam domains annotated by GOBP (as 'Anno' object)
+Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfam2GOBP')
+</div>
+<strong class='message'>'Pfam2GOBP' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>Anno
+</div>
+<div class='output'>An object of S4 class 'Anno'
+@annoData: 3241 domains, 1005 terms 
+@termData (InfoDataFrame)
+  termNames: GO:0008152 GO:0040007 GO:0048511 ... GO:0019281 GO:0032862
+    (1005 total)
+  tvarLabels: ID Name Namespace Distance
+@domainData (InfoDataFrame)
+  domainNames: PF00001 PF00002 PF00003 ... PF15550 PF15556 (3241 total)
+  dvarLabels: id level description
+</div>
+<div class='input'>### prepare for ontology appended with annotation information
+dag <- <a href='dcDAGannotate.html' target=dcDAGannotate>dcDAGannotate</a>(g, annotations=Anno, path.mode="shortest_paths",verbose=FALSE)
+dag
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 1601 terms (parents/from) X 1601 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0008150 GO:0000003 GO:0001906 ... GO:0019281 GO:0032862
+    (1601 total)
+  nodeAttr: term_id term_name term_namespace term_distance annotations
+    IC
+</div>
+<div class='input'>### calculate GOBP-based pair-wise semantic similarity between domains
+dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:18:01</strong>
+<strong class='message'></strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-23 12:18:01)...</strong>
+<strong class='message'>	there are 29 input domains amongst 3241 annotatable domains</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 20 terms (forced to be the most specific for each domain) using Resnik method (2015-07-23 12:18:11)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 29 domains using BM.average method (2015-07-23 12:18:12)...</strong>
+<strong class='message'>	1 out of 29 (2015-07-23 12:18:12)</strong>
+<strong class='message'>	3 out of 29 (2015-07-23 12:18:12)</strong>
+<strong class='message'>	6 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	9 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	12 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	15 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	18 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	21 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	24 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'>	27 out of 29 (2015-07-23 12:18:13)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2015-07-23 12:18:13</strong>
+<strong class='message'>Runtime in total is: 12 secs
+</strong>
+<div class='input'>dnetwork
+</div>
+<div class='output'>An object of S4 class 'Dnetwork'
+@adjMatrix: a weighted symmetric matrix of 29 domains X 29 domains 
+@nodeInfo (InfoDataFrame)
+  nodeNames: PF00443 PF00070 PF05557 ... PF00332 PF00872 (29 total)
+  nodeAttr: id
+</div>
+<div class='input'>### heatmap the adjacency matrix of the domain network
+Adj_GOBP <- as.matrix(adjMatrix(dnetwork))
+visHeatmapAdv(Adj_GOBP, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOBP semantic similarity")
+</div>
+<a href="javascript:newWin('Basu-109.png', 'Basu-109.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-109.png', width="400" /></a>
+<div class='input'>
+## 2) GOMF-based semantic similarity
+### load onto.GOMF (as 'Onto' object)
+g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.GOMF')
+</div>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>g
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 9595 terms (parents/from) X 9595 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0003674 GO:0000988 GO:0001071 ... GO:0004008 GO:0086037
+    (9595 total)
+  nodeAttr: term_id term_name term_namespace term_distance
+</div>
+<div class='input'>### load Pfam domains annotated by GOMF (as 'Anno' object)
+Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfam2GOMF')
+</div>
+<strong class='message'>'Pfam2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>Anno
+</div>
+<div class='output'>An object of S4 class 'Anno'
+@annoData: 3359 domains, 1065 terms 
+@termData (InfoDataFrame)
+  termNames: GO:0003824 GO:0004872 GO:0005198 ... GO:0016286 GO:0005219
+    (1065 total)
+  tvarLabels: ID Name Namespace Distance
+@domainData (InfoDataFrame)
+  domainNames: PF00001 PF00002 PF00003 ... PF15510 PF15549 (3359 total)
+  dvarLabels: id level description
+</div>
+<div class='input'>### prepare for ontology appended with annotation information
+dag <- <a href='dcDAGannotate.html' target=dcDAGannotate>dcDAGannotate</a>(g, annotations=Anno, path.mode="shortest_paths",verbose=FALSE)
+dag
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 1368 terms (parents/from) X 1368 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0003674 GO:0000988 GO:0001071 ... GO:0016286 GO:0005219
+    (1368 total)
+  nodeAttr: term_id term_name term_namespace term_distance annotations
+    IC
+</div>
+<div class='input'>### calculate GOMF-based pair-wise semantic similarity between domains
+dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:18:29</strong>
+<strong class='message'></strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-23 12:18:29)...</strong>
+<strong class='message'>	there are 36 input domains amongst 3359 annotatable domains</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 33 terms (forced to be the most specific for each domain) using Resnik method (2015-07-23 12:18:33)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 36 domains using BM.average method (2015-07-23 12:18:34)...</strong>
+<strong class='message'>	1 out of 36 (2015-07-23 12:18:34)</strong>
+<strong class='message'>	4 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	8 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	12 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	16 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	20 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	24 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	28 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'>	32 out of 36 (2015-07-23 12:18:35)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2015-07-23 12:18:35</strong>
+<strong class='message'>Runtime in total is: 6 secs
+</strong>
+<div class='input'>dnetwork
+</div>
+<div class='output'>An object of S4 class 'Dnetwork'
+@adjMatrix: a weighted symmetric matrix of 36 domains X 36 domains 
+@nodeInfo (InfoDataFrame)
+  nodeNames: PF00769 PF00173 PF02786 ... PF00332 PF00872 (36 total)
+  nodeAttr: id
+</div>
+<div class='input'>### heatmap the adjacency matrix of the domain network
+Adj_GOMF <- as.matrix(adjMatrix(dnetwork))
+visHeatmapAdv(Adj_GOMF, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOMF semantic similarity")
+</div>
+<a href="javascript:newWin('Basu-142.png', 'Basu-142.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-142.png', width="400" /></a>
+<div class='input'>
+## 3) GOCC-based semantic similarity
+### load onto.GOCC (as 'Onto' object)
+g <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('onto.GOCC')
+</div>
+<strong class='message'>'onto.GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>g
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 3215 terms (parents/from) X 3215 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0005575 GO:0005576 GO:0005623 ... GO:0044192 GO:0044201
+    (3215 total)
+  nodeAttr: term_id term_name term_namespace term_distance
+</div>
+<div class='input'>### load Pfam domains annotated by GOCC (as 'Anno' object)
+Anno <- <a href='dcRDataLoader.html' target=dcRDataLoader>dcRDataLoader</a>('Pfam2GOCC')
+</div>
+<strong class='message'>'Pfam2GOCC' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>Anno
+</div>
+<div class='output'>An object of S4 class 'Anno'
+@annoData: 2036 domains, 307 terms 
+@termData (InfoDataFrame)
+  termNames: GO:0005576 GO:0009295 GO:0016020 ... GO:0070188 GO:0042729
+    (307 total)
+  tvarLabels: ID Name Namespace Distance
+@domainData (InfoDataFrame)
+  domainNames: PF00001 PF00002 PF00003 ... PF15550 PF15556 (2036 total)
+  dvarLabels: id level description
+</div>
+<div class='input'>### prepare for ontology appended with annotation information
+dag <- <a href='dcDAGannotate.html' target=dcDAGannotate>dcDAGannotate</a>(g, annotations=Anno, path.mode="shortest_paths",verbose=FALSE)
+dag
+</div>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 417 terms (parents/from) X 417 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0005575 GO:0005576 GO:0009295 ... GO:0070188 GO:0042729
+    (417 total)
+  nodeAttr: term_id term_name term_namespace term_distance annotations
+    IC
+</div>
+<div class='input'>### calculate GOCC-based pair-wise semantic similarity between domains
+dnetwork <- <a href='dcDAGdomainSim.html' target=dcDAGdomainSim>dcDAGdomainSim</a>(g=dag, domains=as.character(domains$Pfam), method.domain="BM.average", method.term="Resnik", parallel=FALSE, verbose=TRUE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:18:44</strong>
+<strong class='message'></strong>
+<strong class='message'>First, extract all annotatable domains (2015-07-23 12:18:44)...</strong>
+<strong class='message'>	there are 8 input domains amongst 2036 annotatable domains</strong>
+<strong class='message'>Second, pre-compute semantic similarity between 8 terms (forced to be the most specific for each domain) using Resnik method (2015-07-23 12:18:46)...</strong>
+<strong class='message'>Last, calculate pair-wise semantic similarity between 8 domains using BM.average method (2015-07-23 12:18:47)...</strong>
+<strong class='message'>	1 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	2 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	3 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	4 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	5 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	6 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'>	7 out of 8 (2015-07-23 12:18:47)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2015-07-23 12:18:47</strong>
+<strong class='message'>Runtime in total is: 3 secs
+</strong>
+<div class='input'>dnetwork
+</div>
+<div class='output'>An object of S4 class 'Dnetwork'
+@adjMatrix: a weighted symmetric matrix of 8 domains X 8 domains 
+@nodeInfo (InfoDataFrame)
+  nodeNames: PF00769 PF01496 PF05955 ... PF00520 PF00083 (8 total)
+  nodeAttr: id
+</div>
+<div class='input'>### heatmap the adjacency matrix of the domain network
+Adj_GOCC <- as.matrix(adjMatrix(dnetwork))
+visHeatmapAdv(Adj_GOCC, Rowv=F, Colv=F, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,1.5), cexRow=0.7, cexCol=0.7, KeyValueName="GOCC semantic similarity")
+</div>
+<a href="javascript:newWin('Basu-173.png', 'Basu-173.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-173.png', width="400" /></a>
+<div class='input'>
+## 4) Obtain GO-based overall semantic similarity via merging all three subontology (GOBP, GOMF and GOCC) based semantic similarity
+allnodes <- sort(unique(c(rownames(Adj_GOBP), rownames(Adj_GOMF), rownames(Adj_GOCC))))
+D <- matrix(0, nrow=length(allnodes), ncol=length(allnodes))
+colnames(D) <- rownames(D) <- allnodes
+### add Adj_GOBP
+ind <- match(rownames(Adj_GOBP), allnodes)
+D[ind,ind] <- D[ind,ind]+Adj_GOBP
+### add Adj_GOMF
+ind <- match(rownames(Adj_GOMF), allnodes)
+D[ind,ind] <- D[ind,ind]+Adj_GOMF
+### add Adj_GOCC
+ind <- match(rownames(Adj_GOCC), allnodes)
+D[ind,ind] <- D[ind,ind]+Adj_GOCC
+### heatmap the GO-based overall semantic similarity
+visHeatmapAdv(D, Rowv=T, Colv=T, dendrogram="none", colormap="white-lightpink-darkred", zlim=c(0,2), cexRow=0.5, cexCol=0.5, KeyValueName="GO overall semantic similarity")</div>
+<a href="javascript:newWin('Basu-175.png', 'Basu-175.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='Basu-175.png', width="400" /></a>
+      </pre>
+    </div>
+
+  <div class="span4">
+
+    <h2>Source demo</h2>
+    <a href="javascript:newWin('demo/Basu.r', 'demo/Basu.r', '1200', '1200')" title="Click to view"><B><code>Basu.r</code></B></a>
+    
+    <h2>Functions used in this demo</h2>
+    <ul>
+      <li><a href="dcRDataLoader.html">dcRDataLoader</a></li>
+      <li><a href="dcEnrichment.html">dcEnrichment</a></li>
+      <li><a href="visEnrichment.html">visEnrichment</a></li>
+      <li><a href="dcDAGannotate.html">dcDAGannotate</a></li>
+      <li><a href="dcDAGdomainSim.html">dcDAGdomainSim</a></li>
+    </ul>
+    
+    <!--
+    
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    <h2>Author</h2>
+    Hai Fang and Julian Gough
+    
+    -->
+    
+  </div>
+
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

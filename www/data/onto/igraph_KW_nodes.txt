@@ -1,0 +1,1170 @@
+name	term_id	term_name	term_namespace	term_distance
+KW:0001	KW:0001	2Fe-2S	Ligand	3
+KW:0003	KW:0003	3Fe-4S	Ligand	3
+KW:0004	KW:0004	4Fe-4S	Ligand	3
+KW:0005	KW:0005	Acetoin biosynthesis	Biological_process	2
+KW:0006	KW:0006	Acetoin catabolism	Biological_process	2
+KW:0007	KW:0007	Acetylation	PTM	2
+KW:0008	KW:0008	Acetylcholine receptor inhibiting toxin	Molecular_function	5
+KW:0009	KW:0009	Actin-binding	Ligand	2
+KW:0010	KW:0010	Activator	Molecular_function	2
+KW:0011	KW:0011	Acute phase	Biological_process	2
+KW:0012	KW:0012	Acyltransferase	Molecular_function	3
+KW:0013	KW:0013	ADP-ribosylation	PTM	2
+KW:0014	KW:0014	AIDS	Disease	2
+KW:0015	KW:0015	Albinism	Disease	2
+KW:0016	KW:0016	Alginate biosynthesis	Biological_process	2
+KW:0017	KW:0017	Alkaloid metabolism	Biological_process	2
+KW:0019	KW:0019	Alkylphosphonate uptake	Biological_process	2
+KW:0020	KW:0020	Allergen	Disease	2
+KW:0022	KW:0022	Alpha-amylase inhibitor	Molecular_function	2
+KW:0023	KW:0023	Alport syndrome	Disease	2
+KW:0024	KW:0024	Alternative initiation	Coding_sequence_diversity	2
+KW:0025	KW:0025	Alternative splicing	Coding_sequence_diversity	2
+KW:0026	KW:0026	Alzheimer disease	Disease	2
+KW:0027	KW:0027	Amidation	PTM	2
+KW:0028	KW:0028	Amino-acid biosynthesis	Biological_process	2
+KW:0029	KW:0029	Amino-acid transport	Biological_process	3
+KW:0030	KW:0030	Aminoacyl-tRNA synthetase	Molecular_function	3
+KW:0031	KW:0031	Aminopeptidase	Molecular_function	4
+KW:0032	KW:0032	Aminotransferase	Molecular_function	3
+KW:0034	KW:0034	Amyloid	Cellular_component	2
+KW:0035	KW:0035	Amyloplast	Cellular_component	3
+KW:0036	KW:0036	Amyotrophic lateral sclerosis	Disease	3
+KW:0037	KW:0037	Angiogenesis	Biological_process	2
+KW:0038	KW:0038	Ectodermal dysplasia	Disease	2
+KW:0039	KW:0039	Anion exchange	Biological_process	4
+KW:0040	KW:0040	ANK repeat	Domain	2
+KW:0041	KW:0041	Annexin	Domain	2
+KW:0042	KW:0042	Antenna complex	Cellular_component	2
+KW:0043	KW:0043	Tumor suppressor	Disease	2
+KW:0044	KW:0044	Antibiotic	Molecular_function	3
+KW:0045	KW:0045	Antibiotic biosynthesis	Biological_process	2
+KW:0046	KW:0046	Antibiotic resistance	Biological_process	2
+KW:0047	KW:0047	Antifreeze protein	Molecular_function	2
+KW:0049	KW:0049	Antioxidant	Molecular_function	2
+KW:0050	KW:0050	Antiport	Biological_process	3
+KW:0051	KW:0051	Antiviral defense	Biological_process	2
+KW:0052	KW:0052	Apoplast	Cellular_component	2
+KW:0053	KW:0053	Apoptosis	Biological_process	2
+KW:0054	KW:0054	Arabinose catabolism	Biological_process	3
+KW:0055	KW:0055	Arginine biosynthesis	Biological_process	3
+KW:0056	KW:0056	Arginine metabolism	Biological_process	2
+KW:0057	KW:0057	Aromatic amino acid biosynthesis	Biological_process	3
+KW:0058	KW:0058	Aromatic hydrocarbons catabolism	Biological_process	2
+KW:0059	KW:0059	Arsenical resistance	Biological_process	2
+KW:0060	KW:0060	Ascorbate biosynthesis	Biological_process	2
+KW:0061	KW:0061	Asparagine biosynthesis	Biological_process	3
+KW:0062	KW:0062	Aspartic protease inhibitor	Molecular_function	3
+KW:0063	KW:0063	Aspartyl esterase	Molecular_function	3
+KW:0064	KW:0064	Aspartyl protease	Molecular_function	4
+KW:0065	KW:0065	Atherosclerosis	Disease	2
+KW:0066	KW:0066	ATP synthesis	Biological_process	2
+KW:0067	KW:0067	ATP-binding	Ligand	3
+KW:0068	KW:0068	Autocatalytic cleavage	PTM	2
+KW:0069	KW:0069	Autoimmune encephalomyelitis	Disease	2
+KW:0070	KW:0070	Autoimmune uveitis	Disease	2
+KW:0071	KW:0071	Autoinducer synthesis	Biological_process	2
+KW:0072	KW:0072	Autophagy	Biological_process	2
+KW:0073	KW:0073	Auxin biosynthesis	Biological_process	2
+KW:0075	KW:0075	B-cell activation	Biological_process	2
+KW:0076	KW:0076	Bacteriochlorophyll	Ligand	4
+KW:0077	KW:0077	Bacteriochlorophyll biosynthesis	Biological_process	3
+KW:0078	KW:0078	Bacteriocin	Molecular_function	4
+KW:0079	KW:0079	Bacteriocin immunity	Biological_process	2
+KW:0080	KW:0080	Bacteriocin transport	Biological_process	4
+KW:0081	KW:0081	Bacteriolytic enzyme	Molecular_function	3
+KW:0082	KW:0082	Bait region	Domain	2
+KW:0083	KW:0083	Bardet-Biedl syndrome	Disease	3
+KW:0084	KW:0084	Basement membrane	Cellular_component	4
+KW:0085	KW:0085	Behavior	Biological_process	2
+KW:0086	KW:0086	Bence-Jones protein	Molecular_function	2
+KW:0087	KW:0087	Bernard Soulier syndrome	Disease	2
+KW:0088	KW:0088	Bile acid catabolism	Biological_process	4
+KW:0089	KW:0089	Bile pigment	Ligand	3
+KW:0090	KW:0090	Biological rhythms	Biological_process	2
+KW:0091	KW:0091	Biomineralization	Biological_process	2
+KW:0092	KW:0092	Biotin	Ligand	2
+KW:0093	KW:0093	Biotin biosynthesis	Biological_process	2
+KW:0094	KW:0094	Blood coagulation	Biological_process	3
+KW:0095	KW:0095	Blood group antigen	Molecular_function	2
+KW:0100	KW:0100	Branched-chain amino acid biosynthesis	Biological_process	3
+KW:0101	KW:0101	Branched-chain amino acid catabolism	Biological_process	2
+KW:0102	KW:0102	Bromination	PTM	2
+KW:0103	KW:0103	Bromodomain	Domain	2
+KW:0104	KW:0104	Cadmium	Ligand	2
+KW:0105	KW:0105	Cadmium resistance	Biological_process	2
+KW:0106	KW:0106	Calcium	Ligand	2
+KW:0107	KW:0107	Calcium channel	Molecular_function	3
+KW:0108	KW:0108	Calcium channel impairing toxin	Molecular_function	4
+KW:0109	KW:0109	Calcium transport	Biological_process	4
+KW:0111	KW:0111	Calcium/phospholipid-binding	Ligand	3
+KW:0112	KW:0112	Calmodulin-binding	Ligand	2
+KW:0113	KW:0113	Calvin cycle	Biological_process	2
+KW:0114	KW:0114	cAMP	Ligand	2
+KW:0115	KW:0115	cAMP biosynthesis	Biological_process	2
+KW:0116	KW:0116	cAMP-binding	Ligand	3
+KW:0117	KW:0117	Actin capping	Molecular_function	2
+KW:0118	KW:0118	Viral capsid assembly	Biological_process	3
+KW:0119	KW:0119	Carbohydrate metabolism	Biological_process	2
+KW:0120	KW:0120	Carbon dioxide fixation	Biological_process	2
+KW:0121	KW:0121	Carboxypeptidase	Molecular_function	4
+KW:0122	KW:0122	Cardiomyopathy	Disease	2
+KW:0123	KW:0123	Cardiotoxin	Molecular_function	3
+KW:0124	KW:0124	Carnitine biosynthesis	Biological_process	2
+KW:0125	KW:0125	Carotenoid biosynthesis	Biological_process	2
+KW:0127	KW:0127	Catecholamine biosynthesis	Biological_process	2
+KW:0128	KW:0128	Catecholamine metabolism	Biological_process	2
+KW:0129	KW:0129	CBS domain	Domain	2
+KW:0130	KW:0130	Cell adhesion	Biological_process	2
+KW:0131	KW:0131	Cell cycle	Biological_process	2
+KW:0132	KW:0132	Cell division	Biological_process	3
+KW:0133	KW:0133	Cell shape	Biological_process	2
+KW:0134	KW:0134	Cell wall	Cellular_component	3
+KW:0135	KW:0135	Cellulose biosynthesis	Biological_process	2
+KW:0136	KW:0136	Cellulose degradation	Biological_process	4
+KW:0137	KW:0137	Centromere	Cellular_component	2
+KW:0138	KW:0138	CF(0)	Cellular_component	2
+KW:0139	KW:0139	CF(1)	Cellular_component	2
+KW:0140	KW:0140	cGMP	Ligand	2
+KW:0141	KW:0141	cGMP biosynthesis	Biological_process	2
+KW:0142	KW:0142	cGMP-binding	Ligand	3
+KW:0143	KW:0143	Chaperone	Molecular_function	2
+KW:0144	KW:0144	Charcot-Marie-Tooth disease	Disease	3
+KW:0145	KW:0145	Chemotaxis	Biological_process	2
+KW:0146	KW:0146	Chitin degradation	Biological_process	4
+KW:0147	KW:0147	Chitin-binding	Ligand	2
+KW:0148	KW:0148	Chlorophyll	Ligand	3
+KW:0149	KW:0149	Chlorophyll biosynthesis	Biological_process	2
+KW:0150	KW:0150	Chloroplast	Cellular_component	3
+KW:0151	KW:0151	Chlorosome	Cellular_component	2
+KW:0152	KW:0152	Cholesterol biosynthesis	Biological_process	6
+KW:0153	KW:0153	Cholesterol metabolism	Biological_process	5
+KW:0155	KW:0155	Chromate resistance	Biological_process	2
+KW:0156	KW:0156	Chromatin regulator	Molecular_function	2
+KW:0157	KW:0157	Chromophore	Ligand	2
+KW:0158	KW:0158	Chromosome	Cellular_component	2
+KW:0159	KW:0159	Chromosome partition	Biological_process	2
+KW:0160	KW:0160	Chromosomal rearrangement	Coding_sequence_diversity	2
+KW:0161	KW:0161	Chronic granulomatous disease	Disease	2
+KW:0162	KW:0162	Chylomicron	Cellular_component	2
+KW:0163	KW:0163	Citrate utilization	Biological_process	2
+KW:0164	KW:0164	Citrullination	PTM	2
+KW:0165	KW:0165	Cleavage on pair of basic residues	PTM	2
+KW:0166	KW:0166	Nematocyst	Cellular_component	2
+KW:0167	KW:0167	Capsid protein	Cellular_component	3
+KW:0168	KW:0168	Coated pit	Cellular_component	3
+KW:0169	KW:0169	Cobalamin biosynthesis	Biological_process	2
+KW:0170	KW:0170	Cobalt	Ligand	2
+KW:0171	KW:0171	Cobalt transport	Biological_process	4
+KW:0172	KW:0172	Cockayne syndrome	Disease	2
+KW:0173	KW:0173	Coenzyme A biosynthesis	Biological_process	2
+KW:0174	KW:0174	Coenzyme M biosynthesis	Biological_process	2
+KW:0175	KW:0175	Coiled coil	Domain	2
+KW:0176	KW:0176	Collagen	Domain	2
+KW:0177	KW:0177	Collagen degradation	Biological_process	2
+KW:0178	KW:0178	Competence	Biological_process	2
+KW:0179	KW:0179	Complement alternate pathway	Biological_process	4
+KW:0180	KW:0180	Complement pathway	Biological_process	4
+KW:0182	KW:0182	Cone-rod dystrophy	Disease	2
+KW:0183	KW:0183	Conidiation	Biological_process	3
+KW:0184	KW:0184	Conjugation	Biological_process	2
+KW:0186	KW:0186	Copper	Ligand	2
+KW:0187	KW:0187	Copper transport	Biological_process	4
+KW:0188	KW:0188	Copulatory plug	Cellular_component	2
+KW:0190	KW:0190	Covalent protein-DNA linkage	PTM	2
+KW:0191	KW:0191	Covalent protein-RNA linkage	PTM	2
+KW:0192	KW:0192	Crown gall tumor	Disease	2
+KW:0193	KW:0193	Cuticle	Cellular_component	2
+KW:0194	KW:0194	Cyanelle	Cellular_component	3
+KW:0195	KW:0195	Cyclin	Molecular_function	2
+KW:0196	KW:0196	Cycloheximide resistance	Biological_process	3
+KW:0197	KW:0197	Cyclosporin	Ligand	2
+KW:0198	KW:0198	Cysteine biosynthesis	Biological_process	3
+KW:0199	KW:0199	Cystinuria	Disease	2
+KW:0200	KW:0200	Cytadherence	Biological_process	2
+KW:0201	KW:0201	Cytochrome c-type biogenesis	Biological_process	2
+KW:0202	KW:0202	Cytokine	Molecular_function	2
+KW:0203	KW:0203	Cytokinin biosynthesis	Biological_process	2
+KW:0204	KW:0204	Cytolysis	Biological_process	2
+KW:0205	KW:0205	Cytosine metabolism	Biological_process	2
+KW:0206	KW:0206	Cytoskeleton	Cellular_component	3
+KW:0208	KW:0208	D-amino acid	PTM	2
+KW:0209	KW:0209	Deafness	Disease	2
+KW:0210	KW:0210	Decarboxylase	Molecular_function	3
+KW:0211	KW:0211	Defensin	Molecular_function	3
+KW:0213	KW:0213	Dejerine-Sottas syndrome	Disease	3
+KW:0214	KW:0214	Dental caries	Disease	2
+KW:0215	KW:0215	Deoxyribonucleotide synthesis	Biological_process	2
+KW:0216	KW:0216	Detoxification	Biological_process	2
+KW:0217	KW:0217	Developmental protein	Molecular_function	2
+KW:0218	KW:0218	Diabetes insipidus	Disease	2
+KW:0219	KW:0219	Diabetes mellitus	Disease	2
+KW:0220	KW:0220	Diaminopimelate biosynthesis	Biological_process	2
+KW:0221	KW:0221	Differentiation	Biological_process	2
+KW:0222	KW:0222	Digestion	Biological_process	2
+KW:0223	KW:0223	Dioxygenase	Molecular_function	3
+KW:0224	KW:0224	Dipeptidase	Molecular_function	4
+KW:0225	KW:0225	Disease mutation	Disease	2
+KW:0226	KW:0226	DNA condensation	Biological_process	2
+KW:0227	KW:0227	DNA damage	Biological_process	2
+KW:0228	KW:0228	DNA excision	Biological_process	2
+KW:0229	KW:0229	DNA integration	Biological_process	2
+KW:0230	KW:0230	DNA invertase	Molecular_function	2
+KW:0231	KW:0231	Viral genome packaging	Biological_process	3
+KW:0233	KW:0233	DNA recombination	Biological_process	2
+KW:0234	KW:0234	DNA repair	Biological_process	3
+KW:0235	KW:0235	DNA replication	Biological_process	2
+KW:0236	KW:0236	DNA replication inhibitor	Molecular_function	2
+KW:0237	KW:0237	DNA synthesis	Biological_process	2
+KW:0238	KW:0238	DNA-binding	Ligand	2
+KW:0239	KW:0239	DNA-directed DNA polymerase	Molecular_function	4
+KW:0240	KW:0240	DNA-directed RNA polymerase	Cellular_component	2
+KW:0241	KW:0241	Down syndrome	Disease	2
+KW:0242	KW:0242	Dwarfism	Disease	2
+KW:0243	KW:0243	Dynein	Cellular_component	2
+KW:0244	KW:0244	Early protein	Developmental_stage	2
+KW:0245	KW:0245	EGF-like domain	Domain	2
+KW:0248	KW:0248	Ehlers-Danlos syndrome	Disease	2
+KW:0249	KW:0249	Electron transport	Biological_process	3
+KW:0250	KW:0250	Elliptocytosis	Disease	3
+KW:0251	KW:0251	Elongation factor	Molecular_function	2
+KW:0254	KW:0254	Endocytosis	Biological_process	2
+KW:0255	KW:0255	Endonuclease	Molecular_function	4
+KW:0256	KW:0256	Endoplasmic reticulum	Cellular_component	2
+KW:0257	KW:0257	Endorphin	Molecular_function	2
+KW:0259	KW:0259	Enterobactin biosynthesis	Biological_process	2
+KW:0260	KW:0260	Enterotoxin	Molecular_function	3
+KW:0261	KW:0261	Viral envelope protein	Cellular_component	3
+KW:0263	KW:0263	Epidermolysis bullosa	Disease	2
+KW:0265	KW:0265	Erythrocyte maturation	Biological_process	2
+KW:0266	KW:0266	Ethylene biosynthesis	Biological_process	2
+KW:0267	KW:0267	Excision nuclease	Molecular_function	2
+KW:0268	KW:0268	Exocytosis	Biological_process	2
+KW:0269	KW:0269	Exonuclease	Molecular_function	4
+KW:0270	KW:0270	Exopolysaccharide synthesis	Biological_process	2
+KW:0271	KW:0271	Exosome	Cellular_component	2
+KW:0272	KW:0272	Extracellular matrix	Cellular_component	3
+KW:0273	KW:0273	Eye lens protein	Molecular_function	2
+KW:0274	KW:0274	FAD	Ligand	3
+KW:0275	KW:0275	Fatty acid biosynthesis	Biological_process	4
+KW:0276	KW:0276	Fatty acid metabolism	Biological_process	3
+KW:0278	KW:0278	Fertilization	Biological_process	2
+KW:0280	KW:0280	Fibrinolysis	Biological_process	4
+KW:0281	KW:0281	Fimbrium	Cellular_component	2
+KW:0282	KW:0282	Flagellum	Cellular_component	4
+KW:0283	KW:0283	Flagellar rotation	Biological_process	2
+KW:0284	KW:0284	Flavonoid biosynthesis	Biological_process	2
+KW:0285	KW:0285	Flavoprotein	Ligand	2
+KW:0286	KW:0286	Flight	Biological_process	2
+KW:0287	KW:0287	Flowering	Biological_process	2
+KW:0288	KW:0288	FMN	Ligand	3
+KW:0289	KW:0289	Folate biosynthesis	Biological_process	2
+KW:0290	KW:0290	Folate-binding	Ligand	2
+KW:0291	KW:0291	Formylation	PTM	2
+KW:0292	KW:0292	Fruit ripening	Biological_process	2
+KW:0293	KW:0293	Fruiting body	Developmental_stage	2
+KW:0294	KW:0294	Fucose metabolism	Biological_process	3
+KW:0295	KW:0295	Fungicide	Molecular_function	3
+KW:0297	KW:0297	G-protein coupled receptor	Molecular_function	3
+KW:0298	KW:0298	Galactitol metabolism	Biological_process	2
+KW:0299	KW:0299	Galactose metabolism	Biological_process	3
+KW:0301	KW:0301	Gamma-carboxyglutamic acid	PTM	2
+KW:0302	KW:0302	Gap protein	Molecular_function	3
+KW:0303	KW:0303	Gap junction	Cellular_component	3
+KW:0304	KW:0304	Gas vesicle	Cellular_component	3
+KW:0305	KW:0305	Gaseous exchange	Biological_process	2
+KW:0306	KW:0306	Gastrulation	Biological_process	2
+KW:0307	KW:0307	Gaucher disease	Disease	2
+KW:0309	KW:0309	Germination	Biological_process	2
+KW:0311	KW:0311	Gluconate utilization	Biological_process	2
+KW:0312	KW:0312	Gluconeogenesis	Biological_process	2
+KW:0313	KW:0313	Glucose metabolism	Biological_process	3
+KW:0314	KW:0314	Glutamate biosynthesis	Biological_process	3
+KW:0315	KW:0315	Glutamine amidotransferase	Domain	2
+KW:0316	KW:0316	Glutaricaciduria	Disease	2
+KW:0317	KW:0317	Glutathione biosynthesis	Biological_process	2
+KW:0318	KW:0318	Glutathionylation	PTM	2
+KW:0319	KW:0319	Glycerol metabolism	Biological_process	2
+KW:0320	KW:0320	Glycogen biosynthesis	Biological_process	2
+KW:0321	KW:0321	Glycogen metabolism	Biological_process	3
+KW:0322	KW:0322	Glycogen storage disease	Disease	2
+KW:0323	KW:0323	Glycolate pathway	Biological_process	2
+KW:0324	KW:0324	Glycolysis	Biological_process	2
+KW:0325	KW:0325	Glycoprotein	PTM	2
+KW:0326	KW:0326	Glycosidase	Molecular_function	3
+KW:0327	KW:0327	Glycosome	Cellular_component	2
+KW:0328	KW:0328	Glycosyltransferase	Molecular_function	3
+KW:0329	KW:0329	Glyoxylate bypass	Biological_process	2
+KW:0330	KW:0330	Glyoxysome	Cellular_component	2
+KW:0331	KW:0331	Gangliosidosis	Disease	2
+KW:0332	KW:0332	GMP biosynthesis	Biological_process	3
+KW:0333	KW:0333	Golgi apparatus	Cellular_component	2
+KW:0334	KW:0334	Gonadal differentiation	Biological_process	3
+KW:0335	KW:0335	Gout	Disease	2
+KW:0336	KW:0336	GPI-anchor	Cellular_component	3
+KW:0337	KW:0337	GPI-anchor biosynthesis	Biological_process	2
+KW:0338	KW:0338	Growth arrest	Biological_process	3
+KW:0339	KW:0339	Growth factor	Molecular_function	2
+KW:0340	KW:0340	Growth factor binding	Ligand	2
+KW:0341	KW:0341	Growth regulation	Biological_process	2
+KW:0342	KW:0342	GTP-binding	Ligand	3
+KW:0343	KW:0343	GTPase activation	Molecular_function	2
+KW:0344	KW:0344	Guanine-nucleotide releasing factor	Molecular_function	2
+KW:0345	KW:0345	HDL	Cellular_component	2
+KW:0346	KW:0346	Stress response	Biological_process	2
+KW:0347	KW:0347	Helicase	Molecular_function	3
+KW:0348	KW:0348	Hemagglutinin	Molecular_function	2
+KW:0349	KW:0349	Heme	Ligand	3
+KW:0350	KW:0350	Heme biosynthesis	Biological_process	2
+KW:0351	KW:0351	Hemoglobin-binding	Ligand	2
+KW:0353	KW:0353	Hemolymph clotting	Biological_process	2
+KW:0354	KW:0354	Hemolysis	Biological_process	3
+KW:0355	KW:0355	Hemophilia	Disease	2
+KW:0356	KW:0356	Hemostasis	Biological_process	2
+KW:0357	KW:0357	Heparan sulfate	PTM	4
+KW:0358	KW:0358	Heparin-binding	Ligand	2
+KW:0359	KW:0359	Herbicide resistance	Biological_process	2
+KW:0360	KW:0360	Hereditary hemolytic anemia	Disease	2
+KW:0361	KW:0361	Hereditary multiple exostoses	Disease	2
+KW:0362	KW:0362	Hereditary nonpolyposis colorectal cancer	Disease	2
+KW:0363	KW:0363	Hermansky-Pudlak syndrome	Disease	3
+KW:0364	KW:0364	Heterocyst	Developmental_stage	2
+KW:0367	KW:0367	Hirschsprung disease	Disease	2
+KW:0368	KW:0368	Histidine biosynthesis	Biological_process	3
+KW:0369	KW:0369	Histidine metabolism	Biological_process	2
+KW:0370	KW:0370	Holoprosencephaly	Disease	2
+KW:0371	KW:0371	Homeobox	Domain	2
+KW:0372	KW:0372	Hormone	Molecular_function	2
+KW:0373	KW:0373	Hyaluronic acid	Ligand	2
+KW:0375	KW:0375	Hydrogen ion transport	Biological_process	4
+KW:0376	KW:0376	Hydrogen peroxide	Biological_process	2
+KW:0377	KW:0377	Hydrogenosome	Cellular_component	2
+KW:0378	KW:0378	Hydrolase	Molecular_function	2
+KW:0379	KW:0379	Hydroxylation	PTM	2
+KW:0380	KW:0380	Hyperlipidemia	Disease	2
+KW:0381	KW:0381	Hypersensitive response	Biological_process	3
+KW:0382	KW:0382	Hypotensive agent	Molecular_function	2
+KW:0385	KW:0385	Hypusine	PTM	2
+KW:0386	KW:0386	Hypusine biosynthesis	Biological_process	2
+KW:0387	KW:0387	Ice nucleation	Molecular_function	2
+KW:0388	KW:0388	IgA-binding protein	Ligand	2
+KW:0389	KW:0389	IgE-binding protein	Ligand	2
+KW:0390	KW:0390	IgG-binding protein	Ligand	2
+KW:0391	KW:0391	Immunity	Biological_process	2
+KW:0392	KW:0392	Immunoglobulin C region	Domain	3
+KW:0393	KW:0393	Immunoglobulin domain	Domain	2
+KW:0394	KW:0394	Immunoglobulin V region	Domain	3
+KW:0395	KW:0395	Inflammatory response	Biological_process	2
+KW:0396	KW:0396	Initiation factor	Molecular_function	2
+KW:0398	KW:0398	Inositol biosynthesis	Biological_process	2
+KW:0399	KW:0399	Innate immunity	Biological_process	3
+KW:0401	KW:0401	Integrin	Molecular_function	2
+KW:0403	KW:0403	Intermediate filament	Cellular_component	2
+KW:0404	KW:0404	Intron homing	Biological_process	2
+KW:0405	KW:0405	Iodination	PTM	2
+KW:0406	KW:0406	Ion transport	Biological_process	3
+KW:0407	KW:0407	Ion channel	Molecular_function	2
+KW:0408	KW:0408	Iron	Ligand	2
+KW:0409	KW:0409	Iron storage	Biological_process	2
+KW:0410	KW:0410	Iron transport	Ligand	3
+KW:0411	KW:0411	Iron-sulfur	Ligand	3
+KW:0412	KW:0412	Isoleucine biosynthesis	Biological_process	4
+KW:0413	KW:0413	Isomerase	Molecular_function	2
+KW:0414	KW:0414	Isoprene biosynthesis	Biological_process	2
+KW:0415	KW:0415	Karyogamy	Biological_process	2
+KW:0416	KW:0416	Keratin	Cellular_component	2
+KW:0417	KW:0417	Keratinization	Biological_process	2
+KW:0418	KW:0418	Kinase	Molecular_function	3
+KW:0419	KW:0419	Kinetoplast	Cellular_component	3
+KW:0420	KW:0420	Kringle	Domain	2
+KW:0421	KW:0421	Lactation	Biological_process	2
+KW:0422	KW:0422	Lactose biosynthesis	Biological_process	2
+KW:0423	KW:0423	Lactose metabolism	Biological_process	2
+KW:0424	KW:0424	Laminin EGF-like domain	Domain	2
+KW:0425	KW:0425	Lantibiotic	Molecular_function	5
+KW:0426	KW:0426	Late protein	Developmental_stage	2
+KW:0427	KW:0427	LDL	Cellular_component	2
+KW:0428	KW:0428	Leader peptide	Molecular_function	2
+KW:0429	KW:0429	Leber hereditary optic neuropathy	Disease	2
+KW:0430	KW:0430	Lectin	Ligand	2
+KW:0431	KW:0431	Leigh syndrome	Disease	2
+KW:0432	KW:0432	Leucine biosynthesis	Biological_process	4
+KW:0433	KW:0433	Leucine-rich repeat	Domain	2
+KW:0434	KW:0434	Leukotriene biosynthesis	Biological_process	2
+KW:0435	KW:0435	Li-Fraumeni syndrome	Disease	2
+KW:0436	KW:0436	Ligase	Molecular_function	2
+KW:0437	KW:0437	Light-harvesting polypeptide	Molecular_function	2
+KW:0438	KW:0438	Lignin biosynthesis	Biological_process	2
+KW:0439	KW:0439	Lignin degradation	Biological_process	2
+KW:0440	KW:0440	LIM domain	Domain	2
+KW:0441	KW:0441	Lipid A biosynthesis	Biological_process	4
+KW:0442	KW:0442	Lipid degradation	Biological_process	3
+KW:0443	KW:0443	Lipid metabolism	Biological_process	2
+KW:0444	KW:0444	Lipid biosynthesis	Biological_process	3
+KW:0445	KW:0445	Lipid transport	Biological_process	3
+KW:0446	KW:0446	Lipid-binding	Ligand	2
+KW:0448	KW:0448	Lipopolysaccharide biosynthesis	Biological_process	2
+KW:0449	KW:0449	Lipoprotein	PTM	2
+KW:0450	KW:0450	Lipoyl	Domain	2
+KW:0451	KW:0451	Lissencephaly	Disease	2
+KW:0452	KW:0452	Lithium	Ligand	2
+KW:0454	KW:0454	Long QT syndrome	Disease	2
+KW:0455	KW:0455	Luminescence	Biological_process	2
+KW:0456	KW:0456	Lyase	Molecular_function	2
+KW:0457	KW:0457	Lysine biosynthesis	Biological_process	3
+KW:0458	KW:0458	Lysosome	Cellular_component	2
+KW:0460	KW:0460	Magnesium	Ligand	2
+KW:0461	KW:0461	Malaria	Disease	2
+KW:0462	KW:0462	Maltose metabolism	Biological_process	2
+KW:0463	KW:0463	Mandelate pathway	Biological_process	2
+KW:0464	KW:0464	Manganese	Ligand	2
+KW:0465	KW:0465	Mannose-binding	Ligand	3
+KW:0466	KW:0466	Maple syrup urine disease	Disease	2
+KW:0467	KW:0467	Mast cell degranulation	Biological_process	2
+KW:0468	KW:0468	Viral matrix protein	Cellular_component	3
+KW:0469	KW:0469	Meiosis	Biological_process	2
+KW:0470	KW:0470	Melanin biosynthesis	Biological_process	2
+KW:0471	KW:0471	Melatonin biosynthesis	Biological_process	2
+KW:0472	KW:0472	Membrane	Cellular_component	2
+KW:0473	KW:0473	Membrane attack complex	Cellular_component	2
+KW:0474	KW:0474	Menaquinone biosynthesis	Biological_process	2
+KW:0475	KW:0475	Mercuric resistance	Biological_process	2
+KW:0476	KW:0476	Mercury	Ligand	2
+KW:0477	KW:0477	Merozoite	Developmental_stage	2
+KW:0478	KW:0478	Metachromatic leukodystrophy	Disease	3
+KW:0479	KW:0479	Metal-binding	Ligand	2
+KW:0480	KW:0480	Metal-thiolate cluster	Ligand	3
+KW:0481	KW:0481	Metalloenzyme inhibitor	Molecular_function	2
+KW:0482	KW:0482	Metalloprotease	Molecular_function	4
+KW:0483	KW:0483	Metalloprotease inhibitor	Molecular_function	3
+KW:0484	KW:0484	Methanogenesis	Biological_process	2
+KW:0485	KW:0485	Methanol utilization	Biological_process	2
+KW:0486	KW:0486	Methionine biosynthesis	Biological_process	3
+KW:0487	KW:0487	Methotrexate resistance	Biological_process	2
+KW:0488	KW:0488	Methylation	PTM	2
+KW:0489	KW:0489	Methyltransferase	Molecular_function	3
+KW:0490	KW:0490	MHC I	Cellular_component	2
+KW:0491	KW:0491	MHC II	Cellular_component	2
+KW:0492	KW:0492	Microsome	Cellular_component	3
+KW:0493	KW:0493	Microtubule	Cellular_component	2
+KW:0494	KW:0494	Milk protein	Molecular_function	2
+KW:0495	KW:0495	Mineral balance	Biological_process	2
+KW:0496	KW:0496	Mitochondrion	Cellular_component	2
+KW:0497	KW:0497	Mitogen	Molecular_function	2
+KW:0498	KW:0498	Mitosis	Biological_process	4
+KW:0499	KW:0499	Mobility protein	Molecular_function	2
+KW:0500	KW:0500	Molybdenum	Ligand	2
+KW:0501	KW:0501	Molybdenum cofactor biosynthesis	Biological_process	2
+KW:0502	KW:0502	Monoclonal antibody	Molecular_function	2
+KW:0503	KW:0503	Monooxygenase	Molecular_function	3
+KW:0504	KW:0504	Morphogen	Molecular_function	2
+KW:0505	KW:0505	Motor protein	Molecular_function	2
+KW:0506	KW:0506	mRNA capping	Biological_process	3
+KW:0507	KW:0507	mRNA processing	Biological_process	2
+KW:0508	KW:0508	mRNA splicing	Biological_process	3
+KW:0509	KW:0509	mRNA transport	Biological_process	3
+KW:0510	KW:0510	Mucopolysaccharidosis	Disease	2
+KW:0514	KW:0514	Muscle protein	Molecular_function	2
+KW:0515	KW:0515	Mutator protein	Molecular_function	2
+KW:0517	KW:0517	Myogenesis	Biological_process	2
+KW:0518	KW:0518	Myosin	Molecular_function	3
+KW:0519	KW:0519	Myristate	PTM	3
+KW:0520	KW:0520	NAD	Ligand	2
+KW:0521	KW:0521	NADP	Ligand	2
+KW:0523	KW:0523	Neurodegeneration	Disease	2
+KW:0524	KW:0524	Neurogenesis	Biological_process	2
+KW:0525	KW:0525	Neuronal ceroid lipofuscinosis	Disease	3
+KW:0527	KW:0527	Neuropeptide	Molecular_function	2
+KW:0528	KW:0528	Neurotoxin	Molecular_function	3
+KW:0529	KW:0529	Neurotransmitter	Molecular_function	2
+KW:0530	KW:0530	Neurotransmitter biosynthesis	Biological_process	2
+KW:0531	KW:0531	Neurotransmitter degradation	Biological_process	2
+KW:0532	KW:0532	Neurotransmitter transport	Biological_process	3
+KW:0533	KW:0533	Nickel	Ligand	2
+KW:0534	KW:0534	Nitrate assimilation	Biological_process	2
+KW:0535	KW:0535	Nitrogen fixation	Biological_process	2
+KW:0536	KW:0536	Nodulation	Biological_process	2
+KW:0539	KW:0539	Nucleus	Cellular_component	2
+KW:0540	KW:0540	Nuclease	Molecular_function	3
+KW:0542	KW:0542	Nucleomorph	Cellular_component	2
+KW:0543	KW:0543	Viral nucleoprotein	Ligand	2
+KW:0544	KW:0544	Nucleosome core	Ligand	3
+KW:0545	KW:0545	Nucleotide biosynthesis	Biological_process	2
+KW:0546	KW:0546	Nucleotide metabolism	Biological_process	2
+KW:0547	KW:0547	Nucleotide-binding	Ligand	2
+KW:0548	KW:0548	Nucleotidyltransferase	Molecular_function	3
+KW:0549	KW:0549	Nylon degradation	Biological_process	2
+KW:0550	KW:0550	Obesity	Disease	2
+KW:0551	KW:0551	Lipid droplet	Cellular_component	2
+KW:0552	KW:0552	Olfaction	Biological_process	3
+KW:0553	KW:0553	Oncogene	Disease	2
+KW:0554	KW:0554	One-carbon metabolism	Biological_process	2
+KW:0555	KW:0555	Opioid peptide	Molecular_function	2
+KW:0556	KW:0556	Organic radical	PTM	2
+KW:0558	KW:0558	Oxidation	PTM	2
+KW:0560	KW:0560	Oxidoreductase	Molecular_function	2
+KW:0561	KW:0561	Oxygen transport	Biological_process	3
+KW:0562	KW:0562	Pair-rule protein	Molecular_function	3
+KW:0563	KW:0563	Paired box	Domain	2
+KW:0564	KW:0564	Palmitate	PTM	3
+KW:0566	KW:0566	Pantothenate biosynthesis	Biological_process	2
+KW:0568	KW:0568	Pathogenesis-related protein	Molecular_function	2
+KW:0570	KW:0570	Pentose shunt	Biological_process	2
+KW:0571	KW:0571	Peptide transport	Biological_process	4
+KW:0572	KW:0572	Peptidoglycan-anchor	PTM	2
+KW:0573	KW:0573	Peptidoglycan synthesis	Biological_process	2
+KW:0574	KW:0574	Periplasm	Cellular_component	2
+KW:0575	KW:0575	Peroxidase	Molecular_function	3
+KW:0576	KW:0576	Peroxisome	Cellular_component	2
+KW:0577	KW:0577	PHA biosynthesis	Biological_process	2
+KW:0578	KW:0578	Host cell lysis by virus	Biological_process	3
+KW:0581	KW:0581	Phagocytosis	Biological_process	2
+KW:0583	KW:0583	PHB biosynthesis	Biological_process	2
+KW:0584	KW:0584	Phenylalanine biosynthesis	Biological_process	4
+KW:0585	KW:0585	Phenylalanine catabolism	Biological_process	2
+KW:0586	KW:0586	Phenylketonuria	Disease	2
+KW:0587	KW:0587	Phenylpropanoid metabolism	Biological_process	2
+KW:0588	KW:0588	Pheromone	Molecular_function	2
+KW:0589	KW:0589	Pheromone response	Biological_process	2
+KW:0590	KW:0590	Pheromone-binding	Ligand	2
+KW:0592	KW:0592	Phosphate transport	Biological_process	3
+KW:0593	KW:0593	Phospholipase A2 inhibitor	Molecular_function	2
+KW:0594	KW:0594	Phospholipid biosynthesis	Biological_process	4
+KW:0595	KW:0595	Phospholipid degradation	Biological_process	4
+KW:0596	KW:0596	Phosphopantetheine	PTM	2
+KW:0597	KW:0597	Phosphoprotein	PTM	2
+KW:0598	KW:0598	Phosphotransferase system	Biological_process	2
+KW:0599	KW:0599	Photoprotein	Molecular_function	2
+KW:0600	KW:0600	Photoreceptor protein	Molecular_function	3
+KW:0601	KW:0601	Photorespiration	Biological_process	2
+KW:0602	KW:0602	Photosynthesis	Biological_process	2
+KW:0603	KW:0603	Photosystem I	Cellular_component	2
+KW:0604	KW:0604	Photosystem II	Cellular_component	2
+KW:0605	KW:0605	Phycobilisome	Cellular_component	2
+KW:0607	KW:0607	Phytochrome signaling pathway	Biological_process	2
+KW:0608	KW:0608	Pigment	Ligand	2
+KW:0611	KW:0611	Plant defense	Biological_process	2
+KW:0615	KW:0615	Plasmid copy control	Biological_process	2
+KW:0616	KW:0616	Plasmid partition	Biological_process	2
+KW:0617	KW:0617	Plasminogen activation	Biological_process	2
+KW:0618	KW:0618	Plastoquinone	Ligand	2
+KW:0620	KW:0620	Polyamine biosynthesis	Biological_process	2
+KW:0621	KW:0621	Polymorphism	Coding_sequence_diversity	2
+KW:0622	KW:0622	Neuropathy	Disease	2
+KW:0624	KW:0624	Polysaccharide degradation	Biological_process	3
+KW:0625	KW:0625	Polysaccharide transport	Biological_process	4
+KW:0626	KW:0626	Porin	Molecular_function	2
+KW:0627	KW:0627	Porphyrin biosynthesis	Biological_process	2
+KW:0628	KW:0628	Postsynaptic cell membrane	Cellular_component	4
+KW:0629	KW:0629	Postsynaptic neurotoxin	Molecular_function	4
+KW:0630	KW:0630	Potassium	Ligand	2
+KW:0631	KW:0631	Potassium channel	Biological_process	5
+KW:0632	KW:0632	Potassium channel impairing toxin	Molecular_function	4
+KW:0633	KW:0633	Potassium transport	Biological_process	4
+KW:0634	KW:0634	PQQ	Ligand	2
+KW:0635	KW:0635	Pregnancy	Biological_process	2
+KW:0636	KW:0636	Prenylation	PTM	3
+KW:0637	KW:0637	Prenyltransferase	Molecular_function	3
+KW:0638	KW:0638	Presynaptic neurotoxin	Molecular_function	4
+KW:0639	KW:0639	Primosome	Cellular_component	2
+KW:0640	KW:0640	Prion	Molecular_function	2
+KW:0641	KW:0641	Proline biosynthesis	Biological_process	3
+KW:0642	KW:0642	Proline metabolism	Biological_process	2
+KW:0643	KW:0643	Prostaglandin biosynthesis	Biological_process	5
+KW:0644	KW:0644	Prostaglandin metabolism	Biological_process	4
+KW:0645	KW:0645	Protease	Molecular_function	3
+KW:0646	KW:0646	Protease inhibitor	Molecular_function	2
+KW:0647	KW:0647	Proteasome	Cellular_component	2
+KW:0648	KW:0648	Protein biosynthesis	Biological_process	2
+KW:0649	KW:0649	Protein kinase inhibitor	Molecular_function	2
+KW:0650	KW:0650	Protein phosphatase inhibitor	Molecular_function	2
+KW:0651	KW:0651	Protein splicing	PTM	3
+KW:0652	KW:0652	Protein synthesis inhibitor	Molecular_function	2
+KW:0653	KW:0653	Protein transport	Biological_process	3
+KW:0654	KW:0654	Proteoglycan	PTM	3
+KW:0655	KW:0655	Prothrombin activator	Molecular_function	2
+KW:0656	KW:0656	Proto-oncogene	Disease	2
+KW:0657	KW:0657	Pseudohermaphroditism	Disease	2
+KW:0658	KW:0658	Purine biosynthesis	Biological_process	2
+KW:0659	KW:0659	Purine metabolism	Biological_process	2
+KW:0660	KW:0660	Purine salvage	Biological_process	2
+KW:0661	KW:0661	Putrescine biosynthesis	Biological_process	2
+KW:0662	KW:0662	Pyridine nucleotide biosynthesis	Biological_process	2
+KW:0663	KW:0663	Pyridoxal phosphate	Ligand	2
+KW:0664	KW:0664	Pyridoxine biosynthesis	Biological_process	2
+KW:0665	KW:0665	Pyrimidine biosynthesis	Biological_process	2
+KW:0666	KW:0666	Pyrogen	Molecular_function	2
+KW:0668	KW:0668	Pyropoikilocytosis	Disease	3
+KW:0669	KW:0669	Pyrrolysine	Coding_sequence_diversity	2
+KW:0670	KW:0670	Pyruvate	Ligand	2
+KW:0671	KW:0671	Queuosine biosynthesis	Biological_process	2
+KW:0672	KW:0672	Quinate metabolism	Biological_process	2
+KW:0673	KW:0673	Quorum sensing	Biological_process	2
+KW:0674	KW:0674	Reaction center	Cellular_component	2
+KW:0675	KW:0675	Receptor	Molecular_function	2
+KW:0676	KW:0676	Redox-active center	Domain	2
+KW:0677	KW:0677	Repeat	Domain	2
+KW:0678	KW:0678	Repressor	Molecular_function	2
+KW:0679	KW:0679	Respiratory chain	Biological_process	4
+KW:0680	KW:0680	Restriction system	Biological_process	2
+KW:0681	KW:0681	Retinal protein	Molecular_function	4
+KW:0682	KW:0682	Retinitis pigmentosa	Disease	2
+KW:0683	KW:0683	Retinol-binding	Ligand	2
+KW:0684	KW:0684	Rhamnose metabolism	Biological_process	2
+KW:0685	KW:0685	Rhizomelic chondrodysplasia punctata	Disease	2
+KW:0686	KW:0686	Riboflavin biosynthesis	Biological_process	2
+KW:0687	KW:0687	Ribonucleoprotein	Molecular_function	2
+KW:0688	KW:0688	Ribosomal frameshifting	Coding_sequence_diversity	2
+KW:0689	KW:0689	Ribosomal protein	Molecular_function	3
+KW:0690	KW:0690	Ribosome biogenesis	Biological_process	2
+KW:0691	KW:0691	RNA editing	Coding_sequence_diversity	2
+KW:0692	KW:0692	RNA repair	Biological_process	2
+KW:0693	KW:0693	Viral RNA replication	Biological_process	2
+KW:0694	KW:0694	RNA-binding	Ligand	2
+KW:0695	KW:0695	RNA-directed DNA polymerase	Molecular_function	4
+KW:0696	KW:0696	RNA-directed RNA polymerase	Molecular_function	4
+KW:0697	KW:0697	Rotamase	Molecular_function	3
+KW:0698	KW:0698	rRNA processing	Biological_process	2
+KW:0699	KW:0699	rRNA-binding	Ligand	3
+KW:0701	KW:0701	S-layer	Cellular_component	4
+KW:0702	KW:0702	S-nitrosylation	PTM	2
+KW:0703	KW:0703	Sarcoplasmic reticulum	Cellular_component	2
+KW:0704	KW:0704	Schiff base	Ligand	2
+KW:0705	KW:0705	SCID	Disease	2
+KW:0708	KW:0708	Seed storage protein	Molecular_function	3
+KW:0709	KW:0709	Segmentation polarity protein	Molecular_function	3
+KW:0711	KW:0711	Selenium	Ligand	2
+KW:0712	KW:0712	Selenocysteine	Coding_sequence_diversity	2
+KW:0713	KW:0713	Self-incompatibility	Biological_process	2
+KW:0716	KW:0716	Sensory transduction	Biological_process	2
+KW:0717	KW:0717	Septation	Biological_process	4
+KW:0718	KW:0718	Serine biosynthesis	Biological_process	3
+KW:0719	KW:0719	Serine esterase	Molecular_function	3
+KW:0720	KW:0720	Serine protease	Molecular_function	4
+KW:0721	KW:0721	Serine protease homolog	Molecular_function	2
+KW:0722	KW:0722	Serine protease inhibitor	Molecular_function	3
+KW:0723	KW:0723	Serine/threonine-protein kinase	Molecular_function	4
+KW:0724	KW:0724	Serotonin biosynthesis	Biological_process	2
+KW:0726	KW:0726	Sexual differentiation	Biological_process	3
+KW:0727	KW:0727	SH2 domain	Domain	2
+KW:0728	KW:0728	SH3 domain	Domain	2
+KW:0729	KW:0729	SH3-binding	Domain	2
+KW:0730	KW:0730	Sialic acid	Ligand	2
+KW:0731	KW:0731	Sigma factor	Molecular_function	2
+KW:0732	KW:0732	Signal	Domain	2
+KW:0733	KW:0733	Signal recognition particle	Cellular_component	2
+KW:0734	KW:0734	Signal transduction inhibitor	Molecular_function	2
+KW:0735	KW:0735	Signal-anchor	Domain	3
+KW:0736	KW:0736	Signalosome	Cellular_component	2
+KW:0737	KW:0737	Silk protein	Molecular_function	2
+KW:0738	KW:0738	Voltage-gated sodium channel impairing toxin	Molecular_function	4
+KW:0739	KW:0739	Sodium transport	Biological_process	4
+KW:0740	KW:0740	Sodium/potassium transport	Ligand	3
+KW:0741	KW:0741	SOS mutagenesis	Biological_process	5
+KW:0742	KW:0742	SOS response	Biological_process	4
+KW:0744	KW:0744	Spermatogenesis	Biological_process	3
+KW:0745	KW:0745	Spermidine biosynthesis	Biological_process	2
+KW:0746	KW:0746	Sphingolipid metabolism	Biological_process	3
+KW:0747	KW:0747	Spliceosome	Cellular_component	2
+KW:0748	KW:0748	Sporozoite	Developmental_stage	2
+KW:0749	KW:0749	Sporulation	Biological_process	2
+KW:0750	KW:0750	Starch biosynthesis	Biological_process	2
+KW:0751	KW:0751	Stargardt disease	Disease	2
+KW:0752	KW:0752	Steroid biosynthesis	Biological_process	4
+KW:0753	KW:0753	Steroid metabolism	Biological_process	3
+KW:0754	KW:0754	Steroid-binding	Ligand	3
+KW:0755	KW:0755	Steroidogenesis	Biological_process	2
+KW:0756	KW:0756	Sterol biosynthesis	Biological_process	5
+KW:0757	KW:0757	Stickler syndrome	Disease	2
+KW:0758	KW:0758	Storage protein	Molecular_function	2
+KW:0759	KW:0759	Streptomycin biosynthesis	Biological_process	3
+KW:0762	KW:0762	Sugar transport	Biological_process	3
+KW:0763	KW:0763	Sulfate respiration	Biological_process	2
+KW:0764	KW:0764	Sulfate transport	Biological_process	3
+KW:0765	KW:0765	Sulfation	PTM	2
+KW:0766	KW:0766	Superantigen	Molecular_function	2
+KW:0767	KW:0767	Surface film	Cellular_component	3
+KW:0768	KW:0768	Sushi	Domain	2
+KW:0769	KW:0769	Symport	Biological_process	3
+KW:0770	KW:0770	Synapse	Cellular_component	3
+KW:0771	KW:0771	Synaptosome	Cellular_component	4
+KW:0772	KW:0772	Systemic lupus erythematosus	Disease	2
+KW:0776	KW:0776	Taste-modifying protein	Molecular_function	2
+KW:0777	KW:0777	Teichoic acid biosynthesis	Biological_process	2
+KW:0778	KW:0778	Tellurium resistance	Biological_process	2
+KW:0779	KW:0779	Telomere	Cellular_component	3
+KW:0780	KW:0780	Terminal addition	Biological_process	2
+KW:0783	KW:0783	Tetrahydrobiopterin biosynthesis	Biological_process	2
+KW:0784	KW:0784	Thiamine biosynthesis	Biological_process	2
+KW:0785	KW:0785	Thiamine catabolism	Biological_process	2
+KW:0786	KW:0786	Thiamine pyrophosphate	Ligand	2
+KW:0787	KW:0787	Thick filament	Cellular_component	2
+KW:0788	KW:0788	Thiol protease	Molecular_function	4
+KW:0789	KW:0789	Thiol protease inhibitor	Molecular_function	3
+KW:0791	KW:0791	Threonine biosynthesis	Biological_process	3
+KW:0792	KW:0792	Thrombophilia	Disease	2
+KW:0793	KW:0793	Thylakoid	Cellular_component	2
+KW:0795	KW:0795	Thyroid hormone	Molecular_function	3
+KW:0796	KW:0796	Tight junction	Cellular_component	3
+KW:0797	KW:0797	Tissue remodeling	Biological_process	2
+KW:0798	KW:0798	TonB box	Domain	2
+KW:0799	KW:0799	Topoisomerase	Molecular_function	3
+KW:0800	KW:0800	Toxin	Molecular_function	2
+KW:0801	KW:0801	TPQ	PTM	2
+KW:0802	KW:0802	TPR repeat	Domain	2
+KW:0804	KW:0804	Transcription	Biological_process	2
+KW:0805	KW:0805	Transcription regulation	Biological_process	3
+KW:0806	KW:0806	Transcription termination	Biological_process	4
+KW:0807	KW:0807	Transducer	Molecular_function	2
+KW:0808	KW:0808	Transferase	Molecular_function	2
+KW:0809	KW:0809	Transit peptide	Domain	2
+KW:0810	KW:0810	Translation regulation	Biological_process	2
+KW:0811	KW:0811	Translocation	Biological_process	4
+KW:0812	KW:0812	Transmembrane	Domain	2
+KW:0813	KW:0813	Transport	Biological_process	2
+KW:0815	KW:0815	Transposition	Biological_process	2
+KW:0816	KW:0816	Tricarboxylic acid cycle	Biological_process	2
+KW:0817	KW:0817	Trimethoprim resistance	Biological_process	3
+KW:0818	KW:0818	Triplet repeat expansion	Coding_sequence_diversity	2
+KW:0819	KW:0819	tRNA processing	Biological_process	2
+KW:0820	KW:0820	tRNA-binding	Ligand	3
+KW:0821	KW:0821	Trypanosomiasis	Disease	2
+KW:0822	KW:0822	Tryptophan biosynthesis	Biological_process	4
+KW:0823	KW:0823	Tryptophan catabolism	Biological_process	2
+KW:0824	KW:0824	TTQ	PTM	2
+KW:0825	KW:0825	Tumor antigen	Molecular_function	2
+KW:0826	KW:0826	Tungsten	Ligand	2
+KW:0827	KW:0827	Tyrosine biosynthesis	Biological_process	4
+KW:0828	KW:0828	Tyrosine catabolism	Biological_process	2
+KW:0829	KW:0829	Tyrosine-protein kinase	Molecular_function	4
+KW:0830	KW:0830	Ubiquinone	Ligand	2
+KW:0831	KW:0831	Ubiquinone biosynthesis	Biological_process	2
+KW:0832	KW:0832	Ubl conjugation	PTM	2
+KW:0833	KW:0833	Ubl conjugation pathway	Biological_process	2
+KW:0834	KW:0834	Unfolded protein response	Biological_process	2
+KW:0835	KW:0835	Urea cycle	Biological_process	2
+KW:0836	KW:0836	Usher syndrome	Disease	3
+KW:0837	KW:0837	Vanadium	Ligand	2
+KW:0838	KW:0838	Vasoactive	Molecular_function	2
+KW:0839	KW:0839	Vasoconstrictor	Molecular_function	3
+KW:0840	KW:0840	Vasodilator	Molecular_function	3
+KW:0842	KW:0842	Viral occlusion body	Cellular_component	2
+KW:0843	KW:0843	Virulence	Biological_process	2
+KW:0844	KW:0844	Vision	Biological_process	3
+KW:0845	KW:0845	Vitamin A	Ligand	2
+KW:0846	KW:0846	Cobalamin	Ligand	3
+KW:0847	KW:0847	Vitamin C	Ligand	2
+KW:0848	KW:0848	Vitamin D	Ligand	2
+KW:0850	KW:0850	VLDL	Cellular_component	2
+KW:0851	KW:0851	Voltage-gated channel	Molecular_function	3
+KW:0852	KW:0852	von Willebrand disease	Disease	2
+KW:0853	KW:0853	WD repeat	Domain	2
+KW:0855	KW:0855	Whooping cough	Disease	2
+KW:0856	KW:0856	Williams-Beuren syndrome	Disease	2
+KW:0857	KW:0857	Xeroderma pigmentosum	Disease	2
+KW:0858	KW:0858	Xylan degradation	Biological_process	4
+KW:0859	KW:0859	Xylose metabolism	Biological_process	3
+KW:0861	KW:0861	Zellweger syndrome	Disease	3
+KW:0862	KW:0862	Zinc	Ligand	2
+KW:0863	KW:0863	Zinc-finger	Domain	2
+KW:0864	KW:0864	Zinc transport	Ligand	3
+KW:0865	KW:0865	Zymogen	PTM	2
+KW:0866	KW:0866	Nonsense-mediated mRNA decay	Biological_process	2
+KW:0867	KW:0867	MELAS syndrome	Disease	2
+KW:0868	KW:0868	Chloride	Ligand	2
+KW:0869	KW:0869	Chloride channel	Ligand	3
+KW:0870	KW:0870	Chloride channel inhibitor	Molecular_function	4
+KW:0871	KW:0871	Bacteriocin biosynthesis	Biological_process	3
+KW:0872	KW:0872	Ion channel impairing toxin	Molecular_function	3
+KW:0873	KW:0873	Pyrrolidone carboxylic acid	PTM	2
+KW:0874	KW:0874	Quinone	PTM	2
+KW:0875	KW:0875	Capsule	Cellular_component	3
+KW:0876	KW:0876	Taxol biosynthesis	Biological_process	2
+KW:0877	KW:0877	Alternative promoter usage	Coding_sequence_diversity	2
+KW:0878	KW:0878	Amphibian defense peptide	Molecular_function	2
+KW:0879	KW:0879	Wnt signaling pathway	Biological_process	2
+KW:0880	KW:0880	Kelch repeat	Domain	2
+KW:0881	KW:0881	Chlorophyll catabolism	Biological_process	2
+KW:0882	KW:0882	Thioester bond	PTM	2
+KW:0883	KW:0883	Thioether bond	PTM	2
+KW:0884	KW:0884	PQQ biosynthesis	Biological_process	2
+KW:0885	KW:0885	CTQ	PTM	2
+KW:0886	KW:0886	LTQ	PTM	2
+KW:0887	KW:0887	Epilepsy	Disease	2
+KW:0888	KW:0888	Threonine protease	Molecular_function	4
+KW:0889	KW:0889	Transcription antitermination	Biological_process	4
+KW:0890	KW:0890	Hereditary spastic paraplegia	Disease	3
+KW:0891	KW:0891	Chondrogenesis	Biological_process	2
+KW:0892	KW:0892	Osteogenesis	Biological_process	2
+KW:0893	KW:0893	Thyroid hormones biosynthesis	Biological_process	2
+KW:0894	KW:0894	Sodium channel	Ligand	3
+KW:0896	KW:0896	Oogenesis	Biological_process	3
+KW:0897	KW:0897	Waardenburg syndrome	Disease	3
+KW:0898	KW:0898	Cataract	Disease	2
+KW:0899	KW:0899	Viral immunoevasion	Biological_process	3
+KW:0900	KW:0900	Congenital disorder of glycosylation	Disease	2
+KW:0901	KW:0901	Leber congenital amaurosis	Disease	2
+KW:0902	KW:0902	Two-component regulatory system	Biological_process	2
+KW:0904	KW:0904	Protein phosphatase	Molecular_function	3
+KW:0905	KW:0905	Primary microcephaly	Disease	2
+KW:0906	KW:0906	Nuclear pore complex	Biological_process	5
+KW:0907	KW:0907	Parkinson disease	Disease	2
+KW:0908	KW:0908	Parkinsonism	Disease	2
+KW:0909	KW:0909	Hibernation	Biological_process	2
+KW:0910	KW:0910	Bartter syndrome	Disease	2
+KW:0911	KW:0911	Desmin-related myopathy	Disease	3
+KW:0912	KW:0912	Congenital muscular dystrophy	Disease	2
+KW:0913	KW:0913	Age-related macular degeneration	Disease	2
+KW:0914	KW:0914	Notch signaling pathway	Biological_process	2
+KW:0915	KW:0915	Sodium	Ligand	2
+KW:0916	KW:0916	Viral movement protein	Molecular_function	2
+KW:0917	KW:0917	Virion maturation	Biological_process	3
+KW:0918	KW:0918	Phosphonate transport	Biological_process	3
+KW:0919	KW:0919	Taste	Biological_process	3
+KW:0920	KW:0920	Virion tegument	Cellular_component	3
+KW:0921	KW:0921	Nickel transport	Ligand	3
+KW:0922	KW:0922	Interferon antiviral system evasion	Biological_process	2
+KW:0923	KW:0923	Fanconi anemia	Disease	2
+KW:0924	KW:0924	Ammonia transport	Biological_process	3
+KW:0925	KW:0925	Oxylipin biosynthesis	Biological_process	5
+KW:0926	KW:0926	Vacuole	Cellular_component	2
+KW:0927	KW:0927	Auxin signaling pathway	Biological_process	2
+KW:0928	KW:0928	Hypersensitive response elicitation	Biological_process	2
+KW:0929	KW:0929	Antimicrobial	Molecular_function	2
+KW:0930	KW:0930	Antiviral protein	Molecular_function	2
+KW:0931	KW:0931	ER-Golgi transport	Biological_process	3
+KW:0932	KW:0932	Cytokinin signaling pathway	Biological_process	2
+KW:0933	KW:0933	Apicoplast	Cellular_component	3
+KW:0934	KW:0934	Plastid	Cellular_component	2
+KW:0935	KW:0935	Progressive external ophthalmoplegia	Disease	2
+KW:0936	KW:0936	Ethylene signaling pathway	Biological_process	2
+KW:0937	KW:0937	Abscisic acid biosynthesis	Biological_process	2
+KW:0938	KW:0938	Abscisic acid signaling pathway	Biological_process	2
+KW:0939	KW:0939	Gibberellin signaling pathway	Biological_process	2
+KW:0940	KW:0940	Short QT syndrome	Disease	2
+KW:0941	KW:0941	Suppressor of RNA silencing	Molecular_function	2
+KW:0942	KW:0942	Mucolipidosis	Disease	2
+KW:0943	KW:0943	RNA-mediated gene silencing	Biological_process	2
+KW:0944	KW:0944	Nitration	PTM	2
+KW:0945	KW:0945	Host-virus interaction	Biological_process	2
+KW:0946	KW:0946	Virion	Cellular_component	2
+KW:0947	KW:0947	Limb-girdle muscular dystrophy	Disease	2
+KW:0948	KW:0948	Aicardi-Goutieres syndrome	Disease	2
+KW:0949	KW:0949	S-adenosyl-L-methionine	Ligand	2
+KW:0950	KW:0950	Spinocerebellar ataxia	Disease	3
+KW:0951	KW:0951	Familial hemophagocytic lymphohistiocytosis	Disease	2
+KW:0953	KW:0953	Lacrimo-auriculo-dento-digital syndrome	Disease	3
+KW:0954	KW:0954	Congenital adrenal hyperplasia	Disease	2
+KW:0955	KW:0955	Glaucoma	Disease	2
+KW:0956	KW:0956	Kallmann syndrome	Disease	2
+KW:0957	KW:0957	Chromoplast	Cellular_component	3
+KW:0958	KW:0958	Peroxisome biogenesis disorder	Disease	2
+KW:0959	KW:0959	Myotoxin	Molecular_function	3
+KW:0960	KW:0960	Knottin	Domain	2
+KW:0961	KW:0961	Cell wall biogenesis/degradation	Biological_process	2
+KW:0962	KW:0962	Peroxisome biogenesis	Biological_process	2
+KW:0963	KW:0963	Cytoplasm	Cellular_component	2
+KW:0964	KW:0964	Secreted	Cellular_component	2
+KW:0965	KW:0965	Cell junction	Cellular_component	2
+KW:0966	KW:0966	Cell projection	Cellular_component	2
+KW:0967	KW:0967	Endosome	Cellular_component	2
+KW:0968	KW:0968	Cytoplasmic vesicle	Cellular_component	2
+KW:0969	KW:0969	Cilium	Cellular_component	3
+KW:0970	KW:0970	Cilium biogenesis/degradation	Biological_process	2
+KW:0971	KW:0971	Glycation	PTM	3
+KW:0972	KW:0972	Capsule biogenesis/degradation	Biological_process	2
+KW:0973	KW:0973	c-di-GMP	Ligand	2
+KW:0974	KW:0974	Archaeal flagellum	Cellular_component	2
+KW:0975	KW:0975	Bacterial flagellum	Cellular_component	2
+KW:0976	KW:0976	Atrial septal defect	Disease	2
+KW:0977	KW:0977	Ichthyosis	Disease	2
+KW:0978	KW:0978	Insecticide resistance	Biological_process	2
+KW:0979	KW:0979	Joubert syndrome	Disease	3
+KW:0980	KW:0980	Senior-Loken syndrome	Disease	3
+KW:0981	KW:0981	Meckel syndrome	Disease	3
+KW:0982	KW:0982	Primary hypomagnesemia	Disease	2
+KW:0983	KW:0983	Nephronophthisis	Disease	3
+KW:0984	KW:0984	Congenital hypothyroidism	Disease	2
+KW:0985	KW:0985	Congenital erythrocytosis	Disease	2
+KW:0986	KW:0986	Amelogenesis imperfecta	Disease	2
+KW:0987	KW:0987	Osteopetrosis	Disease	2
+KW:0988	KW:0988	Intrahepatic cholestasis	Disease	2
+KW:0989	KW:0989	Craniosynostosis	Disease	2
+KW:0990	KW:0990	Primary ciliary dyskinesia	Disease	3
+KW:0991	KW:0991	Mental retardation	Disease	2
+KW:0992	KW:0992	Brugada syndrome	Disease	2
+KW:0993	KW:0993	Aortic aneurysm	Disease	2
+KW:0994	KW:0994	Organellar chromatophore	Cellular_component	3
+KW:0995	KW:0995	Kinetochore	Cellular_component	2
+KW:0996	KW:0996	Nickel insertion	Biological_process	2
+KW:0997	KW:0997	Cell inner membrane	Cellular_component	4
+KW:0998	KW:0998	Cell outer membrane	Cellular_component	3
+KW:0999	KW:0999	Mitochondrion inner membrane	Cellular_component	3
+KW:1000	KW:1000	Mitochondrion outer membrane	Cellular_component	3
+KW:1001	KW:1001	Plastid inner membrane	Cellular_component	3
+KW:1002	KW:1002	Plastid outer membrane	Cellular_component	3
+KW:1003	KW:1003	Cell membrane	Cellular_component	3
+KW:1004	KW:1004	Congenital myasthenic syndrome	Disease	2
+KW:1005	KW:1005	Bacterial flagellum biogenesis	Biological_process	2
+KW:1006	KW:1006	Bacterial flagellum protein export	Biological_process	4
+KW:1007	KW:1007	Palmoplantar keratoderma	Disease	2
+KW:1008	KW:1008	Amyloidosis	Disease	2
+KW:1009	KW:1009	Hearing	Biological_process	2
+KW:1010	KW:1010	Non-syndromic deafness	Disease	3
+KW:1011	KW:1011	Dyskeratosis congenita	Disease	2
+KW:1012	KW:1012	Kartagener syndrome	Disease	4
+KW:1013	KW:1013	Microphthalmia	Disease	2
+KW:1014	KW:1014	Congenital stationary night blindness	Disease	2
+KW:1015	KW:1015	Disulfide bond	PTM	2
+KW:1016	KW:1016	Hypogonadotropic hypogonadism	Disease	2
+KW:1017	KW:1017	Isopeptide bond	PTM	2
+KW:1018	KW:1018	Complement activation lectin pathway	Biological_process	4
+KW:1020	KW:1020	Atrial fibrillation	Disease	2
+KW:1021	KW:1021	Pontocerebellar hypoplasia	Disease	2
+KW:1022	KW:1022	Congenital generalized lipodystrophy	Disease	2
+KW:1023	KW:1023	Dystonia	Disease	2
+KW:1024	KW:1024	Diamond-Blackfan anemia	Disease	2
+KW:1025	KW:1025	Mitosome	Cellular_component	2
+KW:1026	KW:1026	Leukodystrophy	Disease	2
+KW:1027	KW:1027	Lead	Ligand	2
+KW:1028	KW:1028	Ionotropic glutamate receptor inhibitor	Molecular_function	4
+KW:1029	KW:1029	Fimbrium biogenesis	Biological_process	2
+KW:1030	KW:1030	Host cell inner membrane	Cellular_component	5
+KW:1031	KW:1031	Host cell junction	Cellular_component	2
+KW:1032	KW:1032	Host cell membrane	Cellular_component	4
+KW:1033	KW:1033	Host cell outer membrane	Cellular_component	4
+KW:1034	KW:1034	Host cell projection	Cellular_component	2
+KW:1035	KW:1035	Host cytoplasm	Cellular_component	2
+KW:1036	KW:1036	Host cytoplasmic vesicle	Cellular_component	2
+KW:1037	KW:1037	Host cytoskeleton	Cellular_component	3
+KW:1038	KW:1038	Host endoplasmic reticulum	Cellular_component	2
+KW:1039	KW:1039	Host endosome	Cellular_component	2
+KW:1040	KW:1040	Host Golgi apparatus	Cellular_component	2
+KW:1041	KW:1041	Host lipid droplet	Cellular_component	2
+KW:1042	KW:1042	Host lysosome	Cellular_component	2
+KW:1043	KW:1043	Host membrane	Cellular_component	3
+KW:1044	KW:1044	Host microsome	Cellular_component	3
+KW:1045	KW:1045	Host mitochondrion	Cellular_component	2
+KW:1046	KW:1046	Host mitochondrion inner membrane	Cellular_component	3
+KW:1047	KW:1047	Host mitochondrion outer membrane	Cellular_component	3
+KW:1048	KW:1048	Host nucleus	Cellular_component	2
+KW:1049	KW:1049	Host periplasm	Cellular_component	2
+KW:1050	KW:1050	Host thylakoid	Cellular_component	2
+KW:1051	KW:1051	Host synapse	Cellular_component	3
+KW:1052	KW:1052	Target cell membrane	Cellular_component	4
+KW:1053	KW:1053	Target membrane	Cellular_component	3
+KW:1054	KW:1054	Niemann-Pick disease	Disease	2
+KW:1055	KW:1055	Congenital dyserythropoietic anemia	Disease	3
+KW:1056	KW:1056	Heterotaxy	Disease	2
+KW:1057	KW:1057	Nemaline myopathy	Disease	2
+KW:1058	KW:1058	Asthma	Disease	2
+KW:1059	KW:1059	Peters anomaly	Disease	2
+KW:1060	KW:1060	Myofibrillar myopathy	Disease	2
+KW:1061	KW:1061	Dermonecrotic toxin	Molecular_function	2
+KW:1062	KW:1062	Cushing syndrome	Disease	2
+KW:1063	KW:1063	Hypotrichosis	Disease	2
+KW:1064	KW:1064	Adaptive immunity	Biological_process	3
+KW:1065	KW:1065	Osteogenesis imperfecta	Disease	2
+KW:1066	KW:1066	Premature ovarian failure	Disease	2
+KW:1067	KW:1067	Emery-Dreifuss muscular dystrophy	Disease	2
+KW:1068	KW:1068	Hemolytic uremic syndrome	Disease	2
+KW:1069	KW:1069	Brassinosteroid biosynthesis	Biological_process	5
+KW:1070	KW:1070	Brassinosteroid signaling pathway	Biological_process	2
+KW:1071	KW:1071	Ligand-gated ion channel	Molecular_function	3
+KW:1072	KW:1072	Activation of host autophagy by virus	Biological_process	3
+KW:1073	KW:1073	Activation of host caspases by virus	Biological_process	4
+KW:1074	KW:1074	Activation of host NF-kappa-B by virus	Biological_process	3
+KW:1075	KW:1075	Inhibition of host translation factors by virus	Biological_process	5
+KW:1077	KW:1077	G0/G1 host cell cycle checkpoint dysregulation by virus	Biological_process	4
+KW:1078	KW:1078	G1/S host cell cycle checkpoint dysregulation by virus	Biological_process	4
+KW:1079	KW:1079	Host G2/M cell cycle arrest by virus	Biological_process	4
+KW:1080	KW:1080	Inhibition of host adaptive immune response by virus	Biological_process	4
+KW:1081	KW:1081	Inhibition of host apoptosis by viral BCL2-like protein	Biological_process	4
+KW:1082	KW:1082	Inhibition of host apoptosis by viral FLIP-like protein	Biological_process	4
+KW:1083	KW:1083	Inhibition of host autophagy by virus	Biological_process	3
+KW:1084	KW:1084	Inhibition of host tetherin by virus	Biological_process	6
+KW:1085	KW:1085	Inhibition of host caspases by virus	Biological_process	4
+KW:1086	KW:1086	Inhibition of host chemokines by virus	Biological_process	4
+KW:1087	KW:1087	Inhibition of host complement factors by virus	Biological_process	4
+KW:1088	KW:1088	Inhibition of host RIG-I by virus	Biological_process	6
+KW:1089	KW:1089	Inhibition of host MDA5 by virus	Biological_process	6
+KW:1090	KW:1090	Inhibition of host innate immune response by virus	Biological_process	4
+KW:1091	KW:1091	Inhibition of host interferon receptors by virus	Biological_process	6
+KW:1092	KW:1092	Inhibition of host IRF3 by virus	Biological_process	6
+KW:1093	KW:1093	Inhibition of host IRF7 by virus	Biological_process	6
+KW:1094	KW:1094	Inhibition of host IRF9 by virus	Biological_process	6
+KW:1095	KW:1095	Inhibition of host ISG15 by virus	Biological_process	6
+KW:1096	KW:1096	Inhibition of host JAK1 by virus	Biological_process	6
+KW:1097	KW:1097	Inhibition of host MAVS by virus	Biological_process	6
+KW:1098	KW:1098	Inhibition of host mitotic exit by virus	Biological_process	4
+KW:1099	KW:1099	Inhibition of host mRNA nuclear export by virus	Biological_process	5
+KW:1100	KW:1100	Inhibition of host NF-kappa-B by virus	Biological_process	3
+KW:1101	KW:1101	Inhibition of host poly(A)-binding protein by virus	Biological_process	5
+KW:1102	KW:1102	Inhibition of host PKR by virus	Biological_process	6
+KW:1103	KW:1103	Inhibition of host pre-mRNA processing by virus	Biological_process	5
+KW:1104	KW:1104	Inhibition of host RNA polymerase II by virus	Biological_process	5
+KW:1105	KW:1105	Inhibition of host STAT1 by virus	Biological_process	6
+KW:1106	KW:1106	Inhibition of host STAT2 by virus	Biological_process	6
+KW:1107	KW:1107	Inhibition of host TAP by virus	Biological_process	5
+KW:1108	KW:1108	Inhibition of host tapasin by virus	Biological_process	5
+KW:1110	KW:1110	Inhibition of host TRAFs by virus	Biological_process	6
+KW:1111	KW:1111	Inhibition of host transcription initiation by virus	Biological_process	5
+KW:1112	KW:1112	Inhibition of host TYK2 by virus	Biological_process	6
+KW:1113	KW:1113	Inhibition of host RLR pathway by virus	Biological_process	5
+KW:1114	KW:1114	Inhibition of host interferon signaling pathway by virus	Biological_process	5
+KW:1115	KW:1115	Inhibition of host MHC class I molecule presentation by virus	Biological_process	5
+KW:1116	KW:1116	Inhibition of host MHC class II molecule presentation by virus	Biological_process	5
+KW:1117	KW:1117	Inhibition of host proteasome antigen processing by virus	Biological_process	5
+KW:1118	KW:1118	Modulation of host dendritic cell activity by virus	Biological_process	4
+KW:1119	KW:1119	Modulation of host cell apoptosis by virus	Biological_process	3
+KW:1120	KW:1120	Modulation of host cell cycle by viral cyclin-like protein	Biological_process	4
+KW:1121	KW:1121	Modulation of host cell cycle by virus	Biological_process	3
+KW:1122	KW:1122	Modulation of host chromatin by virus	Biological_process	3
+KW:1123	KW:1123	Modulation of host E3 ubiquitin ligases by virus	Biological_process	4
+KW:1124	KW:1124	Modulation of host immunity by viral IgG Fc receptor-like protein	Biological_process	4
+KW:1125	KW:1125	Evasion of host immunity by viral interleukin-like protein	Biological_process	4
+KW:1126	KW:1126	Modulation of host PP1 activity by virus	Biological_process	6
+KW:1127	KW:1127	Modulation of host ubiquitin pathway by viral deubiquitinase	Biological_process	4
+KW:1128	KW:1128	Modulation of host ubiquitin pathway by viral E3 ligase	Biological_process	4
+KW:1129	KW:1129	Modulation of host ubiquitin pathway by viral ubl	Biological_process	4
+KW:1130	KW:1130	Modulation of host ubiquitin pathway by virus	Biological_process	3
+KW:1131	KW:1131	Modulation of host NK-cell activity by virus	Biological_process	4
+KW:1132	KW:1132	Decay of host mRNAs by virus	Biological_process	5
+KW:1133	KW:1133	Transmembrane helix	Domain	3
+KW:1134	KW:1134	Transmembrane beta strand	Domain	3
+KW:1135	KW:1135	Mitochondrion nucleoid	Cellular_component	3
+KW:1136	KW:1136	Bradyzoite	Developmental_stage	2
+KW:1137	KW:1137	Tachyzoite	Developmental_stage	2
+KW:1138	KW:1138	Trophozoite	Developmental_stage	2
+KW:1139	KW:1139	Helical capsid protein	Cellular_component	3
+KW:1140	KW:1140	T=1 icosahedral capsid protein	Cellular_component	3
+KW:1141	KW:1141	T=2 icosahedral capsid protein	Cellular_component	3
+KW:1142	KW:1142	T=3 icosahedral capsid protein	Cellular_component	3
+KW:1143	KW:1143	T=pseudo3 icosahedral capsid protein	Cellular_component	3
+KW:1144	KW:1144	T=4 icosahedral capsid protein	Cellular_component	3
+KW:1145	KW:1145	T=7 icosahedral capsid protein	Cellular_component	3
+KW:1146	KW:1146	T=13 icosahedral capsid protein	Cellular_component	3
+KW:1147	KW:1147	T=16 icosahedral capsid protein	Cellular_component	3
+KW:1148	KW:1148	T=25 icosahedral capsid protein	Cellular_component	3
+KW:1149	KW:1149	T=147 icosahedral capsid protein	Cellular_component	3
+KW:1150	KW:1150	T=169 icosahedral capsid protein	Cellular_component	3
+KW:1151	KW:1151	T=219 icosahedral capsid protein	Cellular_component	3
+KW:1152	KW:1152	Outer capsid protein	Cellular_component	4
+KW:1153	KW:1153	Inner capsid protein	Cellular_component	4
+KW:1154	KW:1154	Intermediate capsid protein	Cellular_component	4
+KW:1155	KW:1155	Translational shunt	Molecular_function	2
+KW:1156	KW:1156	RNA translational shunting	Coding_sequence_diversity	2
+KW:1157	KW:1157	Cap snatching	Biological_process	2
+KW:1158	KW:1158	RNA termination-reinitiation	Coding_sequence_diversity	2
+KW:1159	KW:1159	RNA suppression of termination	Coding_sequence_diversity	2
+KW:1160	KW:1160	Virus entry into host cell	Biological_process	2
+KW:1161	KW:1161	Viral attachment to host cell	Biological_process	3
+KW:1162	KW:1162	Viral penetration into host cytoplasm	Biological_process	3
+KW:1163	KW:1163	Viral penetration into host nucleus	Biological_process	3
+KW:1164	KW:1164	Virus endocytosis by host	Biological_process	4
+KW:1165	KW:1165	Clathrin-mediated endocytosis of virus by host	Biological_process	5
+KW:1166	KW:1166	Caveolin-mediated endocytosis of virus by host	Biological_process	5
+KW:1167	KW:1167	Clathrin- and caveolin-independent endocytosis of virus by host	Biological_process	5
+KW:1168	KW:1168	Fusion of virus membrane with host membrane	Biological_process	4
+KW:1169	KW:1169	Fusion of virus membrane with host cell membrane	Biological_process	5
+KW:1170	KW:1170	Fusion of virus membrane with host endosomal membrane	Biological_process	5
+KW:1171	KW:1171	Viral genome ejection through host cell envelope	Biological_process	4
+KW:1172	KW:1172	Pore-mediated penetration of viral genome into host cell	Biological_process	4
+KW:1173	KW:1173	Viral penetration via permeabilization of host membrane	Biological_process	4
+KW:1174	KW:1174	Viral penetration via lysis of host organellar membrane	Biological_process	4
+KW:1175	KW:1175	Viral attachment to host cell pilus	Biological_process	4
+KW:1176	KW:1176	Cytoplasmic inwards viral transport	Biological_process	3
+KW:1177	KW:1177	Microtubular inwards viral transport	Biological_process	4
+KW:1178	KW:1178	Actin-dependent inwards viral transport	Biological_process	4
+KW:1179	KW:1179	Viral genome integration	Biological_process	3
+KW:1180	KW:1180	Syncytium formation induced by viral infection	Biological_process	2
+KW:1181	KW:1181	Viral primary envelope fusion with host outer nuclear membrane	Biological_process	3
+KW:1182	KW:1182	Viral ion channel	Molecular_function	3
+KW:1183	KW:1183	Host cell receptor for virus entry	Molecular_function	3
+KW:1184	KW:1184	Jasmonic acid signaling pathway	Biological_process	2
+KW:1186	KW:1186	Ciliopathy	Disease	2
+KW:1187	KW:1187	Viral budding via the host ESCRT complexes	Biological_process	4
+KW:1188	KW:1188	Virus exit from host cell	Biological_process	2
+KW:1189	KW:1189	Microtubular outwards viral transport	Biological_process	3
+KW:1190	KW:1190	Host gene expression shutoff by virus	Biological_process	3
+KW:1191	KW:1191	Host transcription shutoff by virus	Biological_process	4
+KW:1192	KW:1192	Host mRNA suppression by virus	Biological_process	4
+KW:1193	KW:1193	Host translation shutoff by virus	Biological_process	4
+KW:1194	KW:1194	Viral DNA replication	Biological_process	2
+KW:1195	KW:1195	Viral transcription	Biological_process	2
+KW:1196	KW:1196	IFIT mRNA restriction evasion by virus	Biological_process	3
+KW:1197	KW:1197	Ribosomal skipping	Coding_sequence_diversity	2
+KW:1198	KW:1198	Viral budding	Biological_process	3
+KW:1199	KW:1199	Hemostasis impairing toxin	Molecular_function	3
+KW:1200	KW:1200	Hemorrhagic toxin	Molecular_function	4
+KW:1201	KW:1201	Platelet aggregation inhibiting toxin	Molecular_function	4
+KW:1202	KW:1202	Platelet aggregation activating toxin	Molecular_function	4
+KW:1203	KW:1203	Blood coagulation cascade inhibiting toxin	Molecular_function	4
+KW:1204	KW:1204	Blood coagulation cascade activating toxin	Molecular_function	4
+KW:1205	KW:1205	Fibrinolytic toxin	Molecular_function	4
+KW:1206	KW:1206	Fibrinogenolytic toxin	Molecular_function	4
+KW:1207	KW:1207	Sterol metabolism	Biological_process	4
+KW:1208	KW:1208	Phospholipid metabolism	Biological_process	3
+KW:1209	KW:1209	Archaeal flagellum biogenesis	Biological_process	2
+KW:1210	KW:1210	Necrosis	Biological_process	2
+KW:1211	KW:1211	Schizophrenia	Disease	2
+KW:1212	KW:1212	Corneal dystrophy	Disease	2
+KW:1213	KW:1213	G-protein coupled receptor impairing toxin	Molecular_function	3
+KW:1214	KW:1214	G-protein coupled acetylcholine receptor impairing toxin	Molecular_function	4
+KW:1215	KW:1215	Dystroglycanopathy	Disease	2
+KW:1216	KW:1216	Complement system impairing toxin	Molecular_function	3
+KW:1217	KW:1217	Cell adhesion impairing toxin	Molecular_function	3
+KW:1218	KW:1218	Voltage-gated calcium channel impairing toxin	Molecular_function	5
+KW:1219	KW:1219	Ryanodine-sensitive calcium-release channel impairing toxin	Molecular_function	5
+KW:1220	KW:1220	Voltage-gated potassium channel impairing toxin	Molecular_function	5
+KW:1221	KW:1221	Calcium-activated potassium channel impairing toxin	Molecular_function	5
+KW:1222	KW:1222	Bradykinin receptor impairing toxin	Molecular_function	4
+KW:1223	KW:1223	Inhibition of host TBK1 by virus	Biological_process	6
+KW:1224	KW:1224	Inhibition of host IKBKE by virus	Biological_process	6
+KW:1225	KW:1225	Inhibition of host TLR pathway by virus	Biological_process	5
+KW:1226	KW:1226	Viral base plate protein	Cellular_component	4
+KW:1227	KW:1227	Viral tail protein	Cellular_component	3
+KW:1228	KW:1228	Viral tail tube protein	Cellular_component	4
+KW:1229	KW:1229	Viral tail sheath protein	Cellular_component	4
+KW:1230	KW:1230	Viral tail fiber protein	Cellular_component	4
+KW:1231	KW:1231	Capsid inner membrane protein	Cellular_component	3
+KW:1232	KW:1232	Capsid decoration protein	Cellular_component	4
+KW:1233	KW:1233	Viral primary attachment to host cell	Biological_process	4
+KW:1234	KW:1234	Viral attachment to host entry receptor	Biological_process	4
+KW:1235	KW:1235	Degradation of host cell envelope components during virus entry	Biological_process	3
+KW:1236	KW:1236	Degradation of host peptidoglycans during virus entry	Biological_process	4
+KW:1237	KW:1237	Degradation of host lipopolysaccharides during virus entry	Biological_process	4
+KW:1238	KW:1238	Degradation of host capsule during virus entry	Biological_process	4
+KW:1239	KW:1239	Fusion of virus membrane with host outer membrane	Biological_process	5
+KW:1240	KW:1240	Viral attachment to host cell flagellum	Biological_process	4
+KW:1241	KW:1241	Viral penetration into host cytoplasm via pilus retraction	Biological_process	4
+KW:1242	KW:1242	Viral contractile tail ejection system	Molecular_function	2
+KW:1243	KW:1243	Viral long flexible tail ejection system	Molecular_function	2
+KW:1244	KW:1244	Viral short tail ejection system	Molecular_function	2
+KW:1245	KW:1245	Viral tail assembly	Biological_process	3
+KW:1246	KW:1246	Viral tail fiber assembly	Biological_process	4
+KW:1247	KW:1247	Degradation of host chromosome by virus	Biological_process	4
+KW:1248	KW:1248	Inhibition of host DNA replication by virus	Biological_process	4
+KW:1249	KW:1249	Viral extrusion	Biological_process	3
+KW:1250	KW:1250	Viral genome excision	Biological_process	2
+KW:1251	KW:1251	Viral latency	Biological_process	2
+KW:1252	KW:1252	Latency-replication switch	Biological_process	3
+KW:1253	KW:1253	Viral genome circularization	Biological_process	3
+KW:1254	KW:1254	Modulation of host virulence by virus	Biological_process	3
+KW:1255	KW:1255	Viral exotoxin	Biological_process	4
+KW:1256	KW:1256	DNA end degradation evasion by virus	Biological_process	3
+KW:1257	KW:1257	CRISPR-cas system evasion by virus	Biological_process	3
+KW:1258	KW:1258	Restriction-modification system evasion by virus	Biological_process	3
+KW:1259	KW:1259	Abi system evasion by virus	Biological_process	3
+KW:1260	KW:1260	Superinfection exclusion	Biological_process	3
+KW:9991	KW:9991	PTM	PTM	1
+KW:9992	KW:9992	Molecular function	Molecular_function	1
+KW:9993	KW:9993	Ligand	Ligand	1
+KW:9994	KW:9994	Domain	Domain	1
+KW:9995	KW:9995	Disease	Disease	1
+KW:9996	KW:9996	Developmental stage	Developmental_stage	1
+KW:9997	KW:9997	Coding sequence diversity	Coding_sequence_diversity	1
+KW:9998	KW:9998	Cellular component	Cellular_component	1
+KW:9999	KW:9999	Biological process	Biological_process	1
+root	root	root	root	0

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcAlgoPredictPR @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to assess the prediction performance via Precision-Recall (PR) analysis</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcAlgoPredictPR</code> is supposed to assess the prediction performance
+via Precision-Recall (PR) analysis. It requires two input files: 1) a
+Glod Standard Positive (GSP) file containing known annotations between
+proteins/genes and ontology terms; 2) a prediction file containing
+predicted terms for proteins/genes. Note: the known annotations will be
+recursively propagated towards the root of the ontology.</p>
+  
+    <h3>Usage</h3>
+    <pre>dcAlgoPredictPR(GSP.file, prediction.file, ontology = c(NA, "GOBP", "GOMF", "GOCC", 
+  "DO", "HPPA", "HPMI", "HPON", "MP", "EC", "KW", "UP"), num.threshold = 10, bin = c("uniform", 
+      "quantile"), verbose = T, RData.ontology.customised = NULL, RData.location = "https://github.com/hfang-bristol/RDataCentre/blob/master/dcGOR")</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>GSP.file</dt>
+      <dd>a Glod Standard Positive (GSP) file containing known
+annotations between proteins/genes and ontology terms. For example, a
+file containing annotations between human genes and HP terms can be
+found in
+<a href = 'http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt'>http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt</a>. As seen
+in this example, the input file must contain the header (in the first
+row) and two columns: 1st column for 'SeqID' (actually these IDs can be
+anything), 2nd column for 'termID' (HP terms). Alternatively, the
+GSP.file can be a matrix or data frame, assuming that GSP file has been
+read. Note: the file should use the tab delimiter as the field
+separator between columns</dd>
+      <dt>prediction.file</dt>
+      <dd>a prediction file containing proteins/genes,
+their predicted terms along with predictive scores. As seen in an
+example below, this file is usually created via
+<code><a href='dcAlgoPredictMain.html'>dcAlgoPredictMain</a></code>, containing three columns: 1st column
+for 'SeqID' (actually these IDs can be anything), 2nd column for 'Term'
+(ontology terms), 3rd column for 'Score' (predictive score).
+Alternatively, the prediction.file can be a matrix or data frame,
+assuming that prediction file has been read. Note: the file should use
+the tab delimiter as the field separator between columns</dd>
+      <dt>ontology</dt>
+      <dd>the ontology identity. It can be "GOBP" for Gene
+Ontology Biological Process, "GOMF" for Gene Ontology Molecular
+Function, "GOCC" for Gene Ontology Cellular Component, "DO" for Disease
+Ontology, "HPPA" for Human Phenotype Phenotypic Abnormality, "HPMI" for
+Human Phenotype Mode of Inheritance, "HPON" for Human Phenotype ONset
+and clinical course, "MP" for Mammalian Phenotype, "EC" for Enzyme
+Commission, "KW" for UniProtKB KeyWords, "UP" for UniProtKB UniPathway.
+For details on the eligibility for pairs of input domain and ontology,
+please refer to the online Documentations at
+<a href = 'http://supfam.org/dcGOR/docs.html'>http://supfam.org/dcGOR/docs.html</a>. If NA, then the user has to
+input a customised RData-formatted file (see
+<code>RData.ontology.customised</code> below)</dd>
+      <dt>num.threshold</dt>
+      <dd>an integer to specify how many PR points (as a
+function of the score threshold) will be calculated</dd>
+      <dt>bin</dt>
+      <dd>how to bin the scores. It can be "uniform" for binning
+scores with equal interval (ie with uniform distribution), and
+'quantile' for binning scores with eual frequency (ie with equal
+number)</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to TRUE for display</dd>
+      <dt>RData.ontology.customised</dt>
+      <dd>a file name for RData-formatted file
+containing an object of S4 class 'Onto' (i.g. ontology). By default, it
+is NULL. It is only needed when the user wants to perform customised
+analysis using their own ontology. See <code><a href='dcBuildOnto.html'>dcBuildOnto</a></code> for
+how to creat this object</dd>
+      <dt>RData.location</dt>
+      <dd>the characters to tell the location of built-in
+RData files. By default, it remotely locates at
+"https://github.com/hfang-bristol/RDataCentre/blob/master/dcGOR" and
+"http://dcgor.r-forge.r-project.org/data". For the user equipped with
+fast internet connection, this option can be just left as default. But
+it is always advisable to download these files locally. Especially when
+the user needs to run this function many times, there is no need to ask
+the function to remotely download every time (also it will
+unnecessarily increase the runtime). For examples, these files (as a
+whole or part of them) can be first downloaded into your current
+working directory, and then set this option as:
+<code class = 'eq'>RData.location="."</code>. If RData to load is already part of package
+itself, this parameter can be ignored (since this function will try to
+load it via function <code>data</code> first). Here is the UNIX command for
+downloading all RData files (preserving the directory structure):
+<code class = 'eq'>wget -r -l2 -A "*.RData" -np -nH --cut-dirs=0
+"http://dcgor.r-forge.r-project.org/data"</code></dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>a data frame containing two columns: 1st column 'Precision' for
+precision, 2nd 'Recall' for recall. The row has the names corresponding
+to the score threshold.</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>Prediction coverage: the ratio between predicted targets in number and
+GSP targets in number
+F-measure: the maximum of a harmonic mean between precision and recall
+along PR curve</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># 1) Generate prediction file with HPPA predicitions for human genes
+architecture.file <-
+"http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt"
+prediction.file <- "SCOP_architecture.HPPA_predicted.txt"
+res <- dcAlgoPredictMain(input.file=architecture.file,
+output.file=prediction.file, RData.HIS="Feature2HPPA.sf",
+parallel=FALSE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:33:07</strong>
+<strong class='message'></strong>
+<strong class='message'>Read the input file 'http://dcgor.r-forge.r-project.org/data/Algo/SCOP_architecture.txt' ...</strong>
+<strong class='message'>Predictions for 17467 sequences (with 4351 distinct architectures) using 'Feature2HPPA.sf' RData, 'sum' merge method, 'log' scale method and 'supra' feature mode (2015-07-23 12:33:08) ...</strong>
+<strong class='message'>
+##############################</strong>
+<strong class='message'>'dcAlgoPredict' is being called...</strong>
+<strong class='message'>##############################
+</strong>
+<strong class='message'>Start at 2015-07-23 12:33:08</strong>
+<strong class='message'></strong>
+<strong class='message'>Load the HIS object 'Feature2HPPA.sf' (2015-07-23 12:33:08) ...</strong>
+<strong class='message'>'Feature2HPPA.sf' (from https://github.com/hfang-bristol/RDataCentre/blob/master/dcGOR/Feature2HPPA.sf.RData?raw=true) has been loaded into the working environment</strong>
+<strong class='message'>Predictions for 4351 architectures using 'sum' merge method, 'log' scale method and 'supra' feature mode (2015-07-23 12:33:09)...</strong>
+<strong class='message'>	1 out of 4351 (2015-07-23 12:33:09)</strong>
+<strong class='message'>	436 out of 4351 (2015-07-23 12:33:09)</strong>
+<strong class='message'>	872 out of 4351 (2015-07-23 12:33:10)</strong>
+<strong class='message'>	1308 out of 4351 (2015-07-23 12:33:10)</strong>
+<strong class='message'>	1744 out of 4351 (2015-07-23 12:33:11)</strong>
+<strong class='message'>	2180 out of 4351 (2015-07-23 12:33:11)</strong>
+<strong class='message'>	2616 out of 4351 (2015-07-23 12:33:12)</strong>
+<strong class='message'>	3052 out of 4351 (2015-07-23 12:33:13)</strong>
+<strong class='message'>	3488 out of 4351 (2015-07-23 12:33:13)</strong>
+<strong class='message'>	3924 out of 4351 (2015-07-23 12:33:14)</strong>
+<strong class='message'>	4351 out of 4351 (2015-07-23 12:33:14)</strong>
+<strong class='message'>
+End at 2015-07-23 12:33:14</strong>
+<strong class='message'>Runtime in total is: 6 secs
+</strong>
+<strong class='message'>##############################</strong>
+<strong class='message'>'dcAlgoPredict' has been completed!</strong>
+<strong class='message'>##############################
+</strong>
+<strong class='message'>Preparations for output (2015-07-23 12:33:14)...</strong>
+<strong class='message'>The predictions have been saved into '/Users/hfang/Sites/SUPERFAMILY/dcGO/dcGOR/SCOP_architecture.HPPA_predicted.txt'.</strong>
+<strong class='message'>
+End at 2015-07-23 12:33:15</strong>
+<strong class='message'>Runtime in total is: 8 secs
+</strong>
+<div class='input'>
+# 2) Calculate Precision and Recall
+GSP.file <- "http://dcgor.r-forge.r-project.org/data/Algo/HP_anno.txt"
+res_PR <- dcAlgoPredictPR(GSP.file=GSP.file,
+prediction.file=prediction.file, ontology="HPPA")
+</div>
+<strong class='message'>Start at 2015-07-23 12:33:15</strong>
+<strong class='message'></strong>
+<strong class='message'>First, load the ontology 'HPPA' (2015-07-23 12:33:15) ...</strong>
+<strong class='message'>'onto.HPPA' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, import files for GSP and predictions (2015-07-23 12:33:15) ...</strong>
+<strong class='message'>Third, propagate GSP annotations (2015-07-23 12:33:16) ...</strong>
+<strong class='message'>	At level 16, there are 2 nodes, and 5 incoming neighbors.</strong>
+<strong class='message'>	At level 15, there are 7 nodes, and 9 incoming neighbors.</strong>
+<strong class='message'>	At level 14, there are 21 nodes, and 42 incoming neighbors.</strong>
+<strong class='message'>	At level 13, there are 54 nodes, and 82 incoming neighbors.</strong>
+<strong class='message'>	At level 12, there are 105 nodes, and 105 incoming neighbors.</strong>
+<strong class='message'>	At level 11, there are 274 nodes, and 188 incoming neighbors.</strong>
+<strong class='message'>	At level 10, there are 463 nodes, and 294 incoming neighbors.</strong>
+<strong class='message'>	At level 9, there are 782 nodes, and 441 incoming neighbors.</strong>
+<strong class='message'>	At level 8, there are 1004 nodes, and 538 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 1182 nodes, and 581 incoming neighbors.</strong>
+<strong class='message'>	At level 6, there are 1295 nodes, and 527 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 940 nodes, and 290 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 408 nodes, and 99 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 114 nodes, and 21 incoming neighbors.</strong>
+<strong class='message'>	At level 2, there are 21 nodes, and 1 incoming neighbors.</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
+<strong class='message'>	There are 3048 genes/proteins in GSP (2015-07-23 12:34:01).</strong>
+<strong class='message'>Fourth, process input predictions (2015-07-23 12:34:01) ...</strong>
+<strong class='message'>	There are 7749 genes/proteins in predictions (2015-07-23 12:34:01).</strong>
+<strong class='message'>Fifth, calculate the precision and recall for each of 1561 predicted and GSP genes/proteins (2015-07-23 12:34:01).</strong>
+<strong class='message'>Finally, calculate the averaged precision and recall (2015-07-23 12:34:02).</strong>
+<strong class='message'>In summary, Prediction coverage: 0.51 (amongst 3048 targets in GSP), and F-measure: 0.16.</strong>
+<strong class='message'>
+End at 2015-07-23 12:34:02</strong>
+<strong class='message'>Runtime in total is: 47 secs
+</strong>
+<div class='input'>res_PR
+</div>
+<div class='output'>        Precision     Recall
+1       0.7183260 0.02993152
+0.90001 0.6563963 0.03594915
+0.80002 0.5810718 0.04575739
+0.70003 0.5048114 0.05653384
+0.60004 0.4678130 0.06626356
+0.50005 0.4550127 0.07348753
+0.40006 0.4463097 0.08034927
+0.30007 0.4342131 0.08724687
+0.20008 0.4242244 0.09054786
+0.10009 0.4216690 0.09301885
+1e-04   0.4006511 0.10253593
+</div>
+<div class='input'>
+# 3) Plot PR-curve
+plot(res_PR[,2], res_PR[,1], xlim=c(0,1), ylim=c(0,1), type="b",
+xlab="Recall", ylab="Precision")
+</div>
+<a href="javascript:newWin('dcAlgoPredictPR-68.png', 'dcAlgoPredictPR-68.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAlgoPredictPR-68.png', width="400" /></a></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcAlgoPredictPR</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcAlgoPredictPR.r', 'R/dcAlgoPredictPR.r', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictPR.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcAlgoPredictPR.txt', 'man/dcAlgoPredictPR.txt', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictPR.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcAlgoPredictPR.pdf', 'man/dcAlgoPredictPR.pdf', '1200', '1200')" title="Click to view"><B><code>dcAlgoPredictPR.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcConverter.html'>dcConverter</a></code>,
+<code><a href='dcDuplicated.html'>dcDuplicated</a></code>, <code><a href='dcAlgoPredictMain.html'>dcAlgoPredictMain</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

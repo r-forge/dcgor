@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcDAGannotate @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to generate a subgraph of a direct acyclic graph (DAG) induced by the input annotation data</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcDAGannotate</code> is supposed to produce a subgraph induced by the
+input annotation data, given a direct acyclic graph (DAG; an ontology).
+The input is a graph of "igraph" or "Onto" object, a list of the
+vertices containing annotation data, and the mode defining the paths to
+the root of DAG. The induced subgraph contains vertices (with
+annotation data) and their ancestors along with the defined paths to
+the root of DAG. The annotations at these vertices (including their
+ancestors) are also updated according to the true-path rule: a domain
+annotated to a term should also be annotated by its all ancestor terms.</p>
+  
+    <h3>Usage</h3>
+    <pre>dcDAGannotate(g, annotations, path.mode = c("all_paths", "shortest_paths", "all_shortest_paths"), 
+  verbose = TRUE)</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>g</dt>
+      <dd>an object of class "igraph" or <code><a href='Onto-class.html'>Onto</a></code></dd>
+      <dt>annotations</dt>
+      <dd>an object of class <code><a href='Anno-class.html'>Anno</a></code>, that is, the
+vertices/nodes for which annotation data are provided</dd>
+      <dt>path.mode</dt>
+      <dd>the mode of paths induced by vertices/nodes with input
+annotation data. It can be "all_paths" for all possible paths to the
+root, "shortest_paths" for only one path to the root (for each node in
+query), "all_shortest_paths" for all shortest paths to the root (i.e.
+for each node, find all shortest paths with the equal lengths)</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to true for display</dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p><ul>
+<li><code>subg</code>: an induced subgraph, an object of class "igraph" or
+"Onto" (the same as input). In addition to the original attributes to
+nodes and edges, the return subgraph is also appended by new node
+attributes: "annotations", which contains a list of domains either as
+original annotations or inherited annotations; "IC", which stands for
+information content defined as negative 10-based log-transformed
+frequency of domains annotated to that term.
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>For the mode "shortest_paths", the induced subgraph is the most
+concise, and thus informative for visualisation when there are many
+nodes in query, while the mode "all_paths" results in the complete
+subgraph.</p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># 1) load onto.GOMF (as 'Onto' object)
+g <- dcRDataLoader('onto.GOMF')
+</div>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>
+# 2) load SCOP superfamilies annotated by GOMF (as 'Anno' object)
+Anno <- dcRDataLoader('SCOP.sf2GOMF')
+</div>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'>
+# 3) prepare for annotation data
+# randomly select 5 terms vertices (and their annotation data)
+annotations <- Anno[,sample(1:dim(Anno)[2], 5)]
+
+# 4) obtain the induced subgraph according to the input annotation data
+# 4a) based on all possible paths (i.e. the complete subgraph induced)
+dcDAGannotate(g, annotations, path.mode="all_paths", verbose=TRUE)
+</div>
+<strong class='message'>	At level 8, there are 1 nodes, and 1 incoming neighbors.</strong>
+<strong class='message'>	At level 7, there are 1 nodes, and 2 incoming neighbors.</strong>
+<strong class='message'>	At level 6, there are 3 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 6 nodes, and 4 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 4 nodes, and 4 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 3 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 2, there are 4 nodes, and 1 incoming neighbors.</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
+<div class='output'>An object of S4 class 'Onto'
+@adjMatrix: a direct matrix of 23 terms (parents/from) X 23 terms (children/to) 
+@nodeInfo (InfoDataFrame)
+  nodeNames: GO:0003674 GO:0003824 GO:0004872 ... GO:0015464 GO:0005000
+    (23 total)
+  nodeAttr: term_id term_name term_namespace term_distance annotations
+    IC
+</div>
+<div class='input'># 4b) based on shortest paths (i.e. the most concise subgraph induced)
+dag <- dcDAGannotate(g, annotations, path.mode="shortest_paths",
+verbose=TRUE)
+</div>
+<strong class='message'>	At level 6, there are 2 nodes, and 2 incoming neighbors.</strong>
+<strong class='message'>	At level 5, there are 5 nodes, and 5 incoming neighbors.</strong>
+<strong class='message'>	At level 4, there are 5 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 3, there are 3 nodes, and 3 incoming neighbors.</strong>
+<strong class='message'>	At level 2, there are 3 nodes, and 1 incoming neighbors.</strong>
+<strong class='message'>	At level 1, there are 1 nodes, and 0 incoming neighbors.</strong>
+<div class='input'>
+# 5) color-code nodes/terms according to the number of annotations
+if(class(dag)=='Onto') dag <- dcConverter(dag, from='Onto',
+to='igraph')
+</div>
+<strong class='message'>Your input object 'dag' of class 'Onto' has been converted into an object of class 'igraph'.</strong>
+<div class='input'>data <- sapply(V(dag)$annotations, length)
+names(data) <- V(dag)$name
+dnet::visDAG(g=dag, data=data, node.info="both")
+</div>
+<a href="javascript:newWin('dcDAGannotate-25.png', 'dcDAGannotate-25.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcDAGannotate-25.png', width="400" /></a></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcDAGannotate</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcDAGannotate.r', 'R/dcDAGannotate.r', '1200', '1200')" title="Click to view"><B><code>dcDAGannotate.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcDAGannotate.txt', 'man/dcDAGannotate.txt', '1200', '1200')" title="Click to view"><B><code>dcDAGannotate.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcDAGannotate.pdf', 'man/dcDAGannotate.pdf', '1200', '1200')" title="Click to view"><B><code>dcDAGannotate.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcRDataLoader.html'>dcRDataLoader</a></code>, <code><a href='dcEnrichment.html'>dcEnrichment</a></code>,
+<code><a href='dcDAGdomainSim.html'>dcDAGdomainSim</a></code>, <code><a href='dcConverter.html'>dcConverter</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

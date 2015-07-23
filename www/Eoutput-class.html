@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Eoutput-class @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Definition for S4 class Eoutput</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>Eoutput</code> is an S4 class to store output from enrichment analysis
+by <code><a href='dcEnrichment.html'>dcEnrichment</a></code>.</p>
+  
+        <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>Class Eoutput</p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Slots">
+    -->
+      <h3>Slots</h3>
+      
+      <p></p>
+      <p><span class='describe'>
+<code>domain</code>A character specifying the domain identity</p>
+      <p><code>ontology</code>A character specifying the ontology identity</p>
+      <p><code>term_info</code>A data.frame of nTerm X 5 containing term
+information, where nTerm is the number of terms in consideration, and
+the 5 columns are "term_id" (i.e. "Term ID"), "term_name" (i.e. "Term
+Name"), "namespace" (i.e. "Term Namespace"), "distance" (i.e. "Term
+Distance") and "IC" (i.e. "Information Content for the term based on
+annotation frequency by it")</p>
+      <p><code>anno</code>A list of terms, each storing annotated domains
+(also within the background domains). Always, terms are identified by
+"term_id" and domain members identified by their ids (e.g. sunids for
+SCOP domains)</p>
+      <p><code>data</code>A vector containing input data in
+<code><a href='dcEnrichment.html'>dcEnrichment</a></code>. It is not always the same as the input data
+as only those mappable are retained</p>
+      <p><code>background</code>A vector containing background in
+<code><a href='dcEnrichment.html'>dcEnrichment</a></code>. It is not always the same as the input
+background (if provided by the user) as only those mappable are
+retained</p>
+      <p><code>overlap</code>A list of terms, each storing domains overlapped
+between domains annotated by a term and domains in the input data (i.e.
+the domains of interest). Always, terms are identified by "term_id" and
+domain members identified by their ids (e.g. sunids for SCOP domains)</p>
+      <p><code>zscore</code>A vector of terms, containing z-scores</p>
+      <p><code>pvalue</code>A vector of terms, containing p-values</p>
+      <p><code>adjp</code>A vector of terms, containing adjusted p-values. It
+is the p value but after being adjusted for multiple comparisons
+</span></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Creation">
+    -->
+      <h3>Creation</h3>
+      
+      <p></p>
+      <p>An object of this class can be created via: <code>new("Eoutput",
+domain, ontology, term_info, anno, data, overlap, zscore, pvalue,
+adjp)</code></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Methods">
+    -->
+      <h3>Methods</h3>
+      
+      <p></p>
+      <p>Class-specific methods:
+<ul>
+<li><code>zscore()</code>: retrieve the slot 'zscore' in the object
+</li>
+<li><code>pvalue()</code>: retrieve the slot 'pvalue' in the object
+</li>
+<li><code>adjp()</code>: retrieve the slot 'adjp' in the object
+</li>
+<li><code>view()</code>: retrieve an integrated data.frame used for
+viewing the object
+</li>
+<li><code>write()</code>: write the object into a local file
+</li>
+</ul></p>
+      <p>Standard generic methods:
+<ul>
+<li><code>str()</code>: compact display of the content in the object
+</li>
+<li><code>show()</code>: abbreviated display of the object
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Access">
+    -->
+      <h3>Access</h3>
+      
+      <p></p>
+      <p>Ways to access information on this class:
+<ul>
+<li><code>showClass("Eoutput")</code>: show the class definition
+</li>
+<li><code>showMethods(classes="Eoutput")</code>: show the method
+definition upon this class
+</li>
+<li><code>getSlots("Eoutput")</code>: get the name and class of each slot
+in this class
+</li>
+<li><code>slotNames("Eoutput")</code>: get the name of each slot in this
+class
+</li>
+<li><code>selectMethod(f, signature="Eoutput")</code>: retrieve the
+definition code for the method 'f' defined in this class
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># 1) load SCOP.sf (as 'InfoDataFrame' object)
+SCOP.sf <- dcRDataLoader('SCOP.sf')
+</div>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<div class='input'># randomly select 20 domains
+data <- sample(rowNames(SCOP.sf), 20)
+
+# 2) perform enrichment analysis, producing an object of S4 class 'Eoutput'
+eoutput <- dcEnrichment(data, domain="SCOP.sf", ontology="GOMF")
+</div>
+<strong class='message'>Start at 2015-07-23 13:17:24</strong>
+<strong class='message'></strong>
+<strong class='message'>First, load the ontology 'GOMF', the domain 'SCOP.sf', and their associations (2015-07-23 13:17:24) ...</strong>
+<strong class='message'>'onto.GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>'SCOP.sf2GOMF' (from package 'dcGOR' version 1.0.5) has been loaded into the working environment</strong>
+<strong class='message'>Second, perform enrichment analysis using HypergeoTest (2015-07-23 13:17:57) ...</strong>
+<strong class='message'>	There are 811 terms being used, each restricted within [10,1000] annotations</strong>
+<strong class='message'>Last, adjust the p-values using the BH method (2015-07-23 13:17:57) ...</strong>
+<strong class='message'>
+End at 2015-07-23 13:17:57</strong>
+<strong class='message'>Runtime in total is: 33 secs
+</strong>
+<div class='input'>eoutput
+</div>
+<div class='output'>An object of S4 class 'Eoutput', containing following slots:
+  @domain: 'SCOP.sf'
+  @ontology: 'GOMF'
+  @term_info: a data.frame of 52 terms X 5 information
+  @anno: a list of 52 terms, each storing annotated domains
+  @data: a vector containing a group of 9 input domains (annotatable)
+  @background: a vector containing a group of 1083 background domains (annotatable)
+  @overlap: a list of 52 terms, each containing domains overlapped with input domains
+  @zscore: a vector of 52 terms, containing z-scores
+  @pvalue: a vector of 52 terms, containing p-values
+  @adjp: a vector of 52 terms, containing adjusted p-values
+In summary, a total of 52 terms ('GOMF') are analysed for a group of 9 input domains ('SCOP.sf')
+</div>
+<div class='input'>
+# 3) write into the file 'Eoutput.txt' in your local directory
+write(eoutput, file='Eoutput.txt')
+</div>
+<strong class='message'>A file ('Eoutput.txt') has been written into your local directory ('/Users/hfang/Sites/SUPERFAMILY/dcGO/dcGOR')</strong>
+<div class='input'>
+# 4) view the top 5 significant terms
+view(eoutput, top_num=5, sortBy="pvalue", details=TRUE)
+</div>
+<div class='output'>              term_id nAnno nGroup nOverlap zscore pvalue adjp
+GO:0043169 GO:0043169   100      9        3   2.51  0.006 0.31
+GO:0016831 GO:0016831   168      9        3   1.48  0.037 0.52
+GO:0017162 GO:0017162   291      9        4   1.19  0.064 0.52
+GO:0032403 GO:0032403   293      9        4   1.18  0.066 0.52
+GO:0016653 GO:0016653   297      9        4   1.15  0.069 0.52
+                                                                      term_name
+GO:0043169                                                       cation binding
+GO:0016831                                               carboxy-lyase activity
+GO:0017162                                    aryl hydrocarbon receptor binding
+GO:0032403                                              protein complex binding
+GO:0016653 oxidoreductase activity, acting on NAD(P)H, heme protein as acceptor
+               term_namespace term_distance                  members
+GO:0043169 molecular_function             3        89796,51905,47323
+GO:0016831 molecular_function             4        89796,51905,47323
+GO:0017162 molecular_function             4 103511,51905,47323,54631
+GO:0032403 molecular_function             3  89796,51905,54631,63562
+GO:0016653 molecular_function             4 103511,51905,47323,54631
+</div>
+<div class='input'>
+# 4) retrieve several slots directly
+zscore(eoutput)[1:5]
+</div>
+<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
+   -0.0934    -0.2180     0.5460    -0.2700    -0.0934 
+</div>
+<div class='input'>pvalue(eoutput)[1:5]
+</div>
+<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
+      0.39       0.46       0.16       0.46       0.39 
+</div>
+<div class='input'>adjp(eoutput)[1:5]
+</div>
+<div class='output'>GO:0004872 GO:0005215 GO:0005488 GO:0030234 GO:0060089 
+      0.53       0.58       0.52       0.58       0.53 
+</div></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>Eoutput</li><li>Eoutput-class</li>
+    </ul>
+    <ul>
+      <li>S4</li><li>classes</li>
+    </ul> 
+    -->
+    
+    
+        
+    <h2>See also</h2>
+    
+<code><a href='Eoutput-method.html'>Eoutput-method</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>

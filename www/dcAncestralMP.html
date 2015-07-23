@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>dcAncestralMP @ dcGOR 1.0.5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/highlight.css" rel="stylesheet">
+<link href="css/staticdocs.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #999999;
+}
+
+.navbar .brand:hover {
+  color: #F87217;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a:hover {
+  color: #F87217;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17338744-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Enlarge image -->
+<script type="text/javascript">
+    function newWin(url, name, width, height) { 
+       
+        var left = (screen.width/2)-(width/2);
+        var top = (screen.height/2)-(height/2); 
+        
+        window.open(url,name,'scrollbars=yes,resizable=yes,fullscreen=yes, width=' + width + ', height='+height+', top='+top+', left='+left);
+    }
+</script>
+  </head>
+
+  <body>
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="index.html">dcGOR 1.0.5</a>
+      <div class="nav">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="install.html"><i class="icon-wrench icon-white"></i> Installation</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="docs.html"><i class="icon-book icon-white"></i> Documentations</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="demos.html"><i class="icon-play icon-white"></i> Demos</a></li>
+        </ul>
+        <ul class="nav">
+          <li><a href="cite.html"><i class="icon-pencil icon-white"></i> Citation</a></li>
+        </ul>
+       
+        <!-- HTML for GOOLE SEARCH BAR 
+        <ul class="nav">
+            <div id="search-wrapper">
+                <form id="search" method="get" action="http://www.google.com/custom">
+                    <div class="search-box">
+                        <i class="icon-search icon-white"></i>
+                        <input type="text" id="tfq" class="textinput" name="q" size="21" maxlength="120" value="Google Search"/>
+                    </div>
+                </form>
+            </div>
+        </ul>
+        -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+    #search-wrapper {
+        width:300px;
+        height:40px;
+        background-color:transparent;
+        margin:0px auto 0;
+        border:0px solid #ff0000;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+    #search {
+        background-color:transparent;
+        padding:0px;
+        height:40px;
+        overflow:hidden;
+    }
+
+    .search-box {
+        width:250px;
+        height:32px;
+        background-color:transparent;
+        margin:2px 7px;
+        border:0px solid #cfcfcf;
+        -moz-border-radius: 2px; /* FF1+ */
+        -webkit-border-radius: 2px; /* Saf3-4 */
+        border-radius: 2px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        position:relative;
+    }
+
+	.textinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#999999;
+		border:1px solid #f00; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+</style>
+
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Google Search'){//Customize this text string to whatever you want
+				submitbutton.value = 'dcGOR R ';
+			}
+		});
+	}
+}
+</script>
+
+<script>
+  (function() {
+    var cx = '012094530736424854714:k8ieyz4ag4a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div><gcse:search></gcse:search></div>
+
+    <div class="container">
+      <header>
+        
+      </header>
+      
+      <h2>Function to reconstruct ancestral discrete states using maximum parsimony algorithm</h2>
+
+<div class="row">
+  <div class="span8">
+  
+    <h3>Description</h3>
+    <p><code>dcAncestralMP</code> is supposed to reconstruct ancestral discrete
+states using a maximum parsimony-modified Fitch algorithm. In a
+from-tip-to-root manner, ancestral state for an internal node is
+determined if a state is shared in a majority by all its children. If
+two or more states in a majority are equally shared, this internal node
+is temporarily marked as an unknown tie, which is further resolved in a
+from-root-to-tip manner: always being the same state as its direct
+parent holds. If the ties also occur at the root, the state at the root
+is set to the last state in ties (for example, usually being 'present'
+for 'present'-'absent' two states).</p>
+  
+    <h3>Usage</h3>
+    <pre>dcAncestralMP(data, phy, output.detail = F, parallel = T, multicores = NULL, verbose = T)</pre>
+    
+    <h3>Arguments</h3>
+    <dl>
+      <dt>data</dt>
+      <dd>an input data matrix/frame storing discrete states for tips
+(in rows) X characters (in columns). The rows in the matrix are for
+tips. If the row names do not exist, then addumedly they have the same
+order as in the tree tips. More wisely, users provide row names which
+can be matched to the tip labels of the tree. The row names can be more
+than found in the tree labels, and they should contain all those in the
+tree labels</dd>
+      <dt>phy</dt>
+      <dd>an object of class 'phylo'</dd>
+      <dt>output.detail</dt>
+      <dd>logical to indicate whether the output is returned
+as a detailed list. If TRUE, a nested list is returned: a list of
+characters (corresponding to columns of input data matrix), in which
+each element is a list consisting of three components ("states",
+"transition" and "relative"). If FALSE, a matrix is returned: the
+columns respond to the input data columns, and rows responding to all
+node index in the phylo-formatted tree</dd>
+      <dt>parallel</dt>
+      <dd>logical to indicate whether parallel computation with
+multicores is used. By default, it sets to true, but not necessarily
+does so. Partly because parallel backends available will be
+system-specific (now only Linux or Mac OS). Also, it will depend on
+whether these two packages "foreach" and "doMC" have been installed. It
+can be installed via:
+<code>source("http://bioconductor.org/biocLite.R");
+biocLite(c("foreach","doMC"))</code>. If not yet installed, this option will
+be disabled</dd>
+      <dt>multicores</dt>
+      <dd>an integer to specify how many cores will be
+registered as the multicore parallel backend to the 'foreach' package.
+If NULL, it will use a half of cores available in a user's computer.
+This option only works when parallel computation is enabled</dd>
+      <dt>verbose</dt>
+      <dd>logical to indicate whether the messages will be
+displayed in the screen. By default, it sets to TRUE for display</dd>
+    </dl>
+    <!-- 
+    -->
+    
+    <!-- 
+    <div class="Value">
+    -->
+      <h3>Value</h3>
+      
+      <p>It depends on the 'output.detail'.
+If FALSE (by default), a matrix is returned, with the columns
+responding to the input data columns, and rows responding to node index
+in the phylo-formatted tree.
+If TRUE, a nested list is returned. Outer-most list is for characters
+(corresponding to columns of input data matrix), in which each elemenl
+is a list (inner-most) consisting of three components ("states",
+"transition" and "relative"):
+<ul>
+<li><code>states</code>: a named vector storing states (extant and
+ancestral states)
+</li>
+<li><code>transition</code>: a posterior transition matrix between states
+</li>
+<li><code>relative</code>: a matrix of nodes X states, storing relative
+probability
+</li>
+</ul></p>
+      <p></p>
+    <!-- 
+    </div>
+    -->
+    <!-- 
+    <div class="Note">
+    -->
+      <h3>Note</h3>
+      
+      <p>This maximum parsimony algorithm for ancestral discrete state
+reconstruction is attributable to the basic idea as described in
+<a href = 'http://sysbio.oxfordjournals.org/content/20/4/406.short'>http://sysbio.oxfordjournals.org/content/20/4/406.short</a></p>
+    <!-- 
+    </div>
+    -->
+    
+    <h3 id="examples">Examples</h3>
+    <pre class="examples"><div class='input'># 1) a newick tree that is imported as a phylo-formatted tree
+tree <- "(((t1:5,t2:5):2,(t3:4,t4:4):3):2,(t5:4,t6:4):6);"
+phy <- ape::read.tree(text=tree)
+
+# 2) an input data matrix storing discrete states for tips (in rows) X four characters (in columns)
+data1 <- matrix(c(0,rep(1,3),rep(0,2)), ncol=1)
+data2 <- matrix(c(rep(0,4),rep(1,2)), ncol=1)
+data <- cbind(data1, data1, data1, data2)
+colnames(data) <- c("C1", "C2", "C3", "C4")
+## reconstruct ancestral states, without detailed output
+res <- dcAncestralMP(data, phy, parallel=FALSE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:42:16</strong>
+<strong class='message'></strong>
+<strong class='message'>The input tree has '6' tips.</strong>
+<strong class='message'>The input data has 4 characters/columns (with 2 distinct patterns).</strong>
+<strong class='message'>	1 out of 2 (2015-07-23 12:42:17)</strong>
+<strong class='message'>	2 out of 2 (2015-07-23 12:42:17)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2015-07-23 12:42:17</strong>
+<strong class='message'>Runtime in total is: 1 secs
+</strong>
+<div class='input'>res
+</div>
+<div class='output'>   C1 C2 C3 C4
+1   0  0  0  0
+2   1  1  1  0
+3   1  1  1  0
+4   1  1  1  0
+5   0  0  0  1
+6   0  0  0  1
+7   1  1  1  0
+8   1  1  1  0
+9   1  1  1  0
+10  1  1  1  0
+11  0  0  0  1
+</div>
+<div class='input'>
+# 3) an input data matrix storing discrete states for tips (in rows) X only one character
+data <- matrix(c(0,rep(1,3),rep(0,2)), ncol=1)
+## reconstruct ancestral states, with detailed output
+res <- dcAncestralMP(data, phy, parallel=FALSE, output.detail=TRUE)
+</div>
+<strong class='message'>Start at 2015-07-23 12:42:18</strong>
+<strong class='message'></strong>
+<strong class='message'>The input tree has '6' tips.</strong>
+<strong class='message'>The input data has 1 characters/columns (with 1 distinct patterns).</strong>
+<strong class='message'>	1 out of 1 (2015-07-23 12:42:18)</strong>
+<strong class='message'></strong>
+<strong class='message'>Finish at 2015-07-23 12:42:19</strong>
+<strong class='message'>Runtime in total is: 1 secs
+</strong>
+<div class='input'>res
+</div>
+<div class='output'>$`1`
+$`1`$states
+  1   2   3   4   5   6   7   8   9  10  11 
+"0" "1" "1" "1" "0" "0" "1" "1" "1" "1" "0" 
+
+$`1`$transition
+  0 1
+0 2 1
+1 2 6
+
+$`1`$relative
+        0      1
+1  1.0000 0.0000
+2  0.0000 1.0000
+3  0.0000 1.0000
+4  0.0000 1.0000
+5  1.0000 0.0000
+6  1.0000 0.0000
+7  0.4000 0.6000
+8  0.1667 0.8333
+9  0.5000 0.5000
+10 0.0000 1.0000
+11 1.0000 0.0000
+
+
+</div>
+<div class='input'>## get the inner-most list
+res <- res[[1]]
+## visualise the tree with ancestral states and their conditional probability
+Ntip <- ape::Ntip(phy)
+Nnode <- ape::Nnode(phy)
+color <- c("white","gray")
+## visualise main tree
+ape::plot.phylo(phy, type="p", use.edge.length=TRUE, label.offset=1,
+show.tip.label=TRUE, show.node.label=FALSE)
+</div>
+<a href="javascript:newWin('dcAncestralMP-25.png', 'dcAncestralMP-25.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAncestralMP-25.png', width="400" /></a>
+<div class='input'>## visualise tips (state 1 in gray, state 0 in white)
+x <- data[,1]
+ape::tiplabels(pch=22, bg=color[as.numeric(x)+1], cex=2, adj=1)
+</div>
+<a href="javascript:newWin('dcAncestralMP-27.png', 'dcAncestralMP-27.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAncestralMP-27.png', width="400" /></a>
+<div class='input'>## visualise internal nodes
+### thermo bar to illustrate relative probability (state 1 in gray, state 0 in white)
+ape::nodelabels(thermo=res$relative[Ntip+1:Nnode,2:1],
+piecol=color[2:1], cex=0.75)
+</div>
+<a href="javascript:newWin('dcAncestralMP-29.png', 'dcAncestralMP-29.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAncestralMP-29.png', width="400" /></a>
+<div class='input'>### labeling reconstructed ancestral states
+ape::nodelabels(text=res$states[Ntip+1:Nnode], node=Ntip+1:Nnode,
+frame="none", col="red", bg="transparent", cex=0.75)
+</div>
+<a href="javascript:newWin('dcAncestralMP-31.png', 'dcAncestralMP-31.png', '1200', '1200')" title="Click to enlarge"><img style="max-width:95%;border:1px solid #EEEEEE;box-shadow:5px 5px 2px #C0C0C0;" src='dcAncestralMP-31.png', width="400" /></a></pre>
+  </div>
+  
+  <div class="span4">
+    
+    <!-- 
+    <ul>
+      <li>dcAncestralMP</li>
+    </ul>
+    <ul>
+      
+    </ul> 
+    -->
+    
+    <h2>Source code</h2>
+    <a href="javascript:newWin('R/dcAncestralMP.r', 'R/dcAncestralMP.r', '1200', '1200')" title="Click to view"><B><code>dcAncestralMP.r</code></B></a>
+    
+    <h2>Source man</h2>
+    <a href="javascript:newWin('man/dcAncestralMP.txt', 'man/dcAncestralMP.txt', '1200', '1200')" title="Click to view"><B><code>dcAncestralMP.Rd</code></B></a>
+    
+    <a href="javascript:newWin('man/dcAncestralMP.pdf', 'man/dcAncestralMP.pdf', '1200', '1200')" title="Click to view"><B><code>dcAncestralMP.pdf</code></B></a>
+    
+    <h2>See also</h2>
+    
+<code><a href='dcAncestralML.html'>dcAncestralML</a></code>, <code><a href='dcTreeConnectivity.html'>dcTreeConnectivity</a></code>,
+<code><a href='dcDuplicated.html'>dcDuplicated</a></code>
+
+    <!--
+
+    <h2>Citation</h2>
+    <p>Fang H. (2014) <B>dcGOR: an R package for analysing ontologies and protein domain annotations</B>. <I>PLoS Computational Biology</I> 10(10):e1003929. <a href="http://dx.doi.org/10.1371/journal.pcbi.1003929">doi:10.1371/journal.pcbi.1003929</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25356683">25356683</a></p>
+
+<p>You may also cite the package as:</p>
+
+<ul>
+<li><code>database</code></li>
+</ul>
+
+<p>Fang H, Gough J. (2013) <B>dcGO: database of domain-centric ontologies on functions, phenotypes, diseases and more</B>. <I>Nucleic Acids Research</I> 41(Database issue):D536-44. <a href="http://dx.doi.org/10.1093/nar/gks1080">doi:10.1093/nar/gks1080</a>, PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23161684">23161684</a></p>
+
+<ul>
+<li><code>web link/URL</code></li>
+</ul>
+
+<p>Package &ldquo;dcGOR&rdquo; [<a href="http://cran.r-project.org/package=dcGOR">http://cran.r-project.org/package=dcGOR</a>]</p>
+
+    
+    
+    <h2>URL</h2>
+    <ul>
+      <li><a href="http://supfam.org/dcGOR">http://supfam.org/dcGOR</a></li>
+      <li><a href=" http://cran.r-project.org/package=dcGOR"> http://cran.r-project.org/package=dcGOR</a></li>
+      <li><a href=" http://
+dcgor.r-forge.r-project.org"> http://
+dcgor.r-forge.r-project.org</a></li>
+      <li><a href=" https://github.com/hfang-bristol/dcGOR"> https://github.com/hfang-bristol/dcGOR</a></li>
+    </ul>
+    
+    
+    -->
+    
+  </div>
+  
+</div>
+      
+      <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+
+<p><a href="mailto:hfang@well.ox.ac.uk" title="Hai Fang">Hai Fang</a></p>
+<p><a href="http://bioinformatics.bris.ac.uk">Computational Genomics Group, Department of Computer Science, University of Bristol, UK</a></p>
+
+
+      </footer>
+    </div>
+  </body>
+</html>
